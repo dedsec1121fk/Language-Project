@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "project": "Language Project",
+  "id": "scala",
+  "name": "Scala",
+  "kind": "vm",
+  "termux_packages": [
+    "openjdk-21",
+    "scala"
+  ],
+  "worker_protocol": "PING / E <hex> / D <hex> / QUIT",
+  "native_tool": {
+    "id": "properties-check",
+    "name": "Properties File Checker",
+    "category": "data",
+    "source": "languages/scala/tools/PropertiesCheck.scala",
+    "tags": [
+      "properties",
+      "config",
+      "duplicate"
+    ]
+  },
+  "execution_policy": "activated only after on-device worker and native-tool verification",
+  "runtime_home": "$HOME/Language Project",
+  "uses": [
+    "persistent reversible worker for benchmark/polyglot integrity chains",
+    "native practical utility: Properties File Checker",
+    "workspace-report participation when this runtime passes Termux verification",
+    "per-language performance and integrity telemetry"
+  ]
+}

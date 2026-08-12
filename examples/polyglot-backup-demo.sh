@@ -1,8 +1,8 @@
 #!/data/data/com.termux/files/usr/bin/bash
 set -euo pipefail
 
-SOURCE="${1:-$HOME/Language-Project}"
-DEST="${2:-$HOME/storage/downloads/Language-Project-Backups}"
+SOURCE="${1:-$HOME/Language Project/app}"
+DEST="${2:-$HOME/Language Project/backups}"
 
 printf '\nLanguage Project — Practical Polyglot Backup Demo\n'
 printf 'Source: %s\nDestination: %s\n\n' "$SOURCE" "$DEST"

@@ -11,7 +11,7 @@ jobs:
         with:
           python-version: '3.12'
       - name: Python syntax
-        run: python -m compileall -q Language.py core scripts tests
+        run: python -m compileall -q cli core scripts tests
       - name: Core self-test
         run: python scripts/selftest.py
       - name: Static unit checks

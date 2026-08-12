@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "project": "Language Project",
+  "id": "awk",
+  "name": "AWK",
+  "kind": "interpreted",
+  "termux_packages": [
+    "gawk"
+  ],
+  "worker_protocol": "PING / E <hex> / D <hex> / QUIT",
+  "native_tool": {
+    "id": "tabular-stats",
+    "name": "Tabular/TSV Statistics",
+    "category": "data",
+    "source": "languages/awk/tools/tabular-stats.awk",
+    "tags": [
+      "tsv",
+      "table",
+      "columns"
+    ]
+  },
+  "execution_policy": "activated only after on-device worker and native-tool verification",
+  "runtime_home": "$HOME/Language Project",
+  "uses": [
+    "persistent reversible worker for benchmark/polyglot integrity chains",
+    "native practical utility: Tabular/TSV Statistics",
+    "workspace-report participation when this runtime passes Termux verification",
+    "per-language performance and integrity telemetry"
+  ]
+}

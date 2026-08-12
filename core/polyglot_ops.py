@@ -12,6 +12,7 @@ import zipfile
 
 from .engine import active_languages, prewarm, load_state
 from .registry import ROOT
+from .paths import BACKUPS_DIR
 
 FORMAT = "language-project-polyglot"
 FORMAT_VERSION = 1
@@ -685,7 +686,7 @@ def protect(source, destination=None, label=None, chunk_size=DEFAULT_CHUNK, orde
     source = Path(source).expanduser().resolve()
     if not source.exists():
         raise FileNotFoundError(source)
-    dest = Path(destination).expanduser().resolve() if destination else source.parent / 'Language-Project-Backups'
+    dest = Path(destination).expanduser().resolve() if destination else BACKUPS_DIR
     dest.mkdir(parents=True, exist_ok=True)
     stamp = datetime.datetime.now().strftime('%Y%m%d-%H%M%S')
     safe_label = ''.join(c if c.isalnum() or c in '-_.' else '-' for c in (label or source.name)).strip('-') or 'backup'

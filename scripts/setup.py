@@ -4,8 +4,9 @@ import sys,subprocess,json,shutil,os,time,platform,datetime
 import select
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT))
 from core.registry import load_registry,expand,executable_exists,command_version
+from core.paths import APP_ROOT, DATA_ROOT, BUILD_DIR, STATE_DIR, ACTIVE_STATE_FILE, ensure_data_tree
 from core.langtools import setup_tools
-STATE=ROOT/'state'/'active.json'
+STATE=ACTIVE_STATE_FILE
 TEST_VECTORS=[
  '466c65782050726f6a656374',
  '00ff0102037f80fe',
@@ -14,7 +15,7 @@ TEST_VECTORS=[
 ]
 def run(c,timeout=1200,quiet=False):
  if not quiet:print('  $',' '.join(map(str,c)))
- try:return subprocess.run(c,cwd=ROOT,timeout=timeout).returncode==0
+ try:return subprocess.run(c,cwd=APP_ROOT,timeout=timeout).returncode==0
  except Exception as e:
   if not quiet:print('  !',e)
   return False
@@ -35,7 +36,7 @@ def _readline_timeout(pipe, timeout=6):
 def worker_test(lang):
  started=time.perf_counter_ns(); p=None
  try:
-  p=subprocess.Popen(expand(lang['run']),stdin=subprocess.PIPE,stdout=subprocess.PIPE,stderr=subprocess.PIPE,text=True,bufsize=1,cwd=ROOT)
+  p=subprocess.Popen(expand(lang['run']),stdin=subprocess.PIPE,stdout=subprocess.PIPE,stderr=subprocess.PIPE,text=True,bufsize=1,cwd=APP_ROOT)
   p.stdin.write('PING\n');p.stdin.flush();pong=_readline_timeout(p.stdout).strip()
   if pong!='PONG':return False,f'PING failed: {pong!r}',None
   samples=[]
@@ -57,7 +58,7 @@ def main():
  if install and shutil.which('pkg'):
   print('Updating Termux package indexes...');run(['pkg','update','-y'])
   if update:run(['pkg','upgrade','-y'],timeout=2400)
- (ROOT/'build'/'java').mkdir(parents=True,exist_ok=True);(ROOT/'build'/'scala').mkdir(parents=True,exist_ok=True)
+ ensure_data_tree(); (BUILD_DIR/'java').mkdir(parents=True,exist_ok=True);(BUILD_DIR/'scala').mkdir(parents=True,exist_ok=True)
  active=[];failed={};versions={};metrics={};installed=set();package_status={};build_metrics={};registry=load_registry()
  for i,l in enumerate(registry,1):
   print(f"\n[{i:02d}/{len(registry):02d}] {l['name']} ({l['kind']})")
@@ -90,7 +91,7 @@ def main():
  print(f"Verified native tools: {len(tool_state.get('active',[]))}/{len(registry)}")
  if refresh:
   print('\nRefreshing global language catalog (best effort)...')
-  subprocess.run([sys.executable,str(ROOT/'scripts'/'refresh_catalog.py')],cwd=ROOT)
+  subprocess.run([sys.executable,str(ROOT/'scripts'/'refresh_catalog.py')],cwd=APP_ROOT)
  print('\n'+'='*68);print(f'VERIFIED EXECUTABLE WORKERS: {len(active)}/{len(registry)}')
  if failed:print('Skipped:',', '.join(failed))
  print('State:',STATE);print('='*68)

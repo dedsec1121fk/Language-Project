@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "project": "Language Project",
+  "id": "crystal",
+  "name": "Crystal",
+  "kind": "compiled",
+  "termux_packages": [
+    "crystal"
+  ],
+  "worker_protocol": "PING / E <hex> / D <hex> / QUIT",
+  "native_tool": {
+    "id": "duplicate-lines-cr",
+    "name": "Duplicate Line Finder (Crystal)",
+    "category": "text",
+    "source": "languages/crystal/tools/duplicate-lines.cr",
+    "tags": [
+      "duplicate",
+      "lines",
+      "text"
+    ]
+  },
+  "execution_policy": "activated only after on-device worker and native-tool verification",
+  "runtime_home": "$HOME/Language Project",
+  "uses": [
+    "persistent reversible worker for benchmark/polyglot integrity chains",
+    "native practical utility: Duplicate Line Finder (Crystal)",
+    "workspace-report participation when this runtime passes Termux verification",
+    "per-language performance and integrity telemetry"
+  ]
+}

@@ -11,6 +11,7 @@ from core.toolbox import codec,hash_bytes,text_stats
 from core.scaffold import available as scaffold_languages
 from core.langtools import load_tools as load_native_tools
 from core.registry import load_registry
+from core.language_modules import verify_modules
 
 def assert_eq(a,b,msg):
     if a!=b:raise AssertionError(f'{msg}: {a!r} != {b!r}')
@@ -30,6 +31,7 @@ def main():
     assert text_stats(b'one two two')['words']==3
     assert {'python','c','rust','go'}<=set(scaffold_languages())
     native=load_native_tools(); workers=load_registry(); assert len(native)==len(workers)==34
+    mods=verify_modules(); assert mods['ok'] and mods['modules']==len(workers)
     assert {x['language_id'] for x in native}=={x['id'] for x in workers}
     assert all((ROOT/x['source']).is_file() for x in native)
     print('Language Project core self-test: PASS')

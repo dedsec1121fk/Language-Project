@@ -20,7 +20,7 @@ def main():
     assert catalog_stats()['termux_workers']==len(reg)
     scenarios=load_scenarios()['scenarios'];assert {'confidence','presentation','resilience'}<=set(scenarios)
     assert len(fingerprint())==64
-    assert 'Language-Project/' in tree_view(ROOT,depth=1,max_entries=20)
+    assert 'languages/' in tree_view(ROOT,depth=1,max_entries=20)
     assert environment_report(['python'])['commands'][0]['path']
     assert POLYGLOT_FORMAT=='language-project-polyglot' and DEFAULT_CHUNK>=4096
     sampler=ResourceSampler(interval=0.05).start();import time;time.sleep(0.06);summary=sampler.stop();assert summary['samples']>=1

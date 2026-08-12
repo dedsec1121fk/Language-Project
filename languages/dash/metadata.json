@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "project": "Language Project",
+  "id": "dash",
+  "name": "POSIX sh (Dash)",
+  "kind": "interpreted",
+  "termux_packages": [
+    "dash",
+    "coreutils"
+  ],
+  "worker_protocol": "PING / E <hex> / D <hex> / QUIT",
+  "native_tool": {
+    "id": "path-audit",
+    "name": "PATH Audit",
+    "category": "system",
+    "source": "languages/dash/tools/path-audit.sh",
+    "tags": [
+      "path",
+      "environment",
+      "permissions"
+    ]
+  },
+  "execution_policy": "activated only after on-device worker and native-tool verification",
+  "runtime_home": "$HOME/Language Project",
+  "uses": [
+    "persistent reversible worker for benchmark/polyglot integrity chains",
+    "native practical utility: PATH Audit",
+    "workspace-report participation when this runtime passes Termux verification",
+    "per-language performance and integrity telemetry"
+  ]
+}

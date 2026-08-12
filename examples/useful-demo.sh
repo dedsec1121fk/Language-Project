@@ -10,7 +10,7 @@ echo '--- Secure UUID ---'
 language-project tools generate --kind uuid
 
 echo '--- README hash ---'
-language-project tools hash --file "$HOME/Language-Project/README.md"
+language-project tools hash --file "$HOME/Language Project/app/README.md"
 
 echo '--- Project storage summary ---'
-language-project tools storage "$HOME/Language-Project" --top 5
+language-project tools storage "$HOME/Language Project" --top 5

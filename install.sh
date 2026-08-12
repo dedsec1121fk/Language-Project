@@ -1,80 +1,130 @@
 #!/data/data/com.termux/files/usr/bin/bash
-set -u
-SRC="$(cd "$(dirname "$0")" && pwd)"
-DEST="$HOME/Language-Project"
-STAGE="$HOME/.language-project-stage.$$"
+set -euo pipefail
 
-echo "Language Project — Termux installer / upgrader"
+SRC="$(cd "$(dirname "$0")" && pwd)"
+BASE="$HOME/Language Project"
+APP="$BASE/app"
+STAGE="$HOME/.language-project-install-stage.$$"
+
+printf '%s\n' "Language Project — Termux installer / upgrader"
+printf '%s\n' "Runtime home: $BASE"
+
 if ! command -v pkg >/dev/null 2>&1; then
   echo "ERROR: Termux pkg was not found. Run this inside Termux."
   exit 1
 fi
 
 pkg update -y || true
-pkg install -y python coreutils curl || { echo "Could not install required core packages."; exit 1; }
+pkg install -y python coreutils curl git || {
+  echo "ERROR: Could not install the required core packages."
+  exit 1
+}
 
-# Shared Android storage commonly has noexec behavior and is unsuitable for compiled workers.
-if [ "$SRC" != "$DEST" ]; then
-  echo "Staging project in Termux private storage..."
-  rm -rf "$STAGE"; mkdir -p "$STAGE" || exit 1
-  cp -a "$SRC"/. "$STAGE"/ || { rm -rf "$STAGE"; exit 1; }
+mkdir -p \
+  "$BASE" \
+  "$BASE/build" \
+  "$BASE/state/checkpoints" \
+  "$BASE/results" \
+  "$BASE/bundles" \
+  "$BASE/backups" \
+  "$BASE/reports" \
+  "$BASE/logs" \
+  "$BASE/cache" \
+  "$BASE/tmp" \
+  "$BASE/downloads" \
+  "$BASE/workspace"
 
-  # Preserve user-generated local data across upgrades without preserving stale binaries.
-  if [ -d "$DEST" ]; then
-    echo "Preserving previous results, bundles, database, and unfinished checkpoints..."
-    mkdir -p "$STAGE/results" "$STAGE/bundles" "$STAGE/state/checkpoints"
-    [ -d "$DEST/results" ] && cp -a "$DEST/results"/. "$STAGE/results"/ 2>/dev/null || true
-    [ -d "$DEST/bundles" ] && cp -a "$DEST/bundles"/. "$STAGE/bundles"/ 2>/dev/null || true
-    [ -f "$DEST/state/history.sqlite3" ] && cp -a "$DEST/state/history.sqlite3" "$STAGE/state/history.sqlite3" || true
-    [ -d "$DEST/state/checkpoints" ] && cp -a "$DEST/state/checkpoints"/. "$STAGE/state/checkpoints"/ 2>/dev/null || true
+# Android shared storage is commonly unsuitable for executing compiled binaries.
+# Keep the installed application itself and every generated runtime artifact in
+# Termux private home storage under "$HOME/Language Project".
+if [ "$SRC" != "$APP" ]; then
+  echo "Installing application source into: $APP"
+  rm -rf "$STAGE"
+  mkdir -p "$STAGE"
+  cp -a "$SRC"/. "$STAGE"/
+
+  # Do not copy local development artefacts into the installed application.
+  rm -rf \
+    "$STAGE/.git" \
+    "$STAGE/__pycache__"
+  find "$STAGE" -type d -name '__pycache__' -prune -exec rm -rf {} + 2>/dev/null || true
+  find "$STAGE" -type f \( -name '*.pyc' -o -name '*.pyo' \) -delete 2>/dev/null || true
+
+  OLD="$BASE/.previous-app.$$"
+  rm -rf "$OLD"
+  if [ -d "$APP" ]; then mv "$APP" "$OLD"; fi
+  if mv "$STAGE" "$APP"; then
+    rm -rf "$OLD"
+  else
+    echo "ERROR: Could not install application source."
+    rm -rf "$APP"
+    [ -d "$OLD" ] && mv "$OLD" "$APP" || true
+    rm -rf "$STAGE"
+    exit 1
   fi
-
-  rm -rf "$DEST" && mv "$STAGE" "$DEST" || { echo "ERROR: Could not install into $DEST"; exit 1; }
 fi
-ROOT="$DEST"
 
-# Generated binaries and runtime detection are always rebuilt for this device.
-rm -rf "$ROOT/build"
-mkdir -p "$ROOT/build" "$ROOT/results" "$ROOT/bundles" "$ROOT/state" "$ROOT/state/checkpoints"
-touch "$ROOT/build/.gitkeep" "$ROOT/results/.gitkeep" "$ROOT/bundles/.gitkeep" "$ROOT/state/.gitkeep"
-rm -f "$ROOT/state/active.json" "$ROOT/state/calibration.json" "$ROOT/state/polytools.json"
+export LANGUAGE_PROJECT_HOME="$BASE"
+ROOT="$APP"
+ENTRY="$ROOT/cli/Language.py"
 
-echo "Running core static self-test..."
+# Compiled outputs are device-specific and are rebuilt every installation.
+rm -rf "$BASE/build"
+mkdir -p "$BASE/build" "$BASE/state/checkpoints" "$BASE/results" "$BASE/bundles" \
+         "$BASE/backups" "$BASE/reports" "$BASE/logs" "$BASE/cache" "$BASE/tmp" \
+         "$BASE/downloads" "$BASE/workspace"
+rm -f "$BASE/state/active.json" "$BASE/state/calibration.json" "$BASE/state/polytools.json"
+
+if [ ! -f "$ENTRY" ]; then
+  echo "ERROR: Installed entrypoint is missing: $ENTRY"
+  exit 1
+fi
+
+echo "Running core self-test..."
 python "$ROOT/scripts/selftest.py" || { echo "ERROR: core self-test failed."; exit 1; }
 
-echo "Verifying packaged file manifest..."
+echo "Verifying packaged manifest..."
 python "$ROOT/scripts/verify_manifest.py" || { echo "ERROR: project manifest verification failed."; exit 1; }
 
 if ! python "$ROOT/scripts/setup.py" --install --refresh-catalog; then
   echo
   echo "ERROR: No executable language workers passed verification."
-  echo "Run: python $ROOT/scripts/setup.py --install"
+  echo "Repair command: LANGUAGE_PROJECT_HOME=\"$BASE\" python \"$ROOT/scripts/setup.py\" --install"
   exit 1
 fi
 
-# Re-index preserved/new JSON results into the local SQLite control-plane database.
-python "$ROOT/Language.py" db rebuild >/dev/null 2>&1 || true
+# Re-index preserved/new benchmark JSON into the persistent SQLite database.
+python "$ENTRY" db rebuild >/dev/null 2>&1 || true
 
 mkdir -p "$PREFIX/bin"
 for CMD in language-project language; do
- cat > "$PREFIX/bin/$CMD" <<EOF
+  cat > "$PREFIX/bin/$CMD" <<EOF
 #!/data/data/com.termux/files/usr/bin/bash
-exec python "$ROOT/Language.py" "\$@"
+export LANGUAGE_PROJECT_HOME="$BASE"
+exec python "$ENTRY" "\$@"
 EOF
- chmod +x "$PREFIX/bin/$CMD"
+  chmod +x "$PREFIX/bin/$CMD"
 done
+
 cat > "$PREFIX/bin/langtool" <<EOF
 #!/data/data/com.termux/files/usr/bin/bash
-exec python "$ROOT/Language.py" langtools "\$@"
+export LANGUAGE_PROJECT_HOME="$BASE"
+exec python "$ENTRY" langtools "\$@"
 EOF
 chmod +x "$PREFIX/bin/langtool"
 
+cat > "$PREFIX/bin/language-project-home" <<EOF
+#!/data/data/com.termux/files/usr/bin/bash
+printf '%s\n' "$BASE"
+EOF
+chmod +x "$PREFIX/bin/language-project-home"
+
 echo
-echo "Installed in: $ROOT"
+echo "Language Project installed successfully."
+echo "Application: $APP"
+echo "Runtime/data home: $BASE"
 echo "Run: language-project"
 echo "Alias: language"
-echo "Dashboard: language-project dashboard"
-echo "Catalog stats: language-project catalog stats"
-echo "Recommended calibration: language-project calibrate"
-echo "Native tools: language-project langtools list  (or: langtool list)"
-echo "All-language workspace report: language-project langtools workspace-report ~/YourProject"
+echo "Native tools: langtool list"
+echo "Storage path: language-project-home"
+echo "Workspace report: language-project langtools workspace-report ~/YourProject --output \"$BASE/reports/workspace.json\""

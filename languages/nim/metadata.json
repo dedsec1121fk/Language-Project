@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "project": "Language Project",
+  "id": "nim",
+  "name": "Nim",
+  "kind": "compiled",
+  "termux_packages": [
+    "nim"
+  ],
+  "worker_protocol": "PING / E <hex> / D <hex> / QUIT",
+  "native_tool": {
+    "id": "eol-stats",
+    "name": "Line Ending Analyzer",
+    "category": "developer",
+    "source": "languages/nim/tools/eol-stats.nim",
+    "tags": [
+      "eol",
+      "crlf",
+      "lf"
+    ]
+  },
+  "execution_policy": "activated only after on-device worker and native-tool verification",
+  "runtime_home": "$HOME/Language Project",
+  "uses": [
+    "persistent reversible worker for benchmark/polyglot integrity chains",
+    "native practical utility: Line Ending Analyzer",
+    "workspace-report participation when this runtime passes Termux verification",
+    "per-language performance and integrity telemetry"
+  ]
+}

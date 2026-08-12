@@ -1,0 +1,628 @@
+{
+  "schema": 2,
+  "languages": [
+    {
+      "id": "bash",
+      "name": "Bash",
+      "package": "bash",
+      "packages": [
+        "bash",
+        "coreutils"
+      ],
+      "kind": "interpreted",
+      "key": 0,
+      "run": [
+        "bash",
+        "{root}/languages/bash/worker.sh"
+      ],
+      "build": null,
+      "algorithm": "nibble-complement"
+    },
+    {
+      "id": "awk",
+      "name": "AWK",
+      "package": "gawk",
+      "packages": [
+        "gawk"
+      ],
+      "kind": "interpreted",
+      "key": 45,
+      "run": [
+        "gawk",
+        "-f",
+        "{root}/languages/awk/worker.awk"
+      ],
+      "build": null
+    },
+    {
+      "id": "c",
+      "name": "C",
+      "package": "clang",
+      "packages": [
+        "clang"
+      ],
+      "kind": "compiled",
+      "key": 55,
+      "run": [
+        "{data}/build/c"
+      ],
+      "build": [
+        "clang",
+        "-O3",
+        "-pipe",
+        "{root}/languages/c/worker.c",
+        "-o",
+        "{data}/build/c"
+      ]
+    },
+    {
+      "id": "cpp",
+      "name": "C++",
+      "package": "clang",
+      "packages": [
+        "clang"
+      ],
+      "kind": "compiled",
+      "key": 67,
+      "run": [
+        "{data}/build/cpp"
+      ],
+      "build": [
+        "clang++",
+        "-O3",
+        "-pipe",
+        "{root}/languages/cpp/worker.cpp",
+        "-o",
+        "{data}/build/cpp"
+      ]
+    },
+    {
+      "id": "python",
+      "name": "Python",
+      "package": "python",
+      "packages": [
+        "python"
+      ],
+      "kind": "interpreted",
+      "key": 89,
+      "run": [
+        "python",
+        "-u",
+        "{root}/languages/python/worker.py"
+      ],
+      "build": null
+    },
+    {
+      "id": "javascript",
+      "name": "JavaScript",
+      "package": "nodejs",
+      "packages": [
+        "nodejs"
+      ],
+      "kind": "interpreted",
+      "key": 97,
+      "run": [
+        "node",
+        "{root}/languages/javascript/worker.js"
+      ],
+      "build": null
+    },
+    {
+      "id": "perl",
+      "name": "Perl",
+      "package": "perl",
+      "packages": [
+        "perl"
+      ],
+      "kind": "interpreted",
+      "key": 107,
+      "run": [
+        "perl",
+        "{root}/languages/perl/worker.pl"
+      ],
+      "build": null
+    },
+    {
+      "id": "ruby",
+      "name": "Ruby",
+      "package": "ruby",
+      "packages": [
+        "ruby"
+      ],
+      "kind": "interpreted",
+      "key": 115,
+      "run": [
+        "ruby",
+        "{root}/languages/ruby/worker.rb"
+      ],
+      "build": null
+    },
+    {
+      "id": "lua",
+      "name": "Lua",
+      "package": "lua54",
+      "packages": [
+        "lua54"
+      ],
+      "kind": "interpreted",
+      "key": 125,
+      "run": [
+        "lua",
+        "{root}/languages/lua/worker.lua"
+      ],
+      "build": null
+    },
+    {
+      "id": "php",
+      "name": "PHP",
+      "package": "php",
+      "packages": [
+        "php"
+      ],
+      "kind": "interpreted",
+      "key": 131,
+      "run": [
+        "php",
+        "{root}/languages/php/worker.php"
+      ],
+      "build": null
+    },
+    {
+      "id": "tcl",
+      "name": "Tcl",
+      "package": "tcl",
+      "packages": [
+        "tcl"
+      ],
+      "kind": "interpreted",
+      "key": 151,
+      "run": [
+        "tclsh",
+        "{root}/languages/tcl/worker.tcl"
+      ],
+      "build": null
+    },
+    {
+      "id": "go",
+      "name": "Go",
+      "package": "golang",
+      "packages": [
+        "golang"
+      ],
+      "kind": "compiled",
+      "key": 161,
+      "run": [
+        "{data}/build/go"
+      ],
+      "build": [
+        "go",
+        "build",
+        "-ldflags=-s -w",
+        "-o",
+        "{data}/build/go",
+        "{root}/languages/go/worker.go"
+      ]
+    },
+    {
+      "id": "rust",
+      "name": "Rust",
+      "package": "rust",
+      "packages": [
+        "rust"
+      ],
+      "kind": "compiled",
+      "key": 173,
+      "run": [
+        "{data}/build/rust"
+      ],
+      "build": [
+        "rustc",
+        "-O",
+        "{root}/languages/rust/worker.rs",
+        "-o",
+        "{data}/build/rust"
+      ]
+    },
+    {
+      "id": "java",
+      "name": "Java",
+      "package": "openjdk-21",
+      "packages": [
+        "openjdk-21"
+      ],
+      "kind": "vm",
+      "key": 185,
+      "run": [
+        "java",
+        "-cp",
+        "{data}/build/java",
+        "LanguageWorker"
+      ],
+      "build": [
+        "javac",
+        "-d",
+        "{data}/build/java",
+        "{root}/languages/java/LanguageWorker.java"
+      ]
+    },
+    {
+      "id": "scheme",
+      "name": "Scheme (Guile)",
+      "package": "guile",
+      "packages": [
+        "guile"
+      ],
+      "kind": "interpreted",
+      "key": 195,
+      "run": [
+        "guile",
+        "-q",
+        "-s",
+        "{root}/languages/scheme/worker.scm"
+      ],
+      "build": null
+    },
+    {
+      "id": "erlang",
+      "name": "Erlang",
+      "package": "erlang",
+      "packages": [
+        "erlang"
+      ],
+      "kind": "vm",
+      "key": 207,
+      "run": [
+        "escript",
+        "{root}/languages/erlang/worker.escript"
+      ],
+      "build": null
+    },
+    {
+      "id": "elixir",
+      "name": "Elixir",
+      "package": "elixir",
+      "packages": [
+        "erlang",
+        "elixir"
+      ],
+      "kind": "vm",
+      "key": 213,
+      "run": [
+        "elixir",
+        "{root}/languages/elixir/worker.exs"
+      ],
+      "build": null
+    },
+    {
+      "id": "nim",
+      "name": "Nim",
+      "package": "nim",
+      "packages": [
+        "nim"
+      ],
+      "kind": "compiled",
+      "key": 223,
+      "run": [
+        "{data}/build/nim"
+      ],
+      "build": [
+        "nim",
+        "c",
+        "-d:release",
+        "--opt:speed",
+        "--hints:off",
+        "-o:{data}/build/nim",
+        "{root}/languages/nim/worker.nim"
+      ]
+    },
+    {
+      "id": "zig",
+      "name": "Zig",
+      "package": "zig",
+      "packages": [
+        "zig"
+      ],
+      "kind": "compiled",
+      "key": 233,
+      "run": [
+        "{data}/build/zig"
+      ],
+      "build": [
+        "zig",
+        "build-exe",
+        "-O",
+        "ReleaseFast",
+        "-femit-bin={data}/build/zig",
+        "{root}/languages/zig/worker.zig"
+      ]
+    },
+    {
+      "id": "prolog",
+      "name": "Prolog (SWI)",
+      "package": "swi-prolog",
+      "packages": [
+        "swi-prolog"
+      ],
+      "kind": "interpreted",
+      "key": 241,
+      "run": [
+        "swipl",
+        "-q",
+        "-f",
+        "{root}/languages/prolog/worker.pl",
+        "-g",
+        "main",
+        "-t",
+        "halt"
+      ],
+      "build": null
+    },
+    {
+      "id": "haskell",
+      "name": "Haskell",
+      "package": "ghc",
+      "packages": [
+        "ghc"
+      ],
+      "kind": "compiled",
+      "key": 27,
+      "run": [
+        "{data}/build/haskell"
+      ],
+      "build": [
+        "ghc",
+        "-O2",
+        "-o",
+        "{data}/build/haskell",
+        "{root}/languages/haskell/worker.hs"
+      ]
+    },
+    {
+      "id": "d",
+      "name": "D",
+      "package": "ldc",
+      "packages": [
+        "ldc"
+      ],
+      "kind": "compiled",
+      "key": 37,
+      "run": [
+        "{data}/build/d"
+      ],
+      "build": [
+        "ldc2",
+        "-O3",
+        "-release",
+        "-of={data}/build/d",
+        "{root}/languages/d/worker.d"
+      ]
+    },
+    {
+      "id": "kotlin",
+      "name": "Kotlin",
+      "package": "kotlin",
+      "packages": [
+        "openjdk-21",
+        "kotlin"
+      ],
+      "kind": "vm",
+      "key": 49,
+      "run": [
+        "java",
+        "-jar",
+        "{data}/build/kotlin.jar"
+      ],
+      "build": [
+        "kotlinc",
+        "{root}/languages/kotlin/Worker.kt",
+        "-include-runtime",
+        "-d",
+        "{data}/build/kotlin.jar"
+      ]
+    },
+    {
+      "id": "scala",
+      "name": "Scala",
+      "package": "scala",
+      "packages": [
+        "openjdk-21",
+        "scala"
+      ],
+      "kind": "vm",
+      "key": 79,
+      "run": [
+        "scala",
+        "-cp",
+        "{data}/build/scala",
+        "LanguageWorker"
+      ],
+      "build": [
+        "scalac",
+        "-d",
+        "{data}/build/scala",
+        "{root}/languages/scala/LanguageWorker.scala"
+      ]
+    },
+    {
+      "id": "dart",
+      "name": "Dart",
+      "package": "dart",
+      "packages": [
+        "dart"
+      ],
+      "kind": "vm",
+      "key": 87,
+      "run": [
+        "dart",
+        "run",
+        "{root}/languages/dart/worker.dart"
+      ],
+      "build": null
+    },
+    {
+      "id": "fortran",
+      "name": "Fortran",
+      "package": "flang",
+      "packages": [
+        "flang"
+      ],
+      "kind": "compiled",
+      "key": 103,
+      "run": [
+        "{data}/build/fortran"
+      ],
+      "build": [
+        "flang-new",
+        "-O3",
+        "{root}/languages/fortran/worker.f90",
+        "-o",
+        "{data}/build/fortran"
+      ]
+    },
+    {
+      "id": "racket",
+      "name": "Racket",
+      "package": "racket",
+      "packages": [
+        "racket"
+      ],
+      "kind": "vm",
+      "key": 113,
+      "run": [
+        "racket",
+        "{root}/languages/racket/worker.rkt"
+      ],
+      "build": null
+    },
+    {
+      "id": "crystal",
+      "name": "Crystal",
+      "package": "crystal",
+      "packages": [
+        "crystal"
+      ],
+      "kind": "compiled",
+      "key": 137,
+      "run": [
+        "{data}/build/crystal"
+      ],
+      "build": [
+        "crystal",
+        "build",
+        "--release",
+        "--no-debug",
+        "-o",
+        "{data}/build/crystal",
+        "{root}/languages/crystal/worker.cr"
+      ]
+    },
+    {
+      "id": "common-lisp",
+      "name": "Common Lisp (ECL)",
+      "package": "ecl",
+      "packages": [
+        "ecl"
+      ],
+      "kind": "interpreted",
+      "key": 155,
+      "run": [
+        "ecl",
+        "-norc",
+        "-load",
+        "{root}/languages/common-lisp/worker.lisp"
+      ],
+      "build": null
+    },
+    {
+      "id": "dash",
+      "name": "POSIX sh (Dash)",
+      "package": "dash",
+      "packages": [
+        "dash",
+        "coreutils"
+      ],
+      "kind": "interpreted",
+      "key": 0,
+      "algorithm": "nibble-complement",
+      "run": [
+        "dash",
+        "{root}/languages/dash/worker.sh"
+      ],
+      "build": null
+    },
+    {
+      "id": "zsh",
+      "name": "Z shell",
+      "package": "zsh",
+      "packages": [
+        "zsh",
+        "coreutils"
+      ],
+      "kind": "interpreted",
+      "key": 0,
+      "algorithm": "nibble-complement",
+      "run": [
+        "zsh",
+        "{root}/languages/zsh/worker.zsh"
+      ],
+      "build": null
+    },
+    {
+      "id": "fish",
+      "name": "fish",
+      "package": "fish",
+      "packages": [
+        "fish",
+        "coreutils"
+      ],
+      "kind": "interpreted",
+      "key": 0,
+      "algorithm": "nibble-complement",
+      "run": [
+        "fish",
+        "{root}/languages/fish/worker.fish"
+      ],
+      "build": null
+    },
+    {
+      "id": "sed",
+      "name": "sed",
+      "package": "sed",
+      "packages": [
+        "sed"
+      ],
+      "kind": "interpreted",
+      "key": 0,
+      "algorithm": "nibble-complement",
+      "run": [
+        "sed",
+        "-u",
+        "-n",
+        "-f",
+        "{root}/languages/sed/worker.sed"
+      ],
+      "build": null
+    },
+    {
+      "id": "jq",
+      "name": "jq",
+      "package": "jq",
+      "packages": [
+        "jq"
+      ],
+      "kind": "interpreted",
+      "key": 0,
+      "algorithm": "nibble-complement",
+      "run": [
+        "jq",
+        "--unbuffered",
+        "-Rr",
+        "-f",
+        "{root}/languages/jq/worker.jq"
+      ],
+      "build": null
+    }
+  ],
+  "project": "Language Project",
+  "notes": "Only entries in this registry are candidates for the executable Termux chain. Global catalog entries are metadata only."
+}

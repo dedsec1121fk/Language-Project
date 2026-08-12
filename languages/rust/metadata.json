@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "project": "Language Project",
+  "id": "rust",
+  "name": "Rust",
+  "kind": "compiled",
+  "termux_packages": [
+    "rust"
+  ],
+  "worker_protocol": "PING / E <hex> / D <hex> / QUIT",
+  "native_tool": {
+    "id": "fnv64",
+    "name": "Fast FNV-1a 64 Checksum",
+    "category": "integrity",
+    "source": "languages/rust/tools/fnv64.rs",
+    "tags": [
+      "checksum",
+      "fnv",
+      "integrity"
+    ]
+  },
+  "execution_policy": "activated only after on-device worker and native-tool verification",
+  "runtime_home": "$HOME/Language Project",
+  "uses": [
+    "persistent reversible worker for benchmark/polyglot integrity chains",
+    "native practical utility: Fast FNV-1a 64 Checksum",
+    "workspace-report participation when this runtime passes Termux verification",
+    "per-language performance and integrity telemetry"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "project": "Language Project",
+  "id": "common-lisp",
+  "name": "Common Lisp (ECL)",
+  "kind": "interpreted",
+  "termux_packages": [
+    "ecl"
+  ],
+  "worker_protocol": "PING / E <hex> / D <hex> / QUIT",
+  "native_tool": {
+    "id": "top-words",
+    "name": "Top Word Frequencies",
+    "category": "text",
+    "source": "languages/common-lisp/tools/top-words.lisp",
+    "tags": [
+      "words",
+      "frequency",
+      "text"
+    ]
+  },
+  "execution_policy": "activated only after on-device worker and native-tool verification",
+  "runtime_home": "$HOME/Language Project",
+  "uses": [
+    "persistent reversible worker for benchmark/polyglot integrity chains",
+    "native practical utility: Top Word Frequencies",
+    "workspace-report participation when this runtime passes Termux verification",
+    "per-language performance and integrity telemetry"
+  ]
+}

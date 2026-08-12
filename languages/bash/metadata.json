@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "project": "Language Project",
+  "id": "bash",
+  "name": "Bash",
+  "kind": "interpreted",
+  "termux_packages": [
+    "bash",
+    "coreutils"
+  ],
+  "worker_protocol": "PING / E <hex> / D <hex> / QUIT",
+  "native_tool": {
+    "id": "sys-report",
+    "name": "System Report",
+    "category": "system",
+    "source": "languages/bash/tools/sys-report.sh",
+    "tags": [
+      "system",
+      "termux",
+      "environment"
+    ]
+  },
+  "execution_policy": "activated only after on-device worker and native-tool verification",
+  "runtime_home": "$HOME/Language Project",
+  "uses": [
+    "persistent reversible worker for benchmark/polyglot integrity chains",
+    "native practical utility: System Report",
+    "workspace-report participation when this runtime passes Termux verification",
+    "per-language performance and integrity telemetry"
+  ]
+}

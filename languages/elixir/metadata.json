@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "project": "Language Project",
+  "id": "elixir",
+  "name": "Elixir",
+  "kind": "vm",
+  "termux_packages": [
+    "erlang",
+    "elixir"
+  ],
+  "worker_protocol": "PING / E <hex> / D <hex> / QUIT",
+  "native_tool": {
+    "id": "log-stats",
+    "name": "Log Level Statistics",
+    "category": "logs",
+    "source": "languages/elixir/tools/log-stats.exs",
+    "tags": [
+      "log",
+      "error",
+      "warn"
+    ]
+  },
+  "execution_policy": "activated only after on-device worker and native-tool verification",
+  "runtime_home": "$HOME/Language Project",
+  "uses": [
+    "persistent reversible worker for benchmark/polyglot integrity chains",
+    "native practical utility: Log Level Statistics",
+    "workspace-report participation when this runtime passes Termux verification",
+    "per-language performance and integrity telemetry"
+  ]
+}

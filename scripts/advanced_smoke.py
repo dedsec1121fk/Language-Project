@@ -2,6 +2,7 @@
 from pathlib import Path
 import sys
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT))
+from core.paths import CHECKPOINTS_DIR
 from core.engine import active_languages,run_chain
 from core.advanced import differential_audit,chaos_test,checkpoint_chain,resume_checkpoint
 from core.topology import topology_benchmark,consensus_test
@@ -18,7 +19,7 @@ def main():
     results.append(topology_benchmark(data,lanes=min(3,len(active_languages())),iterations=1,warmups=1,save=False))
     results.append(consensus_test(data,replicas=2,rounds=1,warmups=1,seed=1121,save=False))
     results.append(chaos_test(data,cycles=1,restart_rate=0.05,seed=1121,warmups=1,telemetry=False,save=False))
-    cp=ROOT/'state'/'checkpoints'/'advanced-smoke.json'
+    cp=CHECKPOINTS_DIR/'advanced-smoke.json'
     try:
         part=checkpoint_chain(data,order='fastest',stop_after=2,checkpoint_path=cp)
         done=resume_checkpoint(cp) if part.get('status')!='complete' else part

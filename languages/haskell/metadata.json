@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "project": "Language Project",
+  "id": "haskell",
+  "name": "Haskell",
+  "kind": "compiled",
+  "termux_packages": [
+    "ghc"
+  ],
+  "worker_protocol": "PING / E <hex> / D <hex> / QUIT",
+  "native_tool": {
+    "id": "duplicate-lines-hs",
+    "name": "Duplicate Line Finder",
+    "category": "text",
+    "source": "languages/haskell/tools/duplicate-lines.hs",
+    "tags": [
+      "duplicate",
+      "lines",
+      "text"
+    ]
+  },
+  "execution_policy": "activated only after on-device worker and native-tool verification",
+  "runtime_home": "$HOME/Language Project",
+  "uses": [
+    "persistent reversible worker for benchmark/polyglot integrity chains",
+    "native practical utility: Duplicate Line Finder",
+    "workspace-report participation when this runtime passes Termux verification",
+    "per-language performance and integrity telemetry"
+  ]
+}

@@ -54,32 +54,46 @@ def mediawiki_category(store,base,title,source,max_pages=40):
         if 'continue' not in data:break
         cont=data['continue'];pages+=1
 
-def render_readme_catalog(out):
-    readme=ROOT/'README.md'
-    if not readme.exists(): return
-    text=readme.read_text(encoding='utf-8')
-    start='<!-- LANGUAGE-CATALOG:START -->'
-    end='<!-- LANGUAGE-CATALOG:END -->'
-    if start not in text or end not in text: return
+def _catalog_readme_block(out, lang='en'):
     groups={}
     for item in out:
         groups.setdefault(item.get('letter','#'),[]).append(item['name'])
     ordered=['#']+[chr(c) for c in range(ord('A'),ord('Z')+1)]
-    blocks=[start,'',f'Bundled catalog snapshot: **{len(out):,} unique language/dialect names**. Entries here are catalog records; only on-device verified workers participate in the execution chain.','']
+    if lang=='en':
+        start='<!-- LANGUAGE-CATALOG-EN:START -->'; end='<!-- LANGUAGE-CATALOG-EN:END -->'
+        intro=f'Bundled snapshot: **{len(out):,} unique programming-language/dialect records**. Catalog entries are metadata; only workers that pass live Termux verification become executable.'
+        symbol='Symbols / Numbers'; suffix='cataloged names'
+    else:
+        start='<!-- LANGUAGE-CATALOG-EL:START -->'; end='<!-- LANGUAGE-CATALOG-EL:END -->'
+        intro=f'Ενσωματωμένο snapshot: **{len(out):,} μοναδικές εγγραφές γλωσσών/διαλέκτων προγραμματισμού**. Οι εγγραφές του καταλόγου είναι metadata· εκτελέσιμες γίνονται μόνο οι γλώσσες που περνούν επιτυχώς live έλεγχο στο Termux.'
+        symbol='Σύμβολα / Αριθμοί'; suffix='καταχωρημένα ονόματα'
+    blocks=[start,'',intro,'']
     for letter in ordered:
         names=sorted(groups.get(letter,[]),key=str.casefold)
         if not names: continue
-        label='Symbols / Numbers' if letter=='#' else letter
-        blocks += ['<details>',f'<summary><strong>{label} — {len(names):,} cataloged names</strong></summary>','', ' · '.join(names),'','</details>','']
+        label=symbol if letter=='#' else letter
+        blocks += ['<details>',f'<summary><strong>{label} — {len(names):,} {suffix}</strong></summary>','', ' · '.join(names),'','</details>','']
     blocks.append(end)
-    before=text.split(start,1)[0]
-    after=text.split(end,1)[1]
-    readme.write_text(before+'\n'.join(blocks)+after,encoding='utf-8')
+    return start,end,'\n'.join(blocks)
+
+def render_readme_catalog(out):
+    readme=ROOT/'README.md'
+    if not readme.exists(): return
+    text=readme.read_text(encoding='utf-8')
+    changed=False
+    for lang in ('en','el'):
+        start,end,block=_catalog_readme_block(out,lang)
+        if start not in text or end not in text: continue
+        before=text.split(start,1)[0]
+        after=text.split(end,1)[1]
+        text=before+block+after
+        changed=True
+    if changed: readme.write_text(text,encoding='utf-8')
 
 def write(store):
     old=json.loads(CAT.read_text()) if CAT.exists() else {'languages':[]}
     oldmap={norm(x['name']):x for x in old.get('languages',[])}
-    reg=json.loads((ROOT/'languages.json').read_text())['languages']; runtime={norm(x['name']):x['id'] for x in reg}
+    reg=json.loads((ROOT/'config'/'registries'/'languages.json').read_text())['languages']; runtime={norm(x['name']):x['id'] for x in reg}
     runtime_aliases={'posix sh':'dash','posix shell':'dash','dash':'dash','node.js':'javascript','nodejs':'javascript','awk':'awk','gawk':'awk','common lisp':'common-lisp','swi-prolog':'prolog','prolog':'prolog','scheme':'scheme','guile':'scheme'}
     for alias,rid in runtime_aliases.items(): runtime[norm(alias)]=rid
     used={};out=[]

@@ -1,6 +1,6 @@
 #!/data/data/com.termux/files/usr/bin/bash
 set -e
-TARGET="${1:-$HOME/Language-Project}"
+TARGET="${1:-$HOME/Language Project/app}"
 echo "Available native language tools:"
 language-project langtools list
 echo

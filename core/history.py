@@ -1,11 +1,12 @@
 from __future__ import annotations
 from .registry import ROOT
+from .paths import RESULTS_DIR
 from pathlib import Path
 import json, datetime
 
 def result_records(limit=None):
     rows=[]
-    for p in (ROOT/'results').glob('*.json'):
+    for p in RESULTS_DIR.glob('*.json'):
         try:
             d=json.loads(p.read_text())
             rows.append({'path':str(p),'name':p.name,'timestamp':d.get('timestamp',''),'mode':d.get('mode','chain' if 'rounds_detail' in d else 'unknown'),'languages':d.get('languages',0),'bytes':d.get('bytes',0),'integrity':d.get('integrity'),'data':d})

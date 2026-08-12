@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "language_id": "ruby",
+  "language": "Ruby",
+  "native_tool_id": "unique-lines",
+  "verification": [
+    "metadata-present",
+    "worker-source-present",
+    "native-tool-source-present",
+    "examples-present",
+    "registry-link-present"
+  ],
+  "on_device_policy": "worker and native tool must both pass live Termux verification before the module is shown as fully active"
+}

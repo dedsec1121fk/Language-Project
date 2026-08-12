@@ -2,8 +2,9 @@ from __future__ import annotations
 from pathlib import Path
 import json,datetime,statistics,math
 from .registry import ROOT
+from .paths import CALIBRATION_FILE
 from .engine import matrix_benchmark,load_state
-CAL=ROOT/'state'/'calibration.json'
+CAL=CALIBRATION_FILE
 
 def _norm(vals):
     positive=[v for v in vals.values() if v and v>0]
@@ -33,7 +34,7 @@ def calibrate(sizes=(64,4096,65536),iterations=4,warmups=2,save=True):
     orders={strategy:[k for k,_ in sorted(scores.items(),key=lambda kv:kv[1][strategy])] for strategy in ('balanced','latency','throughput','stable')}
     out={'schema':1,'project':'Language Project','generated_at':datetime.datetime.now(datetime.timezone.utc).isoformat(),'sizes':list(map(int,sizes)),'iterations':iterations,'warmups':warmups,'languages':len(grouped),'integrity':result['integrity'],'scores':scores,'orders':orders,'matrix_rows':result['rows']}
     if save:
-        CAL.parent.mkdir(exist_ok=True);CAL.write_text(json.dumps(out,indent=2,ensure_ascii=False)+'\n')
+        CAL.parent.mkdir(parents=True,exist_ok=True);CAL.write_text(json.dumps(out,indent=2,ensure_ascii=False)+'\n')
     return out
 
 def load_calibration():

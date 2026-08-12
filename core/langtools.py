@@ -2,9 +2,10 @@ from pathlib import Path
 import json, subprocess, shutil, tempfile, datetime, os, hashlib
 
 ROOT = Path(__file__).resolve().parents[1]
-REGISTRY = ROOT / 'polytools.json'
-STATE = ROOT / 'state' / 'polytools.json'
-BUILD = ROOT / 'build' / 'polytools'
+from .paths import DATA_ROOT, BUILD_DIR, POLYTOOLS_STATE_FILE
+REGISTRY = ROOT / 'config' / 'registries' / 'polytools.json'
+STATE = POLYTOOLS_STATE_FILE
+BUILD = BUILD_DIR / 'polytools'
 
 
 def load_tools():
@@ -12,7 +13,7 @@ def load_tools():
 
 
 def _expand(parts):
-    return [str(x).replace('{root}', str(ROOT)) for x in parts]
+    return [str(x).replace('{root}', str(ROOT)).replace('{data}', str(DATA_ROOT)) for x in parts]
 
 
 def _tool(tid):
@@ -285,3 +286,12 @@ def workspace_report(path, output=None):
         out=Path(output).expanduser();out.parent.mkdir(parents=True,exist_ok=True);out.write_text(json.dumps(report,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
         report['written_to']=str(out)
     return report
+
+
+def demo_tool(tool_id, timeout=60):
+    """Run a registered native tool against its deterministic built-in fixture set."""
+    t=_tool(tool_id)
+    with tempfile.TemporaryDirectory(prefix='language-project-demo-') as td:
+        fixtures=_fixtures(td)
+        args=_resolve_args(t.get('smoke_args',[]),fixtures)
+        return run_tool(tool_id,args,timeout=timeout)

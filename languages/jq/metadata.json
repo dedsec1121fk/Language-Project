@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "project": "Language Project",
+  "id": "jq",
+  "name": "jq",
+  "kind": "interpreted",
+  "termux_packages": [
+    "jq"
+  ],
+  "worker_protocol": "PING / E <hex> / D <hex> / QUIT",
+  "native_tool": {
+    "id": "json-shape",
+    "name": "JSON Shape Inspector",
+    "category": "data",
+    "source": "languages/jq/tools/json-shape.jq",
+    "tags": [
+      "json",
+      "shape",
+      "schema"
+    ]
+  },
+  "execution_policy": "activated only after on-device worker and native-tool verification",
+  "runtime_home": "$HOME/Language Project",
+  "uses": [
+    "persistent reversible worker for benchmark/polyglot integrity chains",
+    "native practical utility: JSON Shape Inspector",
+    "workspace-report participation when this runtime passes Termux verification",
+    "per-language performance and integrity telemetry"
+  ]
+}

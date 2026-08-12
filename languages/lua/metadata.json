@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "project": "Language Project",
+  "id": "lua",
+  "name": "Lua",
+  "kind": "interpreted",
+  "termux_packages": [
+    "lua54"
+  ],
+  "worker_protocol": "PING / E <hex> / D <hex> / QUIT",
+  "native_tool": {
+    "id": "kv-read",
+    "name": "Key/Value Config Reader",
+    "category": "data",
+    "source": "languages/lua/tools/kv-read.lua",
+    "tags": [
+      "config",
+      "key",
+      "value"
+    ]
+  },
+  "execution_policy": "activated only after on-device worker and native-tool verification",
+  "runtime_home": "$HOME/Language Project",
+  "uses": [
+    "persistent reversible worker for benchmark/polyglot integrity chains",
+    "native practical utility: Key/Value Config Reader",
+    "workspace-report participation when this runtime passes Termux verification",
+    "per-language performance and integrity telemetry"
+  ]
+}

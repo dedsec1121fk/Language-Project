@@ -6,10 +6,12 @@ from .store import stats as db_stats,leaderboard,recent
 from .advanced import checkpoint_list
 from .scenarios import load_scenarios
 from .langtools import status as langtools_status
+from .paths import DATA_ROOT
 
 def dashboard():
     active=active_languages('registry');cat=catalog_stats();cal=load_calibration();db=db_stats();cps=checkpoint_list();incomplete=[x for x in cps if x.get('status')!='complete'];sc=load_scenarios().get('scenarios',{});nt=langtools_status()
     print('\n'+'='*96);print('LANGUAGE PROJECT — CONTROL PLANE');print('='*96)
+    print(f"Language Project home:  {str(DATA_ROOT)}")
     print(f"Verified workers:       {len(active):>8}")
     print(f"Global catalog:         {cat.get('total',0):>8,}")
     print(f"Native useful tools:    {nt.get('available',0):>8}/{nt.get('registered',0)}")

@@ -3,6 +3,7 @@ from pathlib import Path
 import json,os,shutil,subprocess,sys,tempfile,time
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT))
 from core.registry import load_registry,expand,executable_exists
+from core.paths import DATA_ROOT, BUILD_DIR, STATE_DIR, RESULTS_DIR, BUNDLES_DIR, BACKUPS_DIR, REPORTS_DIR, LOGS_DIR, CACHE_DIR, TEMP_DIR, ensure_data_tree
 from core.engine import load_state,active_languages,start_one
 from core.analytics import device_snapshot
 from core.store import stats as database_stats
@@ -21,8 +22,8 @@ def main():
     checks=[];prefix=os.environ.get('PREFIX','');is_termux=bool(shutil.which('pkg')) and ('com.termux' in prefix or prefix.endswith('/usr'))
     checks.append(check('Termux pkg command',bool(shutil.which('pkg')),shutil.which('pkg') or 'missing'))
     checks.append(check('Python runtime',sys.version_info>=(3,9),sys.version.split()[0]))
-    checks.append(check('Project location is writable',os.access(ROOT,os.W_OK),str(ROOT)))
-    checks.append(check('Project is not shared storage','/storage/emulated/' not in str(ROOT) and '/sdcard/' not in str(ROOT),'compiled binaries should live under $HOME'))
+    ensure_data_tree(); checks.append(check('Application location is readable',os.access(ROOT,os.R_OK),str(ROOT))); checks.append(check('Language Project home is writable',os.access(DATA_ROOT,os.W_OK),str(DATA_ROOT)))
+    checks.append(check('Runtime home is not shared storage','/storage/emulated/' not in str(DATA_ROOT) and '/sdcard/' not in str(DATA_ROOT),'runtime data should live under $HOME/Language Project'))
     for d in ('build','state','results','bundles'):
         p=ROOT/d;p.mkdir(exist_ok=True)
         try:
@@ -38,7 +39,7 @@ def main():
     except Exception as e:checks.append(check('SQLite performance database',False,str(e)))
     checks.append(check('Environment fingerprint',len(fingerprint())==64,fingerprint()[:16]+'...'))
     try:
-        raw=b'utility-plane';ok=codec(codec(raw,'base64'),'base64',True)==raw and (identify_language(ROOT/'Language.py').get('best') or {}).get('name')=='Python'
+        raw=b'utility-plane';ok=codec(codec(raw,'base64'),'base64',True)==raw and (identify_language(ROOT/'cli'/'Language.py').get('best') or {}).get('name')=='Python'
         checks.append(check('Useful toolbox core',ok,'codec + catalog language detector'))
     except Exception as e:checks.append(check('Useful toolbox core',False,str(e)))
     try:
@@ -64,11 +65,11 @@ def main():
     if st:
         missing=[x['id'] for x in active if not executable_exists(x['run'])]
         checks.append(check('Verified runtimes still resolvable',not missing,', '.join(missing) if missing else f'{len(active)} available'))
-    manifest=ROOT/'MANIFEST.json'
+    manifest=ROOT/'metadata'/'MANIFEST.json'
     if manifest.exists():
         r=subprocess.run([sys.executable,str(ROOT/'scripts'/'verify_manifest.py')],capture_output=True,text=True)
         checks.append(check('Integrity manifest',r.returncode==0,(r.stdout or r.stderr).strip().splitlines()[-1] if (r.stdout or r.stderr).strip() else ''))
-    else:checks.append(check('Integrity manifest',False,'MANIFEST.json missing'))
+    else:checks.append(check('Integrity manifest',False,'metadata/MANIFEST.json missing'))
     if active:
         sample=active[0];w=None
         try:

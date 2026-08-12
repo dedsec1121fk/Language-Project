@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "project": "Language Project",
+  "id": "fish",
+  "name": "fish",
+  "kind": "interpreted",
+  "termux_packages": [
+    "fish",
+    "coreutils"
+  ],
+  "worker_protocol": "PING / E <hex> / D <hex> / QUIT",
+  "native_tool": {
+    "id": "large-files",
+    "name": "Largest Files",
+    "category": "files",
+    "source": "languages/fish/tools/large-files.fish",
+    "tags": [
+      "large",
+      "size",
+      "storage"
+    ]
+  },
+  "execution_policy": "activated only after on-device worker and native-tool verification",
+  "runtime_home": "$HOME/Language Project",
+  "uses": [
+    "persistent reversible worker for benchmark/polyglot integrity chains",
+    "native practical utility: Largest Files",
+    "workspace-report participation when this runtime passes Termux verification",
+    "per-language performance and integrity telemetry"
+  ]
+}

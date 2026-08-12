@@ -1,6 +1,7 @@
 from __future__ import annotations
 from pathlib import Path
 import difflib,fnmatch,hashlib,json,os,re,shutil,socket,subprocess,time,urllib.request,urllib.parse
+from .paths import BACKUPS_DIR, DOWNLOADS_DIR
 
 SKIP_DIRS={'.git','.hg','.svn','node_modules','vendor','target','build','dist','__pycache__','.venv','venv'}
 CACHE_NAMES={'__pycache__','.pytest_cache','.mypy_cache','.ruff_cache','.cache'}
@@ -99,7 +100,7 @@ def sync_dirs(source,destination,delete=False,apply=False,checksum=False):
 
 def backup_snapshot(source,destination=None,label=None):
     import tarfile
-    src=Path(source).expanduser().resolve();dest=Path(destination).expanduser() if destination else Path.home()/'Language-Project-Backups';dest.mkdir(parents=True,exist_ok=True)
+    src=Path(source).expanduser().resolve();dest=Path(destination).expanduser() if destination else BACKUPS_DIR;dest.mkdir(parents=True,exist_ok=True)
     stamp=time.strftime('%Y%m%d-%H%M%S');safe=re.sub(r'[^A-Za-z0-9._-]+','-',label or src.name).strip('-') or 'backup';out=dest/f'{safe}-{stamp}.tar.gz'
     with tarfile.open(out,'w:gz') as t:t.add(src,arcname=src.name,recursive=True)
     h=hashlib.sha256(out.read_bytes()).hexdigest();meta=out.with_suffix(out.suffix+'.json');meta.write_text(json.dumps({'schema':1,'source':str(src),'archive':str(out),'bytes':out.stat().st_size,'sha256':h,'created_unix':time.time()},indent=2)+'\n')
@@ -213,7 +214,7 @@ def http_info(url,timeout=10):
 def download_file(url,output=None,sha256=None,timeout=30,max_bytes=1024*1024*1024):
     parsed=urllib.parse.urlparse(url)
     if parsed.scheme not in {'http','https'}:raise ValueError('Only http:// and https:// URLs are supported')
-    name=Path(parsed.path).name or 'download.bin';out=Path(output).expanduser() if output else Path.cwd()/name;out.parent.mkdir(parents=True,exist_ok=True);tmp=out.with_name(out.name+'.part')
+    name=Path(parsed.path).name or 'download.bin';out=Path(output).expanduser() if output else DOWNLOADS_DIR/name;out.parent.mkdir(parents=True,exist_ok=True);tmp=out.with_name(out.name+'.part')
     h=hashlib.sha256();total=0;started=time.perf_counter()
     req=urllib.request.Request(url,headers={'User-Agent':'Language-Project/1'})
     try:

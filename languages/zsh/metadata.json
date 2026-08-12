@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "project": "Language Project",
+  "id": "zsh",
+  "name": "Z shell",
+  "kind": "interpreted",
+  "termux_packages": [
+    "zsh",
+    "coreutils"
+  ],
+  "worker_protocol": "PING / E <hex> / D <hex> / QUIT",
+  "native_tool": {
+    "id": "recent-files",
+    "name": "Recent Files",
+    "category": "files",
+    "source": "languages/zsh/tools/recent-files.zsh",
+    "tags": [
+      "recent",
+      "mtime",
+      "files"
+    ]
+  },
+  "execution_policy": "activated only after on-device worker and native-tool verification",
+  "runtime_home": "$HOME/Language Project",
+  "uses": [
+    "persistent reversible worker for benchmark/polyglot integrity chains",
+    "native practical utility: Recent Files",
+    "workspace-report participation when this runtime passes Termux verification",
+    "per-language performance and integrity telemetry"
+  ]
+}

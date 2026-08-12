@@ -2,7 +2,8 @@ from __future__ import annotations
 from pathlib import Path
 import sqlite3,json,datetime
 from .registry import ROOT
-DB=ROOT/'state'/'history.sqlite3'
+from .paths import DATABASE_FILE, RESULTS_DIR
+DB=DATABASE_FILE
 
 SCHEMA='''
 PRAGMA journal_mode=WAL;
@@ -87,7 +88,7 @@ def record_event(session_id,event_type,payload):
 
 def rebuild():
     count=0
-    for p in sorted((ROOT/'results').glob('*.json')):
+    for p in sorted(RESULTS_DIR.glob('*.json')):
         try:
             r=json.loads(p.read_text());record_result(r,str(p));count+=1
         except Exception:pass

@@ -4,12 +4,13 @@ from dataclasses import dataclass
 from concurrent.futures import ThreadPoolExecutor,as_completed
 import subprocess,time,json,hashlib,platform,os,datetime,statistics,random,csv,select
 from .registry import ROOT,load_registry,expand
+from .paths import RESULTS_DIR, ACTIVE_STATE_FILE, CALIBRATION_FILE, ensure_data_tree
 from .analytics import timing_stats,shannon_entropy,device_snapshot,session_id
 from .telemetry import ResourceSampler
 from .store import record_result
 from .plugins import emit
 from .provenance import snapshot as provenance_snapshot
-STATE=ROOT/'state'/'active.json'
+STATE=ACTIVE_STATE_FILE
 @dataclass
 class Worker:
     lang:dict; proc:subprocess.Popen; startup_ns:int
@@ -43,7 +44,7 @@ def active_languages(order='registry',seed=None):
     elif order=='fastest':
         m=st.get('metrics',{});langs.sort(key=lambda x:m.get(x['id'],{}).get('median_vector_ns',10**30))
     elif order.startswith('adaptive-'):
-        strategy=order.split('-',1)[1];cal=ROOT/'state'/'calibration.json'
+        strategy=order.split('-',1)[1];cal=CALIBRATION_FILE
         try:preferred=json.loads(cal.read_text()).get('orders',{}).get(strategy,[])
         except Exception:preferred=[]
         rank={lid:i for i,lid in enumerate(preferred)}
@@ -131,7 +132,7 @@ def run_chain(data:bytes,save=True,verbose=True,rounds=1,warmups=1,order='fastes
     if save:export_result(result)
     return result
 def export_result(r):
-    out=ROOT/'results';out.mkdir(exist_ok=True);stem='run-'+datetime.datetime.now().strftime('%Y%m%d-%H%M%S-%f');jp=out/(stem+'.json');cp=out/(stem+'.csv');mp=out/(stem+'.md')
+    out=RESULTS_DIR;out.mkdir(parents=True,exist_ok=True);stem='run-'+datetime.datetime.now().strftime('%Y%m%d-%H%M%S-%f');jp=out/(stem+'.json');cp=out/(stem+'.csv');mp=out/(stem+'.md')
     with cp.open('w',newline='') as f:
         w=csv.writer(f);w.writerow(['rank','id','language','kind','startup_ms','encode_median_ms','decode_median_ms','combined_median_ms'])
         for i,x in enumerate(r['ranking'],1):w.writerow([i,x['id'],x['name'],x['kind'],x['startup_ns']/1e6,x['encode']['median_ns']/1e6,x['decode']['median_ns']/1e6,x['combined_median_ns']/1e6])
@@ -161,7 +162,7 @@ def race_workers(data:bytes,iterations=5,warmups=1,save=True):
     rows.sort(key=lambda x:x['combined_median_ns'])
     result={'schema':2,'project':'Language Project','mode':'race','session_id':session_id('race',data),'timestamp':datetime.datetime.now(datetime.timezone.utc).isoformat(),'bytes':len(data),'iterations':iterations,'warmups':warmups,'languages':len(rows),'integrity':all(x['integrity'] for x in rows),'sha256':hashlib.sha256(data).hexdigest(),'input_entropy_bits_per_byte':shannon_entropy(data),'provenance':provenance_snapshot(),'device':device_snapshot(),'ranking':rows}
     if save:
-        out=ROOT/'results';out.mkdir(exist_ok=True);stem='race-'+datetime.datetime.now().strftime('%Y%m%d-%H%M%S-%f');jp=out/(stem+'.json');cp=out/(stem+'.csv');mp=out/(stem+'.md')
+        out=RESULTS_DIR;out.mkdir(parents=True,exist_ok=True);stem='race-'+datetime.datetime.now().strftime('%Y%m%d-%H%M%S-%f');jp=out/(stem+'.json');cp=out/(stem+'.csv');mp=out/(stem+'.md')
         with cp.open('w',newline='') as f:
             w=csv.writer(f);w.writerow(['rank','id','language','kind','encode_median_ms','decode_median_ms','combined_median_ms','startup_ms','integrity'])
             for i,x in enumerate(rows,1):w.writerow([i,x['id'],x['name'],x['kind'],x['encode']['median_ns']/1e6,x['decode']['median_ns']/1e6,x['combined_median_ns']/1e6,x['startup_ns']/1e6,x['integrity']])
@@ -185,7 +186,7 @@ def benchmark_suite(sizes=(16,256,4096),repeats=3,order='registry',warmups=1):
       for rep in range(1,repeats+1):
         r=run_chain(data,save=False,verbose=False,rounds=1,warmups=warmups,order=order);samples.append(r['total_ns']);rows.append({'bytes':size,'repeat':rep,'languages':r['languages'],'total_ns':r['total_ns'],'integrity':r['integrity']})
       print(f"{size:>8} bytes  median {statistics.median(samples)/1e6:>10.4f} ms  repeats={repeats}")
-    out=ROOT/'results';out.mkdir(exist_ok=True);p=out/('suite-'+datetime.datetime.now().strftime('%Y%m%d-%H%M%S')+'.json');p.write_text(json.dumps({'schema':1,'rows':rows},indent=2)+'\n');print('Suite JSON:',p);return rows
+    out=RESULTS_DIR;out.mkdir(parents=True,exist_ok=True);p=out/('suite-'+datetime.datetime.now().strftime('%Y%m%d-%H%M%S')+'.json');p.write_text(json.dumps({'schema':1,'rows':rows},indent=2)+'\n');print('Suite JSON:',p);return rows
 def print_report(r,original_preview=''):
     print('\n'+'='*82);print('LANGUAGE PROJECT — FINAL PERFORMANCE REPORT');print('='*82)
     if original_preview:print(f'Input:                 {original_preview[:110]}')
@@ -211,7 +212,7 @@ def print_report(r,original_preview=''):
 
 def _save_generic(prefix,result,rows=None):
     result.setdefault('provenance',provenance_snapshot())
-    out=ROOT/'results';out.mkdir(exist_ok=True)
+    out=RESULTS_DIR;out.mkdir(parents=True,exist_ok=True)
     stem=f"{prefix}-"+datetime.datetime.now().strftime('%Y%m%d-%H%M%S-%f')
     jp=out/(stem+'.json');mp=out/(stem+'.md');hp=out/(stem+'.html')
     lines=[f"# Language Project — {result.get('mode',prefix).replace('-',' ').title()}",'',f"- Session: `{result.get('session_id','')}`",f"- Integrity: **{'PERFECT MATCH' if result.get('integrity') else 'FAILED'}**",f"- Languages: **{result.get('languages',0)}**",f"- Payload: **{result.get('bytes',0)} bytes**",'']
@@ -302,7 +303,7 @@ def matrix_benchmark(sizes=(16,256,4096,65536),iterations=5,warmups=1,save=True)
         for w in workers:w.close()
     result={'schema':2,'project':'Language Project','mode':'matrix','session_id':session_id('matrix',salt=str(sizes)),'timestamp':datetime.datetime.now(datetime.timezone.utc).isoformat(),'sizes':sizes,'iterations':iterations,'warmups':warmups,'languages':len(workers),'integrity':ok_all,'provenance':provenance_snapshot(),'device':device_snapshot(),'rows':rows}
     if save:
-        out=ROOT/'results';out.mkdir(exist_ok=True);stem='matrix-'+datetime.datetime.now().strftime('%Y%m%d-%H%M%S-%f');jp=out/(stem+'.json');cp=out/(stem+'.csv');mp=out/(stem+'.md');hp=out/(stem+'.html')
+        out=RESULTS_DIR;out.mkdir(parents=True,exist_ok=True);stem='matrix-'+datetime.datetime.now().strftime('%Y%m%d-%H%M%S-%f');jp=out/(stem+'.json');cp=out/(stem+'.csv');mp=out/(stem+'.md');hp=out/(stem+'.html')
         with cp.open('w',newline='') as f:
             wr=csv.writer(f);wr.writerow(['language','id','bytes','iterations','median_ms','p95_ms','mean_ms','jitter_pct','throughput_mib_s','integrity'])
             for x in rows:wr.writerow([x['name'],x['id'],x['bytes'],x['iterations'],x['median_ns']/1e6,x['p95_ns']/1e6,x['mean_ns']/1e6,x['jitter_pct'],x['throughput_mib_s'],x['integrity']])

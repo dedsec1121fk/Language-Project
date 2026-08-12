@@ -1,7 +1,7 @@
 #!/data/data/com.termux/files/usr/bin/bash
 set -euo pipefail
 
-ROOT="${1:-$HOME/Language-Project}"
+ROOT="${1:-$HOME/Language Project/app}"
 
 echo '--- Project tree ---'
 language-project tools tree "$ROOT" --depth 2 --max-entries 80
@@ -19,4 +19,4 @@ echo '--- Safe cleanup preview ---'
 language-project tools clean "$ROOT" --older-days 14
 
 echo '--- Backup ---'
-language-project tools backup "$ROOT" --destination "$HOME/Language-Project-Backups" --label language-project
+language-project tools backup "$ROOT" --destination "$HOME/Language Project/backups" --label language-project

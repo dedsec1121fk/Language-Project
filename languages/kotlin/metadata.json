@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "project": "Language Project",
+  "id": "kotlin",
+  "name": "Kotlin",
+  "kind": "vm",
+  "termux_packages": [
+    "openjdk-21",
+    "kotlin"
+  ],
+  "worker_protocol": "PING / E <hex> / D <hex> / QUIT",
+  "native_tool": {
+    "id": "code-metrics",
+    "name": "Codebase Metrics",
+    "category": "developer",
+    "source": "languages/kotlin/tools/CodeMetrics.kt",
+    "tags": [
+      "code",
+      "metrics",
+      "lines"
+    ]
+  },
+  "execution_policy": "activated only after on-device worker and native-tool verification",
+  "runtime_home": "$HOME/Language Project",
+  "uses": [
+    "persistent reversible worker for benchmark/polyglot integrity chains",
+    "native practical utility: Codebase Metrics",
+    "workspace-report participation when this runtime passes Termux verification",
+    "per-language performance and integrity telemetry"
+  ]
+}

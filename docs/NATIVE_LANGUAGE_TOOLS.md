@@ -1,6 +1,6 @@
 # Native Multi-Language Tools
 
-Language Project contains a second practical execution layer under `polytools/`: **one standalone utility for every executable language candidate in `languages.json`**.
+Language Project contains a second practical execution layer under `languages/<id>/tools/`: **one standalone utility for every executable language candidate in `config/registries/languages.json`**.
 
 The benchmark workers all implement the same reversible protocol. Native tools are different: each language owns a genuinely useful job that fits its strengths or gives the project practical coverage across files, data, text, source code, logs, system inspection, and integrity work.
 
@@ -10,9 +10,9 @@ A tool is not advertised as available merely because its source file exists. Dur
 
 1. the normal language worker is installed/built and round-trip tested;
 2. only languages that passed worker verification are considered for native tools;
-3. compiled native tools are built under `$HOME/Language-Project/build/polytools/`;
+3. compiled native tools are built under `$HOME/Language Project/build/polytools/`;
 4. each tool is smoke-tested on deterministic fixture data;
-5. only successful tools are written to `state/polytools.json` and shown with `✓`.
+5. only successful tools are written to `$HOME/Language Project/state/polytools.json` and shown with `✓`.
 
 This means a broken compiler/runtime or a source incompatibility cannot silently become an "available" utility.
 

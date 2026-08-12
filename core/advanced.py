@@ -2,11 +2,12 @@ from __future__ import annotations
 from pathlib import Path
 import json,hashlib,random,time,datetime,statistics,os
 from .registry import ROOT,load_registry
+from .paths import CHECKPOINTS_DIR
 from .engine import active_languages,prewarm,start_one,_stats,_save_generic
 from .analytics import device_snapshot,session_id
 from .telemetry import ResourceSampler
 from .store import record_result,record_event
-CHECKPOINTS=ROOT/'state'/'checkpoints'
+CHECKPOINTS=CHECKPOINTS_DIR
 
 def _utc():return datetime.datetime.now(datetime.timezone.utc).isoformat()
 def _atomic_json(path,obj):

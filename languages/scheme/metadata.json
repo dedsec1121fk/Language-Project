@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "project": "Language Project",
+  "id": "scheme",
+  "name": "Scheme (Guile)",
+  "kind": "interpreted",
+  "termux_packages": [
+    "guile"
+  ],
+  "worker_protocol": "PING / E <hex> / D <hex> / QUIT",
+  "native_tool": {
+    "id": "paren-check",
+    "name": "Delimiter Balance Check",
+    "category": "developer",
+    "source": "languages/scheme/tools/paren-check.scm",
+    "tags": [
+      "parentheses",
+      "syntax",
+      "developer"
+    ]
+  },
+  "execution_policy": "activated only after on-device worker and native-tool verification",
+  "runtime_home": "$HOME/Language Project",
+  "uses": [
+    "persistent reversible worker for benchmark/polyglot integrity chains",
+    "native practical utility: Delimiter Balance Check",
+    "workspace-report participation when this runtime passes Termux verification",
+    "per-language performance and integrity telemetry"
+  ]
+}
