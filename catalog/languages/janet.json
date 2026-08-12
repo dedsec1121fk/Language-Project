@@ -5,7 +5,8 @@
   "sources": [
     "bundled-snapshot",
     "github-linguist",
-    "pygments"
+    "pygments",
+    "termux-official-package-snapshot"
   ],
   "aliases": [
     "janet"
@@ -20,5 +21,15 @@
   "github_linguist_id": 1028705371,
   "termux_worker": false,
   "worker_id": null,
-  "execution_policy": "catalog-only"
+  "execution_policy": "termux-package-runtime-probe",
+  "termux_supported": true,
+  "termux_modules": [
+    "janet"
+  ],
+  "termux_packages": [
+    "janet"
+  ],
+  "termux_tiers": [
+    "native-module"
+  ]
 }

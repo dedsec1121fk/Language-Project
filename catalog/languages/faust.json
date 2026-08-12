@@ -5,7 +5,8 @@
   "sources": [
     "bundled-snapshot",
     "curated-index",
-    "github-linguist"
+    "github-linguist",
+    "termux-official-package-snapshot"
   ],
   "aliases": [],
   "extensions": [
@@ -15,5 +16,15 @@
   "github_linguist_id": 622529198,
   "termux_worker": false,
   "worker_id": null,
-  "execution_policy": "catalog-only"
+  "execution_policy": "termux-package-runtime-probe",
+  "termux_supported": true,
+  "termux_modules": [
+    "faust"
+  ],
+  "termux_packages": [
+    "faust"
+  ],
+  "termux_tiers": [
+    "native-module"
+  ]
 }

@@ -1,0 +1,7 @@
+{
+  "schema": 1,
+  "language_id": "picolisp",
+  "runtime_command": "pil",
+  "source": "practical.l",
+  "tier": "native-module"
+}

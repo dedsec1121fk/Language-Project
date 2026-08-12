@@ -463,6 +463,8 @@ def main():
     for _name in ('project-report','file-report','data-report','auto-report','workspace-report'):
         _p=lts.add_parser(_name);_p.add_argument('path');_p.add_argument('--output')
     lts.add_parser('selftest')
+    sup=sp.add_parser('supported',help='Inspect/install all Termux language modules');sups=sup.add_subparsers(dest='supported_cmd')
+    sups.add_parser('list');sups.add_parser('status');sups.add_parser('packages');sups.add_parser('balance');sups.add_parser('audit');si=sups.add_parser('install');si.add_argument('ids',nargs='+');sups.add_parser('install-all')
     mod=sp.add_parser('modules',help='Browse, verify, and demo the self-contained executable language modules');mods=mod.add_subparsers(dest='module_cmd')
     mods.add_parser('list');mi=mods.add_parser('info');mi.add_argument('query');md=mods.add_parser('demo');md.add_argument('query');md.add_argument('--timeout',type=int,default=60);mods.add_parser('verify')
     sp.add_parser('home',help='Show the persistent Language Project home folder')
@@ -553,6 +555,12 @@ def main():
             if a.poly_cmd=='scrub':r=polyglot_scrub(a.manifest,a.root,a.mirror,a.repair,a.warmups);print(json.dumps(r,indent=2));return 0 if r.get('ok') else 2
             if a.poly_cmd=='backup-health':r=polyglot_backup_health(a.root,a.warmups,a.limit);print(json.dumps(r,indent=2));return 0 if r.get('ok') else 2
         except Exception as e:print('Polyglot workflow error:',e,file=sys.stderr);return 2
+    if a.cmd=='supported':
+        if a.supported_cmd=='balance': return subprocess.call([sys.executable,str(ROOT/'scripts'/'language_balance.py')])
+        if a.supported_cmd=='audit': return subprocess.call([sys.executable,str(ROOT/'scripts'/'termux_coverage_audit.py')])
+        cmd=[sys.executable,str(ROOT/'scripts'/'termux_languages.py'),a.supported_cmd or 'list']
+        if a.supported_cmd=='install': cmd += a.ids
+        return subprocess.call(cmd)
     if a.cmd=='modules':
         try:
             if not a.module_cmd or a.module_cmd=='list':

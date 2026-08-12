@@ -1,0 +1,7 @@
+{
+  "schema": 1,
+  "language_id": "vala",
+  "runtime_command": "valac",
+  "source": "practical.vala",
+  "tier": "native-module"
+}

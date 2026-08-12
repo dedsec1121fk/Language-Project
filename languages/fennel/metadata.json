@@ -1,0 +1,17 @@
+{
+  "schema": 2,
+  "id": "fennel",
+  "name": "Fennel",
+  "tier": "native-module",
+  "packages": [
+    "fennel",
+    "lua54"
+  ],
+  "runtime_command": "fennel",
+  "source": "languages/fennel/tools/practical.fnl",
+  "extension": "fnl",
+  "linguist": "Fennel",
+  "termux_home": "$HOME/Language Project",
+  "github_linguist_supported": true,
+  "official_package_verified": true
+}

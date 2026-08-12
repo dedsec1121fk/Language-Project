@@ -1,0 +1,16 @@
+{
+  "schema": 2,
+  "id": "maxima",
+  "name": "Maxima",
+  "tier": "native-module",
+  "packages": [
+    "maxima"
+  ],
+  "runtime_command": "maxima",
+  "source": "languages/maxima/tools/practical.mac",
+  "extension": "mac",
+  "linguist": "Maxima",
+  "termux_home": "$HOME/Language Project",
+  "github_linguist_supported": false,
+  "official_package_verified": true
+}

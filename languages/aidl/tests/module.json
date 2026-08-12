@@ -1,0 +1,7 @@
+{
+  "schema": 1,
+  "language_id": "aidl",
+  "runtime_command": "aidl",
+  "source": "practical.aidl",
+  "tier": "native-module"
+}

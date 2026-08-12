@@ -1,0 +1,16 @@
+{
+  "schema": 2,
+  "id": "asymptote",
+  "name": "Asymptote",
+  "tier": "native-module",
+  "packages": [
+    "asymptote"
+  ],
+  "runtime_command": "asy",
+  "source": "languages/asymptote/tools/practical.asy",
+  "extension": "asy",
+  "linguist": "Asymptote",
+  "github_linguist_supported": true,
+  "termux_home": "$HOME/Language Project",
+  "official_package_verified": true
+}

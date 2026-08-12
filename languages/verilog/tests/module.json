@@ -1,0 +1,7 @@
+{
+  "schema": 1,
+  "language_id": "verilog",
+  "runtime_command": "iverilog",
+  "source": "practical.v",
+  "tier": "native-module"
+}

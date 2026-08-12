@@ -4,7 +4,8 @@
   "letter": "N",
   "sources": [
     "bundled-snapshot",
-    "github-linguist"
+    "github-linguist",
+    "termux-official-package-snapshot"
   ],
   "aliases": [],
   "extensions": [
@@ -18,5 +19,15 @@
   "github_linguist_id": 249,
   "termux_worker": true,
   "worker_id": "nim",
-  "execution_policy": "verified-on-device"
+  "execution_policy": "verified-on-device",
+  "termux_supported": true,
+  "termux_modules": [
+    "nim"
+  ],
+  "termux_packages": [
+    "nim"
+  ],
+  "termux_tiers": [
+    "worker"
+  ]
 }

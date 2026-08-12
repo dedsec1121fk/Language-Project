@@ -1,0 +1,7 @@
+{
+  "schema": 1,
+  "language_id": "webassembly",
+  "runtime_command": "wat2wasm",
+  "source": "practical.wat",
+  "tier": "native-module"
+}

@@ -4,7 +4,8 @@
   "letter": "V",
   "sources": [
     "bundled-snapshot",
-    "github-linguist"
+    "github-linguist",
+    "termux-official-package-snapshot"
   ],
   "aliases": [
     "visual basic",
@@ -20,5 +21,15 @@
   "github_linguist_id": 389,
   "termux_worker": false,
   "worker_id": null,
-  "execution_policy": "catalog-only"
+  "execution_policy": "termux-package-runtime-probe",
+  "termux_supported": true,
+  "termux_modules": [
+    "vbnet"
+  ],
+  "termux_packages": [
+    "dotnet-sdk-10.0"
+  ],
+  "termux_tiers": [
+    "native-module"
+  ]
 }

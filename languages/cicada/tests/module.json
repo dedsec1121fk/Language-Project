@@ -1,0 +1,7 @@
+{
+  "schema": 1,
+  "language_id": "cicada",
+  "runtime_command": "cicada",
+  "source": "practical.cicada",
+  "tier": "native-module"
+}

@@ -24,12 +24,13 @@ def main():
     checks.append(check('Python runtime',sys.version_info>=(3,9),sys.version.split()[0]))
     ensure_data_tree(); checks.append(check('Application location is readable',os.access(ROOT,os.R_OK),str(ROOT))); checks.append(check('Language Project home is writable',os.access(DATA_ROOT,os.W_OK),str(DATA_ROOT)))
     checks.append(check('Runtime home is not shared storage','/storage/emulated/' not in str(DATA_ROOT) and '/sdcard/' not in str(DATA_ROOT),'runtime data should live under $HOME/Language Project'))
-    for d in ('build','state','results','bundles'):
-        p=ROOT/d;p.mkdir(exist_ok=True)
+    runtime_dirs={'build':BUILD_DIR,'state':STATE_DIR,'results':RESULTS_DIR,'bundles':BUNDLES_DIR,'backups':BACKUPS_DIR,'reports':REPORTS_DIR,'logs':LOGS_DIR,'cache':CACHE_DIR,'tmp':TEMP_DIR}
+    for label,p in runtime_dirs.items():
+        p.mkdir(parents=True,exist_ok=True)
         try:
             t=p/'.doctor-write';t.write_text('ok');t.unlink();ok=True
         except Exception:ok=False
-        checks.append(check(f'{d}/ writable',ok,str(p)))
+        checks.append(check(f'{label}/ writable',ok,str(p)))
     st=load_state();reg=load_registry();active=active_languages()
     try:
         sc=load_scenarios().get('scenarios',{});checks.append(check('Scenario configuration',bool(sc),f'{len(sc)} scenarios'))
@@ -61,6 +62,16 @@ def main():
                 tr=langtools_selftest(); checks.append(check('Native language tool smoke',tr.get('ok',False),f"{tr.get('passed',0)}/{tr.get('tested',0)}"))
     except Exception as e:checks.append(check('Native multi-language tools',False,str(e)))
     checks.append(check('Executable registry readable',bool(reg),f'{len(reg)} workers'))
+    try:
+        cr=subprocess.run([sys.executable,str(ROOT/'scripts'/'termux_coverage_audit.py')],capture_output=True,text=True,timeout=30)
+        detail=(cr.stdout.strip().splitlines()[0] if cr.stdout.strip() else cr.stderr.strip()[:120])
+        checks.append(check('Full Termux language coverage',cr.returncode==0,detail))
+    except Exception as e: checks.append(check('Full Termux language coverage',False,str(e)))
+    try:
+        br=subprocess.run([sys.executable,str(ROOT/'scripts'/'language_balance.py')],capture_output=True,text=True,timeout=30)
+        detail=next((line.strip() for line in br.stdout.splitlines() if line.startswith('Below 0.2%')), 'balance audit')
+        checks.append(check('GitHub language >=0.2% guardrail',br.returncode==0,detail))
+    except Exception as e: checks.append(check('GitHub language >=0.2% guardrail',False,str(e)))
     checks.append(check('Verified runtime state present',bool(st),f"{len(st.get('active',[]))} active" if st else 'run setup'))
     if st:
         missing=[x['id'] for x in active if not executable_exists(x['run'])]

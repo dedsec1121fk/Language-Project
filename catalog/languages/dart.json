@@ -5,7 +5,8 @@
   "sources": [
     "bundled-snapshot",
     "github-linguist",
-    "pygments"
+    "pygments",
+    "termux-official-package-snapshot"
   ],
   "aliases": [
     "dart"
@@ -19,5 +20,15 @@
   "github_linguist_id": 87,
   "termux_worker": true,
   "worker_id": "dart",
-  "execution_policy": "verified-on-device"
+  "execution_policy": "verified-on-device",
+  "termux_supported": true,
+  "termux_modules": [
+    "dart"
+  ],
+  "termux_packages": [
+    "dart"
+  ],
+  "termux_tiers": [
+    "worker"
+  ]
 }

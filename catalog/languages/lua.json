@@ -5,7 +5,8 @@
   "sources": [
     "bundled-snapshot",
     "github-linguist",
-    "pygments"
+    "pygments",
+    "termux-official-package-snapshot"
   ],
   "aliases": [
     "lua"
@@ -27,5 +28,18 @@
   "github_linguist_id": 213,
   "termux_worker": true,
   "worker_id": "lua",
-  "execution_policy": "verified-on-device"
+  "execution_policy": "verified-on-device",
+  "termux_supported": true,
+  "termux_modules": [
+    "lua",
+    "plutolang"
+  ],
+  "termux_packages": [
+    "lua54",
+    "plutolang"
+  ],
+  "termux_tiers": [
+    "native-module",
+    "worker"
+  ]
 }

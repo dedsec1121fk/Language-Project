@@ -1,0 +1,7 @@
+{
+  "schema": 1,
+  "language_id": "groovy",
+  "runtime_command": "groovy",
+  "source": "practical.groovy",
+  "tier": "native-module"
+}

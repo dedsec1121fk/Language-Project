@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 from pathlib import Path
-import json,re,urllib.request,urllib.parse,unicodedata,hashlib,sys
+import json,re,urllib.request,urllib.parse,unicodedata,hashlib,sys,subprocess
 ROOT=Path(__file__).resolve().parents[1]
 CAT=ROOT/'catalog'/'known_languages.json'
 UA={'User-Agent':'Language-Project/2.0 (+Termux catalog refresh)'}
@@ -124,4 +124,6 @@ def main():
         try:print('Refreshing',name+'...');fn()
         except Exception as e:print(f'  ! {name}: {e}')
     write(store)
+    # Re-apply the official Termux support overlay after any live catalog refresh.
+    subprocess.run([sys.executable,str(ROOT/'scripts'/'sync_termux_catalog.py')],cwd=ROOT,check=False)
 if __name__=='__main__':main()

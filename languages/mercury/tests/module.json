@@ -1,0 +1,7 @@
+{
+  "schema": 1,
+  "language_id": "mercury",
+  "runtime_command": "mmc",
+  "source": "practical.m",
+  "tier": "native-module"
+}

@@ -1,0 +1,16 @@
+{
+  "schema": 2,
+  "id": "vbnet",
+  "name": "Visual Basic .NET",
+  "tier": "native-module",
+  "packages": [
+    "dotnet-sdk-10.0"
+  ],
+  "runtime_command": "dotnet",
+  "source": "languages/vbnet/tools/practical.vb",
+  "extension": "vb",
+  "linguist": "Visual Basic .NET",
+  "termux_home": "$HOME/Language Project",
+  "github_linguist_supported": true,
+  "official_package_verified": true
+}

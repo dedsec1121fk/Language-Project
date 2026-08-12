@@ -5,7 +5,8 @@
   "sources": [
     "bundled-snapshot",
     "github-linguist",
-    "pygments"
+    "pygments",
+    "termux-official-package-snapshot"
   ],
   "aliases": [
     "javascript",
@@ -56,5 +57,15 @@
   "github_linguist_id": 183,
   "termux_worker": true,
   "worker_id": "javascript",
-  "execution_policy": "verified-on-device"
+  "execution_policy": "verified-on-device",
+  "termux_supported": true,
+  "termux_modules": [
+    "javascript"
+  ],
+  "termux_packages": [
+    "nodejs"
+  ],
+  "termux_tiers": [
+    "worker"
+  ]
 }

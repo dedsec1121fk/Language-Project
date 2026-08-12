@@ -1,0 +1,16 @@
+{
+  "schema": 2,
+  "id": "picolisp",
+  "name": "PicoLisp",
+  "tier": "native-module",
+  "packages": [
+    "picolisp"
+  ],
+  "runtime_command": "pil",
+  "source": "languages/picolisp/tools/practical.l",
+  "extension": "l",
+  "linguist": "Common Lisp",
+  "termux_home": "$HOME/Language Project",
+  "github_linguist_supported": true,
+  "official_package_verified": true
+}

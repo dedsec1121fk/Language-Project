@@ -4,7 +4,8 @@
   "letter": "A",
   "sources": [
     "bundled-snapshot",
-    "github-linguist"
+    "github-linguist",
+    "termux-official-package-snapshot"
   ],
   "aliases": [
     "asm",
@@ -23,5 +24,15 @@
   "github_linguist_id": 24,
   "termux_worker": false,
   "worker_id": null,
-  "execution_policy": "catalog-only"
+  "execution_policy": "termux-package-runtime-probe",
+  "termux_supported": true,
+  "termux_modules": [
+    "assembly"
+  ],
+  "termux_packages": [
+    "clang"
+  ],
+  "termux_tiers": [
+    "native-module"
+  ]
 }

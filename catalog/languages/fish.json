@@ -5,7 +5,8 @@
   "sources": [
     "bundled-snapshot",
     "github-linguist",
-    "pygments"
+    "pygments",
+    "termux-official-package-snapshot"
   ],
   "aliases": [
     "fish",
@@ -21,5 +22,16 @@
   "github_linguist_id": 415,
   "termux_worker": true,
   "worker_id": "fish",
-  "execution_policy": "verified-on-device"
+  "execution_policy": "verified-on-device",
+  "termux_supported": true,
+  "termux_modules": [
+    "fish"
+  ],
+  "termux_packages": [
+    "coreutils",
+    "fish"
+  ],
+  "termux_tiers": [
+    "worker"
+  ]
 }

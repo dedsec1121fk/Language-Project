@@ -1,0 +1,7 @@
+{
+  "schema": 1,
+  "language_id": "slang",
+  "runtime_command": "slsh",
+  "source": "practical.sl",
+  "tier": "native-module"
+}

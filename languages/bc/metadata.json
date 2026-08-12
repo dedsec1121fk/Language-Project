@@ -1,0 +1,16 @@
+{
+  "schema": 2,
+  "id": "bc",
+  "name": "bc",
+  "tier": "native-module",
+  "packages": [
+    "bc"
+  ],
+  "runtime_command": "bc",
+  "source": "languages/bc/tools/practical.bc",
+  "extension": "bc",
+  "linguist": "bc",
+  "github_linguist_supported": false,
+  "termux_home": "$HOME/Language Project",
+  "official_package_verified": true
+}

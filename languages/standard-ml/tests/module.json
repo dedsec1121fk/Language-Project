@@ -1,0 +1,7 @@
+{
+  "schema": 1,
+  "language_id": "standard-ml",
+  "runtime_command": "poly",
+  "source": "practical.sml",
+  "tier": "native-module"
+}

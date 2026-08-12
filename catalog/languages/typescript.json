@@ -6,7 +6,8 @@
     "bundled-snapshot",
     "curated-index",
     "github-linguist",
-    "pygments"
+    "pygments",
+    "termux-official-package-snapshot"
   ],
   "aliases": [
     "ts",
@@ -27,5 +28,15 @@
   "github_linguist_id": 378,
   "termux_worker": false,
   "worker_id": null,
-  "execution_policy": "catalog-only"
+  "execution_policy": "termux-package-runtime-probe",
+  "termux_supported": true,
+  "termux_modules": [
+    "typescript"
+  ],
+  "termux_packages": [
+    "deno"
+  ],
+  "termux_tiers": [
+    "native-module"
+  ]
 }

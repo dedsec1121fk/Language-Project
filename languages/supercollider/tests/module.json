@@ -1,0 +1,7 @@
+{
+  "schema": 1,
+  "language_id": "supercollider",
+  "runtime_command": "sclang",
+  "source": "practical.scd",
+  "tier": "native-module"
+}

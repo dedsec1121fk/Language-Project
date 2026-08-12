@@ -6,7 +6,8 @@
     "bundled-snapshot",
     "curated-index",
     "github-linguist",
-    "pygments"
+    "pygments",
+    "termux-official-package-snapshot"
   ],
   "aliases": [
     "wasm",
@@ -21,5 +22,16 @@
   "github_linguist_id": 956556503,
   "termux_worker": false,
   "worker_id": null,
-  "execution_policy": "catalog-only"
+  "execution_policy": "termux-package-runtime-probe",
+  "termux_supported": true,
+  "termux_modules": [
+    "webassembly"
+  ],
+  "termux_packages": [
+    "wabt",
+    "wasmtime"
+  ],
+  "termux_tiers": [
+    "native-module"
+  ]
 }

@@ -1,0 +1,106 @@
+# Language Project GitHub Linguist rules
+# Generated from config/registries/termux_supported.json.
+# Every override below maps real source to its actual language; Python is not relabeled.
+
+# Catalog and generated metadata are not source-code statistics.
+catalog/** linguist-vendored=true
+metadata/** linguist-vendored=true
+
+# Termux-supported languages recognized by current GitHub Linguist.
+languages/aidl/**/*.aidl linguist-language=AIDL
+languages/assembly/**/*.s linguist-language=Assembly
+languages/asymptote/**/*.asy linguist-language=Asymptote
+languages/awk/**/*.awk linguist-language=Awk
+languages/bash/**/*.sh linguist-language=Shell
+languages/beanshell/**/*.bsh linguist-language=Java
+languages/brainfuck/**/*.bf linguist-language=Brainfuck
+languages/c/**/*.c linguist-language=C
+languages/cicada/**/*.cicada linguist-language=Shell
+languages/cmake/**/*.cmake linguist-language=CMake
+languages/cobol/**/*.cob linguist-language=COBOL
+languages/common-lisp/**/*.lisp linguist-language=Common-Lisp
+languages/cpp/**/*.cpp linguist-language=C++
+languages/crystal/**/*.cr linguist-language=Crystal
+languages/csh/**/*.csh linguist-language=Tcsh
+languages/csharp/**/*.cs linguist-language=C#
+languages/d/**/*.d linguist-language=D
+languages/dart/**/*.dart linguist-language=Dart
+languages/dash/**/*.sh linguist-language=Shell
+languages/elixir/**/*.exs linguist-language=Elixir
+languages/elvish/**/*.elv linguist-language=Elvish
+languages/erlang/**/*.erl linguist-language=Erlang
+languages/faust/**/*.dsp linguist-language=Faust
+languages/fennel/**/*.fnl linguist-language=Fennel
+languages/fish/**/*.fish linguist-language=fish
+languages/forth/**/*.fs linguist-language=Forth
+languages/fortran/**/*.f90 linguist-language=Fortran-Free-Form
+languages/fsharp/**/*.fsx linguist-language=F#
+languages/gap/**/*.gap linguist-language=GAP
+languages/gleam/**/*.gleam linguist-language=Gleam
+languages/glsl/**/*.glsl linguist-language=GLSL
+languages/gnuplot/**/*.gnuplot linguist-language=Gnuplot
+languages/go/**/*.go linguist-language=Go
+languages/groovy/**/*.groovy linguist-language=Groovy
+languages/haskell/**/*.hs linguist-language=Haskell
+languages/hilbish/**/*.hil linguist-language=Shell
+languages/janet/**/*.janet linguist-language=Janet
+languages/java/**/*.java linguist-language=Java
+languages/javascript/**/*.js linguist-language=JavaScript
+languages/jq/**/*.jq linguist-language=jq
+languages/kotlin/**/*.kt linguist-language=Kotlin
+languages/lua/**/*.lua linguist-language=Lua
+languages/m4/**/*.m4 linguist-language=M4
+languages/makefile/**/*.mk linguist-language=Makefile
+languages/mercury/**/*.m linguist-language=Mercury
+languages/minizinc/**/*.mzn linguist-language=MiniZinc
+languages/mksh/**/*.mksh linguist-language=Shell
+languages/nim/**/*.nim linguist-language=Nim
+languages/nushell/**/*.nu linguist-language=Nushell
+languages/objective-c/**/*.m linguist-language=Objective-C
+languages/octave/**/*.m linguist-language=MATLAB
+languages/ol/**/*.ol linguist-language=Common-Lisp
+languages/opencl/**/*.cl linguist-language=OpenCL
+languages/perl/**/*.pl linguist-language=Perl
+languages/php/**/*.php linguist-language=PHP
+languages/picolisp/**/*.l linguist-language=Common-Lisp
+languages/plutolang/**/*.pluto linguist-language=Lua
+languages/postscript/**/*.ps linguist-language=PostScript
+languages/prolog/**/*.pl linguist-language=Prolog
+languages/python/**/*.py linguist-language=Python
+languages/racket/**/*.rkt linguist-language=Racket
+languages/rc/**/*.rc linguist-language=Shell
+languages/rexx/**/*.rexx linguist-language=REXX
+languages/ruby/**/*.rb linguist-language=Ruby
+languages/rust/**/*.rs linguist-language=Rust
+languages/scala/**/*.scala linguist-language=Scala
+languages/scheme/**/*.scm linguist-language=Scheme
+languages/sed/**/*.sed linguist-language=sed
+languages/slang/**/*.sl linguist-language=Slang
+languages/smalltalk/**/*.st linguist-language=Smalltalk
+languages/solidity/**/*.sol linguist-language=Solidity
+languages/sql/**/*.sql linguist-language=SQL linguist-detectable=true
+languages/standard-ml/**/*.sml linguist-language=Standard-ML
+languages/supercollider/**/*.scd linguist-language=SuperCollider
+languages/swift/**/*.swift linguist-language=Swift
+languages/tcl/**/*.tcl linguist-language=Tcl
+languages/typescript/**/*.ts linguist-language=TypeScript
+languages/typst/**/*.typ linguist-language=Typst
+languages/vala/**/*.vala linguist-language=Vala
+languages/vbnet/**/*.vb linguist-language=Visual-Basic-.NET
+languages/verilog/**/*.v linguist-language=Verilog
+languages/webassembly/**/*.wat linguist-language=WebAssembly
+languages/wren/**/*.wren linguist-language=Wren
+languages/zig/**/*.zig linguist-language=Zig
+languages/zsh/**/*.zsh linguist-language=Shell
+
+# Termux can run these modules, but current GitHub Linguist has no separate language definition.
+# Exclude them from the percentage bar rather than misclassifying them as a different language.
+languages/arturo/** linguist-detectable=false
+languages/bc/** linguist-detectable=false
+languages/gluelang/** linguist-detectable=false
+languages/grap/** linguist-detectable=false
+languages/k/** linguist-detectable=false
+languages/maxima/** linguist-detectable=false
+languages/nelua/** linguist-detectable=false
+languages/pari-gp/** linguist-detectable=false
+languages/wiz/** linguist-detectable=false

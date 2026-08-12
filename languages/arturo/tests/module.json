@@ -1,0 +1,7 @@
+{
+  "schema": 1,
+  "language_id": "arturo",
+  "runtime_command": "arturo",
+  "source": "practical.art",
+  "tier": "native-module"
+}

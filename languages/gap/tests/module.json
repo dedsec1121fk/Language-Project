@@ -1,0 +1,6 @@
+{
+  "schema": 1,
+  "id": "gap",
+  "source": "tools/practical.gap",
+  "expected_runtime": "gap"
+}

@@ -1,0 +1,16 @@
+{
+  "schema": 2,
+  "id": "ol",
+  "name": "OL Lisp",
+  "tier": "native-module",
+  "packages": [
+    "ol"
+  ],
+  "runtime_command": "ol",
+  "source": "languages/ol/tools/practical.ol",
+  "extension": "ol",
+  "linguist": "Common Lisp",
+  "termux_home": "$HOME/Language Project",
+  "github_linguist_supported": true,
+  "official_package_verified": true
+}

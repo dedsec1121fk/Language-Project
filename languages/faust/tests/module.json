@@ -1,0 +1,7 @@
+{
+  "schema": 1,
+  "language_id": "faust",
+  "runtime_command": "faust",
+  "source": "practical.dsp",
+  "tier": "native-module"
+}

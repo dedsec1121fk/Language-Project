@@ -1,0 +1,6 @@
+{
+  "schema": 1,
+  "id": "gnuplot",
+  "source": "tools/practical.gnuplot",
+  "expected_runtime": "gnuplot"
+}

@@ -1,0 +1,7 @@
+{
+  "schema": 1,
+  "language_id": "brainfuck",
+  "runtime_command": "brainfuck",
+  "source": "practical.bf",
+  "tier": "native-module"
+}

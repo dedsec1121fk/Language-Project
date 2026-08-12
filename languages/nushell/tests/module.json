@@ -1,0 +1,7 @@
+{
+  "schema": 1,
+  "language_id": "nushell",
+  "runtime_command": "nu",
+  "source": "practical.nu",
+  "tier": "native-module"
+}

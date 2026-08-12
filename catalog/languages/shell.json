@@ -4,7 +4,8 @@
   "letter": "S",
   "sources": [
     "bundled-snapshot",
-    "github-linguist"
+    "github-linguist",
+    "termux-official-package-snapshot"
   ],
   "aliases": [
     "sh",
@@ -45,5 +46,17 @@
   "github_linguist_id": 346,
   "termux_worker": false,
   "worker_id": null,
-  "execution_policy": "catalog-only"
+  "execution_policy": "termux-package-runtime-probe",
+  "termux_supported": true,
+  "termux_modules": [
+    "cicada",
+    "hilbish"
+  ],
+  "termux_packages": [
+    "cicada",
+    "hilbish"
+  ],
+  "termux_tiers": [
+    "native-module"
+  ]
 }

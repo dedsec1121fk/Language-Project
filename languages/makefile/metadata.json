@@ -1,0 +1,16 @@
+{
+  "schema": 2,
+  "id": "makefile",
+  "name": "Make",
+  "tier": "native-module",
+  "packages": [
+    "make"
+  ],
+  "runtime_command": "make",
+  "source": "languages/makefile/tools/practical.mk",
+  "extension": "mk",
+  "linguist": "Makefile",
+  "termux_home": "$HOME/Language Project",
+  "official_package_verified": true,
+  "github_linguist_supported": true
+}

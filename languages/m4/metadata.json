@@ -1,0 +1,16 @@
+{
+  "schema": 2,
+  "id": "m4",
+  "name": "M4",
+  "tier": "native-module",
+  "packages": [
+    "m4"
+  ],
+  "runtime_command": "m4",
+  "source": "languages/m4/tools/practical.m4",
+  "extension": "m4",
+  "linguist": "M4",
+  "termux_home": "$HOME/Language Project",
+  "official_package_verified": true,
+  "github_linguist_supported": true
+}

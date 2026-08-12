@@ -1,0 +1,16 @@
+{
+  "schema": 2,
+  "id": "mercury",
+  "name": "Mercury",
+  "tier": "native-module",
+  "packages": [
+    "mercury"
+  ],
+  "runtime_command": "mmc",
+  "source": "languages/mercury/tools/practical.m",
+  "extension": "m",
+  "linguist": "Mercury",
+  "termux_home": "$HOME/Language Project",
+  "github_linguist_supported": true,
+  "official_package_verified": true
+}

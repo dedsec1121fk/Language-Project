@@ -1,0 +1,7 @@
+{
+  "schema": 1,
+  "language_id": "postscript",
+  "runtime_command": "gs",
+  "source": "practical.ps",
+  "tier": "native-module"
+}

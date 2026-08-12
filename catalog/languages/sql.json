@@ -5,7 +5,8 @@
   "sources": [
     "bundled-snapshot",
     "curated-index",
-    "pygments"
+    "pygments",
+    "termux-official-package-snapshot"
   ],
   "aliases": [
     "sql"
@@ -17,5 +18,15 @@
   "github_linguist_id": null,
   "termux_worker": false,
   "worker_id": null,
-  "execution_policy": "catalog-only"
+  "execution_policy": "termux-package-runtime-probe",
+  "termux_supported": true,
+  "termux_modules": [
+    "sql"
+  ],
+  "termux_packages": [
+    "sqlite"
+  ],
+  "termux_tiers": [
+    "native-module"
+  ]
 }

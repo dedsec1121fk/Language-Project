@@ -5,7 +5,8 @@
   "sources": [
     "bundled-snapshot",
     "github-linguist",
-    "pygments"
+    "pygments",
+    "termux-official-package-snapshot"
   ],
   "aliases": [
     "cl",
@@ -32,5 +33,18 @@
   "github_linguist_id": 66,
   "termux_worker": true,
   "worker_id": "common-lisp",
-  "execution_policy": "verified-on-device"
+  "execution_policy": "verified-on-device",
+  "termux_supported": true,
+  "termux_modules": [
+    "common-lisp",
+    "ol"
+  ],
+  "termux_packages": [
+    "ecl",
+    "ol"
+  ],
+  "termux_tiers": [
+    "native-module",
+    "worker"
+  ]
 }

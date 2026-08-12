@@ -1,0 +1,16 @@
+{
+  "schema": 2,
+  "id": "gleam",
+  "name": "Gleam",
+  "tier": "native-module",
+  "packages": [
+    "gleam"
+  ],
+  "runtime_command": "gleam",
+  "source": "languages/gleam/tools/practical.gleam",
+  "extension": "gleam",
+  "linguist": "Gleam",
+  "github_linguist_supported": true,
+  "termux_home": "$HOME/Language Project",
+  "official_package_verified": true
+}

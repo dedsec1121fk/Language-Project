@@ -14,5 +14,9 @@
   "github_linguist_id": 429002699,
   "termux_worker": false,
   "worker_id": null,
-  "execution_policy": "catalog-only"
+  "execution_policy": "catalog-only",
+  "termux_supported": false,
+  "termux_modules": [],
+  "termux_packages": [],
+  "termux_tiers": []
 }

@@ -5,7 +5,8 @@
   "sources": [
     "bundled-snapshot",
     "github-linguist",
-    "pygments"
+    "pygments",
+    "termux-official-package-snapshot"
   ],
   "aliases": [
     "v",
@@ -19,5 +20,15 @@
   "github_linguist_id": 387,
   "termux_worker": false,
   "worker_id": null,
-  "execution_policy": "catalog-only"
+  "execution_policy": "termux-package-runtime-probe",
+  "termux_supported": true,
+  "termux_modules": [
+    "verilog"
+  ],
+  "termux_packages": [
+    "iverilog"
+  ],
+  "termux_tiers": [
+    "native-module"
+  ]
 }

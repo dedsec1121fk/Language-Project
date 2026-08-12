@@ -5,7 +5,8 @@
   "sources": [
     "bundled-snapshot",
     "github-linguist",
-    "pygments"
+    "pygments",
+    "termux-official-package-snapshot"
   ],
   "aliases": [
     "sml"
@@ -20,5 +21,15 @@
   "github_linguist_id": 357,
   "termux_worker": false,
   "worker_id": null,
-  "execution_policy": "catalog-only"
+  "execution_policy": "termux-package-runtime-probe",
+  "termux_supported": true,
+  "termux_modules": [
+    "standard-ml"
+  ],
+  "termux_packages": [
+    "polyml"
+  ],
+  "termux_tiers": [
+    "native-module"
+  ]
 }

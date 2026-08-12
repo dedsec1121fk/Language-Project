@@ -1,0 +1,7 @@
+{
+  "schema": 1,
+  "language_id": "solidity",
+  "runtime_command": "solc",
+  "source": "practical.sol",
+  "tier": "native-module"
+}

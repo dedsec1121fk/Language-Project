@@ -1,0 +1,26 @@
+Language Project Brainfuck practical notes safe deterministic local utility notes safe deterministic local utility notes safe deterministic local utility notes safe deterministic local utility notes 
+Language Project Brainfuck practical notes safe deterministic local utility notes safe deterministic local utility notes safe deterministic local utility notes safe deterministic local utility notes 
+Language Project Brainfuck practical notes safe deterministic local utility notes safe deterministic local utility notes safe deterministic local utility notes safe deterministic local utility notes 
+Language Project Brainfuck practical notes safe deterministic local utility notes safe deterministic local utility notes safe deterministic local utility notes safe deterministic local utility notes 
+Language Project Brainfuck practical notes safe deterministic local utility notes safe deterministic local utility notes safe deterministic local utility notes safe deterministic local utility notes 
+Language Project Brainfuck practical notes safe deterministic local utility notes safe deterministic local utility notes safe deterministic local utility notes safe deterministic local utility notes 
+Language Project Brainfuck practical notes safe deterministic local utility notes safe deterministic local utility notes safe deterministic local utility notes safe deterministic local utility notes 
+Language Project Brainfuck practical notes safe deterministic local utility notes safe deterministic local utility notes safe deterministic local utility notes safe deterministic local utility notes 
+Language Project Brainfuck practical notes safe deterministic local utility notes safe deterministic local utility notes safe deterministic local utility notes safe deterministic local utility notes 
+Language Project Brainfuck practical notes safe deterministic local utility notes safe deterministic local utility notes safe deterministic local utility notes safe deterministic local utility notes 
+Language Project Brainfuck practical notes safe deterministic local utility notes safe deterministic local utility notes safe deterministic local utility notes safe deterministic local utility notes 
+Language Project Brainfuck practical notes safe deterministic local utility notes safe deterministic local utility notes safe deterministic local utility notes safe deterministic local utility notes 
+Language Project Brainfuck practical notes safe deterministic local utility notes safe deterministic local utility notes safe deterministic local utility notes safe deterministic local utility notes 
+Language Project Brainfuck practical notes safe deterministic local utility notes safe deterministic local utility notes safe deterministic local utility notes safe deterministic local utility notes 
+Language Project Brainfuck practical notes safe deterministic local utility notes safe deterministic local utility notes safe deterministic local utility notes safe deterministic local utility notes 
+Language Project Brainfuck practical notes safe deterministic local utility notes safe deterministic local utility notes safe deterministic local utility notes safe deterministic local utility notes 
+Language Project Brainfuck practical notes safe deterministic local utility notes safe deterministic local utility notes safe deterministic local utility notes safe deterministic local utility notes 
+Language Project Brainfuck practical notes safe deterministic local utility notes safe deterministic local utility notes safe deterministic local utility notes safe deterministic local utility notes 
+Language Project Brainfuck practical notes safe deterministic local utility notes safe deterministic local utility notes safe deterministic local utility notes safe deterministic local utility notes 
+Language Project Brainfuck practical notes safe deterministic local utility notes safe deterministic local utility notes safe deterministic local utility notes safe deterministic local utility notes 
+Language Project Brainfuck practical notes safe deterministic local utility notes safe deterministic local utility notes safe deterministic local utility notes safe deterministic local utility notes 
+Language Project Brainfuck practical notes safe deterministic local utility notes safe deterministic local utility notes safe deterministic local utility notes safe deterministic local utility notes 
+Language Project Brainfuck practical notes safe deterministic local utility notes safe deterministic local utility notes safe deterministic local utility notes safe deterministic local utility notes 
+Language Project Brainfuck practical notes safe deterministic local utility notes safe deterministic local utility notes safe deterministic local utility notes safe deterministic local utility notes 
+Language Project Brainfuck practical notes safe deterministic local utility notes safe deterministic local utility notes safe deterministic local utility notes safe deterministic local utility notes 
+++++++++++[>+++++++>++++++++++>+++>+<<<<-]>++.>+.+++++++..+++.>++.<<+++++++++++++++.>.+++.------.--------.>+.>.

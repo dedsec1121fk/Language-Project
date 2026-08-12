@@ -1,0 +1,6 @@
+{
+  "schema": 1,
+  "id": "opencl",
+  "source": "tools/practical.cl",
+  "expected_runtime": "clang"
+}

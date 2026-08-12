@@ -1,0 +1,16 @@
+{
+  "schema": 2,
+  "id": "glsl",
+  "name": "GLSL",
+  "tier": "native-module",
+  "packages": [
+    "glslang"
+  ],
+  "runtime_command": "glslangValidator",
+  "source": "languages/glsl/tools/practical.glsl",
+  "extension": "glsl",
+  "linguist": "GLSL",
+  "termux_home": "$HOME/Language Project",
+  "official_package_verified": true,
+  "github_linguist_supported": true
+}

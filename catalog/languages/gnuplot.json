@@ -5,7 +5,8 @@
   "sources": [
     "bundled-snapshot",
     "github-linguist",
-    "pygments"
+    "pygments",
+    "termux-official-package-snapshot"
   ],
   "aliases": [
     "gnuplot"
@@ -24,5 +25,15 @@
   "github_linguist_id": 131,
   "termux_worker": false,
   "worker_id": null,
-  "execution_policy": "catalog-only"
+  "execution_policy": "termux-package-runtime-probe",
+  "termux_supported": true,
+  "termux_modules": [
+    "gnuplot"
+  ],
+  "termux_packages": [
+    "gnuplot"
+  ],
+  "termux_tiers": [
+    "native-module"
+  ]
 }

@@ -1,0 +1,16 @@
+{
+  "schema": 2,
+  "id": "gluelang",
+  "name": "Glue",
+  "tier": "native-module",
+  "packages": [
+    "gluelang"
+  ],
+  "runtime_command": "glue",
+  "source": "languages/gluelang/tools/practical.glu",
+  "extension": "glu",
+  "linguist": "Glue",
+  "termux_home": "$HOME/Language Project",
+  "github_linguist_supported": false,
+  "official_package_verified": true
+}

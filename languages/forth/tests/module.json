@@ -1,0 +1,7 @@
+{
+  "schema": 1,
+  "language_id": "forth",
+  "runtime_command": "gforth",
+  "source": "practical.fs",
+  "tier": "native-module"
+}

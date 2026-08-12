@@ -1,0 +1,1331 @@
+{
+  "schema": 1,
+  "project": "Language Project",
+  "source": "Official Termux aarch64 package inventory snapshot used for this release (2026-08-12)",
+  "count": 94,
+  "languages": [
+    {
+      "id": "bash",
+      "name": "Bash",
+      "packages": [
+        "bash",
+        "coreutils"
+      ],
+      "command": "bash",
+      "extension": "sh",
+      "linguist": "Shell",
+      "tier": "worker",
+      "worker_id": "bash",
+      "official_package_verified": true,
+      "github_linguist_supported": true
+    },
+    {
+      "id": "awk",
+      "name": "AWK",
+      "packages": [
+        "gawk"
+      ],
+      "command": "gawk",
+      "extension": "awk",
+      "linguist": "Awk",
+      "tier": "worker",
+      "worker_id": "awk",
+      "official_package_verified": true,
+      "github_linguist_supported": true
+    },
+    {
+      "id": "c",
+      "name": "C",
+      "packages": [
+        "clang"
+      ],
+      "command": "{data}/build/c",
+      "extension": "c",
+      "linguist": "C",
+      "tier": "worker",
+      "worker_id": "c",
+      "official_package_verified": true,
+      "github_linguist_supported": true
+    },
+    {
+      "id": "cpp",
+      "name": "C++",
+      "packages": [
+        "clang"
+      ],
+      "command": "{data}/build/cpp",
+      "extension": "cpp",
+      "linguist": "C++",
+      "tier": "worker",
+      "worker_id": "cpp",
+      "official_package_verified": true,
+      "github_linguist_supported": true
+    },
+    {
+      "id": "python",
+      "name": "Python",
+      "packages": [
+        "python"
+      ],
+      "command": "python",
+      "extension": "py",
+      "linguist": "Python",
+      "tier": "worker",
+      "worker_id": "python",
+      "official_package_verified": true,
+      "github_linguist_supported": true
+    },
+    {
+      "id": "javascript",
+      "name": "JavaScript",
+      "packages": [
+        "nodejs"
+      ],
+      "command": "node",
+      "extension": "js",
+      "linguist": "JavaScript",
+      "tier": "worker",
+      "worker_id": "javascript",
+      "official_package_verified": true,
+      "github_linguist_supported": true
+    },
+    {
+      "id": "perl",
+      "name": "Perl",
+      "packages": [
+        "perl"
+      ],
+      "command": "perl",
+      "extension": "pl",
+      "linguist": "Perl",
+      "tier": "worker",
+      "worker_id": "perl",
+      "official_package_verified": true,
+      "github_linguist_supported": true
+    },
+    {
+      "id": "ruby",
+      "name": "Ruby",
+      "packages": [
+        "ruby"
+      ],
+      "command": "ruby",
+      "extension": "rb",
+      "linguist": "Ruby",
+      "tier": "worker",
+      "worker_id": "ruby",
+      "official_package_verified": true,
+      "github_linguist_supported": true
+    },
+    {
+      "id": "lua",
+      "name": "Lua",
+      "packages": [
+        "lua54"
+      ],
+      "command": "lua",
+      "extension": "lua",
+      "linguist": "Lua",
+      "tier": "worker",
+      "worker_id": "lua",
+      "official_package_verified": true,
+      "github_linguist_supported": true
+    },
+    {
+      "id": "php",
+      "name": "PHP",
+      "packages": [
+        "php"
+      ],
+      "command": "php",
+      "extension": "php",
+      "linguist": "PHP",
+      "tier": "worker",
+      "worker_id": "php",
+      "official_package_verified": true,
+      "github_linguist_supported": true
+    },
+    {
+      "id": "tcl",
+      "name": "Tcl",
+      "packages": [
+        "tcl"
+      ],
+      "command": "tclsh",
+      "extension": "tcl",
+      "linguist": "Tcl",
+      "tier": "worker",
+      "worker_id": "tcl",
+      "official_package_verified": true,
+      "github_linguist_supported": true
+    },
+    {
+      "id": "go",
+      "name": "Go",
+      "packages": [
+        "golang"
+      ],
+      "command": "{data}/build/go",
+      "extension": "go",
+      "linguist": "Go",
+      "tier": "worker",
+      "worker_id": "go",
+      "official_package_verified": true,
+      "github_linguist_supported": true
+    },
+    {
+      "id": "rust",
+      "name": "Rust",
+      "packages": [
+        "rust"
+      ],
+      "command": "{data}/build/rust",
+      "extension": "rs",
+      "linguist": "Rust",
+      "tier": "worker",
+      "worker_id": "rust",
+      "official_package_verified": true,
+      "github_linguist_supported": true
+    },
+    {
+      "id": "java",
+      "name": "Java",
+      "packages": [
+        "openjdk-21"
+      ],
+      "command": "java",
+      "extension": "java",
+      "linguist": "Java",
+      "tier": "worker",
+      "worker_id": "java",
+      "official_package_verified": true,
+      "github_linguist_supported": true
+    },
+    {
+      "id": "scheme",
+      "name": "Scheme (Guile)",
+      "packages": [
+        "guile"
+      ],
+      "command": "guile",
+      "extension": "scm",
+      "linguist": "Scheme",
+      "tier": "worker",
+      "worker_id": "scheme",
+      "official_package_verified": true,
+      "github_linguist_supported": true
+    },
+    {
+      "id": "erlang",
+      "name": "Erlang",
+      "packages": [
+        "erlang"
+      ],
+      "command": "escript",
+      "extension": "erl",
+      "linguist": "Erlang",
+      "tier": "worker",
+      "worker_id": "erlang",
+      "official_package_verified": true,
+      "github_linguist_supported": true
+    },
+    {
+      "id": "elixir",
+      "name": "Elixir",
+      "packages": [
+        "erlang",
+        "elixir"
+      ],
+      "command": "elixir",
+      "extension": "exs",
+      "linguist": "Elixir",
+      "tier": "worker",
+      "worker_id": "elixir",
+      "official_package_verified": true,
+      "github_linguist_supported": true
+    },
+    {
+      "id": "nim",
+      "name": "Nim",
+      "packages": [
+        "nim"
+      ],
+      "command": "{data}/build/nim",
+      "extension": "nim",
+      "linguist": "Nim",
+      "tier": "worker",
+      "worker_id": "nim",
+      "official_package_verified": true,
+      "github_linguist_supported": true
+    },
+    {
+      "id": "zig",
+      "name": "Zig",
+      "packages": [
+        "zig"
+      ],
+      "command": "{data}/build/zig",
+      "extension": "zig",
+      "linguist": "Zig",
+      "tier": "worker",
+      "worker_id": "zig",
+      "official_package_verified": true,
+      "github_linguist_supported": true
+    },
+    {
+      "id": "prolog",
+      "name": "Prolog (SWI)",
+      "packages": [
+        "swi-prolog"
+      ],
+      "command": "swipl",
+      "extension": "pl",
+      "linguist": "Prolog",
+      "tier": "worker",
+      "worker_id": "prolog",
+      "official_package_verified": true,
+      "github_linguist_supported": true
+    },
+    {
+      "id": "haskell",
+      "name": "Haskell",
+      "packages": [
+        "ghc"
+      ],
+      "command": "{data}/build/haskell",
+      "extension": "hs",
+      "linguist": "Haskell",
+      "tier": "worker",
+      "worker_id": "haskell",
+      "official_package_verified": true,
+      "github_linguist_supported": true
+    },
+    {
+      "id": "d",
+      "name": "D",
+      "packages": [
+        "ldc"
+      ],
+      "command": "{data}/build/d",
+      "extension": "d",
+      "linguist": "D",
+      "tier": "worker",
+      "worker_id": "d",
+      "official_package_verified": true,
+      "github_linguist_supported": true
+    },
+    {
+      "id": "kotlin",
+      "name": "Kotlin",
+      "packages": [
+        "openjdk-21",
+        "kotlin"
+      ],
+      "command": "java",
+      "extension": "kt",
+      "linguist": "Kotlin",
+      "tier": "worker",
+      "worker_id": "kotlin",
+      "official_package_verified": true,
+      "github_linguist_supported": true
+    },
+    {
+      "id": "scala",
+      "name": "Scala",
+      "packages": [
+        "openjdk-21",
+        "scala"
+      ],
+      "command": "scala",
+      "extension": "scala",
+      "linguist": "Scala",
+      "tier": "worker",
+      "worker_id": "scala",
+      "official_package_verified": true,
+      "github_linguist_supported": true
+    },
+    {
+      "id": "dart",
+      "name": "Dart",
+      "packages": [
+        "dart"
+      ],
+      "command": "dart",
+      "extension": "dart",
+      "linguist": "Dart",
+      "tier": "worker",
+      "worker_id": "dart",
+      "official_package_verified": true,
+      "github_linguist_supported": true
+    },
+    {
+      "id": "fortran",
+      "name": "Fortran",
+      "packages": [
+        "flang"
+      ],
+      "command": "{data}/build/fortran",
+      "extension": "f90",
+      "linguist": "Fortran Free Form",
+      "tier": "worker",
+      "worker_id": "fortran",
+      "official_package_verified": true,
+      "github_linguist_supported": true
+    },
+    {
+      "id": "racket",
+      "name": "Racket",
+      "packages": [
+        "racket"
+      ],
+      "command": "racket",
+      "extension": "rkt",
+      "linguist": "Racket",
+      "tier": "worker",
+      "worker_id": "racket",
+      "official_package_verified": true,
+      "github_linguist_supported": true
+    },
+    {
+      "id": "crystal",
+      "name": "Crystal",
+      "packages": [
+        "crystal"
+      ],
+      "command": "{data}/build/crystal",
+      "extension": "cr",
+      "linguist": "Crystal",
+      "tier": "worker",
+      "worker_id": "crystal",
+      "official_package_verified": true,
+      "github_linguist_supported": true
+    },
+    {
+      "id": "common-lisp",
+      "name": "Common Lisp (ECL)",
+      "packages": [
+        "ecl"
+      ],
+      "command": "ecl",
+      "extension": "lisp",
+      "linguist": "Common Lisp",
+      "tier": "worker",
+      "worker_id": "common-lisp",
+      "official_package_verified": true,
+      "github_linguist_supported": true
+    },
+    {
+      "id": "dash",
+      "name": "POSIX sh (Dash)",
+      "packages": [
+        "dash",
+        "coreutils"
+      ],
+      "command": "dash",
+      "extension": "sh",
+      "linguist": "Shell",
+      "tier": "worker",
+      "worker_id": "dash",
+      "official_package_verified": true,
+      "github_linguist_supported": true
+    },
+    {
+      "id": "zsh",
+      "name": "Z shell",
+      "packages": [
+        "zsh",
+        "coreutils"
+      ],
+      "command": "zsh",
+      "extension": "zsh",
+      "linguist": "Shell",
+      "tier": "worker",
+      "worker_id": "zsh",
+      "official_package_verified": true,
+      "github_linguist_supported": true
+    },
+    {
+      "id": "fish",
+      "name": "fish",
+      "packages": [
+        "fish",
+        "coreutils"
+      ],
+      "command": "fish",
+      "extension": "fish",
+      "linguist": "fish",
+      "tier": "worker",
+      "worker_id": "fish",
+      "official_package_verified": true,
+      "github_linguist_supported": true
+    },
+    {
+      "id": "sed",
+      "name": "sed",
+      "packages": [
+        "sed"
+      ],
+      "command": "sed",
+      "extension": "sed",
+      "linguist": "sed",
+      "tier": "worker",
+      "worker_id": "sed",
+      "official_package_verified": true,
+      "github_linguist_supported": true
+    },
+    {
+      "id": "jq",
+      "name": "jq",
+      "packages": [
+        "jq"
+      ],
+      "command": "jq",
+      "extension": "jq",
+      "linguist": "jq",
+      "tier": "worker",
+      "worker_id": "jq",
+      "official_package_verified": true,
+      "github_linguist_supported": true
+    },
+    {
+      "id": "arturo",
+      "name": "Arturo",
+      "packages": [
+        "arturo"
+      ],
+      "command": "arturo",
+      "extension": "art",
+      "linguist": "Arturo",
+      "tier": "native-module",
+      "worker_id": null,
+      "official_package_verified": true,
+      "github_linguist_supported": false
+    },
+    {
+      "id": "assembly",
+      "name": "Assembly (AArch64)",
+      "packages": [
+        "clang"
+      ],
+      "command": "clang",
+      "extension": "s",
+      "linguist": "Assembly",
+      "tier": "native-module",
+      "worker_id": null,
+      "official_package_verified": true,
+      "github_linguist_supported": true
+    },
+    {
+      "id": "beanshell",
+      "name": "BeanShell",
+      "packages": [
+        "beanshell",
+        "openjdk-21"
+      ],
+      "command": "bsh",
+      "extension": "bsh",
+      "linguist": "Java",
+      "tier": "native-module",
+      "worker_id": null,
+      "official_package_verified": true,
+      "github_linguist_supported": true
+    },
+    {
+      "id": "brainfuck",
+      "name": "Brainfuck",
+      "packages": [
+        "brainfuck"
+      ],
+      "command": "brainfuck",
+      "extension": "bf",
+      "linguist": "Brainfuck",
+      "tier": "native-module",
+      "worker_id": null,
+      "official_package_verified": true,
+      "github_linguist_supported": true
+    },
+    {
+      "id": "csharp",
+      "name": "C#",
+      "packages": [
+        "dotnet-sdk-10.0"
+      ],
+      "command": "dotnet",
+      "extension": "cs",
+      "linguist": "C#",
+      "tier": "native-module",
+      "worker_id": null,
+      "official_package_verified": true,
+      "github_linguist_supported": true
+    },
+    {
+      "id": "cobol",
+      "name": "COBOL",
+      "packages": [
+        "gnucobol"
+      ],
+      "command": "cobc",
+      "extension": "cob",
+      "linguist": "COBOL",
+      "tier": "native-module",
+      "worker_id": null,
+      "official_package_verified": true,
+      "github_linguist_supported": true
+    },
+    {
+      "id": "csh",
+      "name": "C Shell",
+      "packages": [
+        "csh"
+      ],
+      "command": "csh",
+      "extension": "csh",
+      "linguist": "Tcsh",
+      "tier": "native-module",
+      "worker_id": null,
+      "official_package_verified": true,
+      "github_linguist_supported": true
+    },
+    {
+      "id": "elvish",
+      "name": "Elvish",
+      "packages": [
+        "elvish"
+      ],
+      "command": "elvish",
+      "extension": "elv",
+      "linguist": "Elvish",
+      "tier": "native-module",
+      "worker_id": null,
+      "official_package_verified": true,
+      "github_linguist_supported": true
+    },
+    {
+      "id": "faust",
+      "name": "Faust",
+      "packages": [
+        "faust"
+      ],
+      "command": "faust",
+      "extension": "dsp",
+      "linguist": "Faust",
+      "tier": "native-module",
+      "worker_id": null,
+      "official_package_verified": true,
+      "github_linguist_supported": true
+    },
+    {
+      "id": "fennel",
+      "name": "Fennel",
+      "packages": [
+        "fennel",
+        "lua54"
+      ],
+      "command": "fennel",
+      "extension": "fnl",
+      "linguist": "Fennel",
+      "tier": "native-module",
+      "worker_id": null,
+      "official_package_verified": true,
+      "github_linguist_supported": true
+    },
+    {
+      "id": "forth",
+      "name": "Forth",
+      "packages": [
+        "gforth"
+      ],
+      "command": "gforth",
+      "extension": "fs",
+      "linguist": "Forth",
+      "tier": "native-module",
+      "worker_id": null,
+      "official_package_verified": true,
+      "github_linguist_supported": true
+    },
+    {
+      "id": "fsharp",
+      "name": "F#",
+      "packages": [
+        "dotnet-sdk-10.0"
+      ],
+      "command": "dotnet",
+      "extension": "fsx",
+      "linguist": "F#",
+      "tier": "native-module",
+      "worker_id": null,
+      "official_package_verified": true,
+      "github_linguist_supported": true
+    },
+    {
+      "id": "gluelang",
+      "name": "Glue",
+      "packages": [
+        "gluelang"
+      ],
+      "command": "glue",
+      "extension": "glu",
+      "linguist": "Glue",
+      "tier": "native-module",
+      "worker_id": null,
+      "official_package_verified": true,
+      "github_linguist_supported": false
+    },
+    {
+      "id": "groovy",
+      "name": "Groovy",
+      "packages": [
+        "groovy",
+        "openjdk-21"
+      ],
+      "command": "groovy",
+      "extension": "groovy",
+      "linguist": "Groovy",
+      "tier": "native-module",
+      "worker_id": null,
+      "official_package_verified": true,
+      "github_linguist_supported": true
+    },
+    {
+      "id": "hilbish",
+      "name": "Hilbish",
+      "packages": [
+        "hilbish"
+      ],
+      "command": "hilbish",
+      "extension": "hil",
+      "linguist": "Shell",
+      "tier": "native-module",
+      "worker_id": null,
+      "official_package_verified": true,
+      "github_linguist_supported": true
+    },
+    {
+      "id": "janet",
+      "name": "Janet",
+      "packages": [
+        "janet"
+      ],
+      "command": "janet",
+      "extension": "janet",
+      "linguist": "Janet",
+      "tier": "native-module",
+      "worker_id": null,
+      "official_package_verified": true,
+      "github_linguist_supported": true
+    },
+    {
+      "id": "k",
+      "name": "K (Kona)",
+      "packages": [
+        "kona"
+      ],
+      "command": "k",
+      "extension": "k",
+      "linguist": "K",
+      "tier": "native-module",
+      "worker_id": null,
+      "official_package_verified": true,
+      "github_linguist_supported": false
+    },
+    {
+      "id": "mercury",
+      "name": "Mercury",
+      "packages": [
+        "mercury"
+      ],
+      "command": "mmc",
+      "extension": "m",
+      "linguist": "Mercury",
+      "tier": "native-module",
+      "worker_id": null,
+      "official_package_verified": true,
+      "github_linguist_supported": true
+    },
+    {
+      "id": "mksh",
+      "name": "MirBSD Korn Shell",
+      "packages": [
+        "mksh"
+      ],
+      "command": "mksh",
+      "extension": "mksh",
+      "linguist": "Shell",
+      "tier": "native-module",
+      "worker_id": null,
+      "official_package_verified": true,
+      "github_linguist_supported": true
+    },
+    {
+      "id": "nelua",
+      "name": "Nelua",
+      "packages": [
+        "nelua"
+      ],
+      "command": "nelua",
+      "extension": "nelua",
+      "linguist": "Nelua",
+      "tier": "native-module",
+      "worker_id": null,
+      "official_package_verified": true,
+      "github_linguist_supported": false
+    },
+    {
+      "id": "nushell",
+      "name": "Nushell",
+      "packages": [
+        "nushell"
+      ],
+      "command": "nu",
+      "extension": "nu",
+      "linguist": "Nushell",
+      "tier": "native-module",
+      "worker_id": null,
+      "official_package_verified": true,
+      "github_linguist_supported": true
+    },
+    {
+      "id": "objective-c",
+      "name": "Objective-C",
+      "packages": [
+        "clang",
+        "libobjc2"
+      ],
+      "command": "clang",
+      "extension": "m",
+      "linguist": "Objective-C",
+      "tier": "native-module",
+      "worker_id": null,
+      "official_package_verified": true,
+      "github_linguist_supported": true
+    },
+    {
+      "id": "octave",
+      "name": "GNU Octave",
+      "packages": [
+        "octave"
+      ],
+      "command": "octave",
+      "extension": "m",
+      "linguist": "MATLAB",
+      "tier": "native-module",
+      "worker_id": null,
+      "official_package_verified": true,
+      "github_linguist_supported": true
+    },
+    {
+      "id": "ol",
+      "name": "OL Lisp",
+      "packages": [
+        "ol"
+      ],
+      "command": "ol",
+      "extension": "ol",
+      "linguist": "Common Lisp",
+      "tier": "native-module",
+      "worker_id": null,
+      "official_package_verified": true,
+      "github_linguist_supported": true
+    },
+    {
+      "id": "picolisp",
+      "name": "PicoLisp",
+      "packages": [
+        "picolisp"
+      ],
+      "command": "pil",
+      "extension": "l",
+      "linguist": "Common Lisp",
+      "tier": "native-module",
+      "worker_id": null,
+      "official_package_verified": true,
+      "github_linguist_supported": true
+    },
+    {
+      "id": "plutolang",
+      "name": "Pluto",
+      "packages": [
+        "plutolang"
+      ],
+      "command": "pluto",
+      "extension": "pluto",
+      "linguist": "Lua",
+      "tier": "native-module",
+      "worker_id": null,
+      "official_package_verified": true,
+      "github_linguist_supported": true
+    },
+    {
+      "id": "postscript",
+      "name": "PostScript",
+      "packages": [
+        "ghostscript"
+      ],
+      "command": "gs",
+      "extension": "ps",
+      "linguist": "PostScript",
+      "tier": "native-module",
+      "worker_id": null,
+      "official_package_verified": true,
+      "github_linguist_supported": true
+    },
+    {
+      "id": "rc",
+      "name": "Plan 9 rc",
+      "packages": [
+        "rc"
+      ],
+      "command": "rc",
+      "extension": "rc",
+      "linguist": "Shell",
+      "tier": "native-module",
+      "worker_id": null,
+      "official_package_verified": true,
+      "github_linguist_supported": true
+    },
+    {
+      "id": "smalltalk",
+      "name": "GNU Smalltalk",
+      "packages": [
+        "smalltalk"
+      ],
+      "command": "gst",
+      "extension": "st",
+      "linguist": "Smalltalk",
+      "tier": "native-module",
+      "worker_id": null,
+      "official_package_verified": true,
+      "github_linguist_supported": true
+    },
+    {
+      "id": "solidity",
+      "name": "Solidity",
+      "packages": [
+        "solidity"
+      ],
+      "command": "solc",
+      "extension": "sol",
+      "linguist": "Solidity",
+      "tier": "native-module",
+      "worker_id": null,
+      "official_package_verified": true,
+      "github_linguist_supported": true
+    },
+    {
+      "id": "standard-ml",
+      "name": "Standard ML",
+      "packages": [
+        "polyml"
+      ],
+      "command": "poly",
+      "extension": "sml",
+      "linguist": "Standard ML",
+      "tier": "native-module",
+      "worker_id": null,
+      "official_package_verified": true,
+      "github_linguist_supported": true
+    },
+    {
+      "id": "supercollider",
+      "name": "SuperCollider",
+      "packages": [
+        "supercollider"
+      ],
+      "command": "sclang",
+      "extension": "scd",
+      "linguist": "SuperCollider",
+      "tier": "native-module",
+      "worker_id": null,
+      "official_package_verified": true,
+      "github_linguist_supported": true
+    },
+    {
+      "id": "swift",
+      "name": "Swift",
+      "packages": [
+        "swift"
+      ],
+      "command": "swift",
+      "extension": "swift",
+      "linguist": "Swift",
+      "tier": "native-module",
+      "worker_id": null,
+      "official_package_verified": true,
+      "github_linguist_supported": true
+    },
+    {
+      "id": "vala",
+      "name": "Vala",
+      "packages": [
+        "valac"
+      ],
+      "command": "valac",
+      "extension": "vala",
+      "linguist": "Vala",
+      "tier": "native-module",
+      "worker_id": null,
+      "official_package_verified": true,
+      "github_linguist_supported": true
+    },
+    {
+      "id": "vbnet",
+      "name": "Visual Basic .NET",
+      "packages": [
+        "dotnet-sdk-10.0"
+      ],
+      "command": "dotnet",
+      "extension": "vb",
+      "linguist": "Visual Basic .NET",
+      "tier": "native-module",
+      "worker_id": null,
+      "official_package_verified": true,
+      "github_linguist_supported": true
+    },
+    {
+      "id": "verilog",
+      "name": "Verilog",
+      "packages": [
+        "iverilog"
+      ],
+      "command": "iverilog",
+      "extension": "v",
+      "linguist": "Verilog",
+      "tier": "native-module",
+      "worker_id": null,
+      "official_package_verified": true,
+      "github_linguist_supported": true
+    },
+    {
+      "id": "webassembly",
+      "name": "WebAssembly Text",
+      "packages": [
+        "wabt",
+        "wasmtime"
+      ],
+      "command": "wat2wasm",
+      "extension": "wat",
+      "linguist": "WebAssembly",
+      "tier": "native-module",
+      "worker_id": null,
+      "official_package_verified": true,
+      "github_linguist_supported": true
+    },
+    {
+      "id": "wren",
+      "name": "Wren",
+      "packages": [
+        "wren"
+      ],
+      "command": "wren",
+      "extension": "wren",
+      "linguist": "Wren",
+      "tier": "native-module",
+      "worker_id": null,
+      "official_package_verified": true,
+      "github_linguist_supported": true
+    },
+    {
+      "id": "sql",
+      "name": "SQL (SQLite)",
+      "packages": [
+        "sqlite"
+      ],
+      "command": "sqlite3",
+      "extension": "sql",
+      "linguist": "SQL",
+      "tier": "native-module",
+      "worker_id": null,
+      "official_package_verified": true,
+      "github_linguist_supported": true
+    },
+    {
+      "id": "cicada",
+      "name": "Cicada Shell",
+      "packages": [
+        "cicada"
+      ],
+      "command": "cicada",
+      "extension": "cicada",
+      "linguist": "Shell",
+      "tier": "native-module",
+      "worker_id": null,
+      "official_package_verified": true,
+      "github_linguist_supported": true
+    },
+    {
+      "id": "maxima",
+      "name": "Maxima",
+      "packages": [
+        "maxima"
+      ],
+      "command": "maxima",
+      "extension": "mac",
+      "linguist": "Maxima",
+      "tier": "native-module",
+      "worker_id": null,
+      "official_package_verified": true,
+      "github_linguist_supported": false
+    },
+    {
+      "id": "asymptote",
+      "name": "Asymptote",
+      "packages": [
+        "asymptote"
+      ],
+      "command": "asy",
+      "extension": "asy",
+      "linguist": "Asymptote",
+      "tier": "native-module",
+      "worker_id": null,
+      "official_package_verified": true,
+      "github_linguist_supported": true
+    },
+    {
+      "id": "bc",
+      "name": "bc",
+      "packages": [
+        "bc"
+      ],
+      "command": "bc",
+      "extension": "bc",
+      "linguist": "bc",
+      "tier": "native-module",
+      "worker_id": null,
+      "official_package_verified": true,
+      "github_linguist_supported": false
+    },
+    {
+      "id": "gleam",
+      "name": "Gleam",
+      "packages": [
+        "gleam"
+      ],
+      "command": "gleam",
+      "extension": "gleam",
+      "linguist": "Gleam",
+      "tier": "native-module",
+      "worker_id": null,
+      "official_package_verified": true,
+      "github_linguist_supported": true
+    },
+    {
+      "id": "minizinc",
+      "name": "MiniZinc",
+      "packages": [
+        "minizinc"
+      ],
+      "command": "minizinc",
+      "extension": "mzn",
+      "linguist": "MiniZinc",
+      "tier": "native-module",
+      "worker_id": null,
+      "official_package_verified": true,
+      "github_linguist_supported": true
+    },
+    {
+      "id": "slang",
+      "name": "S-Lang",
+      "packages": [
+        "slang"
+      ],
+      "command": "slsh",
+      "extension": "sl",
+      "linguist": "Slang",
+      "tier": "native-module",
+      "worker_id": null,
+      "official_package_verified": true,
+      "github_linguist_supported": true
+    },
+    {
+      "id": "wiz",
+      "name": "Wiz",
+      "packages": [
+        "wiz"
+      ],
+      "command": "wiz",
+      "extension": "wiz",
+      "linguist": "Wiz",
+      "tier": "native-module",
+      "worker_id": null,
+      "official_package_verified": true,
+      "github_linguist_supported": false
+    },
+    {
+      "id": "aidl",
+      "name": "AIDL",
+      "packages": [
+        "aidl"
+      ],
+      "command": "aidl",
+      "extension": "aidl",
+      "linguist": "AIDL",
+      "tier": "native-module",
+      "worker_id": null,
+      "official_package_verified": true,
+      "github_linguist_supported": true
+    },
+    {
+      "id": "grap",
+      "name": "grap",
+      "packages": [
+        "grap"
+      ],
+      "command": "grap",
+      "extension": "grap",
+      "linguist": "grap",
+      "tier": "native-module",
+      "worker_id": null,
+      "official_package_verified": true,
+      "github_linguist_supported": false
+    },
+    {
+      "id": "typescript",
+      "name": "TypeScript",
+      "packages": [
+        "deno"
+      ],
+      "command": "deno",
+      "extension": "ts",
+      "linguist": "TypeScript",
+      "tier": "native-module",
+      "official_package_verified": true,
+      "github_linguist_supported": true
+    },
+    {
+      "id": "rexx",
+      "name": "Open Object Rexx",
+      "packages": [
+        "oorexx"
+      ],
+      "command": "rexx",
+      "extension": "rexx",
+      "linguist": "REXX",
+      "tier": "native-module",
+      "official_package_verified": true,
+      "github_linguist_supported": true
+    },
+    {
+      "id": "typst",
+      "name": "Typst",
+      "packages": [
+        "typst"
+      ],
+      "command": "typst",
+      "extension": "typ",
+      "linguist": "Typst",
+      "tier": "native-module",
+      "official_package_verified": true,
+      "github_linguist_supported": true
+    },
+    {
+      "id": "m4",
+      "name": "M4",
+      "packages": [
+        "m4"
+      ],
+      "command": "m4",
+      "extension": "m4",
+      "linguist": "M4",
+      "tier": "native-module",
+      "official_package_verified": true,
+      "github_linguist_supported": true
+    },
+    {
+      "id": "gnuplot",
+      "name": "Gnuplot",
+      "packages": [
+        "gnuplot"
+      ],
+      "command": "gnuplot",
+      "extension": "gnuplot",
+      "linguist": "Gnuplot",
+      "tier": "native-module",
+      "official_package_verified": true,
+      "github_linguist_supported": true
+    },
+    {
+      "id": "glsl",
+      "name": "GLSL",
+      "packages": [
+        "glslang"
+      ],
+      "command": "glslangValidator",
+      "extension": "glsl",
+      "linguist": "GLSL",
+      "tier": "native-module",
+      "official_package_verified": true,
+      "github_linguist_supported": true
+    },
+    {
+      "id": "opencl",
+      "name": "OpenCL C",
+      "packages": [
+        "clang",
+        "libclc"
+      ],
+      "command": "clang",
+      "extension": "cl",
+      "linguist": "OpenCL",
+      "tier": "native-module",
+      "official_package_verified": true,
+      "github_linguist_supported": true
+    },
+    {
+      "id": "gap",
+      "name": "GAP",
+      "packages": [
+        "gap"
+      ],
+      "command": "gap",
+      "extension": "gap",
+      "linguist": "GAP",
+      "tier": "native-module",
+      "official_package_verified": true,
+      "github_linguist_supported": true
+    },
+    {
+      "id": "pari-gp",
+      "name": "PARI/GP",
+      "packages": [
+        "pari"
+      ],
+      "command": "gp",
+      "extension": "gp",
+      "linguist": "Pari/GP",
+      "tier": "native-module",
+      "official_package_verified": true,
+      "github_linguist_supported": false
+    },
+    {
+      "id": "cmake",
+      "name": "CMake Language",
+      "packages": [
+        "cmake"
+      ],
+      "command": "cmake",
+      "extension": "cmake",
+      "linguist": "CMake",
+      "tier": "native-module",
+      "official_package_verified": true,
+      "github_linguist_supported": true
+    },
+    {
+      "id": "makefile",
+      "name": "Make",
+      "packages": [
+        "make"
+      ],
+      "command": "make",
+      "extension": "mk",
+      "linguist": "Makefile",
+      "tier": "native-module",
+      "official_package_verified": true,
+      "github_linguist_supported": true
+    }
+  ],
+  "notes": [
+    "Entries represent distinct programming/scripting language families or executable programmable DSLs, not every alternate runtime/version.",
+    "official_package_verified means at least one listed package was present in the official Termux aarch64 package inventory snapshot used for this release.",
+    "github_linguist_supported says whether GitHub Linguist can display the language as its own repository language; Termux support and GitHub recognition are separate facts."
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "Nelua",
+  "slug": "nelua",
+  "letter": "N",
+  "sources": [
+    "termux-official-package-snapshot"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".nelua"
+  ],
+  "interpreters": [
+    "nelua"
+  ],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "termux-module",
+  "termux_supported": true,
+  "termux_modules": [
+    "nelua"
+  ],
+  "termux_packages": [
+    "nelua"
+  ],
+  "termux_tiers": [
+    "native-module"
+  ]
+}

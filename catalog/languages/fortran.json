@@ -5,7 +5,8 @@
   "sources": [
     "bundled-snapshot",
     "github-linguist",
-    "pygments"
+    "pygments",
+    "termux-official-package-snapshot"
   ],
   "aliases": [
     "f90",
@@ -25,5 +26,15 @@
   "github_linguist_id": 107,
   "termux_worker": true,
   "worker_id": "fortran",
-  "execution_policy": "verified-on-device"
+  "execution_policy": "verified-on-device",
+  "termux_supported": true,
+  "termux_modules": [
+    "fortran"
+  ],
+  "termux_packages": [
+    "flang"
+  ],
+  "termux_tiers": [
+    "worker"
+  ]
 }

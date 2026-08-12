@@ -6,7 +6,8 @@
     "bundled-snapshot",
     "curated-index",
     "github-linguist",
-    "pygments"
+    "pygments",
+    "termux-official-package-snapshot"
   ],
   "aliases": [
     "obj-c",
@@ -22,5 +23,16 @@
   "github_linguist_id": 257,
   "termux_worker": false,
   "worker_id": null,
-  "execution_policy": "catalog-only"
+  "execution_policy": "termux-package-runtime-probe",
+  "termux_supported": true,
+  "termux_modules": [
+    "objective-c"
+  ],
+  "termux_packages": [
+    "clang",
+    "libobjc2"
+  ],
+  "termux_tiers": [
+    "native-module"
+  ]
 }

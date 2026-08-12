@@ -1,0 +1,7 @@
+{
+  "schema": 1,
+  "language_id": "swift",
+  "runtime_command": "swift",
+  "source": "practical.swift",
+  "tier": "native-module"
+}

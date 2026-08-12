@@ -1,0 +1,7 @@
+{
+  "schema": 1,
+  "language_id": "objective-c",
+  "runtime_command": "clang",
+  "source": "practical.m",
+  "tier": "native-module"
+}

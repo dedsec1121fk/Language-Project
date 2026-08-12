@@ -1,0 +1,6 @@
+{
+  "schema": 1,
+  "id": "glsl",
+  "source": "tools/practical.glsl",
+  "expected_runtime": "glslangValidator"
+}

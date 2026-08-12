@@ -1,0 +1,7 @@
+{
+  "schema": 1,
+  "language_id": "grap",
+  "runtime_command": "grap",
+  "source": "practical.grap",
+  "tier": "native-module"
+}

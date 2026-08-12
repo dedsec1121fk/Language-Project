@@ -5,7 +5,8 @@
   "sources": [
     "bundled-snapshot",
     "github-linguist",
-    "pygments"
+    "pygments",
+    "termux-official-package-snapshot"
   ],
   "aliases": [
     "bazel",
@@ -54,5 +55,15 @@
   "github_linguist_id": 303,
   "termux_worker": true,
   "worker_id": "python",
-  "execution_policy": "verified-on-device"
+  "execution_policy": "verified-on-device",
+  "termux_supported": true,
+  "termux_modules": [
+    "python"
+  ],
+  "termux_packages": [
+    "python"
+  ],
+  "termux_tiers": [
+    "worker"
+  ]
 }

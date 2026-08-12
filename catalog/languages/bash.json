@@ -4,7 +4,8 @@
   "letter": "B",
   "sources": [
     "bundled-snapshot",
-    "pygments"
+    "pygments",
+    "termux-official-package-snapshot"
   ],
   "aliases": [
     "bash",
@@ -28,5 +29,16 @@
   "github_linguist_id": null,
   "termux_worker": true,
   "worker_id": "bash",
-  "execution_policy": "verified-on-device"
+  "execution_policy": "verified-on-device",
+  "termux_supported": true,
+  "termux_modules": [
+    "bash"
+  ],
+  "termux_packages": [
+    "bash",
+    "coreutils"
+  ],
+  "termux_tiers": [
+    "worker"
+  ]
 }

@@ -5,7 +5,8 @@
   "sources": [
     "bundled-snapshot",
     "github-linguist",
-    "pygments"
+    "pygments",
+    "termux-official-package-snapshot"
   ],
   "aliases": [
     "duby",
@@ -51,5 +52,15 @@
   "github_linguist_id": 326,
   "termux_worker": true,
   "worker_id": "ruby",
-  "execution_policy": "verified-on-device"
+  "execution_policy": "verified-on-device",
+  "termux_supported": true,
+  "termux_modules": [
+    "ruby"
+  ],
+  "termux_packages": [
+    "ruby"
+  ],
+  "termux_tiers": [
+    "worker"
+  ]
 }

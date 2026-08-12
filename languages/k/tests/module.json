@@ -1,0 +1,7 @@
+{
+  "schema": 1,
+  "language_id": "k",
+  "runtime_command": "k",
+  "source": "practical.k",
+  "tier": "native-module"
+}

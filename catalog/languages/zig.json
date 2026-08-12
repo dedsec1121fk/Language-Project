@@ -6,7 +6,8 @@
     "bundled-snapshot",
     "curated-index",
     "github-linguist",
-    "pygments"
+    "pygments",
+    "termux-official-package-snapshot"
   ],
   "aliases": [
     "zig"
@@ -19,5 +20,15 @@
   "github_linguist_id": 646424281,
   "termux_worker": true,
   "worker_id": "zig",
-  "execution_policy": "verified-on-device"
+  "execution_policy": "verified-on-device",
+  "termux_supported": true,
+  "termux_modules": [
+    "zig"
+  ],
+  "termux_packages": [
+    "zig"
+  ],
+  "termux_tiers": [
+    "worker"
+  ]
 }

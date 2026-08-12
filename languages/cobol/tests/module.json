@@ -1,0 +1,7 @@
+{
+  "schema": 1,
+  "language_id": "cobol",
+  "runtime_command": "cobc",
+  "source": "practical.cob",
+  "tier": "native-module"
+}

@@ -4,7 +4,8 @@
   "letter": "J",
   "sources": [
     "bundled-snapshot",
-    "github-linguist"
+    "github-linguist",
+    "termux-official-package-snapshot"
   ],
   "aliases": [],
   "extensions": [
@@ -21,5 +22,15 @@
   "github_linguist_id": 905371884,
   "termux_worker": true,
   "worker_id": "jq",
-  "execution_policy": "verified-on-device"
+  "execution_policy": "verified-on-device",
+  "termux_supported": true,
+  "termux_modules": [
+    "jq"
+  ],
+  "termux_packages": [
+    "jq"
+  ],
+  "termux_tiers": [
+    "worker"
+  ]
 }

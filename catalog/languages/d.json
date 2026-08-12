@@ -5,7 +5,8 @@
   "sources": [
     "bundled-snapshot",
     "github-linguist",
-    "pygments"
+    "pygments",
+    "termux-official-package-snapshot"
   ],
   "aliases": [
     "d",
@@ -19,5 +20,15 @@
   "github_linguist_id": 80,
   "termux_worker": true,
   "worker_id": "d",
-  "execution_policy": "verified-on-device"
+  "execution_policy": "verified-on-device",
+  "termux_supported": true,
+  "termux_modules": [
+    "d"
+  ],
+  "termux_packages": [
+    "ldc"
+  ],
+  "termux_tiers": [
+    "worker"
+  ]
 }

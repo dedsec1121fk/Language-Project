@@ -1,0 +1,7 @@
+{
+  "schema": 1,
+  "language_id": "smalltalk",
+  "runtime_command": "gst",
+  "source": "practical.st",
+  "tier": "native-module"
+}

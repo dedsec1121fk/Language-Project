@@ -1,0 +1,7 @@
+{
+  "schema": 1,
+  "language_id": "octave",
+  "runtime_command": "octave",
+  "source": "practical.m",
+  "tier": "native-module"
+}

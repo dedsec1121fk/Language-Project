@@ -1,0 +1,16 @@
+{
+  "schema": 2,
+  "id": "grap",
+  "name": "grap",
+  "tier": "native-module",
+  "packages": [
+    "grap"
+  ],
+  "runtime_command": "grap",
+  "source": "languages/grap/tools/practical.grap",
+  "extension": "grap",
+  "linguist": "grap",
+  "github_linguist_supported": false,
+  "termux_home": "$HOME/Language Project",
+  "official_package_verified": true
+}

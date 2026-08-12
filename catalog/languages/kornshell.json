@@ -4,7 +4,8 @@
   "letter": "K",
   "sources": [
     "bundled-snapshot",
-    "curated-index"
+    "curated-index",
+    "termux-official-package-snapshot"
   ],
   "aliases": [],
   "extensions": [],
@@ -12,5 +13,15 @@
   "github_linguist_id": null,
   "termux_worker": false,
   "worker_id": null,
-  "execution_policy": "catalog-only"
+  "execution_policy": "termux-package-runtime-probe",
+  "termux_supported": true,
+  "termux_modules": [
+    "mksh"
+  ],
+  "termux_packages": [
+    "mksh"
+  ],
+  "termux_tiers": [
+    "native-module"
+  ]
 }

@@ -5,7 +5,8 @@
   "sources": [
     "bundled-snapshot",
     "github-linguist",
-    "pygments"
+    "pygments",
+    "termux-official-package-snapshot"
   ],
   "aliases": [
     "prolog"
@@ -25,5 +26,15 @@
   "github_linguist_id": 295,
   "termux_worker": true,
   "worker_id": "prolog",
-  "execution_policy": "verified-on-device"
+  "execution_policy": "verified-on-device",
+  "termux_supported": true,
+  "termux_modules": [
+    "prolog"
+  ],
+  "termux_packages": [
+    "swi-prolog"
+  ],
+  "termux_tiers": [
+    "worker"
+  ]
 }

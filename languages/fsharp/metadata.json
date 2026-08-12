@@ -1,0 +1,16 @@
+{
+  "schema": 2,
+  "id": "fsharp",
+  "name": "F#",
+  "tier": "native-module",
+  "packages": [
+    "dotnet-sdk-10.0"
+  ],
+  "runtime_command": "dotnet",
+  "source": "languages/fsharp/tools/practical.fsx",
+  "extension": "fsx",
+  "linguist": "F#",
+  "termux_home": "$HOME/Language Project",
+  "github_linguist_supported": true,
+  "official_package_verified": true
+}

@@ -5,7 +5,8 @@
   "sources": [
     "bundled-snapshot",
     "github-linguist",
-    "pygments"
+    "pygments",
+    "termux-official-package-snapshot"
   ],
   "aliases": [
     "kotlin"
@@ -19,5 +20,16 @@
   "github_linguist_id": 189,
   "termux_worker": true,
   "worker_id": "kotlin",
-  "execution_policy": "verified-on-device"
+  "execution_policy": "verified-on-device",
+  "termux_supported": true,
+  "termux_modules": [
+    "kotlin"
+  ],
+  "termux_packages": [
+    "kotlin",
+    "openjdk-21"
+  ],
+  "termux_tiers": [
+    "worker"
+  ]
 }

@@ -1,0 +1,16 @@
+{
+  "schema": 2,
+  "id": "typescript",
+  "name": "TypeScript",
+  "tier": "native-module",
+  "packages": [
+    "deno"
+  ],
+  "runtime_command": "deno",
+  "source": "languages/typescript/tools/practical.ts",
+  "extension": "ts",
+  "linguist": "TypeScript",
+  "termux_home": "$HOME/Language Project",
+  "official_package_verified": true,
+  "github_linguist_supported": true
+}

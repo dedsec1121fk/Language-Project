@@ -1,0 +1,16 @@
+{
+  "schema": 2,
+  "id": "aidl",
+  "name": "AIDL",
+  "tier": "native-module",
+  "packages": [
+    "aidl"
+  ],
+  "runtime_command": "aidl",
+  "source": "languages/aidl/tools/practical.aidl",
+  "extension": "aidl",
+  "linguist": "AIDL",
+  "github_linguist_supported": true,
+  "termux_home": "$HOME/Language Project",
+  "official_package_verified": true
+}

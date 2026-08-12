@@ -4,9 +4,21 @@
   "letter": "P",
   "sources": [
     "bundled-snapshot",
+    "termux-official-package-snapshot",
     "termux-runtime-registry"
   ],
   "termux_worker": true,
   "worker_id": "dash",
-  "execution_policy": "verified-on-device"
+  "execution_policy": "verified-on-device",
+  "termux_supported": true,
+  "termux_modules": [
+    "dash"
+  ],
+  "termux_packages": [
+    "coreutils",
+    "dash"
+  ],
+  "termux_tiers": [
+    "worker"
+  ]
 }

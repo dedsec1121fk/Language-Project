@@ -1,0 +1,16 @@
+{
+  "schema": 2,
+  "id": "supercollider",
+  "name": "SuperCollider",
+  "tier": "native-module",
+  "packages": [
+    "supercollider"
+  ],
+  "runtime_command": "sclang",
+  "source": "languages/supercollider/tools/practical.scd",
+  "extension": "scd",
+  "linguist": "SuperCollider",
+  "termux_home": "$HOME/Language Project",
+  "github_linguist_supported": true,
+  "official_package_verified": true
+}

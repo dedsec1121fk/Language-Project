@@ -1,0 +1,6 @@
+{
+  "schema": 1,
+  "id": "cmake",
+  "source": "tools/practical.cmake",
+  "expected_runtime": "cmake"
+}

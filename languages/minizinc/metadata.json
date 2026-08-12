@@ -1,0 +1,16 @@
+{
+  "schema": 2,
+  "id": "minizinc",
+  "name": "MiniZinc",
+  "tier": "native-module",
+  "packages": [
+    "minizinc"
+  ],
+  "runtime_command": "minizinc",
+  "source": "languages/minizinc/tools/practical.mzn",
+  "extension": "mzn",
+  "linguist": "MiniZinc",
+  "github_linguist_supported": true,
+  "termux_home": "$HOME/Language Project",
+  "official_package_verified": true
+}

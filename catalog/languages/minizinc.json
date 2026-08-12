@@ -4,7 +4,8 @@
   "letter": "M",
   "sources": [
     "bundled-snapshot",
-    "github-linguist"
+    "github-linguist",
+    "termux-official-package-snapshot"
   ],
   "aliases": [],
   "extensions": [
@@ -14,5 +15,15 @@
   "github_linguist_id": 238874535,
   "termux_worker": false,
   "worker_id": null,
-  "execution_policy": "catalog-only"
+  "execution_policy": "termux-package-runtime-probe",
+  "termux_supported": true,
+  "termux_modules": [
+    "minizinc"
+  ],
+  "termux_packages": [
+    "minizinc"
+  ],
+  "termux_tiers": [
+    "native-module"
+  ]
 }

@@ -1,0 +1,7 @@
+{
+  "schema": 1,
+  "language_id": "asymptote",
+  "runtime_command": "asy",
+  "source": "practical.asy",
+  "tier": "native-module"
+}

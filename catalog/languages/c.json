@@ -6,7 +6,8 @@
     "bundled-snapshot",
     "curated-index",
     "github-linguist",
-    "pygments"
+    "pygments",
+    "termux-official-package-snapshot"
   ],
   "aliases": [
     "c"
@@ -25,5 +26,15 @@
   "github_linguist_id": 41,
   "termux_worker": true,
   "worker_id": "c",
-  "execution_policy": "verified-on-device"
+  "execution_policy": "verified-on-device",
+  "termux_supported": true,
+  "termux_modules": [
+    "c"
+  ],
+  "termux_packages": [
+    "clang"
+  ],
+  "termux_tiers": [
+    "worker"
+  ]
 }

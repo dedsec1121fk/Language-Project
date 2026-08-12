@@ -26,5 +26,11 @@
     "native practical utility: Extension Statistics",
     "workspace-report participation when this runtime passes Termux verification",
     "per-language performance and integrity telemetry"
+  ],
+  "linguist": "D",
+  "github_linguist_supported": true,
+  "official_package_verified": true,
+  "packages": [
+    "ldc"
   ]
 }

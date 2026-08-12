@@ -1,0 +1,16 @@
+{
+  "schema": 2,
+  "id": "solidity",
+  "name": "Solidity",
+  "tier": "native-module",
+  "packages": [
+    "solidity"
+  ],
+  "runtime_command": "solc",
+  "source": "languages/solidity/tools/practical.sol",
+  "extension": "sol",
+  "linguist": "Solidity",
+  "termux_home": "$HOME/Language Project",
+  "github_linguist_supported": true,
+  "official_package_verified": true
+}

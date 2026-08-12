@@ -1,0 +1,16 @@
+{
+  "schema": 2,
+  "id": "wiz",
+  "name": "Wiz",
+  "tier": "native-module",
+  "packages": [
+    "wiz"
+  ],
+  "runtime_command": "wiz",
+  "source": "languages/wiz/tools/practical.wiz",
+  "extension": "wiz",
+  "linguist": "Wiz",
+  "github_linguist_supported": false,
+  "termux_home": "$HOME/Language Project",
+  "official_package_verified": true
+}

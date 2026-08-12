@@ -1,0 +1,6 @@
+{
+  "schema": 1,
+  "id": "makefile",
+  "source": "tools/practical.mk",
+  "expected_runtime": "make"
+}

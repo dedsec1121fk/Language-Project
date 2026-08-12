@@ -1,0 +1,16 @@
+{
+  "schema": 2,
+  "id": "sql",
+  "name": "SQL (SQLite)",
+  "tier": "native-module",
+  "packages": [
+    "sqlite"
+  ],
+  "runtime_command": "sqlite3",
+  "source": "languages/sql/tools/practical.sql",
+  "extension": "sql",
+  "linguist": "SQL",
+  "termux_home": "$HOME/Language Project",
+  "github_linguist_supported": true,
+  "official_package_verified": true
+}

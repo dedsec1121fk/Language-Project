@@ -1,0 +1,16 @@
+{
+  "schema": 2,
+  "id": "swift",
+  "name": "Swift",
+  "tier": "native-module",
+  "packages": [
+    "swift"
+  ],
+  "runtime_command": "swift",
+  "source": "languages/swift/tools/practical.swift",
+  "extension": "swift",
+  "linguist": "Swift",
+  "termux_home": "$HOME/Language Project",
+  "github_linguist_supported": true,
+  "official_package_verified": true
+}

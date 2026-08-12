@@ -5,7 +5,8 @@
   "sources": [
     "bundled-snapshot",
     "github-linguist",
-    "pygments"
+    "pygments",
+    "termux-official-package-snapshot"
   ],
   "aliases": [
     "cmake"
@@ -18,5 +19,15 @@
   "github_linguist_id": 47,
   "termux_worker": false,
   "worker_id": null,
-  "execution_policy": "catalog-only"
+  "execution_policy": "termux-package-runtime-probe",
+  "termux_supported": true,
+  "termux_modules": [
+    "cmake"
+  ],
+  "termux_packages": [
+    "cmake"
+  ],
+  "termux_tiers": [
+    "native-module"
+  ]
 }

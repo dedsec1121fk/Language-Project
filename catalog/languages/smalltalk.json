@@ -6,7 +6,8 @@
     "bundled-snapshot",
     "curated-index",
     "github-linguist",
-    "pygments"
+    "pygments",
+    "termux-official-package-snapshot"
   ],
   "aliases": [
     "smalltalk",
@@ -21,5 +22,15 @@
   "github_linguist_id": 352,
   "termux_worker": false,
   "worker_id": null,
-  "execution_policy": "catalog-only"
+  "execution_policy": "termux-package-runtime-probe",
+  "termux_supported": true,
+  "termux_modules": [
+    "smalltalk"
+  ],
+  "termux_packages": [
+    "smalltalk"
+  ],
+  "termux_tiers": [
+    "native-module"
+  ]
 }

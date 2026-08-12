@@ -1,0 +1,16 @@
+{
+  "schema": 2,
+  "id": "verilog",
+  "name": "Verilog",
+  "tier": "native-module",
+  "packages": [
+    "iverilog"
+  ],
+  "runtime_command": "iverilog",
+  "source": "languages/verilog/tools/practical.v",
+  "extension": "v",
+  "linguist": "Verilog",
+  "termux_home": "$HOME/Language Project",
+  "github_linguist_supported": true,
+  "official_package_verified": true
+}

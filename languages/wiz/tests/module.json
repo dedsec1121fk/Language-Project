@@ -1,0 +1,7 @@
+{
+  "schema": 1,
+  "language_id": "wiz",
+  "runtime_command": "wiz",
+  "source": "practical.wiz",
+  "tier": "native-module"
+}

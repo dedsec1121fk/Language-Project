@@ -4,7 +4,8 @@
   "letter": "O",
   "sources": [
     "bundled-snapshot",
-    "pygments"
+    "pygments",
+    "termux-official-package-snapshot"
   ],
   "aliases": [
     "octave"
@@ -16,5 +17,15 @@
   "github_linguist_id": null,
   "termux_worker": false,
   "worker_id": null,
-  "execution_policy": "catalog-only"
+  "execution_policy": "termux-package-runtime-probe",
+  "termux_supported": true,
+  "termux_modules": [
+    "octave"
+  ],
+  "termux_packages": [
+    "octave"
+  ],
+  "termux_tiers": [
+    "native-module"
+  ]
 }

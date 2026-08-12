@@ -1,0 +1,29 @@
+{
+  "name": "Glue",
+  "slug": "glue",
+  "letter": "G",
+  "sources": [
+    "termux-official-package-snapshot"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".glu"
+  ],
+  "interpreters": [
+    "glue"
+  ],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "termux-module",
+  "termux_supported": true,
+  "termux_modules": [
+    "gluelang"
+  ],
+  "termux_packages": [
+    "gluelang"
+  ],
+  "termux_tiers": [
+    "native-module"
+  ]
+}

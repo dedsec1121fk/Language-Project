@@ -1,0 +1,16 @@
+{
+  "schema": 2,
+  "id": "slang",
+  "name": "S-Lang",
+  "tier": "native-module",
+  "packages": [
+    "slang"
+  ],
+  "runtime_command": "slsh",
+  "source": "languages/slang/tools/practical.sl",
+  "extension": "sl",
+  "linguist": "Slang",
+  "github_linguist_supported": true,
+  "termux_home": "$HOME/Language Project",
+  "official_package_verified": true
+}

@@ -5,7 +5,8 @@
   "sources": [
     "bundled-snapshot",
     "github-linguist",
-    "pygments"
+    "pygments",
+    "termux-official-package-snapshot"
   ],
   "aliases": [
     "bsdmake",
@@ -27,5 +28,15 @@
   "github_linguist_id": 220,
   "termux_worker": false,
   "worker_id": null,
-  "execution_policy": "catalog-only"
+  "execution_policy": "termux-package-runtime-probe",
+  "termux_supported": true,
+  "termux_modules": [
+    "makefile"
+  ],
+  "termux_packages": [
+    "make"
+  ],
+  "termux_tiers": [
+    "native-module"
+  ]
 }

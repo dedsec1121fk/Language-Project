@@ -4,7 +4,8 @@
   "letter": "Z",
   "sources": [
     "bundled-snapshot",
-    "curated-index"
+    "curated-index",
+    "termux-official-package-snapshot"
   ],
   "aliases": [],
   "extensions": [],
@@ -12,5 +13,16 @@
   "github_linguist_id": null,
   "termux_worker": true,
   "worker_id": "zsh",
-  "execution_policy": "verified-on-device"
+  "execution_policy": "verified-on-device",
+  "termux_supported": true,
+  "termux_modules": [
+    "zsh"
+  ],
+  "termux_packages": [
+    "coreutils",
+    "zsh"
+  ],
+  "termux_tiers": [
+    "worker"
+  ]
 }

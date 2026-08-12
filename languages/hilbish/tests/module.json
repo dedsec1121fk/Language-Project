@@ -1,0 +1,7 @@
+{
+  "schema": 1,
+  "language_id": "hilbish",
+  "runtime_command": "hilbish",
+  "source": "practical.hil",
+  "tier": "native-module"
+}

@@ -1,0 +1,16 @@
+{
+  "schema": 2,
+  "id": "pari-gp",
+  "name": "PARI/GP",
+  "tier": "native-module",
+  "packages": [
+    "pari"
+  ],
+  "runtime_command": "gp",
+  "source": "languages/pari-gp/tools/practical.gp",
+  "extension": "gp",
+  "linguist": "Pari/GP",
+  "termux_home": "$HOME/Language Project",
+  "official_package_verified": true,
+  "github_linguist_supported": false
+}

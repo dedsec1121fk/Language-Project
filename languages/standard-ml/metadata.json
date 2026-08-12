@@ -1,0 +1,16 @@
+{
+  "schema": 2,
+  "id": "standard-ml",
+  "name": "Standard ML",
+  "tier": "native-module",
+  "packages": [
+    "polyml"
+  ],
+  "runtime_command": "poly",
+  "source": "languages/standard-ml/tools/practical.sml",
+  "extension": "sml",
+  "linguist": "Standard ML",
+  "termux_home": "$HOME/Language Project",
+  "github_linguist_supported": true,
+  "official_package_verified": true
+}

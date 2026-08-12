@@ -6,7 +6,8 @@
     "bundled-snapshot",
     "curated-index",
     "github-linguist",
-    "pygments"
+    "pygments",
+    "termux-official-package-snapshot"
   ],
   "aliases": [
     "gap"
@@ -22,5 +23,15 @@
   "github_linguist_id": 119,
   "termux_worker": false,
   "worker_id": null,
-  "execution_policy": "catalog-only"
+  "execution_policy": "termux-package-runtime-probe",
+  "termux_supported": true,
+  "termux_modules": [
+    "gap"
+  ],
+  "termux_packages": [
+    "gap"
+  ],
+  "termux_tiers": [
+    "native-module"
+  ]
 }

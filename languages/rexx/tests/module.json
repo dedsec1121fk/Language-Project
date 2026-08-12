@@ -1,0 +1,6 @@
+{
+  "schema": 1,
+  "id": "rexx",
+  "source": "tools/practical.rexx",
+  "expected_runtime": "rexx"
+}

@@ -4,7 +4,8 @@
   "letter": "A",
   "sources": [
     "bundled-snapshot",
-    "github-linguist"
+    "github-linguist",
+    "termux-official-package-snapshot"
   ],
   "aliases": [],
   "extensions": [
@@ -16,5 +17,15 @@
   "github_linguist_id": 451700185,
   "termux_worker": false,
   "worker_id": null,
-  "execution_policy": "catalog-only"
+  "execution_policy": "termux-package-runtime-probe",
+  "termux_supported": true,
+  "termux_modules": [
+    "aidl"
+  ],
+  "termux_packages": [
+    "aidl"
+  ],
+  "termux_tiers": [
+    "native-module"
+  ]
 }

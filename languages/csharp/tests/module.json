@@ -1,0 +1,7 @@
+{
+  "schema": 1,
+  "language_id": "csharp",
+  "runtime_command": "dotnet",
+  "source": "practical.cs",
+  "tier": "native-module"
+}

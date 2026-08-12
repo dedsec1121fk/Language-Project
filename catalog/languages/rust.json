@@ -5,7 +5,8 @@
   "sources": [
     "bundled-snapshot",
     "github-linguist",
-    "pygments"
+    "pygments",
+    "termux-official-package-snapshot"
   ],
   "aliases": [
     "rs",
@@ -21,5 +22,15 @@
   "github_linguist_id": 327,
   "termux_worker": true,
   "worker_id": "rust",
-  "execution_policy": "verified-on-device"
+  "execution_policy": "verified-on-device",
+  "termux_supported": true,
+  "termux_modules": [
+    "rust"
+  ],
+  "termux_packages": [
+    "rust"
+  ],
+  "termux_tiers": [
+    "worker"
+  ]
 }

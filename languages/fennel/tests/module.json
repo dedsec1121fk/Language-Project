@@ -1,0 +1,7 @@
+{
+  "schema": 1,
+  "language_id": "fennel",
+  "runtime_command": "fennel",
+  "source": "practical.fnl",
+  "tier": "native-module"
+}

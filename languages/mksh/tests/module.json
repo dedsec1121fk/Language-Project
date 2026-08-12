@@ -1,0 +1,7 @@
+{
+  "schema": 1,
+  "language_id": "mksh",
+  "runtime_command": "mksh",
+  "source": "practical.mksh",
+  "tier": "native-module"
+}

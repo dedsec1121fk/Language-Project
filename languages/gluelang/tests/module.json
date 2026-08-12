@@ -1,0 +1,7 @@
+{
+  "schema": 1,
+  "language_id": "gluelang",
+  "runtime_command": "glue",
+  "source": "practical.glu",
+  "tier": "native-module"
+}

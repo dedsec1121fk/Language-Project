@@ -5,7 +5,8 @@
   "sources": [
     "bundled-snapshot",
     "github-linguist",
-    "pygments"
+    "pygments",
+    "termux-official-package-snapshot"
   ],
   "aliases": [
     "cr",
@@ -20,5 +21,15 @@
   "github_linguist_id": 72,
   "termux_worker": true,
   "worker_id": "crystal",
-  "execution_policy": "verified-on-device"
+  "execution_policy": "verified-on-device",
+  "termux_supported": true,
+  "termux_modules": [
+    "crystal"
+  ],
+  "termux_packages": [
+    "crystal"
+  ],
+  "termux_tiers": [
+    "worker"
+  ]
 }

@@ -1,0 +1,29 @@
+{
+  "name": "Wiz",
+  "slug": "wiz",
+  "letter": "W",
+  "sources": [
+    "termux-official-package-snapshot"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".wiz"
+  ],
+  "interpreters": [
+    "wiz"
+  ],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "termux-module",
+  "termux_supported": true,
+  "termux_modules": [
+    "wiz"
+  ],
+  "termux_packages": [
+    "wiz"
+  ],
+  "termux_tiers": [
+    "native-module"
+  ]
+}

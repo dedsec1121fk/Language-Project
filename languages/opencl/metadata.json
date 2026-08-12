@@ -1,0 +1,17 @@
+{
+  "schema": 2,
+  "id": "opencl",
+  "name": "OpenCL C",
+  "tier": "native-module",
+  "packages": [
+    "clang",
+    "libclc"
+  ],
+  "runtime_command": "clang",
+  "source": "languages/opencl/tools/practical.cl",
+  "extension": "cl",
+  "linguist": "OpenCL",
+  "termux_home": "$HOME/Language Project",
+  "official_package_verified": true,
+  "github_linguist_supported": true
+}

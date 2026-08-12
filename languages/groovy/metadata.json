@@ -1,0 +1,17 @@
+{
+  "schema": 2,
+  "id": "groovy",
+  "name": "Groovy",
+  "tier": "native-module",
+  "packages": [
+    "groovy",
+    "openjdk-21"
+  ],
+  "runtime_command": "groovy",
+  "source": "languages/groovy/tools/practical.groovy",
+  "extension": "groovy",
+  "linguist": "Groovy",
+  "termux_home": "$HOME/Language Project",
+  "github_linguist_supported": true,
+  "official_package_verified": true
+}

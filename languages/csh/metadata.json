@@ -1,0 +1,16 @@
+{
+  "schema": 2,
+  "id": "csh",
+  "name": "C Shell",
+  "tier": "native-module",
+  "packages": [
+    "csh"
+  ],
+  "runtime_command": "csh",
+  "source": "languages/csh/tools/practical.csh",
+  "extension": "csh",
+  "linguist": "Tcsh",
+  "termux_home": "$HOME/Language Project",
+  "github_linguist_supported": true,
+  "official_package_verified": true
+}

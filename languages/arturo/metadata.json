@@ -1,0 +1,16 @@
+{
+  "schema": 2,
+  "id": "arturo",
+  "name": "Arturo",
+  "tier": "native-module",
+  "packages": [
+    "arturo"
+  ],
+  "runtime_command": "arturo",
+  "source": "languages/arturo/tools/practical.art",
+  "extension": "art",
+  "linguist": "Arturo",
+  "termux_home": "$HOME/Language Project",
+  "github_linguist_supported": false,
+  "official_package_verified": true
+}

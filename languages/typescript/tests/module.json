@@ -1,0 +1,6 @@
+{
+  "schema": 1,
+  "id": "typescript",
+  "source": "tools/practical.ts",
+  "expected_runtime": "deno"
+}

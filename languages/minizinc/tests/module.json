@@ -1,0 +1,7 @@
+{
+  "schema": 1,
+  "language_id": "minizinc",
+  "runtime_command": "minizinc",
+  "source": "practical.mzn",
+  "tier": "native-module"
+}

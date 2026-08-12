@@ -1,0 +1,6 @@
+{
+  "schema": 1,
+  "id": "typst",
+  "source": "tools/practical.typ",
+  "expected_runtime": "typst"
+}

@@ -1,0 +1,17 @@
+{
+  "schema": 2,
+  "id": "beanshell",
+  "name": "BeanShell",
+  "tier": "native-module",
+  "packages": [
+    "beanshell",
+    "openjdk-21"
+  ],
+  "runtime_command": "bsh",
+  "source": "languages/beanshell/tools/practical.bsh",
+  "extension": "bsh",
+  "linguist": "Java",
+  "termux_home": "$HOME/Language Project",
+  "github_linguist_supported": true,
+  "official_package_verified": true
+}

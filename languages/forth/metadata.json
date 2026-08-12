@@ -1,0 +1,16 @@
+{
+  "schema": 2,
+  "id": "forth",
+  "name": "Forth",
+  "tier": "native-module",
+  "packages": [
+    "gforth"
+  ],
+  "runtime_command": "gforth",
+  "source": "languages/forth/tools/practical.fs",
+  "extension": "fs",
+  "linguist": "Forth",
+  "termux_home": "$HOME/Language Project",
+  "github_linguist_supported": true,
+  "official_package_verified": true
+}

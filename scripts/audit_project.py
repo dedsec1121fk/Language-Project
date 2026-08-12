@@ -9,7 +9,7 @@ def ok(msg): print(' OK ',msg)
 def warn(msg): warnings.append(msg); print('WARN',msg)
 
 # Root organization policy.
-allowed_root_files={'README.md','LICENSE','install.sh','.gitignore'}
+allowed_root_files={'README.md','LICENSE','install.sh','.gitignore','.gitattributes'}
 root_files={p.name for p in ROOT.iterdir() if p.is_file()}
 unexpected=sorted(root_files-allowed_root_files)
 if unexpected: bad('unexpected root files: '+', '.join(unexpected))
@@ -65,6 +65,16 @@ missing=[x['id'] for x in reg if x.get('id') not in worker_ids]
 if missing: bad('registry workers missing from catalog mapping: '+', '.join(missing))
 else: ok(f'all {len(reg)} executable workers map into catalog records')
 
+# Full official Termux support overlay in the global catalog.
+try:
+    sup=json.loads((ROOT/'config'/'registries'/'termux_supported.json').read_text()).get('languages',[])
+    covered={mid for row in xs for mid in row.get('termux_modules',[])}
+    expected={x.get('id') for x in sup}
+    if cat.get('termux_module_count')!=len(sup): bad(f"catalog termux_module_count {cat.get('termux_module_count')} != {len(sup)}")
+    if covered!=expected: bad('catalog Termux module overlay mismatch')
+    else: ok(f'all {len(sup)} Termux-supported modules are represented in the global catalog')
+except Exception as e: bad('full Termux catalog overlay invalid: '+str(e))
+
 # Native practical tools: exactly one per executable worker and co-located with module.
 try: tools_doc=json.loads(tool_path.read_text()); tools=tools_doc.get('tools',[])
 except Exception as e: bad('native tool registry invalid: '+str(e)); tools=[]; tools_doc={}
@@ -119,12 +129,12 @@ if reg: ok(f'{len(reg)} self-contained language modules verified ({module_file_t
 # Core architecture files.
 required_files=[
  'cli/Language.py','core/paths.py','core/language_modules.py','core/toolbox.py','core/practical.py','core/langtools.py','core/polyglot_ops.py','core/polyglot_practical.py','core/scaffold.py','core/source_runner.py','core/analytics.py','core/profiles.py','core/history.py','core/telemetry.py','core/store.py','core/adaptive.py','core/advanced.py','core/topology.py','core/scenarios.py','core/bundles.py','core/dashboard.py','core/plugins.py','core/provenance.py','core/planner.py','core/regression.py',
- 'config/registries/languages.json','config/registries/polytools.json','config/benchmark_profiles.json','config/scenarios.json','plugins/README.md',
- 'metadata/MANIFEST.json','.github/SECURITY.md','.github/CONTRIBUTING.md','scripts/uninstall.sh',
- 'scripts/doctor.py','scripts/selftest.py','scripts/module_smoke.py','scripts/langtools_smoke.py','scripts/toolbox_smoke.py','scripts/practical_smoke.py','scripts/polyglot_smoke.py','scripts/polyglot_practical_smoke.py','scripts/package_plan.py','scripts/smoke_benchmark.py','scripts/advanced_smoke.py',
- 'docs/USEFUL_TOOLS.md','docs/NATIVE_LANGUAGE_TOOLS.md','docs/PRACTICAL_POLYGLOT.md','docs/POLYGLOT_OPERATIONS.md','docs/STORAGE_LAYOUT.md','docs/LANGUAGE_MODULES.md',
+ 'config/registries/languages.json','config/registries/polytools.json','config/registries/termux_supported.json','config/benchmark_profiles.json','config/scenarios.json','plugins/README.md',
+ 'metadata/MANIFEST.json','metadata/termux-supported-packages.json','.github/SECURITY.md','.github/CONTRIBUTING.md','scripts/uninstall.sh',
+ 'scripts/doctor.py','scripts/termux_languages.py','scripts/language_balance.py','scripts/termux_coverage_audit.py','scripts/sync_termux_catalog.py','scripts/selftest.py','scripts/module_smoke.py','scripts/langtools_smoke.py','scripts/toolbox_smoke.py','scripts/practical_smoke.py','scripts/polyglot_smoke.py','scripts/polyglot_practical_smoke.py','scripts/package_plan.py','scripts/smoke_benchmark.py','scripts/advanced_smoke.py',
+ 'docs/TERMUX_LANGUAGE_COVERAGE.md','docs/LANGUAGE_BALANCE.md','docs/USEFUL_TOOLS.md','docs/NATIVE_LANGUAGE_TOOLS.md','docs/PRACTICAL_POLYGLOT.md','docs/POLYGLOT_OPERATIONS.md','docs/STORAGE_LAYOUT.md','docs/LANGUAGE_MODULES.md',
  'examples/useful-demo.sh','examples/everyday-demo.sh','examples/native-tools-demo.sh','examples/polyglot-backup-demo.sh','docs/ADVANCED_MODES.md','docs/ADVANCED_ARCHITECTURE.md','docs/RESULT_SCHEMA.md','docs/PROTOCOL.md','docs/REPRODUCIBILITY.md','docs/DIAGNOSTICS.md','docs/CHECKPOINTS.md','docs/ADAPTIVE_SCHEDULER.md','docs/CHAOS_TESTING.md','docs/TOPOLOGY.md','docs/DATABASE.md','docs/PLUGINS.md','docs/SCENARIOS.md','docs/TELEMETRY.md','docs/BUNDLES.md','docs/REGRESSION_GATES.md','docs/DIFFERENTIAL_AUDIT.md','docs/CONSENSUS.md',
- 'schemas/languages.schema.json','schemas/language-module.schema.json','schemas/polytools.schema.json','schemas/polyglot.schema.json','schemas/active-state.schema.json','schemas/catalog.schema.json','schemas/result.schema.json','schemas/calibration.schema.json','schemas/checkpoint.schema.json','schemas/scenarios.schema.json','schemas/provenance.schema.json'
+ 'schemas/languages.schema.json','schemas/termux-supported.schema.json','schemas/language-module.schema.json','schemas/polytools.schema.json','schemas/polyglot.schema.json','schemas/active-state.schema.json','schemas/catalog.schema.json','schemas/result.schema.json','schemas/calibration.schema.json','schemas/checkpoint.schema.json','schemas/scenarios.schema.json','schemas/provenance.schema.json'
 ]
 missing_required=[x for x in required_files if not (ROOT/x).exists()]
 if missing_required: bad('missing architecture files: '+', '.join(missing_required))
@@ -169,6 +179,7 @@ if readme.count('<details>')<70: bad('README does not contain enough collapsible
 else: ok(f"README contains {readme.count('<details>')} collapsible sections")
 if '$HOME/Language Project/' not in readme: bad('README does not document the persistent Language Project home')
 if 'language-project modules verify' not in readme: bad('README does not document module verification')
+if 'language-project supported balance' not in readme or 'language-project supported audit' not in readme: bad('README does not document Termux coverage/balance verification')
 if 'config/registries/' not in readme: bad('README does not document organized registry location')
 else: ok('README bilingual organization and module/storage documentation present')
 

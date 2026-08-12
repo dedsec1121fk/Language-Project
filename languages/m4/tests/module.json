@@ -1,0 +1,6 @@
+{
+  "schema": 1,
+  "id": "m4",
+  "source": "tools/practical.m4",
+  "expected_runtime": "m4"
+}

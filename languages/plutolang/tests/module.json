@@ -1,0 +1,7 @@
+{
+  "schema": 1,
+  "language_id": "plutolang",
+  "runtime_command": "pluto",
+  "source": "practical.pluto",
+  "tier": "native-module"
+}

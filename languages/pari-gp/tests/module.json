@@ -1,0 +1,6 @@
+{
+  "schema": 1,
+  "id": "pari-gp",
+  "source": "tools/practical.gp",
+  "expected_runtime": "gp"
+}

@@ -1,0 +1,16 @@
+{
+  "schema": 2,
+  "id": "octave",
+  "name": "GNU Octave",
+  "tier": "native-module",
+  "packages": [
+    "octave"
+  ],
+  "runtime_command": "octave",
+  "source": "languages/octave/tools/practical.m",
+  "extension": "m",
+  "linguist": "MATLAB",
+  "termux_home": "$HOME/Language Project",
+  "github_linguist_supported": true,
+  "official_package_verified": true
+}

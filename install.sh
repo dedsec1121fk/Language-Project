@@ -2,6 +2,15 @@
 set -euo pipefail
 
 SRC="$(cd "$(dirname "$0")" && pwd)"
+INSTALL_ALL_LANGUAGES="${LANGUAGE_PROJECT_INSTALL_ALL_LANGUAGES:-0}"
+for arg in "$@"; do
+  case "$arg" in
+    --all-languages) INSTALL_ALL_LANGUAGES=1 ;;
+    --core-only) INSTALL_ALL_LANGUAGES=0 ;;
+    -h|--help) echo "Usage: bash install.sh [--all-languages|--core-only]"; exit 0 ;;
+    *) echo "ERROR: Unknown installer option: $arg"; exit 2 ;;
+  esac
+done
 BASE="$HOME/Language Project"
 APP="$BASE/app"
 STAGE="$HOME/.language-project-install-stage.$$"
@@ -128,3 +137,12 @@ echo "Alias: language"
 echo "Native tools: langtool list"
 echo "Storage path: language-project-home"
 echo "Workspace report: language-project langtools workspace-report ~/YourProject --output \"$BASE/reports/workspace.json\""
+
+# Optional exhaustive Termux language installation. This is intentionally opt-in because all toolchains can use several GB.
+if [ "$INSTALL_ALL_LANGUAGES" = "1" ]; then
+  echo "[Language Project] Installing all registered Termux language packages..."
+  python "$BASE/app/scripts/termux_languages.py" install-all || true
+fi
+
+echo "Full language install: bash install.sh --all-languages"
+echo "Or later: language-project supported install-all"
