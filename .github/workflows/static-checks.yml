@@ -1,22 +1,45 @@
 name: Static checks
+
 on:
   push:
   pull_request:
+
 jobs:
   validate:
     runs-on: ubuntu-latest
+    env:
+      PYTHONDONTWRITEBYTECODE: '1'
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
         with:
           python-version: '3.12'
-      - name: Python syntax
-        run: python -m compileall -q cli core scripts tests
+
+      - name: Python syntax (artifact-free)
+        run: python scripts/check_python_syntax.py
+
       - name: Core self-test
         run: python scripts/selftest.py
+
       - name: Static unit checks
         run: python tests/test_static.py
+
+      - name: Ensure CI produced no Python bytecode
+        shell: bash
+        run: |
+          if find . -type f \( -name '*.pyc' -o -name '*.pyo' \) -print -quit | grep -q . || \
+             find . -type d -name '__pycache__' -print -quit | grep -q .; then
+            echo 'Generated Python bytecode/cache found before project audit:'
+            find . \( -type d -name '__pycache__' -o -type f \( -name '*.pyc' -o -name '*.pyo' \) \) -print
+            exit 1
+          fi
+          echo 'No Python bytecode/cache artifacts generated.'
+
       - name: Project audit
         run: python scripts/audit_project.py
+
       - name: Manifest verification
         run: python scripts/verify_manifest.py

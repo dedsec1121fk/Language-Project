@@ -1,7 +1,7 @@
 {
   "schema": 2,
   "project": "Language Project",
-  "file_count": 2145,
+  "file_count": 2146,
   "files": [
     {
       "path": ".gitattributes",
@@ -20,13 +20,13 @@
     },
     {
       "path": ".github/workflows/static-checks.yml",
-      "bytes": 610,
-      "sha256": "8f7dde4acff00290b8070516fe1f72329bb41707e876f2a5142b277f4379c5e6"
+      "bytes": 1275,
+      "sha256": "e219bdc79a396136934d2f96834717c236cc259e98e0ced0eccbeffd979316fb"
     },
     {
       "path": ".gitignore",
-      "bytes": 256,
-      "sha256": "5cd253990743519937522607c5a3bb14bbf7e00b54dc44708877603bba028d55"
+      "bytes": 309,
+      "sha256": "c52af54fa8cef3a3f374707a53fe8f9dde7ea8ea99e499f5b5b4a955563aaaa1"
     },
     {
       "path": "LICENSE",
@@ -10629,6 +10629,11 @@
       "sha256": "ea8b7a67b8e24e33a779851bdf7993bedcad05f05da12729073f80e3eca0e297"
     },
     {
+      "path": "scripts/check_python_syntax.py",
+      "bytes": 1210,
+      "sha256": "de08cb0431971d2c98efb6687b3cde101e9a525849fd6f90b210b09fe7cc41f0"
+    },
+    {
       "path": "scripts/doctor.py",
       "bytes": 7197,
       "sha256": "aaaa9d5ff0e8aac36a8e61476df056d681b3091350f843f7ab2d5f3427cc3e13"
@@ -10725,8 +10730,8 @@
     },
     {
       "path": "tests/test_static.py",
-      "bytes": 1533,
-      "sha256": "2ee21a36321b1979bfcdbd447e53830c4db4a8a6df5f0a6eb6152fba7774b862"
+      "bytes": 1921,
+      "sha256": "94a9ea1b1688ebd16f7bcbaadb96a784278132f861794e59c45b55a0286c2df3"
     }
   ]
 }

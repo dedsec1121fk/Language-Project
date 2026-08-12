@@ -23,6 +23,12 @@ def main():
     assert 'languages/' in tree_view(ROOT,depth=1,max_entries=20)
     assert environment_report(['python'])['commands'][0]['path']
     assert POLYGLOT_FORMAT=='language-project-polyglot' and DEFAULT_CHUNK>=4096
+    workflow=(ROOT/'.github/workflows/static-checks.yml').read_text()
+    assert 'python -m compileall' not in workflow
+    assert 'python scripts/check_python_syntax.py' in workflow
+    assert "PYTHONDONTWRITEBYTECODE: '1'" in workflow
+    syntax_checker=(ROOT/'scripts/check_python_syntax.py').read_text()
+    assert 'ast.parse' in syntax_checker and 'compileall' not in syntax_checker
     sampler=ResourceSampler(interval=0.05).start();import time;time.sleep(0.06);summary=sampler.stop();assert summary['samples']>=1
     print('tests/test_static.py: PASS')
 if __name__=='__main__':main()
