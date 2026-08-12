@@ -1,0 +1,6 @@
+# Rename to example_plugin.py and set LANGUAGE_PROJECT_PLUGINS=1 to enable.
+def on_session_start(context):
+    print('[plugin] session started:', context.get('session_id'))
+
+def on_session_end(context):
+    print('[plugin] session ended:', context.get('session_id'))

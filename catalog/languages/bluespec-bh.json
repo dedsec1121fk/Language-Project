@@ -1,0 +1,21 @@
+{
+  "name": "Bluespec BH",
+  "slug": "bluespec-bh",
+  "letter": "B",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [
+    "bh",
+    "bluespec classic"
+  ],
+  "extensions": [
+    ".bs"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 641580358,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

@@ -1,0 +1,20 @@
+{
+  "name": "CSS+UL4",
+  "slug": "css-ul4",
+  "letter": "C",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "css+ul4"
+  ],
+  "extensions": [
+    ".cssul4"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

@@ -1,0 +1,27 @@
+{
+  "name": "Vim Script",
+  "slug": "vim-script",
+  "letter": "V",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist"
+  ],
+  "aliases": [
+    "vim",
+    "viml",
+    "nvim",
+    "vimscript"
+  ],
+  "extensions": [
+    ".vim",
+    ".vba",
+    ".vimrc",
+    ".vmb"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 388,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

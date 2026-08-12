@@ -1,0 +1,21 @@
+{
+  "name": "ThingsDB",
+  "slug": "thingsdb",
+  "letter": "T",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "thingsdb",
+    "ti"
+  ],
+  "extensions": [
+    ".ti"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

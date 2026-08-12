@@ -1,0 +1,20 @@
+{
+  "name": "Just",
+  "slug": "just",
+  "letter": "J",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [
+    "Justfile"
+  ],
+  "extensions": [
+    ".just"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 128447695,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

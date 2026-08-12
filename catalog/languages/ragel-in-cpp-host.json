@@ -1,0 +1,20 @@
+{
+  "name": "Ragel in CPP Host",
+  "slug": "ragel-in-cpp-host",
+  "letter": "R",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "ragel-cpp"
+  ],
+  "extensions": [
+    ".rl"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

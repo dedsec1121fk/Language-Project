@@ -1,0 +1,12 @@
+{
+  "name": "C--",
+  "slug": "c-61b3800",
+  "letter": "C",
+  "sources": [
+    "bundled-snapshot",
+    "programminglanguages.info"
+  ],
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

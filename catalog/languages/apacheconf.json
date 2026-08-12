@@ -1,0 +1,20 @@
+{
+  "name": "ApacheConf",
+  "slug": "apacheconf",
+  "letter": "A",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "aconf",
+    "apache",
+    "apacheconf"
+  ],
+  "extensions": [],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

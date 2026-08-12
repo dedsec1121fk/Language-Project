@@ -1,0 +1,22 @@
+{
+  "name": "X++",
+  "slug": "x",
+  "letter": "X",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "pygments"
+  ],
+  "aliases": [
+    "x++",
+    "xpp"
+  ],
+  "extensions": [
+    ".xpp"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

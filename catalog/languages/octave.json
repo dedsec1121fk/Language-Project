@@ -1,0 +1,20 @@
+{
+  "name": "Octave",
+  "slug": "octave",
+  "letter": "O",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "octave"
+  ],
+  "extensions": [
+    ".m"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

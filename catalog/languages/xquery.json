@@ -1,0 +1,30 @@
+{
+  "name": "XQuery",
+  "slug": "xquery",
+  "letter": "X",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "xq",
+    "xql",
+    "xqm",
+    "xquery",
+    "xqy"
+  ],
+  "extensions": [
+    ".xq",
+    ".xql",
+    ".xqm",
+    ".xquery",
+    ".xqy"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 402,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

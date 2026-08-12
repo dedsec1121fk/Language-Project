@@ -1,0 +1,18 @@
+{
+  "name": "BASIC",
+  "slug": "basic",
+  "letter": "B",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".bas"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 28923963,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

@@ -1,0 +1,22 @@
+{
+  "name": "Wren",
+  "slug": "wren",
+  "letter": "W",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "wren",
+    "wrenlang"
+  ],
+  "extensions": [
+    ".wren"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 713580619,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

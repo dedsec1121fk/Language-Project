@@ -1,0 +1,22 @@
+{
+  "name": "Crmsh",
+  "slug": "crmsh",
+  "letter": "C",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "crmsh",
+    "pcmk"
+  ],
+  "extensions": [
+    ".crmsh",
+    ".pcmk"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

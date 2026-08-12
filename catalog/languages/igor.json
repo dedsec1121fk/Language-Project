@@ -1,0 +1,21 @@
+{
+  "name": "Igor",
+  "slug": "igor",
+  "letter": "I",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "igor",
+    "igorpro"
+  ],
+  "extensions": [
+    ".ipf"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

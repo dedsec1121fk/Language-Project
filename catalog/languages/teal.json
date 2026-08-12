@@ -1,0 +1,24 @@
+{
+  "name": "Teal",
+  "slug": "teal",
+  "letter": "T",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "teal"
+  ],
+  "extensions": [
+    ".teal",
+    ".tl"
+  ],
+  "interpreters": [
+    "tl"
+  ],
+  "github_linguist_id": 719038619,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Unix Assembly",
+  "slug": "unix-assembly",
+  "letter": "U",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [
+    "gas",
+    "gnu asm",
+    "unix asm"
+  ],
+  "extensions": [
+    ".s",
+    ".ms"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 120,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

@@ -1,0 +1,27 @@
+{
+  "name": "VB.net",
+  "slug": "vb-net",
+  "letter": "V",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "lobas",
+    "oobas",
+    "sobas",
+    "vb.net",
+    "vbnet",
+    "visual-basic",
+    "visualbasic"
+  ],
+  "extensions": [
+    ".bas",
+    ".vb"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

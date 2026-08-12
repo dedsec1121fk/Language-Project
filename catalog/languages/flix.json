@@ -1,0 +1,19 @@
+{
+  "name": "Flix",
+  "slug": "flix",
+  "letter": "F",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".flix"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 800935960,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

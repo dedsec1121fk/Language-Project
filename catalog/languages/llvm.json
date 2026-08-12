@@ -1,0 +1,21 @@
+{
+  "name": "LLVM",
+  "slug": "llvm",
+  "letter": "L",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "llvm"
+  ],
+  "extensions": [
+    ".ll"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 191,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

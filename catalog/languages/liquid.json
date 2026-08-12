@@ -1,0 +1,20 @@
+{
+  "name": "liquid",
+  "slug": "liquid",
+  "letter": "L",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "liquid"
+  ],
+  "extensions": [
+    ".liquid"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

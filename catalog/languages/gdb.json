@@ -1,0 +1,19 @@
+{
+  "name": "GDB",
+  "slug": "gdb",
+  "letter": "G",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".gdb",
+    ".gdbinit"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 122,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

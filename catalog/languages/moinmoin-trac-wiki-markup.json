@@ -1,0 +1,19 @@
+{
+  "name": "MoinMoin/Trac Wiki markup",
+  "slug": "moinmoin-trac-wiki-markup",
+  "letter": "M",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "moin",
+    "trac-wiki"
+  ],
+  "extensions": [],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

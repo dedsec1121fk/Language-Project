@@ -1,0 +1,18 @@
+{
+  "name": "DenizenScript",
+  "slug": "denizenscript",
+  "letter": "D",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".dsc"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 435000929,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

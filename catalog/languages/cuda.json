@@ -1,0 +1,23 @@
+{
+  "name": "Cuda",
+  "slug": "cuda",
+  "letter": "C",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "cu",
+    "cuda"
+  ],
+  "extensions": [
+    ".cu",
+    ".cuh"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 77,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

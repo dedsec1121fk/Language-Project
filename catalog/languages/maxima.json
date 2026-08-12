@@ -1,0 +1,23 @@
+{
+  "name": "Maxima",
+  "slug": "maxima",
+  "letter": "M",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "pygments"
+  ],
+  "aliases": [
+    "macsyma",
+    "maxima"
+  ],
+  "extensions": [
+    ".mac",
+    ".max"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

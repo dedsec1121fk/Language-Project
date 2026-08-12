@@ -1,0 +1,16 @@
+{
+  "name": "Elvish Transcript",
+  "slug": "elvish-transcript",
+  "letter": "E",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [],
+  "interpreters": [],
+  "github_linguist_id": 452025714,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

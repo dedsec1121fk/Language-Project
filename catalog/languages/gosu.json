@@ -1,0 +1,26 @@
+{
+  "name": "Gosu",
+  "slug": "gosu",
+  "letter": "G",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "gosu"
+  ],
+  "extensions": [
+    ".gs",
+    ".gsp",
+    ".gst",
+    ".gsx",
+    ".vark"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 134,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

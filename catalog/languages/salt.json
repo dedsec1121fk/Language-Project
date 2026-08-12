@@ -1,0 +1,21 @@
+{
+  "name": "Salt",
+  "slug": "salt",
+  "letter": "S",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [
+    "saltstack",
+    "saltstate"
+  ],
+  "extensions": [
+    ".sls"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 339,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

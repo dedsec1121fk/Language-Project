@@ -1,0 +1,28 @@
+{
+  "name": "XML",
+  "slug": "xml",
+  "letter": "X",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "xml"
+  ],
+  "extensions": [
+    ".pom",
+    ".rss",
+    ".wsdl",
+    ".wsf",
+    ".xbrl",
+    ".xml",
+    ".xsd",
+    ".xsl",
+    ".xslt"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

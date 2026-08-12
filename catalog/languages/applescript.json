@@ -1,0 +1,26 @@
+{
+  "name": "AppleScript",
+  "slug": "applescript",
+  "letter": "A",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "apples",
+    "applescript",
+    "osascript"
+  ],
+  "extensions": [
+    ".applescript",
+    ".scpt"
+  ],
+  "interpreters": [
+    "osascript"
+  ],
+  "github_linguist_id": 19,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

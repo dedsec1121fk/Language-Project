@@ -1,0 +1,22 @@
+{
+  "name": "TASM",
+  "slug": "tasm",
+  "letter": "T",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "tasm"
+  ],
+  "extensions": [
+    ".ASM",
+    ".asm",
+    ".tasm"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

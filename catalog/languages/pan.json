@@ -1,0 +1,21 @@
+{
+  "name": "Pan",
+  "slug": "pan",
+  "letter": "P",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "pan"
+  ],
+  "extensions": [
+    ".pan"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 276,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

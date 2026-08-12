@@ -1,0 +1,22 @@
+{
+  "name": "Sieve",
+  "slug": "sieve",
+  "letter": "S",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "sieve"
+  ],
+  "extensions": [
+    ".sieve",
+    ".siv"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 208976687,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

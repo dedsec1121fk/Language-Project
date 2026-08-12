@@ -1,0 +1,21 @@
+{
+  "name": "BitBake",
+  "slug": "bitbake",
+  "letter": "B",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".bb",
+    ".bbappend",
+    ".bbclass",
+    ".inc"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 32,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

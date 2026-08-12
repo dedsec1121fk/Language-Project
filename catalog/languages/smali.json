@@ -1,0 +1,21 @@
+{
+  "name": "Smali",
+  "slug": "smali",
+  "letter": "S",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "smali"
+  ],
+  "extensions": [
+    ".smali"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 351,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

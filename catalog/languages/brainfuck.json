@@ -1,0 +1,24 @@
+{
+  "name": "Brainfuck",
+  "slug": "brainfuck",
+  "letter": "B",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "bf",
+    "brainfuck"
+  ],
+  "extensions": [
+    ".b",
+    ".bf"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 38,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

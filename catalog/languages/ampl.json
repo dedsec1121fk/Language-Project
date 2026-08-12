@@ -1,0 +1,23 @@
+{
+  "name": "AMPL",
+  "slug": "ampl",
+  "letter": "A",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "ampl"
+  ],
+  "extensions": [
+    ".ampl",
+    ".mod",
+    ".run"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 3,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Singularity",
+  "slug": "singularity",
+  "letter": "S",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "singularity"
+  ],
+  "extensions": [
+    ".def"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 987024632,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

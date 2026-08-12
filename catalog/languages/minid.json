@@ -1,0 +1,21 @@
+{
+  "name": "MiniD",
+  "slug": "minid",
+  "letter": "M",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "minid"
+  ],
+  "extensions": [
+    ".minid"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 231,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

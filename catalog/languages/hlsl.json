@@ -1,0 +1,25 @@
+{
+  "name": "HLSL",
+  "slug": "hlsl",
+  "letter": "H",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "hlsl"
+  ],
+  "extensions": [
+    ".cginc",
+    ".fx",
+    ".fxh",
+    ".hlsl",
+    ".hlsli"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 145,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

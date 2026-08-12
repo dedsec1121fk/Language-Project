@@ -1,0 +1,23 @@
+{
+  "name": "Befunge",
+  "slug": "befunge",
+  "letter": "B",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "befunge"
+  ],
+  "extensions": [
+    ".befunge",
+    ".bf"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 30,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

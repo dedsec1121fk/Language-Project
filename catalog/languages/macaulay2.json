@@ -1,0 +1,24 @@
+{
+  "name": "Macaulay2",
+  "slug": "macaulay2",
+  "letter": "M",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "m2",
+    "macaulay2"
+  ],
+  "extensions": [
+    ".m2"
+  ],
+  "interpreters": [
+    "M2"
+  ],
+  "github_linguist_id": 34167825,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

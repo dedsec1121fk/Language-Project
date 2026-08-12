@@ -1,0 +1,24 @@
+{
+  "name": "Mojo",
+  "slug": "mojo",
+  "letter": "M",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "mojo",
+    "🔥"
+  ],
+  "extensions": [
+    ".mojo",
+    ".🔥"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 1045019587,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

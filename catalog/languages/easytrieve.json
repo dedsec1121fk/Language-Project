@@ -1,0 +1,21 @@
+{
+  "name": "Easytrieve",
+  "slug": "easytrieve",
+  "letter": "E",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "easytrieve"
+  ],
+  "extensions": [
+    ".ezt",
+    ".mac"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

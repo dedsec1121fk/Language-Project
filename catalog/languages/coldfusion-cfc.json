@@ -1,0 +1,21 @@
+{
+  "name": "ColdFusion CFC",
+  "slug": "coldfusion-cfc",
+  "letter": "C",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "cfc"
+  ],
+  "extensions": [
+    ".cfc"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 65,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

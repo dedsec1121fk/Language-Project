@@ -1,0 +1,19 @@
+{
+  "name": "Lighttpd configuration file",
+  "slug": "lighttpd-configuration-file",
+  "letter": "L",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "lighttpd",
+    "lighty"
+  ],
+  "extensions": [],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

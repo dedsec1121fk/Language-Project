@@ -1,0 +1,22 @@
+{
+  "name": "BUGS",
+  "slug": "bugs",
+  "letter": "B",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "bugs",
+    "openbugs",
+    "winbugs"
+  ],
+  "extensions": [
+    ".bug"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

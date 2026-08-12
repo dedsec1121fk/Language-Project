@@ -1,0 +1,21 @@
+{
+  "name": "Dockerfile",
+  "slug": "dockerfile",
+  "letter": "D",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [
+    "Containerfile"
+  ],
+  "extensions": [
+    ".dockerfile",
+    ".containerfile"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 89,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

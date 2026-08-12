@@ -1,0 +1,22 @@
+{
+  "name": "Slash",
+  "slug": "slash",
+  "letter": "S",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "slash"
+  ],
+  "extensions": [
+    ".sl",
+    ".sla"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 349,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

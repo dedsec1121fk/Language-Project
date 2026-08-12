@@ -1,0 +1,22 @@
+{
+  "name": "RPC",
+  "slug": "rpc",
+  "letter": "R",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [
+    "rpcgen",
+    "oncrpc",
+    "xdr"
+  ],
+  "extensions": [
+    ".x"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 1031374237,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

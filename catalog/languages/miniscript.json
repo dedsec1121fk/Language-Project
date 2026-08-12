@@ -1,0 +1,22 @@
+{
+  "name": "MiniScript",
+  "slug": "miniscript",
+  "letter": "M",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "miniscript",
+    "ms"
+  ],
+  "extensions": [
+    ".ms"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 704299647,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

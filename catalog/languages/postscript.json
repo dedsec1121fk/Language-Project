@@ -1,0 +1,23 @@
+{
+  "name": "PostScript",
+  "slug": "postscript",
+  "letter": "P",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "pygments"
+  ],
+  "aliases": [
+    "postscr",
+    "postscript"
+  ],
+  "extensions": [
+    ".eps",
+    ".ps"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

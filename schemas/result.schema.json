@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Language Project benchmark result",
+  "type": "object",
+  "required": ["project", "mode", "timestamp", "integrity"],
+  "properties": {
+    "project": {"const": "Language Project"},
+    "mode": {"type": "string"},
+    "session_id": {"type": "string"},
+    "timestamp": {"type": "string"},
+    "integrity": {"type": "boolean"},
+    "languages": {"type": "integer", "minimum": 0},
+    "bytes": {"type": "integer", "minimum": 0},
+    "device": {"type": "object"},
+    "telemetry": {"type": ["object", "null"]},
+    "provenance": {"type": "object"},
+    "result_files": {"type": "object"},
+    "ranking": {"type": "array"},
+    "stages": {"type": "array"}
+  }
+}

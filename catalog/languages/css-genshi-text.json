@@ -1,0 +1,19 @@
+{
+  "name": "CSS+Genshi Text",
+  "slug": "css-genshi-text",
+  "letter": "C",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "css+genshi",
+    "css+genshitext"
+  ],
+  "extensions": [],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

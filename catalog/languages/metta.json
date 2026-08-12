@@ -1,0 +1,18 @@
+{
+  "name": "MeTTa",
+  "slug": "metta",
+  "letter": "M",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".metta"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 1037612668,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

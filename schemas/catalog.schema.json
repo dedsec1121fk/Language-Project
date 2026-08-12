@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Language Project global language catalog",
+  "type": "object",
+  "required": ["project", "count", "languages"],
+  "properties": {
+    "project": {"const": "Language Project"},
+    "count": {"type": "integer", "minimum": 0},
+    "languages": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "slug", "letter", "sources", "termux_worker", "execution_policy"],
+        "properties": {
+          "name": {"type": "string"},
+          "slug": {"type": "string"},
+          "termux_worker": {"type": "boolean"},
+          "execution_policy": {"enum": ["verified-on-device", "catalog-only"]}
+        }
+      }
+    }
+  }
+}

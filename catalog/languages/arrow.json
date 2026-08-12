@@ -1,0 +1,20 @@
+{
+  "name": "Arrow",
+  "slug": "arrow",
+  "letter": "A",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "arrow"
+  ],
+  "extensions": [
+    ".arw"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

@@ -1,0 +1,20 @@
+{
+  "name": "Gosu Template",
+  "slug": "gosu-template",
+  "letter": "G",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "gst"
+  ],
+  "extensions": [
+    ".gst"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

@@ -1,0 +1,22 @@
+{
+  "name": "Ceylon",
+  "slug": "ceylon",
+  "letter": "C",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "ceylon"
+  ],
+  "extensions": [
+    ".ceylon"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 54,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

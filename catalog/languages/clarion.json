@@ -1,0 +1,19 @@
+{
+  "name": "Clarion",
+  "slug": "clarion",
+  "letter": "C",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".clw"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 59,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

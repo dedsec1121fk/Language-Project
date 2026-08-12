@@ -1,0 +1,12 @@
+{
+  "name": "POSIX sh (Dash)",
+  "slug": "posix-sh-dash",
+  "letter": "P",
+  "sources": [
+    "bundled-snapshot",
+    "termux-runtime-registry"
+  ],
+  "termux_worker": true,
+  "worker_id": "dash",
+  "execution_policy": "verified-on-device"
+}

@@ -1,0 +1,20 @@
+{
+  "name": "Boa",
+  "slug": "boa",
+  "letter": "B",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "boa"
+  ],
+  "extensions": [
+    ".boa"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

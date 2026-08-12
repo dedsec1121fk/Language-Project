@@ -1,0 +1,20 @@
+{
+  "name": "Erlang erl session",
+  "slug": "erlang-erl-session",
+  "letter": "E",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "erl"
+  ],
+  "extensions": [
+    ".erl-sh"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

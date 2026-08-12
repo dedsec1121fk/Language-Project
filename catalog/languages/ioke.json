@@ -1,0 +1,24 @@
+{
+  "name": "Ioke",
+  "slug": "ioke",
+  "letter": "I",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "ik",
+    "ioke"
+  ],
+  "extensions": [
+    ".ik"
+  ],
+  "interpreters": [
+    "ioke"
+  ],
+  "github_linguist_id": 169,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

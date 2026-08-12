@@ -1,0 +1,16 @@
+{
+  "name": "Raw token data",
+  "slug": "raw-token-data",
+  "letter": "R",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [],
+  "extensions": [],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

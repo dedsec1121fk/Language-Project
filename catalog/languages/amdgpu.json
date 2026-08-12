@@ -1,0 +1,20 @@
+{
+  "name": "AMDGPU",
+  "slug": "amdgpu",
+  "letter": "A",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "amdgpu"
+  ],
+  "extensions": [
+    ".isa"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

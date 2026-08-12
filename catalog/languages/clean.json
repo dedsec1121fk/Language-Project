@@ -1,0 +1,23 @@
+{
+  "name": "Clean",
+  "slug": "clean",
+  "letter": "C",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "clean"
+  ],
+  "extensions": [
+    ".dcl",
+    ".icl"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 60,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

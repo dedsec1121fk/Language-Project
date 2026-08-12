@@ -1,0 +1,6 @@
+(use-modules (ice-9 rdelim))
+(define key #xc3)
+(define (hexval c) (cond ((char-numeric? c) (- (char->integer c) 48)) ((char>=? (char-downcase c) #\a) (+ 10 (- (char->integer (char-downcase c)) 97))) (else -1)))
+(define (hx n) (let ((digits "0123456789abcdef")) (string (string-ref digits (quotient n 16)) (string-ref digits (modulo n 16)))))
+(define (transform h) (let loop ((i 0)(o "")) (if (>= i (string-length h)) o (let* ((v (+ (* 16 (hexval (string-ref h i))) (hexval (string-ref h (+ i 1))))) (x (logxor v key))) (loop (+ i 2) (string-append o (hx x)))))))
+(let loop () (let ((line (read-line))) (unless (eof-object? line) (cond ((string=? line "PING") (display "PONG\n")(force-output)(loop)) ((string=? line "QUIT") #t) ((and (>= (string-length line) 2) (or (char=? (string-ref line 0) #\E)(char=? (string-ref line 0) #\D)) (char=? (string-ref line 1) #\space)) (display (transform (substring line 2)))(newline)(force-output)(loop)) (else (display "ERR\n")(force-output)(loop))))))

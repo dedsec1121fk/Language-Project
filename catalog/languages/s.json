@@ -1,0 +1,24 @@
+{
+  "name": "S",
+  "slug": "s",
+  "letter": "S",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "pygments"
+  ],
+  "aliases": [
+    "r",
+    "s",
+    "splus"
+  ],
+  "extensions": [
+    ".R",
+    ".S"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

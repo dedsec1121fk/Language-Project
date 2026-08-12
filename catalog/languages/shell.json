@@ -1,0 +1,49 @@
+{
+  "name": "Shell",
+  "slug": "shell",
+  "letter": "S",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [
+    "sh",
+    "shell-script",
+    "bash",
+    "zsh",
+    "envrc"
+  ],
+  "extensions": [
+    ".sh",
+    ".bash",
+    ".bats",
+    ".cgi",
+    ".command",
+    ".fcgi",
+    ".ksh",
+    ".pacscript",
+    ".sbatch",
+    ".sh.in",
+    ".slurm",
+    ".tmux",
+    ".tool",
+    ".trigger",
+    ".zsh",
+    ".zsh-theme"
+  ],
+  "interpreters": [
+    "ash",
+    "bash",
+    "dash",
+    "ksh",
+    "mksh",
+    "pdksh",
+    "rc",
+    "sh",
+    "zsh"
+  ],
+  "github_linguist_id": 346,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

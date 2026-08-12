@@ -1,0 +1,22 @@
+{
+  "name": "Python Traceback",
+  "slug": "python-traceback",
+  "letter": "P",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "py3tb",
+    "pytb"
+  ],
+  "extensions": [
+    ".py3tb",
+    ".pytb"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

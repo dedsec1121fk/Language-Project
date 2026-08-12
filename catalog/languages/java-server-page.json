@@ -1,0 +1,20 @@
+{
+  "name": "Java Server Page",
+  "slug": "java-server-page",
+  "letter": "J",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "jsp"
+  ],
+  "extensions": [
+    ".jsp"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

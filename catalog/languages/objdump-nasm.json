@@ -1,0 +1,20 @@
+{
+  "name": "objdump-nasm",
+  "slug": "objdump-nasm",
+  "letter": "O",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "objdump-nasm"
+  ],
+  "extensions": [
+    ".objdump-intel"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

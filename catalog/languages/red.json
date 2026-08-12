@@ -1,0 +1,24 @@
+{
+  "name": "Red",
+  "slug": "red",
+  "letter": "R",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "red",
+    "red/system"
+  ],
+  "extensions": [
+    ".red",
+    ".reds"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 320,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

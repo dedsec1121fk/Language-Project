@@ -1,0 +1,22 @@
+{
+  "name": "Go",
+  "slug": "go",
+  "letter": "G",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "go",
+    "golang"
+  ],
+  "extensions": [
+    ".go"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 132,
+  "termux_worker": true,
+  "worker_id": "go",
+  "execution_policy": "verified-on-device"
+}

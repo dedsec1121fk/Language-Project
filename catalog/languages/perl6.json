@@ -1,0 +1,36 @@
+{
+  "name": "Perl6",
+  "slug": "perl6",
+  "letter": "P",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "perl6",
+    "pl6",
+    "raku"
+  ],
+  "extensions": [
+    ".6pl",
+    ".6pm",
+    ".nqp",
+    ".p6",
+    ".p6l",
+    ".p6m",
+    ".pl",
+    ".pl6",
+    ".pm",
+    ".pm6",
+    ".raku",
+    ".rakudoc",
+    ".rakumod",
+    ".rakutest",
+    ".t"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

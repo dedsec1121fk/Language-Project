@@ -1,0 +1,25 @@
+{
+  "name": "Emacs Lisp",
+  "slug": "emacs-lisp",
+  "letter": "E",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [
+    "cask",
+    "eask",
+    "elisp",
+    "emacs"
+  ],
+  "extensions": [
+    ".el",
+    ".emacs",
+    ".emacs.desktop"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 102,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

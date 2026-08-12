@@ -1,0 +1,21 @@
+{
+  "name": "QMake",
+  "slug": "qmake",
+  "letter": "Q",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".pro",
+    ".pri"
+  ],
+  "interpreters": [
+    "qmake"
+  ],
+  "github_linguist_id": 306,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

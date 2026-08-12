@@ -1,0 +1,26 @@
+{
+  "name": "BlitzBasic",
+  "slug": "blitzbasic",
+  "letter": "B",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "b3d",
+    "blitz3d",
+    "blitzbasic",
+    "blitzplus",
+    "bplus"
+  ],
+  "extensions": [
+    ".bb",
+    ".decls"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 34,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

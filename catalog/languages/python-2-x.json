@@ -1,0 +1,19 @@
+{
+  "name": "Python 2.x",
+  "slug": "python-2-x",
+  "letter": "P",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "py2",
+    "python2"
+  ],
+  "extensions": [],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

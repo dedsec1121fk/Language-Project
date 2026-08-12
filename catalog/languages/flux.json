@@ -1,0 +1,19 @@
+{
+  "name": "FLUX",
+  "slug": "flux",
+  "letter": "F",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".fx",
+    ".flux"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 106,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

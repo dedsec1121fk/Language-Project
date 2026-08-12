@@ -1,0 +1,25 @@
+{
+  "name": "Objective-J",
+  "slug": "objective-j",
+  "letter": "O",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "obj-j",
+    "objective-j",
+    "objectivej",
+    "objj"
+  ],
+  "extensions": [
+    ".j",
+    ".sj"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 259,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

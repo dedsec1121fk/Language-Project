@@ -1,0 +1,21 @@
+{
+  "name": "ANTLR With Python Target",
+  "slug": "antlr-with-python-target",
+  "letter": "A",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "antlr-python"
+  ],
+  "extensions": [
+    ".G",
+    ".g"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

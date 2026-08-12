@@ -1,0 +1,23 @@
+{
+  "name": "Logtalk",
+  "slug": "logtalk",
+  "letter": "L",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "logtalk"
+  ],
+  "extensions": [
+    ".lgt",
+    ".logtalk"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 210,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

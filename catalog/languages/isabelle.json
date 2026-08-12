@@ -1,0 +1,21 @@
+{
+  "name": "Isabelle",
+  "slug": "isabelle",
+  "letter": "I",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "isabelle"
+  ],
+  "extensions": [
+    ".thy"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 170,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

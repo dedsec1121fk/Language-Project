@@ -1,0 +1,19 @@
+{
+  "name": "Nearley",
+  "slug": "nearley",
+  "letter": "N",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".ne",
+    ".nearley"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 521429430,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

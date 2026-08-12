@@ -1,0 +1,22 @@
+{
+  "name": "Solidity",
+  "slug": "solidity",
+  "letter": "S",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "solidity"
+  ],
+  "extensions": [
+    ".sol"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 237469032,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

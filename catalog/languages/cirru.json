@@ -1,0 +1,21 @@
+{
+  "name": "Cirru",
+  "slug": "cirru",
+  "letter": "C",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "cirru"
+  ],
+  "extensions": [
+    ".cirru"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 58,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

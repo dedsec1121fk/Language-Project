@@ -1,0 +1,21 @@
+{
+  "name": "KakouneScript",
+  "slug": "kakounescript",
+  "letter": "K",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [
+    "kak",
+    "kakscript"
+  ],
+  "extensions": [
+    ".kak"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 603336474,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

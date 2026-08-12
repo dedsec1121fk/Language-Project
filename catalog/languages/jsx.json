@@ -1,0 +1,22 @@
+{
+  "name": "JSX",
+  "slug": "jsx",
+  "letter": "J",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "jsx",
+    "react"
+  ],
+  "extensions": [
+    ".jsx",
+    ".react"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

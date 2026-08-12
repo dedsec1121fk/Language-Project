@@ -1,0 +1,21 @@
+{
+  "name": "ANTLR With Java Target",
+  "slug": "antlr-with-java-target",
+  "letter": "A",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "antlr-java"
+  ],
+  "extensions": [
+    ".G",
+    ".g"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

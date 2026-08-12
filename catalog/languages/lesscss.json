@@ -1,0 +1,20 @@
+{
+  "name": "LessCss",
+  "slug": "lesscss",
+  "letter": "L",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "less"
+  ],
+  "extensions": [
+    ".less"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

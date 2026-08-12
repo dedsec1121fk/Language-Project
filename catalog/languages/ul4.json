@@ -1,0 +1,20 @@
+{
+  "name": "UL4",
+  "slug": "ul4",
+  "letter": "U",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "ul4"
+  ],
+  "extensions": [
+    ".ul4"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

@@ -1,0 +1,29 @@
+{
+  "name": "Mathematica",
+  "slug": "mathematica",
+  "letter": "M",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "mathematica",
+    "mma",
+    "nb",
+    "wl",
+    "wolfram"
+  ],
+  "extensions": [
+    ".cdf",
+    ".ma",
+    ".nb",
+    ".nbp",
+    ".wl",
+    ".wls"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

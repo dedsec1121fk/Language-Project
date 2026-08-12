@@ -1,0 +1,21 @@
+{
+  "name": "Augeas",
+  "slug": "augeas",
+  "letter": "A",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "augeas"
+  ],
+  "extensions": [
+    ".aug"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 25,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

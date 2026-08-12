@@ -1,0 +1,22 @@
+{
+  "name": "Factor",
+  "slug": "factor",
+  "letter": "F",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "factor"
+  ],
+  "extensions": [
+    ".factor"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 108,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "D",
+  "slug": "d",
+  "letter": "D",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "d",
+    "Dlang"
+  ],
+  "extensions": [
+    ".d",
+    ".di"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 80,
+  "termux_worker": true,
+  "worker_id": "d",
+  "execution_policy": "verified-on-device"
+}

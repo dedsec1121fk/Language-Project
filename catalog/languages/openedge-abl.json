@@ -1,0 +1,25 @@
+{
+  "name": "OpenEdge ABL",
+  "slug": "openedge-abl",
+  "letter": "O",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "abl",
+    "openedge",
+    "progress"
+  ],
+  "extensions": [
+    ".cls",
+    ".p",
+    ".w"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 264,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

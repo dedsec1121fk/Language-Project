@@ -1,0 +1,21 @@
+{
+  "name": "ShellSession",
+  "slug": "shellsession",
+  "letter": "S",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [
+    "bash session",
+    "console"
+  ],
+  "extensions": [
+    ".sh-session"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 347,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

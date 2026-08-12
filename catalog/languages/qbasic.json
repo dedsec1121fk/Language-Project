@@ -1,0 +1,22 @@
+{
+  "name": "QBasic",
+  "slug": "qbasic",
+  "letter": "Q",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "basic",
+    "qbasic"
+  ],
+  "extensions": [
+    ".bas",
+    ".BAS"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

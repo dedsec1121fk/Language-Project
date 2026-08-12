@@ -1,0 +1,18 @@
+{
+  "name": "MLIR",
+  "slug": "mlir",
+  "letter": "M",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".mlir"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 448253929,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

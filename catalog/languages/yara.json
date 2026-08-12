@@ -1,0 +1,23 @@
+{
+  "name": "YARA",
+  "slug": "yara",
+  "letter": "Y",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "yar",
+    "yara"
+  ],
+  "extensions": [
+    ".yar",
+    ".yara"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 805122868,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

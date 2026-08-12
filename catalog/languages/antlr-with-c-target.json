@@ -1,0 +1,22 @@
+{
+  "name": "ANTLR With C# Target",
+  "slug": "antlr-with-c-target",
+  "letter": "A",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "antlr-c#",
+    "antlr-csharp"
+  ],
+  "extensions": [
+    ".G",
+    ".g"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

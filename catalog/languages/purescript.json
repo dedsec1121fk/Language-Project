@@ -1,0 +1,19 @@
+{
+  "name": "PureScript",
+  "slug": "purescript",
+  "letter": "P",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".purs"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 302,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

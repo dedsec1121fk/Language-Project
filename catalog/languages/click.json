@@ -1,0 +1,18 @@
+{
+  "name": "Click",
+  "slug": "click",
+  "letter": "C",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".click"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 61,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

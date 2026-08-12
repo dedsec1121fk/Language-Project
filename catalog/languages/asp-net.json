@@ -1,0 +1,26 @@
+{
+  "name": "ASP.NET",
+  "slug": "asp-net",
+  "letter": "A",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [
+    "aspx",
+    "aspx-vb"
+  ],
+  "extensions": [
+    ".asax",
+    ".ascx",
+    ".ashx",
+    ".asmx",
+    ".aspx",
+    ".axd"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 564186416,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

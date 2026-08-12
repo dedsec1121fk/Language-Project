@@ -1,0 +1,32 @@
+{
+  "name": "Bash",
+  "slug": "bash",
+  "letter": "B",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "bash",
+    "ksh",
+    "openrc",
+    "sh",
+    "shell",
+    "zsh"
+  ],
+  "extensions": [
+    ".bash",
+    ".ebuild",
+    ".eclass",
+    ".exheres-0",
+    ".exlib",
+    ".ksh",
+    ".sh",
+    ".zsh"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": true,
+  "worker_id": "bash",
+  "execution_policy": "verified-on-device"
+}

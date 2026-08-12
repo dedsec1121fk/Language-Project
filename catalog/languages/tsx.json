@@ -1,0 +1,22 @@
+{
+  "name": "TSX",
+  "slug": "tsx",
+  "letter": "T",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "tsx",
+    "typescriptreact"
+  ],
+  "extensions": [
+    ".tsx"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 94901924,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

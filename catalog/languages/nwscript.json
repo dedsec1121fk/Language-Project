@@ -1,0 +1,19 @@
+{
+  "name": "NWScript",
+  "slug": "nwscript",
+  "letter": "N",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".nss"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 731233819,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

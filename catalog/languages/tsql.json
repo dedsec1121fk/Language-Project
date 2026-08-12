@@ -1,0 +1,18 @@
+{
+  "name": "TSQL",
+  "slug": "tsql",
+  "letter": "T",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".sql"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 918334941,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

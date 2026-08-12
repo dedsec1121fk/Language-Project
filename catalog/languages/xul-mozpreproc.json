@@ -1,0 +1,20 @@
+{
+  "name": "XUL+mozpreproc",
+  "slug": "xul-mozpreproc",
+  "letter": "X",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "xul+mozpreproc"
+  ],
+  "extensions": [
+    ".xul.in"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "KRL",
+  "slug": "krl",
+  "letter": "K",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".krl"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 186,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

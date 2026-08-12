@@ -1,0 +1,22 @@
+{
+  "name": "VBScript",
+  "slug": "vbscript",
+  "letter": "V",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "vbscript"
+  ],
+  "extensions": [
+    ".vbs",
+    ".VBS"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 408016005,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

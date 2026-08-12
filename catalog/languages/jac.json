@@ -1,0 +1,18 @@
+{
+  "name": "Jac",
+  "slug": "jac",
+  "letter": "J",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".jac"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 235277043,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

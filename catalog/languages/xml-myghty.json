@@ -1,0 +1,18 @@
+{
+  "name": "XML+Myghty",
+  "slug": "xml-myghty",
+  "letter": "X",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "xml+myghty"
+  ],
+  "extensions": [],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

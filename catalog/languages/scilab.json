@@ -1,0 +1,24 @@
+{
+  "name": "Scilab",
+  "slug": "scilab",
+  "letter": "S",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "scilab"
+  ],
+  "extensions": [
+    ".sce",
+    ".sci",
+    ".tst"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 344,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

@@ -1,0 +1,18 @@
+{
+  "name": "TypoScriptCssData",
+  "slug": "typoscriptcssdata",
+  "letter": "T",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "typoscriptcssdata"
+  ],
+  "extensions": [],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

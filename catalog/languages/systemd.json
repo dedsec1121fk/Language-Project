@@ -1,0 +1,30 @@
+{
+  "name": "Systemd",
+  "slug": "systemd",
+  "letter": "S",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "systemd"
+  ],
+  "extensions": [
+    ".automount",
+    ".device",
+    ".mount",
+    ".path",
+    ".scope",
+    ".service",
+    ".slice",
+    ".socket",
+    ".swap",
+    ".target",
+    ".timer"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

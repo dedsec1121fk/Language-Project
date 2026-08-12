@@ -1,0 +1,14 @@
+build/*
+!build/.gitkeep
+state/active.json
+state/calibration.json
+state/history.sqlite3
+state/history.sqlite3-*
+state/checkpoints/*
+!state/checkpoints/.gitkeep
+results/*
+!results/.gitkeep
+bundles/*
+!bundles/.gitkeep
+__pycache__/
+*.pyc

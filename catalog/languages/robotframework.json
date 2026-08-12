@@ -1,0 +1,22 @@
+{
+  "name": "RobotFramework",
+  "slug": "robotframework",
+  "letter": "R",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "robotframework"
+  ],
+  "extensions": [
+    ".resource",
+    ".robot"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 324,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

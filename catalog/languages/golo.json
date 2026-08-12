@@ -1,0 +1,22 @@
+{
+  "name": "Golo",
+  "slug": "golo",
+  "letter": "G",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "golo"
+  ],
+  "extensions": [
+    ".golo"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 133,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

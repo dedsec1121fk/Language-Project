@@ -1,0 +1,24 @@
+{
+  "name": "JavaScript+Django/Jinja",
+  "slug": "javascript-django-jinja",
+  "letter": "J",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "javascript+django",
+    "javascript+jinja",
+    "js+django",
+    "js+jinja"
+  ],
+  "extensions": [
+    ".js.j2",
+    ".js.jinja2"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

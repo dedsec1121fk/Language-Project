@@ -1,0 +1,19 @@
+{
+  "name": "Julia console",
+  "slug": "julia-console",
+  "letter": "J",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "jlcon",
+    "julia-repl"
+  ],
+  "extensions": [],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

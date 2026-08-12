@@ -1,0 +1,21 @@
+{
+  "name": "Unicon",
+  "slug": "unicon",
+  "letter": "U",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "pygments"
+  ],
+  "aliases": [
+    "unicon"
+  ],
+  "extensions": [
+    ".icn"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

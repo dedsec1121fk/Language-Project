@@ -1,0 +1,23 @@
+{
+  "name": "Gherkin",
+  "slug": "gherkin",
+  "letter": "G",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "cucumber",
+    "gherkin"
+  ],
+  "extensions": [
+    ".feature",
+    ".story"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 76,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

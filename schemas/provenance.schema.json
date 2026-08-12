@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Language Project environment provenance",
+  "type": "object",
+  "properties": {
+    "registry_sha256": {"type": ["string", "null"]},
+    "manifest_sha256": {"type": ["string", "null"]},
+    "active_state_sha256": {"type": ["string", "null"]},
+    "calibration_sha256": {"type": ["string", "null"]},
+    "active_language_ids": {"type": "array", "items": {"type": "string"}},
+    "runtime_versions": {"type": "object"}
+  }
+}

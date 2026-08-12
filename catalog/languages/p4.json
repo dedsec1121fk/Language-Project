@@ -1,0 +1,19 @@
+{
+  "name": "P4",
+  "slug": "p4",
+  "letter": "P",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".p4"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 348895984,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

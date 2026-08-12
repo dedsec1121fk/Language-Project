@@ -1,0 +1,20 @@
+{
+  "name": "Elvish",
+  "slug": "elvish",
+  "letter": "E",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".elv"
+  ],
+  "interpreters": [
+    "elvish"
+  ],
+  "github_linguist_id": 570996448,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

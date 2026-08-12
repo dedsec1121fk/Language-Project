@@ -1,0 +1,22 @@
+{
+  "name": "Chapel",
+  "slug": "chapel",
+  "letter": "C",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "chapel",
+    "chpl"
+  ],
+  "extensions": [
+    ".chpl"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 55,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

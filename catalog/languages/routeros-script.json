@@ -1,0 +1,20 @@
+{
+  "name": "RouterOS Script",
+  "slug": "routeros-script",
+  "letter": "R",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".rsc"
+  ],
+  "interpreters": [
+    "RouterOS"
+  ],
+  "github_linguist_id": 592853203,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

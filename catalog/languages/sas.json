@@ -1,0 +1,23 @@
+{
+  "name": "SAS",
+  "slug": "sas",
+  "letter": "S",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "sas"
+  ],
+  "extensions": [
+    ".sas",
+    ".SAS"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 328,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

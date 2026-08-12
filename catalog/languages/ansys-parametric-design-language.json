@@ -1,0 +1,21 @@
+{
+  "name": "ANSYS parametric design language",
+  "slug": "ansys-parametric-design-language",
+  "letter": "A",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "ansys",
+    "apdl"
+  ],
+  "extensions": [
+    ".ans"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "FloScript",
+  "slug": "floscript",
+  "letter": "F",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "flo",
+    "floscript"
+  ],
+  "extensions": [
+    ".flo"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

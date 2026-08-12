@@ -1,0 +1,20 @@
+{
+  "name": "C2hs Haskell",
+  "slug": "c2hs-haskell",
+  "letter": "C",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [
+    "c2hs"
+  ],
+  "extensions": [
+    ".chs"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 45,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

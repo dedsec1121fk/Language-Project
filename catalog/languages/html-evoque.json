@@ -1,0 +1,18 @@
+{
+  "name": "HTML+Evoque",
+  "slug": "html-evoque",
+  "letter": "H",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "html+evoque"
+  ],
+  "extensions": [],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

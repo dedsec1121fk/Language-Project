@@ -1,0 +1,21 @@
+{
+  "name": "PDDL",
+  "slug": "pddl",
+  "letter": "P",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "pddl"
+  ],
+  "extensions": [
+    ".pddl"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 736235603,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

@@ -1,0 +1,20 @@
+{
+  "name": "WDL",
+  "slug": "wdl",
+  "letter": "W",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [
+    "Workflow Description Language"
+  ],
+  "extensions": [
+    ".wdl"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 374521672,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

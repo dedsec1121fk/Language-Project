@@ -1,0 +1,22 @@
+{
+  "name": "Carbon",
+  "slug": "carbon",
+  "letter": "C",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "carbon"
+  ],
+  "extensions": [
+    ".carbon"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 55627273,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

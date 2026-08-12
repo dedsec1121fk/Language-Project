@@ -1,0 +1,22 @@
+{
+  "name": "Markdown",
+  "slug": "markdown",
+  "letter": "M",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "markdown",
+    "md"
+  ],
+  "extensions": [
+    ".markdown",
+    ".md"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

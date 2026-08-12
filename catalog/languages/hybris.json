@@ -1,0 +1,20 @@
+{
+  "name": "Hybris",
+  "slug": "hybris",
+  "letter": "H",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "hybris"
+  ],
+  "extensions": [
+    ".hyb"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

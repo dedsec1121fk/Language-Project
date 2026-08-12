@@ -1,0 +1,20 @@
+{
+  "name": "Turing",
+  "slug": "turing",
+  "letter": "T",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".t",
+    ".tu"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 375,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

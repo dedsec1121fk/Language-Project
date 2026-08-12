@@ -1,0 +1,23 @@
+{
+  "name": "ADL",
+  "slug": "adl",
+  "letter": "A",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "adl"
+  ],
+  "extensions": [
+    ".adl",
+    ".adlf",
+    ".adls",
+    ".adlx"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

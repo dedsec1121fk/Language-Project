@@ -1,0 +1,19 @@
+{
+  "name": "CLIPS",
+  "slug": "clips",
+  "letter": "C",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".clp"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 46,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

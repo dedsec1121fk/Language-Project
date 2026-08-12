@@ -1,0 +1,22 @@
+{
+  "name": "SQL+Jinja",
+  "slug": "sql-jinja",
+  "letter": "S",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "sql+jinja"
+  ],
+  "extensions": [
+    ".sql",
+    ".sql.j2",
+    ".sql.jinja2"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

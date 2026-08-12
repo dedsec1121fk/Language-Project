@@ -1,0 +1,22 @@
+{
+  "name": "Earl Grey",
+  "slug": "earl-grey",
+  "letter": "E",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "earl-grey",
+    "earlgrey",
+    "eg"
+  ],
+  "extensions": [
+    ".eg"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

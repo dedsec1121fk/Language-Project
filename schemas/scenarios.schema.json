@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Language Project scenario definitions",
+  "type": "object",
+  "required": ["project", "scenarios"],
+  "properties": {
+    "project": {"const": "Language Project"},
+    "scenarios": {"type": "object", "additionalProperties": {"type": "object", "required": ["description", "steps"]}}
+  }
+}

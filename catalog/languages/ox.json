@@ -1,0 +1,20 @@
+{
+  "name": "Ox",
+  "slug": "ox",
+  "letter": "O",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".ox",
+    ".oxh",
+    ".oxo"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 268,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

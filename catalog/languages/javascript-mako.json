@@ -1,0 +1,19 @@
+{
+  "name": "JavaScript+Mako",
+  "slug": "javascript-mako",
+  "letter": "J",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "javascript+mako",
+    "js+mako"
+  ],
+  "extensions": [],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

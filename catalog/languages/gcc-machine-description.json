@@ -1,0 +1,18 @@
+{
+  "name": "GCC Machine Description",
+  "slug": "gcc-machine-description",
+  "letter": "G",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".md"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 121,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

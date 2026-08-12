@@ -1,0 +1,30 @@
+{
+  "name": "PowerShell",
+  "slug": "powershell",
+  "letter": "P",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "posh",
+    "powershell",
+    "ps1",
+    "psm1",
+    "pwsh"
+  ],
+  "extensions": [
+    ".ps1",
+    ".psd1",
+    ".psm1"
+  ],
+  "interpreters": [
+    "pwsh"
+  ],
+  "github_linguist_id": 293,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

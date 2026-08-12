@@ -1,0 +1,29 @@
+{
+  "name": "C",
+  "slug": "c",
+  "letter": "C",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "c"
+  ],
+  "extensions": [
+    ".c",
+    ".cats",
+    ".h",
+    ".h.in",
+    ".idc",
+    ".x[bp]m"
+  ],
+  "interpreters": [
+    "tcc"
+  ],
+  "github_linguist_id": 41,
+  "termux_worker": true,
+  "worker_id": "c",
+  "execution_policy": "verified-on-device"
+}

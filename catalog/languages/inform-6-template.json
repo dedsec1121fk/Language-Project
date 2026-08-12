@@ -1,0 +1,20 @@
+{
+  "name": "Inform 6 template",
+  "slug": "inform-6-template",
+  "letter": "I",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "i6t"
+  ],
+  "extensions": [
+    ".i6t"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

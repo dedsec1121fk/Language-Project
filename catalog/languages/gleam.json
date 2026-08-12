@@ -1,0 +1,22 @@
+{
+  "name": "Gleam",
+  "slug": "gleam",
+  "letter": "G",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "gleam"
+  ],
+  "extensions": [
+    ".gleam"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 1054258749,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

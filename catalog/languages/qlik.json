@@ -1,0 +1,24 @@
+{
+  "name": "Qlik",
+  "slug": "qlik",
+  "letter": "Q",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "qlik",
+    "qlikscript",
+    "qliksense",
+    "qlikview"
+  ],
+  "extensions": [
+    ".qvs",
+    ".qvw"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "BST",
+  "slug": "bst",
+  "letter": "B",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "bst",
+    "bst-pybtex"
+  ],
+  "extensions": [
+    ".bst"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

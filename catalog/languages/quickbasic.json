@@ -1,0 +1,25 @@
+{
+  "name": "QuickBASIC",
+  "slug": "quickbasic",
+  "letter": "Q",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [
+    "qb",
+    "qbasic",
+    "qb64",
+    "classic qbasic",
+    "classic quickbasic"
+  ],
+  "extensions": [
+    ".bas",
+    ".bi"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 593107205,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

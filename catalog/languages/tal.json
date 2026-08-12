@@ -1,0 +1,22 @@
+{
+  "name": "Tal",
+  "slug": "tal",
+  "letter": "T",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "pygments"
+  ],
+  "aliases": [
+    "tal",
+    "uxntal"
+  ],
+  "extensions": [
+    ".tal"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

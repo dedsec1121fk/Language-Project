@@ -1,0 +1,30 @@
+{
+  "name": "REXX",
+  "slug": "rexx",
+  "letter": "R",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "arexx",
+    "rexx"
+  ],
+  "extensions": [
+    ".arexx",
+    ".pprx",
+    ".rex",
+    ".rexx",
+    ".rx"
+  ],
+  "interpreters": [
+    "regina",
+    "rexx"
+  ],
+  "github_linguist_id": 311,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

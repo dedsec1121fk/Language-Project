@@ -1,0 +1,18 @@
+{
+  "name": "Tolk",
+  "slug": "tolk",
+  "letter": "T",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".tolk"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 678673060,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

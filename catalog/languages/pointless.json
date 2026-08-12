@@ -1,0 +1,20 @@
+{
+  "name": "Pointless",
+  "slug": "pointless",
+  "letter": "P",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "pointless"
+  ],
+  "extensions": [
+    ".ptls"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

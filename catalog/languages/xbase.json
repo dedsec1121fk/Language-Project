@@ -1,0 +1,24 @@
+{
+  "name": "xBase",
+  "slug": "xbase",
+  "letter": "X",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [
+    "advpl",
+    "clipper",
+    "foxpro"
+  ],
+  "extensions": [
+    ".prg",
+    ".ch",
+    ".prw"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 421,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

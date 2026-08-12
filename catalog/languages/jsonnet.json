@@ -1,0 +1,22 @@
+{
+  "name": "Jsonnet",
+  "slug": "jsonnet",
+  "letter": "J",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "jsonnet"
+  ],
+  "extensions": [
+    ".jsonnet",
+    ".libsonnet"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 664885656,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

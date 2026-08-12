@@ -1,0 +1,18 @@
+{
+  "name": "Hurl",
+  "slug": "hurl",
+  "letter": "H",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".hurl"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 959040217,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

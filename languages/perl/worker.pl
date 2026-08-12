@@ -1,0 +1,1 @@
+use strict; use warnings; $|=1; my $KEY=0x6b; while(my $line=<STDIN>){chomp $line; $line=~s/\r$//; if($line eq 'PING'){print "PONG\n";next} last if $line eq 'QUIT'; if($line=~/^[ED] ([0-9A-Fa-f]*)$/){my $h=$1; my $o=''; for(my $i=0;$i<length($h);$i+=2){$o.=sprintf('%02x',hex(substr($h,$i,2))^$KEY)} print "$o\n"}else{print "ERR\n"}}

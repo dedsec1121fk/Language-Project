@@ -1,0 +1,19 @@
+{
+  "name": "ZAP",
+  "slug": "zap",
+  "letter": "Z",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".zap",
+    ".xzap"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 952972794,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

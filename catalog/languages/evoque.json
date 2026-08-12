@@ -1,0 +1,20 @@
+{
+  "name": "Evoque",
+  "slug": "evoque",
+  "letter": "E",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "evoque"
+  ],
+  "extensions": [
+    ".evoque"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

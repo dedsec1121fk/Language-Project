@@ -1,0 +1,21 @@
+{
+  "name": "Cap'n Proto",
+  "slug": "cap-n-proto",
+  "letter": "C",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "capnp"
+  ],
+  "extensions": [
+    ".capnp"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 52,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

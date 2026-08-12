@@ -1,0 +1,16 @@
+{
+  "name": "Z shell",
+  "slug": "z-shell",
+  "letter": "Z",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index"
+  ],
+  "aliases": [],
+  "extensions": [],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": true,
+  "worker_id": "zsh",
+  "execution_policy": "verified-on-device"
+}

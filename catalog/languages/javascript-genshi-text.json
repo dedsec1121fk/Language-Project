@@ -1,0 +1,21 @@
+{
+  "name": "JavaScript+Genshi Text",
+  "slug": "javascript-genshi-text",
+  "letter": "J",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "javascript+genshi",
+    "javascript+genshitext",
+    "js+genshi",
+    "js+genshitext"
+  ],
+  "extensions": [],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

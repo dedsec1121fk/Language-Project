@@ -1,0 +1,22 @@
+{
+  "name": "JetBrains MPS",
+  "slug": "jetbrains-mps",
+  "letter": "J",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [
+    "mps"
+  ],
+  "extensions": [
+    ".mps",
+    ".mpl",
+    ".msd"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 465165328,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

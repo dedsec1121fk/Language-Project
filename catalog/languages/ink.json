@@ -1,0 +1,18 @@
+{
+  "name": "Ink",
+  "slug": "ink",
+  "letter": "I",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".ink"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 838252715,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

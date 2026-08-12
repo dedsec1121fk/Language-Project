@@ -1,0 +1,20 @@
+{
+  "name": "MXML",
+  "slug": "mxml",
+  "letter": "M",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "mxml"
+  ],
+  "extensions": [
+    ".mxml"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

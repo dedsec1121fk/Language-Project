@@ -1,0 +1,20 @@
+{
+  "name": "Kaitai Struct",
+  "slug": "kaitai-struct",
+  "letter": "K",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [
+    "ksy"
+  ],
+  "extensions": [
+    ".ksy"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 818804755,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

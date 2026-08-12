@@ -1,0 +1,21 @@
+{
+  "name": "ANTLR With CPP Target",
+  "slug": "antlr-with-cpp-target",
+  "letter": "A",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "antlr-cpp"
+  ],
+  "extensions": [
+    ".G",
+    ".g"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

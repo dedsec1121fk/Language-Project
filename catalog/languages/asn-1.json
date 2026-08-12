@@ -1,0 +1,20 @@
+{
+  "name": "ASN.1",
+  "slug": "asn-1",
+  "letter": "A",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "asn1"
+  ],
+  "extensions": [
+    ".asn1"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

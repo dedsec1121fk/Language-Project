@@ -1,0 +1,19 @@
+{
+  "name": "HiveQL",
+  "slug": "hiveql",
+  "letter": "H",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".q",
+    ".hql"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 931814087,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

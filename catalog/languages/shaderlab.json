@@ -1,0 +1,18 @@
+{
+  "name": "ShaderLab",
+  "slug": "shaderlab",
+  "letter": "S",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".shader"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 664257356,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

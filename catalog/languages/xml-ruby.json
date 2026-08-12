@@ -1,0 +1,19 @@
+{
+  "name": "XML+Ruby",
+  "slug": "xml-ruby",
+  "letter": "X",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "xml+erb",
+    "xml+ruby"
+  ],
+  "extensions": [],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

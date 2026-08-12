@@ -1,0 +1,20 @@
+{
+  "name": "M4Sugar",
+  "slug": "m4sugar",
+  "letter": "M",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [
+    "autoconf"
+  ],
+  "extensions": [
+    ".m4"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 216,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

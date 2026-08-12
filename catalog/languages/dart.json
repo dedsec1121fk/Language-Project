@@ -1,0 +1,23 @@
+{
+  "name": "Dart",
+  "slug": "dart",
+  "letter": "D",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "dart"
+  ],
+  "extensions": [
+    ".dart"
+  ],
+  "interpreters": [
+    "dart"
+  ],
+  "github_linguist_id": 87,
+  "termux_worker": true,
+  "worker_id": "dart",
+  "execution_policy": "verified-on-device"
+}

@@ -1,0 +1,2 @@
+const readline=require('readline'); const KEY=0x61; const rl=readline.createInterface({input:process.stdin,crlfDelay:Infinity});
+rl.on('line',line=>{if(line==='PING'){console.log('PONG');return;}if(line==='QUIT'){process.exit(0);}if(/^[ED] [0-9a-fA-F]*$/.test(line)){let b=Buffer.from(line.slice(2),'hex');for(let i=0;i<b.length;i++)b[i]^=KEY;console.log(b.toString('hex'));}else console.log('ERR');});

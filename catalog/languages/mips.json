@@ -1,0 +1,21 @@
+{
+  "name": "MIPS",
+  "slug": "mips",
+  "letter": "M",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "mips"
+  ],
+  "extensions": [
+    ".MIPS",
+    ".mips"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

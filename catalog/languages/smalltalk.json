@@ -1,0 +1,25 @@
+{
+  "name": "Smalltalk",
+  "slug": "smalltalk",
+  "letter": "S",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "smalltalk",
+    "squeak",
+    "st"
+  ],
+  "extensions": [
+    ".cs",
+    ".st"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 352,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

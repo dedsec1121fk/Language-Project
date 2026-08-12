@@ -1,0 +1,20 @@
+{
+  "name": "BBC Basic",
+  "slug": "bbc-basic",
+  "letter": "B",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "bbcbasic"
+  ],
+  "extensions": [
+    ".bbc"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

@@ -1,0 +1,20 @@
+{
+  "name": "Power Query",
+  "slug": "power-query",
+  "letter": "P",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [
+    "powerquery"
+  ],
+  "extensions": [
+    ".pq"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 37496382,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

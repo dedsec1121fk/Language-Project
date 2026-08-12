@@ -1,0 +1,20 @@
+{
+  "name": "OMNeT++ NED",
+  "slug": "omnet-ned",
+  "letter": "O",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [
+    "omnetpp-ned"
+  ],
+  "extensions": [
+    ".ned"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 924868392,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

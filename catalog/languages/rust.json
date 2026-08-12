@@ -1,0 +1,25 @@
+{
+  "name": "Rust",
+  "slug": "rust",
+  "letter": "R",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "rs",
+    "rust"
+  ],
+  "extensions": [
+    ".rs",
+    ".rs.in"
+  ],
+  "interpreters": [
+    "rust-script"
+  ],
+  "github_linguist_id": 327,
+  "termux_worker": true,
+  "worker_id": "rust",
+  "execution_policy": "verified-on-device"
+}

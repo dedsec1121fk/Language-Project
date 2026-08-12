@@ -1,0 +1,24 @@
+{
+  "name": "Modula-2",
+  "slug": "modula-2",
+  "letter": "M",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "m2",
+    "modula2"
+  ],
+  "extensions": [
+    ".def",
+    ".mod"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 234,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Odin",
+  "slug": "odin",
+  "letter": "O",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "odin",
+    "odin-lang",
+    "odinlang"
+  ],
+  "extensions": [
+    ".odin"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 889244082,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

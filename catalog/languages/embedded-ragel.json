@@ -1,0 +1,20 @@
+{
+  "name": "Embedded Ragel",
+  "slug": "embedded-ragel",
+  "letter": "E",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "ragel-em"
+  ],
+  "extensions": [
+    ".rl"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

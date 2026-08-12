@@ -1,0 +1,20 @@
+{
+  "name": "Glimmer JS",
+  "slug": "glimmer-js",
+  "letter": "G",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [
+    "gjs"
+  ],
+  "extensions": [
+    ".gjs"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 5523150,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

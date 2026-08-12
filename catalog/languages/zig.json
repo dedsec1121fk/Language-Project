@@ -1,0 +1,23 @@
+{
+  "name": "Zig",
+  "slug": "zig",
+  "letter": "Z",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "zig"
+  ],
+  "extensions": [
+    ".zig",
+    ".zig.zon"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 646424281,
+  "termux_worker": true,
+  "worker_id": "zig",
+  "execution_policy": "verified-on-device"
+}

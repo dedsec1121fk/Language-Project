@@ -1,0 +1,23 @@
+{
+  "name": "SourcePawn",
+  "slug": "sourcepawn",
+  "letter": "S",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "sourcemod",
+    "sp"
+  ],
+  "extensions": [
+    ".inc",
+    ".sp"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 354,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

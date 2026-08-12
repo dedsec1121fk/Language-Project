@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Language Project resumable checkpoint",
+  "type": "object",
+  "required": ["project", "session_id", "status", "phase", "language_order", "original_hex", "current_hex", "completed_stages"],
+  "properties": {
+    "project": {"const": "Language Project"},
+    "session_id": {"type": "string"},
+    "status": {"enum": ["running", "complete"]},
+    "phase": {"enum": ["encode", "decode", "done"]},
+    "language_order": {"type": "array", "items": {"type": "string"}},
+    "original_hex": {"type": "string"},
+    "current_hex": {"type": "string"},
+    "completed_stages": {"type": "array"},
+    "integrity": {"type": "boolean"}
+  }
+}

@@ -1,0 +1,16 @@
+(defparameter *key* #x9b)
+(defun transform (h)
+  (with-output-to-string (out)
+    (loop for i from 0 below (length h) by 2
+          for v = (parse-integer h :start i :end (+ i 2) :radix 16)
+          do (format out "~2,'0x" (logxor v *key*)))))
+(defun language-project-main ()
+  (loop for line = (read-line *standard-input* nil nil)
+        while line do
+          (cond ((string= line "PING") (format t "PONG~%") (finish-output))
+                ((string= line "QUIT") (return))
+                ((and (>= (length line) 2) (member (char line 0) '(#\E #\D)) (char= (char line 1) #\Space))
+                 (format t "~a~%" (transform (subseq line 2))) (finish-output))
+                (t (format t "ERR~%") (finish-output)))))
+(language-project-main)
+(quit)

@@ -1,0 +1,19 @@
+{
+  "name": "Bicep",
+  "slug": "bicep",
+  "letter": "B",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".bicep",
+    ".bicepparam"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 321200902,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

@@ -1,0 +1,26 @@
+{
+  "name": "MQL",
+  "slug": "mql",
+  "letter": "M",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "mq4",
+    "mq5",
+    "mql",
+    "mql4",
+    "mql5"
+  ],
+  "extensions": [
+    ".mq4",
+    ".mq5",
+    ".mqh"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Language Project on-device verified state",
+  "type": "object",
+  "required": ["project", "active", "failed", "versions", "metrics"],
+  "properties": {
+    "project": {"const": "Language Project"},
+    "active": {"type": "array", "items": {"type": "string"}},
+    "failed": {"type": "object"},
+    "versions": {"type": "object"},
+    "metrics": {"type": "object"}
+  }
+}

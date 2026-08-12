@@ -1,0 +1,22 @@
+{
+  "name": "XML+Django/Jinja",
+  "slug": "xml-django-jinja",
+  "letter": "X",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "xml+django",
+    "xml+jinja"
+  ],
+  "extensions": [
+    ".xml.j2",
+    ".xml.jinja2"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

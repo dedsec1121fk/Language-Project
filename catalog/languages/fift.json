@@ -1,0 +1,21 @@
+{
+  "name": "Fift",
+  "slug": "fift",
+  "letter": "F",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "fif",
+    "fift"
+  ],
+  "extensions": [
+    ".fif"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

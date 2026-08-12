@@ -1,0 +1,21 @@
+{
+  "name": "Kconfig",
+  "slug": "kconfig",
+  "letter": "K",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "kconfig",
+    "kernel-config",
+    "linux-config",
+    "menuconfig"
+  ],
+  "extensions": [],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

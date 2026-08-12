@@ -1,0 +1,19 @@
+{
+  "name": "MQL5",
+  "slug": "mql5",
+  "letter": "M",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".mq5",
+    ".mqh"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 427,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

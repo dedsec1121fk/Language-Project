@@ -1,0 +1,33 @@
+{
+  "name": "PLSQL",
+  "slug": "plsql",
+  "letter": "P",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".pls",
+    ".bdy",
+    ".ddl",
+    ".fnc",
+    ".pck",
+    ".pkb",
+    ".pks",
+    ".plb",
+    ".plsql",
+    ".prc",
+    ".spc",
+    ".sql",
+    ".tpb",
+    ".tps",
+    ".trg",
+    ".vw"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 273,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

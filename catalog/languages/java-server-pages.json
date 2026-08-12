@@ -1,0 +1,21 @@
+{
+  "name": "Java Server Pages",
+  "slug": "java-server-pages",
+  "letter": "J",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [
+    "jsp"
+  ],
+  "extensions": [
+    ".jsp",
+    ".tag"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 182,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

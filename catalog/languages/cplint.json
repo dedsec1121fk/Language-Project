@@ -1,0 +1,26 @@
+{
+  "name": "cplint",
+  "slug": "cplint",
+  "letter": "C",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "cplint"
+  ],
+  "extensions": [
+    ".cpl",
+    ".ecl",
+    ".lpad",
+    ".P",
+    ".pl",
+    ".pro",
+    ".prolog"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

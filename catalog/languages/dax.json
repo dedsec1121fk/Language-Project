@@ -1,0 +1,20 @@
+{
+  "name": "Dax",
+  "slug": "dax",
+  "letter": "D",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "dax"
+  ],
+  "extensions": [
+    ".dax"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

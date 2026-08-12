@@ -1,0 +1,20 @@
+{
+  "name": "SCSS",
+  "slug": "scss",
+  "letter": "S",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "scss"
+  ],
+  "extensions": [
+    ".scss"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

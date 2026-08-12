@@ -1,0 +1,18 @@
+{
+  "name": "MoonBit",
+  "slug": "moonbit",
+  "letter": "M",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".mbt"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 181453007,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

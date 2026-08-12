@@ -1,0 +1,19 @@
+{
+  "name": "Harbour",
+  "slug": "harbour",
+  "letter": "H",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".hb"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 156,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

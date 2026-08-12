@@ -1,0 +1,23 @@
+{
+  "name": "Kotlin",
+  "slug": "kotlin",
+  "letter": "K",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "kotlin"
+  ],
+  "extensions": [
+    ".kt",
+    ".ktm",
+    ".kts"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 189,
+  "termux_worker": true,
+  "worker_id": "kotlin",
+  "execution_policy": "verified-on-device"
+}

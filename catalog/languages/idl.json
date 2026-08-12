@@ -1,0 +1,23 @@
+{
+  "name": "IDL",
+  "slug": "idl",
+  "letter": "I",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "idl"
+  ],
+  "extensions": [
+    ".dlm",
+    ".pro"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 161,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

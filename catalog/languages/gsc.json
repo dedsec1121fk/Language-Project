@@ -1,0 +1,20 @@
+{
+  "name": "GSC",
+  "slug": "gsc",
+  "letter": "G",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".gsc",
+    ".csc",
+    ".gsh"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 257856279,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

@@ -1,0 +1,29 @@
+{
+  "name": "IPython",
+  "slug": "ipython",
+  "letter": "I",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "ipython",
+    "ipython3"
+  ],
+  "extensions": [
+    ".bzl",
+    ".jy",
+    ".py",
+    ".pye",
+    ".pyi",
+    ".pyw",
+    ".sage",
+    ".sc",
+    ".tac"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

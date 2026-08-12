@@ -1,0 +1,20 @@
+{
+  "name": "Meson",
+  "slug": "meson",
+  "letter": "M",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "meson",
+    "meson.build"
+  ],
+  "extensions": [],
+  "interpreters": [],
+  "github_linguist_id": 799141244,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Visual Basic .NET",
+  "slug": "visual-basic-net",
+  "letter": "V",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [
+    "visual basic",
+    "vbnet",
+    "vb .net",
+    "vb.net"
+  ],
+  "extensions": [
+    ".vb",
+    ".vbhtml"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 389,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

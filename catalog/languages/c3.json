@@ -1,0 +1,18 @@
+{
+  "name": "C3",
+  "slug": "c3",
+  "letter": "C",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".c3"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 769248603,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

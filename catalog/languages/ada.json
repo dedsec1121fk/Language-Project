@@ -1,0 +1,25 @@
+{
+  "name": "Ada",
+  "slug": "ada",
+  "letter": "A",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "ada",
+    "ada2005",
+    "ada95"
+  ],
+  "extensions": [
+    ".ada",
+    ".adb",
+    ".ads"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 11,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

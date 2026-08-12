@@ -1,0 +1,22 @@
+{
+  "name": "Csound Orchestra",
+  "slug": "csound-orchestra",
+  "letter": "C",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "csound",
+    "csound-orc"
+  ],
+  "extensions": [
+    ".orc",
+    ".udo"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Isabelle ROOT",
+  "slug": "isabelle-root",
+  "letter": "I",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [],
+  "interpreters": [],
+  "github_linguist_id": 171,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

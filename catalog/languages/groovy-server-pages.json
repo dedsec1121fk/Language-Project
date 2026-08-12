@@ -1,0 +1,21 @@
+{
+  "name": "Groovy Server Pages",
+  "slug": "groovy-server-pages",
+  "letter": "G",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [
+    "gsp",
+    "java server page"
+  ],
+  "extensions": [
+    ".gsp"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 143,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

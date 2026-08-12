@@ -1,0 +1,22 @@
+{
+  "name": "Nim",
+  "slug": "nim",
+  "letter": "N",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".nim",
+    ".nim.cfg",
+    ".nimble",
+    ".nimrod",
+    ".nims"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 249,
+  "termux_worker": true,
+  "worker_id": "nim",
+  "execution_policy": "verified-on-device"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Inform 6",
+  "slug": "inform-6",
+  "letter": "I",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "i6",
+    "inform6"
+  ],
+  "extensions": [
+    ".inf"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

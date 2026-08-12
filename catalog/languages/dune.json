@@ -1,0 +1,16 @@
+{
+  "name": "Dune",
+  "slug": "dune",
+  "letter": "D",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [],
+  "interpreters": [],
+  "github_linguist_id": 754574151,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

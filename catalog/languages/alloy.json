@@ -1,0 +1,21 @@
+{
+  "name": "Alloy",
+  "slug": "alloy",
+  "letter": "A",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "alloy"
+  ],
+  "extensions": [
+    ".als"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 13,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

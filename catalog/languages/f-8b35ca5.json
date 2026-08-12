@@ -1,0 +1,24 @@
+{
+  "name": "F#",
+  "slug": "f-8b35ca5",
+  "letter": "F",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "f#",
+    "fsharp"
+  ],
+  "extensions": [
+    ".fs",
+    ".fsi",
+    ".fsx"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 105,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

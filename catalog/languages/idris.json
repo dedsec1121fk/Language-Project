@@ -1,0 +1,24 @@
+{
+  "name": "Idris",
+  "slug": "idris",
+  "letter": "I",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "idr",
+    "idris"
+  ],
+  "extensions": [
+    ".idr",
+    ".lidr"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 165,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

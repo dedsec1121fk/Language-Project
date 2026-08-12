@@ -1,0 +1,16 @@
+{
+  "name": "J++",
+  "slug": "j-7461bcd",
+  "letter": "J",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index"
+  ],
+  "aliases": [],
+  "extensions": [],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

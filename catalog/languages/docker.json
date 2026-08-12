@@ -1,0 +1,21 @@
+{
+  "name": "Docker",
+  "slug": "docker",
+  "letter": "D",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "docker",
+    "dockerfile"
+  ],
+  "extensions": [
+    ".docker"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "TrafficScript",
+  "slug": "trafficscript",
+  "letter": "T",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "rts",
+    "trafficscript"
+  ],
+  "extensions": [
+    ".rts"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

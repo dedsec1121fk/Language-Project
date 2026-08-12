@@ -1,0 +1,21 @@
+{
+  "name": "RConsole",
+  "slug": "rconsole",
+  "letter": "R",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "rconsole",
+    "rout"
+  ],
+  "extensions": [
+    ".Rout"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Cangjie",
+  "slug": "cangjie",
+  "letter": "C",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".cj"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 581895317,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

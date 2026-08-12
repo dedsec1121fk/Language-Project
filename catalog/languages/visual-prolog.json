@@ -1,0 +1,25 @@
+{
+  "name": "Visual Prolog",
+  "slug": "visual-prolog",
+  "letter": "V",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "pygments"
+  ],
+  "aliases": [
+    "visualprolog"
+  ],
+  "extensions": [
+    ".cl",
+    ".i",
+    ".pack",
+    ".ph",
+    ".pro"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Arturo",
+  "slug": "arturo",
+  "letter": "A",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "art",
+    "arturo"
+  ],
+  "extensions": [
+    ".art"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

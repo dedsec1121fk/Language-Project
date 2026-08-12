@@ -1,0 +1,22 @@
+{
+  "name": "Modula-3",
+  "slug": "modula-3",
+  "letter": "M",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".i3",
+    ".ig",
+    ".m3",
+    ".mg"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 564743864,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

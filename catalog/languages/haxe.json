@@ -1,0 +1,25 @@
+{
+  "name": "Haxe",
+  "slug": "haxe",
+  "letter": "H",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "haxe",
+    "hx",
+    "hxsl"
+  ],
+  "extensions": [
+    ".hx",
+    ".hxsl"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 158,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

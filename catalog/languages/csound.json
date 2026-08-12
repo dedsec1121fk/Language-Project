@@ -1,0 +1,21 @@
+{
+  "name": "Csound",
+  "slug": "csound",
+  "letter": "C",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [
+    "csound-orc"
+  ],
+  "extensions": [
+    ".orc",
+    ".udo"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 73,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

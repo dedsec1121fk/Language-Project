@@ -1,0 +1,22 @@
+{
+  "name": "COMAL-80",
+  "slug": "comal-80",
+  "letter": "C",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "comal",
+    "comal80"
+  ],
+  "extensions": [
+    ".cml",
+    ".comal"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

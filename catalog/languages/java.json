@@ -1,0 +1,23 @@
+{
+  "name": "Java",
+  "slug": "java",
+  "letter": "J",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "java"
+  ],
+  "extensions": [
+    ".jav",
+    ".java",
+    ".jsh"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 181,
+  "termux_worker": true,
+  "worker_id": "java",
+  "execution_policy": "verified-on-device"
+}

@@ -1,0 +1,26 @@
+{
+  "name": "YAML+Jinja",
+  "slug": "yaml-jinja",
+  "letter": "Y",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "salt",
+    "sls",
+    "yaml+jinja"
+  ],
+  "extensions": [
+    ".sls",
+    ".yaml.j2",
+    ".yaml.jinja2",
+    ".yml.j2",
+    ".yml.jinja2"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

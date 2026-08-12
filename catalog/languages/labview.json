@@ -1,0 +1,21 @@
+{
+  "name": "LabVIEW",
+  "slug": "labview",
+  "letter": "L",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".lvproj",
+    ".lvclass",
+    ".lvlib"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 194,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

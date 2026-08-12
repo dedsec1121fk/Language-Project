@@ -1,0 +1,31 @@
+{
+  "name": "APL",
+  "slug": "apl",
+  "letter": "A",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "apl"
+  ],
+  "extensions": [
+    ".apl",
+    ".aplc",
+    ".aplf",
+    ".apli",
+    ".apln",
+    ".aplo",
+    ".dyalog"
+  ],
+  "interpreters": [
+    "apl",
+    "aplx",
+    "dyalog"
+  ],
+  "github_linguist_id": 6,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

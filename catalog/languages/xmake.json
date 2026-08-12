@@ -1,0 +1,16 @@
+{
+  "name": "Xmake",
+  "slug": "xmake",
+  "letter": "X",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [],
+  "interpreters": [],
+  "github_linguist_id": 225223071,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

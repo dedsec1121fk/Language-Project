@@ -1,0 +1,23 @@
+{
+  "name": "Portugol",
+  "slug": "portugol",
+  "letter": "P",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "portugol"
+  ],
+  "extensions": [
+    ".alg",
+    ".por",
+    ".portugol"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 832391833,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

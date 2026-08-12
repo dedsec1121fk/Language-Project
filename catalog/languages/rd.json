@@ -1,0 +1,20 @@
+{
+  "name": "Rd",
+  "slug": "rd",
+  "letter": "R",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "rd"
+  ],
+  "extensions": [
+    ".Rd"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

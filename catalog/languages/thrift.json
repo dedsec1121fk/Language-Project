@@ -1,0 +1,21 @@
+{
+  "name": "Thrift",
+  "slug": "thrift",
+  "letter": "T",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "thrift"
+  ],
+  "extensions": [
+    ".thrift"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 374,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

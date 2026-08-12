@@ -1,0 +1,19 @@
+{
+  "name": "PLpgSQL",
+  "slug": "plpgsql",
+  "letter": "P",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".pgsql",
+    ".sql"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 274,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

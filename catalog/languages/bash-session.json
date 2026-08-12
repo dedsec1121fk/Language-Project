@@ -1,0 +1,22 @@
+{
+  "name": "Bash Session",
+  "slug": "bash-session",
+  "letter": "B",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "console",
+    "shell-session"
+  ],
+  "extensions": [
+    ".sh-session",
+    ".shell-session"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

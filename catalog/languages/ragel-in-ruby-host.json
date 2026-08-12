@@ -1,0 +1,21 @@
+{
+  "name": "Ragel in Ruby Host",
+  "slug": "ragel-in-ruby-host",
+  "letter": "R",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "ragel-rb",
+    "ragel-ruby"
+  ],
+  "extensions": [
+    ".rl"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

@@ -1,0 +1,20 @@
+{
+  "name": "Visual Prolog Grammar",
+  "slug": "visual-prolog-grammar",
+  "letter": "V",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "visualprologgrammar"
+  ],
+  "extensions": [
+    ".vipgrm"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

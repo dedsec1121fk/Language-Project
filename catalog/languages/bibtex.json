@@ -1,0 +1,21 @@
+{
+  "name": "BibTeX",
+  "slug": "bibtex",
+  "letter": "B",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "bib",
+    "bibtex"
+  ],
+  "extensions": [
+    ".bib"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

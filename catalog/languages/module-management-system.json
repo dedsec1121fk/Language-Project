@@ -1,0 +1,19 @@
+{
+  "name": "Module Management System",
+  "slug": "module-management-system",
+  "letter": "M",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".mms",
+    ".mmk"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 235,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

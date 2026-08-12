@@ -1,0 +1,30 @@
+{
+  "name": "Pascal",
+  "slug": "pascal",
+  "letter": "P",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist"
+  ],
+  "aliases": [
+    "delphi",
+    "objectpascal"
+  ],
+  "extensions": [
+    ".pas",
+    ".dfm",
+    ".dpr",
+    ".inc",
+    ".lpr",
+    ".pascal",
+    ".pp"
+  ],
+  "interpreters": [
+    "instantfpc"
+  ],
+  "github_linguist_id": 281,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

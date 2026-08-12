@@ -1,0 +1,27 @@
+{
+  "name": "HTML+Django/Jinja",
+  "slug": "html-django-jinja",
+  "letter": "H",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "html+django",
+    "html+jinja",
+    "htmldjango"
+  ],
+  "extensions": [
+    ".htm.j2",
+    ".htm.jinja2",
+    ".html.j2",
+    ".html.jinja2",
+    ".xhtml.j2",
+    ".xhtml.jinja2"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Bluespec",
+  "slug": "bluespec",
+  "letter": "B",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [
+    "bluespec bsv",
+    "bsv"
+  ],
+  "extensions": [
+    ".bsv"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 36,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

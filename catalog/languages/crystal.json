@@ -1,0 +1,24 @@
+{
+  "name": "Crystal",
+  "slug": "crystal",
+  "letter": "C",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "cr",
+    "crystal"
+  ],
+  "extensions": [
+    ".cr"
+  ],
+  "interpreters": [
+    "crystal"
+  ],
+  "github_linguist_id": 72,
+  "termux_worker": true,
+  "worker_id": "crystal",
+  "execution_policy": "verified-on-device"
+}

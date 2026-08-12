@@ -1,0 +1,20 @@
+{
+  "name": "Debian Sources file",
+  "slug": "debian-sources-file",
+  "letter": "D",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "debian.sources"
+  ],
+  "extensions": [
+    ".sources"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

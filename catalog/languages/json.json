@@ -1,0 +1,25 @@
+{
+  "name": "JSON",
+  "slug": "json",
+  "letter": "J",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "json",
+    "json-object"
+  ],
+  "extensions": [
+    ".json",
+    ".jsonl",
+    ".module",
+    ".ndjson",
+    ".xc"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

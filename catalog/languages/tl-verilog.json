@@ -1,0 +1,18 @@
+{
+  "name": "TL-Verilog",
+  "slug": "tl-verilog",
+  "letter": "T",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".tlv"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 118656070,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

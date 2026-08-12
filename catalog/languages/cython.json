@@ -1,0 +1,25 @@
+{
+  "name": "Cython",
+  "slug": "cython",
+  "letter": "C",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "cython",
+    "pyrex",
+    "pyx"
+  ],
+  "extensions": [
+    ".pxd",
+    ".pxi",
+    ".pyx"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 79,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

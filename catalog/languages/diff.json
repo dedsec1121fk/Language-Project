@@ -1,0 +1,22 @@
+{
+  "name": "Diff",
+  "slug": "diff",
+  "letter": "D",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "diff",
+    "udiff"
+  ],
+  "extensions": [
+    ".diff",
+    ".patch"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

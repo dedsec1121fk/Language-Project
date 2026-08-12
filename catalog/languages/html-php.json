@@ -1,0 +1,20 @@
+{
+  "name": "HTML+PHP",
+  "slug": "html-php",
+  "letter": "H",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "html+php"
+  ],
+  "extensions": [
+    ".phtml"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

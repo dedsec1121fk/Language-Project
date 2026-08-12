@@ -1,0 +1,21 @@
+{
+  "name": "FortranFixed",
+  "slug": "fortranfixed",
+  "letter": "F",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "fortranfixed"
+  ],
+  "extensions": [
+    ".f",
+    ".F"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

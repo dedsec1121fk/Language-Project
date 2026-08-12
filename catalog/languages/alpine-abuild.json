@@ -1,0 +1,19 @@
+{
+  "name": "Alpine Abuild",
+  "slug": "alpine-abuild",
+  "letter": "A",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [
+    "abuild",
+    "apkbuild"
+  ],
+  "extensions": [],
+  "interpreters": [],
+  "github_linguist_id": 14,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

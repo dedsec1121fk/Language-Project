@@ -1,0 +1,20 @@
+{
+  "name": "Freefem",
+  "slug": "freefem",
+  "letter": "F",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "freefem"
+  ],
+  "extensions": [
+    ".edp"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

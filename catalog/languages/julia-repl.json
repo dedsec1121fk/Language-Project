@@ -1,0 +1,16 @@
+{
+  "name": "Julia REPL",
+  "slug": "julia-repl",
+  "letter": "J",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [],
+  "interpreters": [],
+  "github_linguist_id": 220689142,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

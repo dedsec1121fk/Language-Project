@@ -1,0 +1,22 @@
+{
+  "name": "BlitzMax",
+  "slug": "blitzmax",
+  "letter": "B",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "blitzmax",
+    "bmax"
+  ],
+  "extensions": [
+    ".bmx"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 35,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

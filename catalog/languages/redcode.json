@@ -1,0 +1,22 @@
+{
+  "name": "Redcode",
+  "slug": "redcode",
+  "letter": "R",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "redcode"
+  ],
+  "extensions": [
+    ".cw"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 321,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

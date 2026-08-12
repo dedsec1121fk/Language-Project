@@ -1,0 +1,22 @@
+{
+  "name": "Xtend",
+  "slug": "xtend",
+  "letter": "X",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "xtend"
+  ],
+  "extensions": [
+    ".xtend"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 406,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

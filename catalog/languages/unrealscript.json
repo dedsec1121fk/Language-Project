@@ -1,0 +1,19 @@
+{
+  "name": "UnrealScript",
+  "slug": "unrealscript",
+  "letter": "U",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".uc"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 382,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

@@ -1,0 +1,36 @@
+{
+  "name": "Common Lisp",
+  "slug": "common-lisp",
+  "letter": "C",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "cl",
+    "common-lisp",
+    "lisp"
+  ],
+  "extensions": [
+    ".asd",
+    ".cl",
+    ".l",
+    ".lisp",
+    ".lsp",
+    ".ny",
+    ".podsl",
+    ".sexp"
+  ],
+  "interpreters": [
+    "lisp",
+    "sbcl",
+    "ccl",
+    "clisp",
+    "ecl"
+  ],
+  "github_linguist_id": 66,
+  "termux_worker": true,
+  "worker_id": "common-lisp",
+  "execution_policy": "verified-on-device"
+}

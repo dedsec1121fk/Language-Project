@@ -1,0 +1,21 @@
+{
+  "name": "JavaScript+Ruby",
+  "slug": "javascript-ruby",
+  "letter": "J",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "javascript+erb",
+    "javascript+ruby",
+    "js+erb",
+    "js+ruby"
+  ],
+  "extensions": [],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

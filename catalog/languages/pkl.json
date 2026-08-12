@@ -1,0 +1,20 @@
+{
+  "name": "Pkl",
+  "slug": "pkl",
+  "letter": "P",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".pkl"
+  ],
+  "interpreters": [
+    "pkl"
+  ],
+  "github_linguist_id": 288822799,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

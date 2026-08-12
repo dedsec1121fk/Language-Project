@@ -1,0 +1,23 @@
+{
+  "name": "Mason",
+  "slug": "mason",
+  "letter": "M",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "mason"
+  ],
+  "extensions": [
+    ".m",
+    ".mc",
+    ".mhtml",
+    ".mi"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

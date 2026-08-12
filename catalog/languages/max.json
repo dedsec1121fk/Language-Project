@@ -1,0 +1,26 @@
+{
+  "name": "Max",
+  "slug": "max",
+  "letter": "M",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist"
+  ],
+  "aliases": [
+    "max/msp",
+    "maxmsp"
+  ],
+  "extensions": [
+    ".maxpat",
+    ".maxhelp",
+    ".maxproj",
+    ".mxt",
+    ".pat"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 227,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

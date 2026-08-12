@@ -1,0 +1,29 @@
+{
+  "name": "CoffeeScript",
+  "slug": "coffeescript",
+  "letter": "C",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "coffee",
+    "coffee-script",
+    "coffeescript"
+  ],
+  "extensions": [
+    "._coffee",
+    ".cake",
+    ".cjsx",
+    ".coffee",
+    ".iced"
+  ],
+  "interpreters": [
+    "coffee"
+  ],
+  "github_linguist_id": 63,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

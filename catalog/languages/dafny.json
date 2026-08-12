@@ -1,0 +1,20 @@
+{
+  "name": "Dafny",
+  "slug": "dafny",
+  "letter": "D",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".dfy"
+  ],
+  "interpreters": [
+    "dafny"
+  ],
+  "github_linguist_id": 969323346,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

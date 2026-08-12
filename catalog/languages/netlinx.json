@@ -1,0 +1,19 @@
+{
+  "name": "NetLinx",
+  "slug": "netlinx",
+  "letter": "N",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".axs",
+    ".axi"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 244,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

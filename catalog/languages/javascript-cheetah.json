@@ -1,0 +1,21 @@
+{
+  "name": "JavaScript+Cheetah",
+  "slug": "javascript-cheetah",
+  "letter": "J",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "javascript+cheetah",
+    "javascript+spitfire",
+    "js+cheetah",
+    "js+spitfire"
+  ],
+  "extensions": [],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "NASM",
+  "slug": "nasm",
+  "letter": "N",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "pygments"
+  ],
+  "aliases": [
+    "nasm"
+  ],
+  "extensions": [
+    ".ASM",
+    ".asm",
+    ".nasm"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

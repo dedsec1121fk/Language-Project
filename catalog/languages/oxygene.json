@@ -1,0 +1,19 @@
+{
+  "name": "Oxygene",
+  "slug": "oxygene",
+  "letter": "O",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".oxygene"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 269,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

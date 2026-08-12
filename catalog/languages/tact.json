@@ -1,0 +1,21 @@
+{
+  "name": "Tact",
+  "slug": "tact",
+  "letter": "T",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "tact"
+  ],
+  "extensions": [
+    ".tact"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 606708469,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

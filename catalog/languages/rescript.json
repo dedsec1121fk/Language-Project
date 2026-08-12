@@ -1,0 +1,22 @@
+{
+  "name": "ReScript",
+  "slug": "rescript",
+  "letter": "R",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".res",
+    ".resi"
+  ],
+  "interpreters": [
+    "ocaml"
+  ],
+  "github_linguist_id": 501875647,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

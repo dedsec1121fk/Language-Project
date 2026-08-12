@@ -1,0 +1,20 @@
+{
+  "name": "Classic ASP",
+  "slug": "classic-asp",
+  "letter": "C",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [
+    "asp"
+  ],
+  "extensions": [
+    ".asp"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 8,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

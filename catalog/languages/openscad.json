@@ -1,0 +1,21 @@
+{
+  "name": "OpenSCAD",
+  "slug": "openscad",
+  "letter": "O",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "openscad"
+  ],
+  "extensions": [
+    ".scad"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 266,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Mathematical Programming System",
+  "slug": "mathematical-programming-system",
+  "letter": "M",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".mps"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 429002699,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

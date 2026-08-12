@@ -1,0 +1,28 @@
+{
+  "name": "Haskell",
+  "slug": "haskell",
+  "letter": "H",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "haskell",
+    "hs"
+  ],
+  "extensions": [
+    ".hs",
+    ".hs-boot",
+    ".hsc"
+  ],
+  "interpreters": [
+    "runghc",
+    "runhaskell",
+    "runhugs"
+  ],
+  "github_linguist_id": 157,
+  "termux_worker": true,
+  "worker_id": "haskell",
+  "execution_policy": "verified-on-device"
+}

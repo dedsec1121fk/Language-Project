@@ -1,0 +1,20 @@
+{
+  "name": "PEG",
+  "slug": "peg",
+  "letter": "P",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "peg"
+  ],
+  "extensions": [
+    ".peg"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

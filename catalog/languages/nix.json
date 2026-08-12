@@ -1,0 +1,23 @@
+{
+  "name": "Nix",
+  "slug": "nix",
+  "letter": "N",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "nix",
+    "nixos"
+  ],
+  "extensions": [
+    ".nix"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 252,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

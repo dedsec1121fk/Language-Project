@@ -1,0 +1,26 @@
+{
+  "name": "Scala",
+  "slug": "scala",
+  "letter": "S",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "scala"
+  ],
+  "extensions": [
+    ".kojo",
+    ".sbt",
+    ".sc",
+    ".scala"
+  ],
+  "interpreters": [
+    "scala"
+  ],
+  "github_linguist_id": 341,
+  "termux_worker": true,
+  "worker_id": "scala",
+  "execution_policy": "verified-on-device"
+}

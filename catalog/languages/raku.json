@@ -1,0 +1,38 @@
+{
+  "name": "Raku",
+  "slug": "raku",
+  "letter": "R",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist"
+  ],
+  "aliases": [
+    "perl6",
+    "perl-6"
+  ],
+  "extensions": [
+    ".6pl",
+    ".6pm",
+    ".nqp",
+    ".p6",
+    ".p6l",
+    ".p6m",
+    ".pl",
+    ".pl6",
+    ".pm",
+    ".pm6",
+    ".raku",
+    ".rakumod",
+    ".t"
+  ],
+  "interpreters": [
+    "perl6",
+    "raku",
+    "rakudo"
+  ],
+  "github_linguist_id": 283,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

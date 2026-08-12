@@ -1,0 +1,22 @@
+{
+  "name": "JCL",
+  "slug": "jcl",
+  "letter": "J",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "jcl"
+  ],
+  "extensions": [
+    ".jcl"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 316620079,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

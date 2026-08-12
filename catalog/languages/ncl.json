@@ -1,0 +1,21 @@
+{
+  "name": "NCL",
+  "slug": "ncl",
+  "letter": "N",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "ncl"
+  ],
+  "extensions": [
+    ".ncl"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 240,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

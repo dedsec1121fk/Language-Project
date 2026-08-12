@@ -1,0 +1,22 @@
+{
+  "name": "Gettext Catalog",
+  "slug": "gettext-catalog",
+  "letter": "G",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "po",
+    "pot"
+  ],
+  "extensions": [
+    ".po",
+    ".pot"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

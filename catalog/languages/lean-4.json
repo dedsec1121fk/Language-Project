@@ -1,0 +1,20 @@
+{
+  "name": "Lean 4",
+  "slug": "lean-4",
+  "letter": "L",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [
+    "lean4"
+  ],
+  "extensions": [
+    ".lean"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 455147478,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

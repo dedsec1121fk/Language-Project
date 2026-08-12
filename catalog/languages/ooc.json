@@ -1,0 +1,21 @@
+{
+  "name": "ooc",
+  "slug": "ooc",
+  "letter": "O",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "ooc"
+  ],
+  "extensions": [
+    ".ooc"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 418,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

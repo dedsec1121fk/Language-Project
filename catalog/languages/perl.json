@@ -1,0 +1,35 @@
+{
+  "name": "Perl",
+  "slug": "perl",
+  "letter": "P",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "cperl",
+    "perl",
+    "pl"
+  ],
+  "extensions": [
+    ".al",
+    ".cgi",
+    ".fcgi",
+    ".perl",
+    ".ph",
+    ".pl",
+    ".plx",
+    ".pm",
+    ".psgi",
+    ".t"
+  ],
+  "interpreters": [
+    "cperl",
+    "perl"
+  ],
+  "github_linguist_id": 282,
+  "termux_worker": true,
+  "worker_id": "perl",
+  "execution_policy": "verified-on-device"
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Motorola 68K Assembly",
+  "slug": "motorola-68k-assembly",
+  "letter": "M",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [
+    "m68k"
+  ],
+  "extensions": [
+    ".asm",
+    ".i",
+    ".inc",
+    ".s",
+    ".x68"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 477582706,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

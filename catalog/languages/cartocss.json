@@ -1,0 +1,20 @@
+{
+  "name": "CartoCSS",
+  "slug": "cartocss",
+  "letter": "C",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [
+    "Carto"
+  ],
+  "extensions": [
+    ".mss"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 53,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

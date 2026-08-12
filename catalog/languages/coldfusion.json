@@ -1,0 +1,23 @@
+{
+  "name": "ColdFusion",
+  "slug": "coldfusion",
+  "letter": "C",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [
+    "cfm",
+    "cfml",
+    "coldfusion html"
+  ],
+  "extensions": [
+    ".cfm",
+    ".cfml"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 64,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

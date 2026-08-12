@@ -1,0 +1,22 @@
+{
+  "name": "ImHex Pattern Language",
+  "slug": "imhex-pattern-language",
+  "letter": "I",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [
+    "ImHex",
+    "ImHexPatternLanguage",
+    "imhexpl"
+  ],
+  "extensions": [
+    ".hexpat"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 805861688,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

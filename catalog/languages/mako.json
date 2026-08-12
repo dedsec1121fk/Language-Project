@@ -1,0 +1,22 @@
+{
+  "name": "Mako",
+  "slug": "mako",
+  "letter": "M",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "mako"
+  ],
+  "extensions": [
+    ".mako",
+    ".mao"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 221,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

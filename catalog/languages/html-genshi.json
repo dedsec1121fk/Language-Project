@@ -1,0 +1,19 @@
+{
+  "name": "HTML+Genshi",
+  "slug": "html-genshi",
+  "letter": "H",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "html+genshi",
+    "html+kid"
+  ],
+  "extensions": [],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

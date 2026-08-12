@@ -1,0 +1,31 @@
+{
+  "name": "Makefile",
+  "slug": "makefile",
+  "letter": "M",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "bsdmake",
+    "make",
+    "makefile",
+    "mf"
+  ],
+  "extensions": [
+    ".d",
+    ".mak",
+    ".make",
+    ".makefile",
+    ".mk",
+    ".mkfile"
+  ],
+  "interpreters": [
+    "make"
+  ],
+  "github_linguist_id": 220,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

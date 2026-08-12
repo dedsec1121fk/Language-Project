@@ -1,0 +1,21 @@
+{
+  "name": "E-mail",
+  "slug": "e-mail",
+  "letter": "E",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "email",
+    "eml"
+  ],
+  "extensions": [
+    ".eml"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

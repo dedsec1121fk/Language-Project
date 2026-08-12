@@ -1,0 +1,22 @@
+{
+  "name": "DTrace",
+  "slug": "dtrace",
+  "letter": "D",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [
+    "dtrace-script"
+  ],
+  "extensions": [
+    ".d"
+  ],
+  "interpreters": [
+    "dtrace"
+  ],
+  "github_linguist_id": 85,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

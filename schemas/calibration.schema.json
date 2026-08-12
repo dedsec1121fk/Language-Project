@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Language Project adaptive calibration",
+  "type": "object",
+  "required": ["project", "generated_at", "languages", "integrity", "scores", "orders"],
+  "properties": {
+    "project": {"const": "Language Project"},
+    "generated_at": {"type": "string"},
+    "languages": {"type": "integer", "minimum": 0},
+    "integrity": {"type": "boolean"},
+    "sizes": {"type": "array", "items": {"type": "integer", "minimum": 0}},
+    "scores": {"type": "object"},
+    "orders": {
+      "type": "object",
+      "required": ["balanced", "latency", "throughput", "stable"]
+    }
+  }
+}

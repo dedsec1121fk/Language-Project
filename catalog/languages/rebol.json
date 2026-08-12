@@ -1,0 +1,26 @@
+{
+  "name": "Rebol",
+  "slug": "rebol",
+  "letter": "R",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "rebol"
+  ],
+  "extensions": [
+    ".r",
+    ".r2",
+    ".r3",
+    ".reb",
+    ".rebol"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 319,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

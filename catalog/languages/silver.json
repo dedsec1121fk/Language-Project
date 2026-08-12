@@ -1,0 +1,21 @@
+{
+  "name": "Silver",
+  "slug": "silver",
+  "letter": "S",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "silver"
+  ],
+  "extensions": [
+    ".sil",
+    ".vpr"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

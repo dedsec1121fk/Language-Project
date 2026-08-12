@@ -1,0 +1,23 @@
+{
+  "name": "Terraform",
+  "slug": "terraform",
+  "letter": "T",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "hcl",
+    "terraform",
+    "tf"
+  ],
+  "extensions": [
+    ".hcl",
+    ".tf"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

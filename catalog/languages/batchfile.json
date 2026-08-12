@@ -1,0 +1,25 @@
+{
+  "name": "Batchfile",
+  "slug": "batchfile",
+  "letter": "B",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "bat",
+    "batch",
+    "dosbatch",
+    "winbatch"
+  ],
+  "extensions": [
+    ".bat",
+    ".cmd"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 29,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

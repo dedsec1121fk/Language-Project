@@ -1,0 +1,20 @@
+{
+  "name": "HTML + Angular2",
+  "slug": "html-angular2",
+  "letter": "H",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "html+ng2"
+  ],
+  "extensions": [
+    ".ng2"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

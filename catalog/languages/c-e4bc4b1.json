@@ -1,0 +1,29 @@
+{
+  "name": "C#",
+  "slug": "c-e4bc4b1",
+  "letter": "C",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "c#",
+    "cake",
+    "cakescript",
+    "cs",
+    "csharp"
+  ],
+  "extensions": [
+    ".cake",
+    ".cs",
+    ".cs.pp",
+    ".csx",
+    ".linq"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 42,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

@@ -1,0 +1,22 @@
+{
+  "name": "Devicetree",
+  "slug": "devicetree",
+  "letter": "D",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "devicetree",
+    "dts"
+  ],
+  "extensions": [
+    ".dts",
+    ".dtsi"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

@@ -1,0 +1,26 @@
+{
+  "name": "R",
+  "slug": "r",
+  "letter": "R",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist"
+  ],
+  "aliases": [
+    "Rscript",
+    "splus"
+  ],
+  "extensions": [
+    ".r",
+    ".rd",
+    ".rsx"
+  ],
+  "interpreters": [
+    "Rscript"
+  ],
+  "github_linguist_id": 307,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

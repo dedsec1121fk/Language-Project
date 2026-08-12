@@ -1,0 +1,20 @@
+{
+  "name": "Roboconf Instances",
+  "slug": "roboconf-instances",
+  "letter": "R",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "roboconf-instances"
+  ],
+  "extensions": [
+    ".instances"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

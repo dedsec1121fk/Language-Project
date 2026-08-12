@@ -1,0 +1,20 @@
+{
+  "name": "XML+UL4",
+  "slug": "xml-ul4",
+  "letter": "X",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "xml+ul4"
+  ],
+  "extensions": [
+    ".xmlul4"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

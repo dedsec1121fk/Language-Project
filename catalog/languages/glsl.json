@@ -1,0 +1,43 @@
+{
+  "name": "GLSL",
+  "slug": "glsl",
+  "letter": "G",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "glsl"
+  ],
+  "extensions": [
+    ".fp",
+    ".frag",
+    ".frg",
+    ".fs",
+    ".fsh",
+    ".fshader",
+    ".geo",
+    ".geom",
+    ".glsl",
+    ".glslf",
+    ".glslv",
+    ".gs",
+    ".gshader",
+    ".rchit",
+    ".rmiss",
+    ".shader",
+    ".tesc",
+    ".tese",
+    ".vert",
+    ".vrx",
+    ".vs",
+    ".vsh",
+    ".vshader"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 124,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

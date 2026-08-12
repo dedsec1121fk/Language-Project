@@ -1,0 +1,21 @@
+{
+  "name": "Ezhil",
+  "slug": "ezhil",
+  "letter": "E",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "pygments"
+  ],
+  "aliases": [
+    "ezhil"
+  ],
+  "extensions": [
+    ".n"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

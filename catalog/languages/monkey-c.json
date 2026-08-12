@@ -1,0 +1,18 @@
+{
+  "name": "Monkey C",
+  "slug": "monkey-c",
+  "letter": "M",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".mc"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 231751931,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

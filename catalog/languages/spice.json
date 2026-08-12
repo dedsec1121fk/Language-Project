@@ -1,0 +1,21 @@
+{
+  "name": "Spice",
+  "slug": "spice",
+  "letter": "S",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "spice",
+    "spicelang"
+  ],
+  "extensions": [
+    ".spice"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

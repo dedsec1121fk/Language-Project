@@ -1,0 +1,21 @@
+{
+  "name": "SPARQL",
+  "slug": "sparql",
+  "letter": "S",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "sparql"
+  ],
+  "extensions": [
+    ".rq",
+    ".sparql"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Pep8",
+  "slug": "pep8",
+  "letter": "P",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".pep"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 840372442,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

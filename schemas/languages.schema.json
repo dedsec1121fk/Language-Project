@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Language Project executable worker registry",
+  "type": "object",
+  "required": ["schema", "project", "languages"],
+  "properties": {
+    "project": {"const": "Language Project"},
+    "languages": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "kind", "packages", "run"],
+        "properties": {
+          "id": {"type": "string", "minLength": 1},
+          "name": {"type": "string", "minLength": 1},
+          "kind": {"enum": ["compiled", "interpreted", "vm"]},
+          "packages": {"type": "array", "items": {"type": "string"}},
+          "run": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+          "build": {"type": ["array", "null"], "items": {"type": "string"}}
+        }
+      }
+    }
+  }
+}

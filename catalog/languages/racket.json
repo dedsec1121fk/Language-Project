@@ -1,0 +1,27 @@
+{
+  "name": "Racket",
+  "slug": "racket",
+  "letter": "R",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "racket",
+    "rkt"
+  ],
+  "extensions": [
+    ".rkt",
+    ".rktd",
+    ".rktl",
+    ".scrbl"
+  ],
+  "interpreters": [
+    "racket"
+  ],
+  "github_linguist_id": 316,
+  "termux_worker": true,
+  "worker_id": "racket",
+  "execution_policy": "verified-on-device"
+}

@@ -1,0 +1,27 @@
+{
+  "name": "Promela",
+  "slug": "promela",
+  "letter": "P",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "promela"
+  ],
+  "extensions": [
+    ".pm",
+    ".pml",
+    ".pr",
+    ".prm",
+    ".prom",
+    ".promela"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 441858312,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

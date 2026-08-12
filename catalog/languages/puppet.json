@@ -1,0 +1,21 @@
+{
+  "name": "Puppet",
+  "slug": "puppet",
+  "letter": "P",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "puppet"
+  ],
+  "extensions": [
+    ".pp"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 299,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

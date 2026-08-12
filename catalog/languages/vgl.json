@@ -1,0 +1,20 @@
+{
+  "name": "VGL",
+  "slug": "vgl",
+  "letter": "V",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "vgl"
+  ],
+  "extensions": [
+    ".rpf"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

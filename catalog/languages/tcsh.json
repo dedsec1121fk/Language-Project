@@ -1,0 +1,26 @@
+{
+  "name": "Tcsh",
+  "slug": "tcsh",
+  "letter": "T",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "csh",
+    "tcsh"
+  ],
+  "extensions": [
+    ".csh",
+    ".tcsh"
+  ],
+  "interpreters": [
+    "tcsh",
+    "csh"
+  ],
+  "github_linguist_id": 368,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

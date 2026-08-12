@@ -1,0 +1,21 @@
+{
+  "name": "JSON-LD",
+  "slug": "json-ld",
+  "letter": "J",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "json-ld",
+    "jsonld"
+  ],
+  "extensions": [
+    ".jsonld"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

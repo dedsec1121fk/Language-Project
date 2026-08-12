@@ -1,0 +1,30 @@
+{
+  "name": "Erlang",
+  "slug": "erlang",
+  "letter": "E",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "erlang"
+  ],
+  "extensions": [
+    ".app",
+    ".app.src",
+    ".erl",
+    ".es",
+    ".escript",
+    ".hrl",
+    ".xrl",
+    ".yrl"
+  ],
+  "interpreters": [
+    "escript"
+  ],
+  "github_linguist_id": 104,
+  "termux_worker": true,
+  "worker_id": "erlang",
+  "execution_policy": "verified-on-device"
+}

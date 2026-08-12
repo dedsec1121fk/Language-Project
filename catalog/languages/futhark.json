@@ -1,0 +1,22 @@
+{
+  "name": "Futhark",
+  "slug": "futhark",
+  "letter": "F",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "futhark"
+  ],
+  "extensions": [
+    ".fut"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 97358117,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

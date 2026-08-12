@@ -1,0 +1,20 @@
+{
+  "name": "Kal",
+  "slug": "kal",
+  "letter": "K",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "kal"
+  ],
+  "extensions": [
+    ".kal"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

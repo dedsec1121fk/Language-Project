@@ -1,0 +1,26 @@
+{
+  "name": "GAP",
+  "slug": "gap",
+  "letter": "G",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "gap"
+  ],
+  "extensions": [
+    ".g",
+    ".gap",
+    ".gd",
+    ".gi",
+    ".tst"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 119,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

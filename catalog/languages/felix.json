@@ -1,0 +1,22 @@
+{
+  "name": "Felix",
+  "slug": "felix",
+  "letter": "F",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "felix",
+    "flx"
+  ],
+  "extensions": [
+    ".flx",
+    ".flxh"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

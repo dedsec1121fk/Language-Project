@@ -1,0 +1,25 @@
+{
+  "name": "Fennel",
+  "slug": "fennel",
+  "letter": "F",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "fennel",
+    "fnl"
+  ],
+  "extensions": [
+    ".fnl",
+    ".fnlm"
+  ],
+  "interpreters": [
+    "fennel"
+  ],
+  "github_linguist_id": 239946126,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

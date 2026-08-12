@@ -1,0 +1,18 @@
+{
+  "name": "Gentoo Ebuild",
+  "slug": "gentoo-ebuild",
+  "letter": "G",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".ebuild"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 127,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

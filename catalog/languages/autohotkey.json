@@ -1,0 +1,25 @@
+{
+  "name": "AutoHotkey",
+  "slug": "autohotkey",
+  "letter": "A",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "ahk",
+    "autohotkey"
+  ],
+  "extensions": [
+    ".ah1",
+    ".ah2",
+    ".ahk",
+    ".ahkl"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 26,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

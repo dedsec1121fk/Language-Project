@@ -1,0 +1,20 @@
+{
+  "name": "Java Template Engine",
+  "slug": "java-template-engine",
+  "letter": "J",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [
+    "jte"
+  ],
+  "extensions": [
+    ".jte"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 599494012,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

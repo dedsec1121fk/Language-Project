@@ -1,0 +1,18 @@
+{
+  "name": "PigLatin",
+  "slug": "piglatin",
+  "letter": "P",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".pig"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 286,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

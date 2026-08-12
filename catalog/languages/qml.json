@@ -1,0 +1,23 @@
+{
+  "name": "QML",
+  "slug": "qml",
+  "letter": "Q",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "qbs",
+    "qml"
+  ],
+  "extensions": [
+    ".qbs",
+    ".qml"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 305,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

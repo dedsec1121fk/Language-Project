@@ -1,0 +1,19 @@
+{
+  "name": "AngelScript",
+  "slug": "angelscript",
+  "letter": "A",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".as",
+    ".angelscript"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 389477596,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

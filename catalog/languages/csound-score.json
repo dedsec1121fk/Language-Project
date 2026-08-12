@@ -1,0 +1,22 @@
+{
+  "name": "Csound Score",
+  "slug": "csound-score",
+  "letter": "C",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "csound-sco",
+    "csound-score"
+  ],
+  "extensions": [
+    ".sco"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 75,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

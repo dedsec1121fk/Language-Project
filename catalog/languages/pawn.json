@@ -1,0 +1,24 @@
+{
+  "name": "Pawn",
+  "slug": "pawn",
+  "letter": "P",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "pawn"
+  ],
+  "extensions": [
+    ".inc",
+    ".p",
+    ".pwn",
+    ".sma"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 271,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

@@ -1,0 +1,20 @@
+{
+  "name": "DIGITAL Command Language",
+  "slug": "digital-command-language",
+  "letter": "D",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [
+    "dcl"
+  ],
+  "extensions": [
+    ".com"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 82,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

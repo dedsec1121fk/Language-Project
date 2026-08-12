@@ -1,0 +1,22 @@
+name: Static checks
+on:
+  push:
+  pull_request:
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Python syntax
+        run: python -m compileall -q Language.py core scripts tests
+      - name: Core self-test
+        run: python scripts/selftest.py
+      - name: Static unit checks
+        run: python tests/test_static.py
+      - name: Project audit
+        run: python scripts/audit_project.py
+      - name: Manifest verification
+        run: python scripts/verify_manifest.py

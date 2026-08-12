@@ -1,0 +1,20 @@
+{
+  "name": "Typographic Number Theory",
+  "slug": "typographic-number-theory",
+  "letter": "T",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "tnt"
+  ],
+  "extensions": [
+    ".tnt"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

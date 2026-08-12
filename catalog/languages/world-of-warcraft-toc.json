@@ -1,0 +1,20 @@
+{
+  "name": "World of Warcraft TOC",
+  "slug": "world-of-warcraft-toc",
+  "letter": "W",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "wowtoc"
+  ],
+  "extensions": [
+    ".toc"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

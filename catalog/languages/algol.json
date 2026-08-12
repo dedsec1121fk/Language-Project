@@ -1,0 +1,18 @@
+{
+  "name": "ALGOL",
+  "slug": "algol",
+  "letter": "A",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".alg"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 79217948,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "POV-Ray SDL",
+  "slug": "pov-ray-sdl",
+  "letter": "P",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist"
+  ],
+  "aliases": [
+    "pov-ray",
+    "povray"
+  ],
+  "extensions": [
+    ".pov",
+    ".inc"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 275,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

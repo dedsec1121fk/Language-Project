@@ -1,0 +1,21 @@
+{
+  "name": "Tea",
+  "slug": "tea",
+  "letter": "T",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "pygments"
+  ],
+  "aliases": [
+    "tea"
+  ],
+  "extensions": [
+    ".tea"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

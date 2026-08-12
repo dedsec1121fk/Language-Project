@@ -1,0 +1,25 @@
+{
+  "name": "WebAssembly",
+  "slug": "webassembly",
+  "letter": "W",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "wasm",
+    "wast",
+    "wat"
+  ],
+  "extensions": [
+    ".wast",
+    ".wat"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 956556503,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

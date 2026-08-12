@@ -1,0 +1,25 @@
+{
+  "name": "Objective-C++",
+  "slug": "objective-c-bf11108",
+  "letter": "O",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "obj-c++",
+    "objc++",
+    "objective-c++",
+    "objectivec++"
+  ],
+  "extensions": [
+    ".hh",
+    ".mm"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 258,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

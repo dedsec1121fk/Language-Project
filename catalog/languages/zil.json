@@ -1,0 +1,19 @@
+{
+  "name": "ZIL",
+  "slug": "zil",
+  "letter": "Z",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".zil",
+    ".mud"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 973483626,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

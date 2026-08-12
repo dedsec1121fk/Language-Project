@@ -1,0 +1,33 @@
+{
+  "name": "Clojure",
+  "slug": "clojure",
+  "letter": "C",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "clj",
+    "clojure"
+  ],
+  "extensions": [
+    ".bb",
+    ".boot",
+    ".cl2",
+    ".clj",
+    ".cljc",
+    ".cljs",
+    ".cljs.hl",
+    ".cljscm",
+    ".cljx",
+    ".hic"
+  ],
+  "interpreters": [
+    "bb"
+  ],
+  "github_linguist_id": 62,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

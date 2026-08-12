@@ -1,0 +1,23 @@
+{
+  "name": "SWIG",
+  "slug": "swig",
+  "letter": "S",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "swig"
+  ],
+  "extensions": [
+    ".i",
+    ".swg",
+    ".swig"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 1066250075,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "FreeMarker",
+  "slug": "freemarker",
+  "letter": "F",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [
+    "ftl"
+  ],
+  "extensions": [
+    ".ftl",
+    ".ftlh"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 115,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

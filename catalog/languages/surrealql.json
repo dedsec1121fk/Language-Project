@@ -1,0 +1,20 @@
+{
+  "name": "SurrealQL",
+  "slug": "surrealql",
+  "letter": "S",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [
+    "surql"
+  ],
+  "extensions": [
+    ".surql"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 735141027,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

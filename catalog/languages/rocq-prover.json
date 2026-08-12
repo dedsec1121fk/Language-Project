@@ -1,0 +1,24 @@
+{
+  "name": "Rocq Prover",
+  "slug": "rocq-prover",
+  "letter": "R",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "coq",
+    "rocq",
+    "rocq-prover"
+  ],
+  "extensions": [
+    ".coq",
+    ".v"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 69,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

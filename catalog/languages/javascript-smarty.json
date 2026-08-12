@@ -1,0 +1,19 @@
+{
+  "name": "JavaScript+Smarty",
+  "slug": "javascript-smarty",
+  "letter": "J",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "javascript+smarty",
+    "js+smarty"
+  ],
+  "extensions": [],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

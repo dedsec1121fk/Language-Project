@@ -1,0 +1,25 @@
+{
+  "name": "fish",
+  "slug": "fish",
+  "letter": "F",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "fish",
+    "fishshell"
+  ],
+  "extensions": [
+    ".fish",
+    ".load"
+  ],
+  "interpreters": [
+    "fish"
+  ],
+  "github_linguist_id": 415,
+  "termux_worker": true,
+  "worker_id": "fish",
+  "execution_policy": "verified-on-device"
+}

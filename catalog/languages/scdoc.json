@@ -1,0 +1,22 @@
+{
+  "name": "scdoc",
+  "slug": "scdoc",
+  "letter": "S",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "scd",
+    "scdoc"
+  ],
+  "extensions": [
+    ".scd",
+    ".scdoc"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

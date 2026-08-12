@@ -1,0 +1,22 @@
+{
+  "name": "FunC",
+  "slug": "func",
+  "letter": "F",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "fc",
+    "func"
+  ],
+  "extensions": [
+    ".fc",
+    ".func"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

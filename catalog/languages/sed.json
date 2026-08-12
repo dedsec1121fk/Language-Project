@@ -1,0 +1,29 @@
+{
+  "name": "sed",
+  "slug": "sed",
+  "letter": "S",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "gsed",
+    "sed",
+    "ssed"
+  ],
+  "extensions": [
+    ".[gs]sed",
+    ".sed"
+  ],
+  "interpreters": [
+    "gsed",
+    "minised",
+    "sed",
+    "ssed"
+  ],
+  "github_linguist_id": 847830017,
+  "termux_worker": true,
+  "worker_id": "sed",
+  "execution_policy": "verified-on-device"
+}

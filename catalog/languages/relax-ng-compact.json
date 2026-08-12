@@ -1,0 +1,21 @@
+{
+  "name": "Relax-NG Compact",
+  "slug": "relax-ng-compact",
+  "letter": "R",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "rnc",
+    "rng-compact"
+  ],
+  "extensions": [
+    ".rnc"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

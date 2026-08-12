@@ -1,0 +1,19 @@
+{
+  "name": "RenderScript",
+  "slug": "renderscript",
+  "letter": "R",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".rs",
+    ".rsh"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 323,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

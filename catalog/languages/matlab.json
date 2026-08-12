@@ -1,0 +1,24 @@
+{
+  "name": "MATLAB",
+  "slug": "matlab",
+  "letter": "M",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "matlab",
+    "octave"
+  ],
+  "extensions": [
+    ".m",
+    ".matlab"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 225,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

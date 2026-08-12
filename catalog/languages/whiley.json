@@ -1,0 +1,22 @@
+{
+  "name": "Whiley",
+  "slug": "whiley",
+  "letter": "W",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "whiley"
+  ],
+  "extensions": [
+    ".whiley"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 888779559,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

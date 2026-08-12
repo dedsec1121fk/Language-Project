@@ -1,0 +1,21 @@
+{
+  "name": "IL Assembly",
+  "slug": "il-assembly",
+  "letter": "I",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [
+    "ilasm",
+    "msil"
+  ],
+  "extensions": [
+    ".il"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 592065806,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

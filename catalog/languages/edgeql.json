@@ -1,0 +1,21 @@
+{
+  "name": "EdgeQL",
+  "slug": "edgeql",
+  "letter": "E",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [
+    "esdl"
+  ],
+  "extensions": [
+    ".edgeql",
+    ".esdl"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 925235833,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

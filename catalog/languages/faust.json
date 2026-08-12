@@ -1,0 +1,19 @@
+{
+  "name": "Faust",
+  "slug": "faust",
+  "letter": "F",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".dsp"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 622529198,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

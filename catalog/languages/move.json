@@ -1,0 +1,18 @@
+{
+  "name": "Move",
+  "slug": "move",
+  "letter": "M",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".move"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 638334599,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

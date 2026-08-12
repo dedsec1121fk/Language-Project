@@ -1,0 +1,22 @@
+{
+  "name": "Modelica",
+  "slug": "modelica",
+  "letter": "M",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "modelica"
+  ],
+  "extensions": [
+    ".mo"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 233,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

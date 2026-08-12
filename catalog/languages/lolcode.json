@@ -1,0 +1,19 @@
+{
+  "name": "LOLCODE",
+  "slug": "lolcode",
+  "letter": "L",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".lol"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 192,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

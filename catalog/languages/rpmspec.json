@@ -1,0 +1,20 @@
+{
+  "name": "RPMSpec",
+  "slug": "rpmspec",
+  "letter": "R",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "spec"
+  ],
+  "extensions": [
+    ".spec"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

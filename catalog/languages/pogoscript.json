@@ -1,0 +1,18 @@
+{
+  "name": "PogoScript",
+  "slug": "pogoscript",
+  "letter": "P",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".pogo"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 289,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

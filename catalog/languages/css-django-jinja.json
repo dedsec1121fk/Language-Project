@@ -1,0 +1,22 @@
+{
+  "name": "CSS+Django/Jinja",
+  "slug": "css-django-jinja",
+  "letter": "C",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "css+django",
+    "css+jinja"
+  ],
+  "extensions": [
+    ".css.j2",
+    ".css.jinja2"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

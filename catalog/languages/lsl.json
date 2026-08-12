@@ -1,0 +1,25 @@
+{
+  "name": "LSL",
+  "slug": "lsl",
+  "letter": "L",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "lsl"
+  ],
+  "extensions": [
+    ".lsl",
+    ".lslp"
+  ],
+  "interpreters": [
+    "lsl"
+  ],
+  "github_linguist_id": 193,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

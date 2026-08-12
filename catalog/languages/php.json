@@ -1,0 +1,37 @@
+{
+  "name": "PHP",
+  "slug": "php",
+  "letter": "P",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "inc",
+    "php",
+    "php3",
+    "php4",
+    "php5"
+  ],
+  "extensions": [
+    ".aw",
+    ".ctp",
+    ".fcgi",
+    ".inc",
+    ".php",
+    ".php3",
+    ".php4",
+    ".php5",
+    ".php[345]",
+    ".phps",
+    ".phpt"
+  ],
+  "interpreters": [
+    "php"
+  ],
+  "github_linguist_id": 272,
+  "termux_worker": true,
+  "worker_id": "php",
+  "execution_policy": "verified-on-device"
+}

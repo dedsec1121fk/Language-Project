@@ -1,0 +1,19 @@
+{
+  "name": "EmberScript",
+  "slug": "emberscript",
+  "letter": "E",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".em",
+    ".emberscript"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 103,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

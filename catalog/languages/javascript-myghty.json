@@ -1,0 +1,19 @@
+{
+  "name": "JavaScript+Myghty",
+  "slug": "javascript-myghty",
+  "letter": "J",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "javascript+myghty",
+    "js+myghty"
+  ],
+  "extensions": [],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

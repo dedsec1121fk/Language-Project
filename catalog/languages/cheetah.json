@@ -1,0 +1,22 @@
+{
+  "name": "Cheetah",
+  "slug": "cheetah",
+  "letter": "C",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "cheetah",
+    "spitfire"
+  ],
+  "extensions": [
+    ".spt",
+    ".tmpl"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

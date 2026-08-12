@@ -1,0 +1,21 @@
+{
+  "name": "Hare",
+  "slug": "hare",
+  "letter": "H",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "hare"
+  ],
+  "extensions": [
+    ".ha"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 463518941,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

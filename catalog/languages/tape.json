@@ -1,0 +1,20 @@
+{
+  "name": "Tape",
+  "slug": "tape",
+  "letter": "T",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [
+    "vhs"
+  ],
+  "extensions": [
+    ".tape"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 516874200,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

@@ -1,0 +1,20 @@
+{
+  "name": "OMNeT++ MSG",
+  "slug": "omnet-msg",
+  "letter": "O",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [
+    "omnetpp-msg"
+  ],
+  "extensions": [
+    ".msg"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 664100008,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

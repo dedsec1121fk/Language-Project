@@ -1,0 +1,22 @@
+{
+  "name": "Monkey",
+  "slug": "monkey",
+  "letter": "M",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "monkey"
+  ],
+  "extensions": [
+    ".monkey",
+    ".monkey2"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 236,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

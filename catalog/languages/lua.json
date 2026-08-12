@@ -1,0 +1,31 @@
+{
+  "name": "Lua",
+  "slug": "lua",
+  "letter": "L",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "lua"
+  ],
+  "extensions": [
+    ".fcgi",
+    ".lua",
+    ".nse",
+    ".p8",
+    ".pd_lua",
+    ".rbxs",
+    ".rockspec",
+    ".wlua"
+  ],
+  "interpreters": [
+    "lua",
+    "luajit"
+  ],
+  "github_linguist_id": 213,
+  "termux_worker": true,
+  "worker_id": "lua",
+  "execution_policy": "verified-on-device"
+}

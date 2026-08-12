@@ -1,0 +1,20 @@
+{
+  "name": "ImageJ Macro",
+  "slug": "imagej-macro",
+  "letter": "I",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [
+    "ijm"
+  ],
+  "extensions": [
+    ".ijm"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 575143428,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Lobster",
+  "slug": "lobster",
+  "letter": "L",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".lobster"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 790066842,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

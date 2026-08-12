@@ -1,0 +1,19 @@
+{
+  "name": "ASL",
+  "slug": "asl",
+  "letter": "A",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".asl",
+    ".dsl"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 124996147,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

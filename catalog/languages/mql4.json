@@ -1,0 +1,19 @@
+{
+  "name": "MQL4",
+  "slug": "mql4",
+  "letter": "M",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".mq4",
+    ".mqh"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 426,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

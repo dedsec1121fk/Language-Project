@@ -1,0 +1,21 @@
+{
+  "name": "Velocity",
+  "slug": "velocity",
+  "letter": "V",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "velocity"
+  ],
+  "extensions": [
+    ".fhtml",
+    ".vm"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

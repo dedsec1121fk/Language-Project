@@ -1,0 +1,24 @@
+{
+  "name": "Standard ML",
+  "slug": "standard-ml",
+  "letter": "S",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "sml"
+  ],
+  "extensions": [
+    ".fun",
+    ".ml",
+    ".sig",
+    ".sml"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 357,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

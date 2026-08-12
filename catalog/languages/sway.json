@@ -1,0 +1,18 @@
+{
+  "name": "Sway",
+  "slug": "sway",
+  "letter": "S",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".sw"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 271471144,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

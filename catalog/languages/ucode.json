@@ -1,0 +1,26 @@
+{
+  "name": "ucode",
+  "slug": "ucode",
+  "letter": "U",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "ucode"
+  ],
+  "extensions": [
+    ".u",
+    ".u1",
+    ".u2",
+    ".uc"
+  ],
+  "interpreters": [
+    "ucode"
+  ],
+  "github_linguist_id": 365454253,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

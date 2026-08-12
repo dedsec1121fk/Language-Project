@@ -1,0 +1,21 @@
+{
+  "name": "CFEngine3",
+  "slug": "cfengine3",
+  "letter": "C",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "cf3",
+    "cfengine3"
+  ],
+  "extensions": [
+    ".cf"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

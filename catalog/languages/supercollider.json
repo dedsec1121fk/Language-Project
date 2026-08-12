@@ -1,0 +1,27 @@
+{
+  "name": "SuperCollider",
+  "slug": "supercollider",
+  "letter": "S",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "sc",
+    "supercollider"
+  ],
+  "extensions": [
+    ".sc",
+    ".scd"
+  ],
+  "interpreters": [
+    "sclang",
+    "scsynth"
+  ],
+  "github_linguist_id": 361,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

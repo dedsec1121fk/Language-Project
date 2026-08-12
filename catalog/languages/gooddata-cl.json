@@ -1,0 +1,20 @@
+{
+  "name": "GoodData-CL",
+  "slug": "gooddata-cl",
+  "letter": "G",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "gooddata-cl"
+  ],
+  "extensions": [
+    ".gdc"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

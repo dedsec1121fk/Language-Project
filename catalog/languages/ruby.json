@@ -1,0 +1,55 @@
+{
+  "name": "Ruby",
+  "slug": "ruby",
+  "letter": "R",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "duby",
+    "jruby",
+    "macruby",
+    "rake",
+    "rb",
+    "rbx",
+    "ruby"
+  ],
+  "extensions": [
+    ".builder",
+    ".duby",
+    ".eye",
+    ".fcgi",
+    ".gemspec",
+    ".god",
+    ".jbuilder",
+    ".mspec",
+    ".pluginspec",
+    ".podspec",
+    ".prawn",
+    ".rabl",
+    ".rake",
+    ".rb",
+    ".rbi",
+    ".rbuild",
+    ".rbw",
+    ".rbx",
+    ".ru",
+    ".ruby",
+    ".spec",
+    ".thor",
+    ".watchr"
+  ],
+  "interpreters": [
+    "ruby",
+    "macruby",
+    "rake",
+    "jruby",
+    "rbx"
+  ],
+  "github_linguist_id": 326,
+  "termux_worker": true,
+  "worker_id": "ruby",
+  "execution_policy": "verified-on-device"
+}

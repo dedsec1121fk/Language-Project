@@ -1,0 +1,19 @@
+{
+  "name": "Verse",
+  "slug": "verse",
+  "letter": "V",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".verse"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 180832205,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

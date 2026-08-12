@@ -1,0 +1,19 @@
+{
+  "name": "Sage",
+  "slug": "sage",
+  "letter": "S",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".sage",
+    ".sagews"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 338,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

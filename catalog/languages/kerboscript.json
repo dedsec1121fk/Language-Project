@@ -1,0 +1,18 @@
+{
+  "name": "KerboScript",
+  "slug": "kerboscript",
+  "letter": "K",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".ks"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 59716426,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

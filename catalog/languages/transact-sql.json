@@ -1,0 +1,22 @@
+{
+  "name": "Transact-SQL",
+  "slug": "transact-sql",
+  "letter": "T",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "pygments"
+  ],
+  "aliases": [
+    "t-sql",
+    "tsql"
+  ],
+  "extensions": [
+    ".sql"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

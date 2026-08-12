@@ -1,0 +1,18 @@
+{
+  "name": "KFramework",
+  "slug": "kframework",
+  "letter": "K",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".k"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 9479532,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

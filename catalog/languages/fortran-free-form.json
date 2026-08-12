@@ -1,0 +1,21 @@
+{
+  "name": "Fortran Free Form",
+  "slug": "fortran-free-form",
+  "letter": "F",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".f90",
+    ".f03",
+    ".f08",
+    ".f95"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 761352333,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

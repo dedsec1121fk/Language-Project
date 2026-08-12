@@ -1,0 +1,16 @@
+{
+  "name": "Subtext",
+  "slug": "subtext",
+  "letter": "S",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index"
+  ],
+  "aliases": [],
+  "extensions": [],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

@@ -1,0 +1,60 @@
+{
+  "name": "JavaScript",
+  "slug": "javascript",
+  "letter": "J",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "javascript",
+    "js",
+    "node"
+  ],
+  "extensions": [
+    "._js",
+    ".bones",
+    ".cjs",
+    ".es",
+    ".es6",
+    ".frag",
+    ".gs",
+    ".jake",
+    ".javascript",
+    ".js",
+    ".jsb",
+    ".jscad",
+    ".jsfl",
+    ".jslib",
+    ".jsm",
+    ".jspre",
+    ".jss",
+    ".jsx",
+    ".mjs",
+    ".njs",
+    ".pac",
+    ".sjs",
+    ".ssjs",
+    ".xsjs",
+    ".xsjslib"
+  ],
+  "interpreters": [
+    "bun",
+    "chakra",
+    "d8",
+    "deno",
+    "gjs",
+    "js",
+    "node",
+    "nodejs",
+    "qjs",
+    "rhino",
+    "v8",
+    "v8-shell"
+  ],
+  "github_linguist_id": 183,
+  "termux_worker": true,
+  "worker_id": "javascript",
+  "execution_policy": "verified-on-device"
+}

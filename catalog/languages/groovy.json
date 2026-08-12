@@ -1,0 +1,28 @@
+{
+  "name": "Groovy",
+  "slug": "groovy",
+  "letter": "G",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "groovy"
+  ],
+  "extensions": [
+    ".gradle",
+    ".groovy",
+    ".grt",
+    ".gtpl",
+    ".gvy"
+  ],
+  "interpreters": [
+    "groovy"
+  ],
+  "github_linguist_id": 142,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

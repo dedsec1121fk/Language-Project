@@ -1,0 +1,21 @@
+{
+  "name": "Elm",
+  "slug": "elm",
+  "letter": "E",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "elm"
+  ],
+  "extensions": [
+    ".elm"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 101,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

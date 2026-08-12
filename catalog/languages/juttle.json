@@ -1,0 +1,20 @@
+{
+  "name": "Juttle",
+  "slug": "juttle",
+  "letter": "J",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "juttle"
+  ],
+  "extensions": [
+    ".juttle"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

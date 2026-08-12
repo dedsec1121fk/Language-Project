@@ -1,0 +1,21 @@
+{
+  "name": "Dylan session",
+  "slug": "dylan-session",
+  "letter": "D",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "dylan-console",
+    "dylan-repl"
+  ],
+  "extensions": [
+    ".dylan-console"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

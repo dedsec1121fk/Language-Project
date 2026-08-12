@@ -1,0 +1,21 @@
+{
+  "name": "ANTLR",
+  "slug": "antlr",
+  "letter": "A",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "antlr"
+  ],
+  "extensions": [
+    ".g4"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 4,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

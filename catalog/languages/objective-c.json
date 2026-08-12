@@ -1,0 +1,26 @@
+{
+  "name": "Objective-C",
+  "slug": "objective-c",
+  "letter": "O",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "obj-c",
+    "objc",
+    "objective-c",
+    "objectivec"
+  ],
+  "extensions": [
+    ".h",
+    ".m"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 257,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

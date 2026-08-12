@@ -1,0 +1,23 @@
+{
+  "name": "GDScript",
+  "slug": "gdscript",
+  "letter": "G",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "gd",
+    "gdscript"
+  ],
+  "extensions": [
+    ".gd"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 123,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

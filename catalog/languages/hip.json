@@ -1,0 +1,18 @@
+{
+  "name": "HIP",
+  "slug": "hip",
+  "letter": "H",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".hip"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 674379998,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

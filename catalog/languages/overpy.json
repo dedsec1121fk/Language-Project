@@ -1,0 +1,20 @@
+{
+  "name": "OverPy",
+  "slug": "overpy",
+  "letter": "O",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [
+    "opy"
+  ],
+  "extensions": [
+    ".opy"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 492781155,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

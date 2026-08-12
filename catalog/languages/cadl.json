@@ -1,0 +1,20 @@
+{
+  "name": "cADL",
+  "slug": "cadl",
+  "letter": "C",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "cadl"
+  ],
+  "extensions": [
+    ".cadl"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

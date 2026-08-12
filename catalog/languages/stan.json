@@ -1,0 +1,21 @@
+{
+  "name": "Stan",
+  "slug": "stan",
+  "letter": "S",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "stan"
+  ],
+  "extensions": [
+    ".stan"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 356,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

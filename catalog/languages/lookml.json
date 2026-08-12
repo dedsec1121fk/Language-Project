@@ -1,0 +1,19 @@
+{
+  "name": "LookML",
+  "slug": "lookml",
+  "letter": "L",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".lkml",
+    ".lookml"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 211,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

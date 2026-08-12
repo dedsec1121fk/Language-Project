@@ -1,0 +1,21 @@
+{
+  "name": "AspectJ",
+  "slug": "aspectj",
+  "letter": "A",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "aspectj"
+  ],
+  "extensions": [
+    ".aj"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 23,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

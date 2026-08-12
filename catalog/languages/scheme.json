@@ -1,0 +1,35 @@
+{
+  "name": "Scheme",
+  "slug": "scheme",
+  "letter": "S",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "scheme",
+    "scm"
+  ],
+  "extensions": [
+    ".sch",
+    ".scm",
+    ".sld",
+    ".sls",
+    ".sps",
+    ".ss"
+  ],
+  "interpreters": [
+    "scheme",
+    "guile",
+    "bigloo",
+    "chicken",
+    "csi",
+    "gosh",
+    "r6rs"
+  ],
+  "github_linguist_id": 343,
+  "termux_worker": true,
+  "worker_id": "scheme",
+  "execution_policy": "verified-on-device"
+}

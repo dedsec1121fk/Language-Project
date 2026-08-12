@@ -1,0 +1,21 @@
+{
+  "name": "ANTLR With ObjectiveC Target",
+  "slug": "antlr-with-objectivec-target",
+  "letter": "A",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "antlr-objc"
+  ],
+  "extensions": [
+    ".G",
+    ".g"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

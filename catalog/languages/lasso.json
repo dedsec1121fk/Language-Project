@@ -1,0 +1,27 @@
+{
+  "name": "Lasso",
+  "slug": "lasso",
+  "letter": "L",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "lasso",
+    "lassoscript"
+  ],
+  "extensions": [
+    ".las",
+    ".lasso",
+    ".lasso8",
+    ".lasso9",
+    ".lasso[89]"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 195,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

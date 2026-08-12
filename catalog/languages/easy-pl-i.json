@@ -1,0 +1,16 @@
+{
+  "name": "Easy PL/I",
+  "slug": "easy-pl-i",
+  "letter": "E",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index"
+  ],
+  "aliases": [],
+  "extensions": [],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "X10",
+  "slug": "x10",
+  "letter": "X",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "x10",
+    "xten"
+  ],
+  "extensions": [
+    ".x10"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 397,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

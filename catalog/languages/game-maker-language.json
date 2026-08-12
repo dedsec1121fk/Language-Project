@@ -1,0 +1,18 @@
+{
+  "name": "Game Maker Language",
+  "slug": "game-maker-language",
+  "letter": "G",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".gml"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 125,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

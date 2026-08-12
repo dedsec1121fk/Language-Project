@@ -1,0 +1,45 @@
+{
+  "name": "C++",
+  "slug": "c-fc2b421",
+  "letter": "C",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "c++",
+    "cpp"
+  ],
+  "extensions": [
+    ".C",
+    ".c++",
+    ".cc",
+    ".cp",
+    ".cpp",
+    ".CPP",
+    ".cppm",
+    ".cxx",
+    ".h",
+    ".H",
+    ".h++",
+    ".hh",
+    ".hpp",
+    ".hxx",
+    ".inc",
+    ".inl",
+    ".ino",
+    ".ipp",
+    ".ixx",
+    ".mxx",
+    ".re",
+    ".tcc",
+    ".tpp",
+    ".txx"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 43,
+  "termux_worker": true,
+  "worker_id": "cpp",
+  "execution_policy": "verified-on-device"
+}

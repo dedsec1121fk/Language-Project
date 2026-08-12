@@ -1,0 +1,23 @@
+{
+  "name": "REALbasic",
+  "slug": "realbasic",
+  "letter": "R",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".rbbas",
+    ".rbfrm",
+    ".rbmnu",
+    ".rbres",
+    ".rbtbar",
+    ".rbuistate"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 310,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

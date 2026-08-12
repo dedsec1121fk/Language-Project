@@ -1,0 +1,21 @@
+{
+  "name": "Boo",
+  "slug": "boo",
+  "letter": "B",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "boo"
+  ],
+  "extensions": [
+    ".boo"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 37,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

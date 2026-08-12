@@ -1,0 +1,19 @@
+{
+  "name": "LDAP configuration file",
+  "slug": "ldap-configuration-file",
+  "letter": "L",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "ldapconf",
+    "ldaprc"
+  ],
+  "extensions": [],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

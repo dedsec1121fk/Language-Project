@@ -1,0 +1,23 @@
+{
+  "name": "Duel",
+  "slug": "duel",
+  "letter": "D",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "duel",
+    "jbst",
+    "jsonml+bst"
+  ],
+  "extensions": [
+    ".duel",
+    ".jbst"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "aspx-cs",
+  "slug": "aspx-cs",
+  "letter": "A",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "aspx-cs"
+  ],
+  "extensions": [
+    ".asax",
+    ".ascx",
+    ".ashx",
+    ".asmx",
+    ".aspx",
+    ".axd"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

@@ -1,0 +1,28 @@
+{
+  "name": "Visual Basic 6.0",
+  "slug": "visual-basic-6-0",
+  "letter": "V",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [
+    "vb6",
+    "vb 6",
+    "visual basic 6",
+    "visual basic classic",
+    "classic visual basic"
+  ],
+  "extensions": [
+    ".bas",
+    ".cls",
+    ".ctl",
+    ".Dsr",
+    ".frm"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 679594952,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

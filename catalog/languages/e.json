@@ -1,0 +1,20 @@
+{
+  "name": "E",
+  "slug": "e",
+  "letter": "E",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".e"
+  ],
+  "interpreters": [
+    "rune"
+  ],
+  "github_linguist_id": 92,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Newspeak",
+  "slug": "newspeak",
+  "letter": "N",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "pygments"
+  ],
+  "aliases": [
+    "newspeak"
+  ],
+  "extensions": [
+    ".ns2"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

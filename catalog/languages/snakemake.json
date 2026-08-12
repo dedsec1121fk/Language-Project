@@ -1,0 +1,21 @@
+{
+  "name": "Snakemake",
+  "slug": "snakemake",
+  "letter": "S",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [
+    "snakefile"
+  ],
+  "extensions": [
+    ".smk",
+    ".snakefile"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 151241392,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

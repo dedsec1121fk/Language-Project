@@ -1,0 +1,24 @@
+{
+  "name": "cpp-objdump",
+  "slug": "cpp-objdump",
+  "letter": "C",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "c++-objdumb",
+    "cpp-objdump",
+    "cxx-objdump"
+  ],
+  "extensions": [
+    ".c++-objdump",
+    ".cpp-objdump",
+    ".cxx-objdump"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

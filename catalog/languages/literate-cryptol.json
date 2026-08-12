@@ -1,0 +1,22 @@
+{
+  "name": "Literate Cryptol",
+  "slug": "literate-cryptol",
+  "letter": "L",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "lcry",
+    "lcryptol",
+    "literate-cryptol"
+  ],
+  "extensions": [
+    ".lcry"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

@@ -1,0 +1,20 @@
+{
+  "name": "CBM BASIC V2",
+  "slug": "cbm-basic-v2",
+  "letter": "C",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "cbmbas"
+  ],
+  "extensions": [
+    ".bas"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

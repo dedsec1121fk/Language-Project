@@ -1,0 +1,23 @@
+{
+  "name": "LilyPond",
+  "slug": "lilypond",
+  "letter": "L",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "lilypond"
+  ],
+  "extensions": [
+    ".ily",
+    ".ly"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 200,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Praat",
+  "slug": "praat",
+  "letter": "P",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "praat"
+  ],
+  "extensions": [
+    ".praat",
+    ".proc",
+    ".psc"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 106029007,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

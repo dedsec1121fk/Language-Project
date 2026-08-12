@@ -1,0 +1,18 @@
+{
+  "name": "CQL",
+  "slug": "cql",
+  "letter": "C",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".cql"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 71155397,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

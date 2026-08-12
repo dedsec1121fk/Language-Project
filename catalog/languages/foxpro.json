@@ -1,0 +1,25 @@
+{
+  "name": "FoxPro",
+  "slug": "foxpro",
+  "letter": "F",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "pygments"
+  ],
+  "aliases": [
+    "clipper",
+    "foxpro",
+    "vfp",
+    "xbase"
+  ],
+  "extensions": [
+    ".prg",
+    ".PRG"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

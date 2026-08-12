@@ -1,0 +1,24 @@
+{
+  "name": "Io",
+  "slug": "io",
+  "letter": "I",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "io"
+  ],
+  "extensions": [
+    ".io"
+  ],
+  "interpreters": [
+    "io"
+  ],
+  "github_linguist_id": 168,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

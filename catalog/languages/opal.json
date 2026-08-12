@@ -1,0 +1,19 @@
+{
+  "name": "Opal",
+  "slug": "opal",
+  "letter": "O",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".opal"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 262,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

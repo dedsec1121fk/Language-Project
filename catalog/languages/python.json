@@ -1,0 +1,58 @@
+{
+  "name": "Python",
+  "slug": "python",
+  "letter": "P",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "bazel",
+    "py",
+    "py3",
+    "pyi",
+    "python",
+    "python3",
+    "rusthon",
+    "sage",
+    "starlark"
+  ],
+  "extensions": [
+    ".bzl",
+    ".cgi",
+    ".fcgi",
+    ".gyp",
+    ".gypi",
+    ".jy",
+    ".lmi",
+    ".py",
+    ".py3",
+    ".pyde",
+    ".pye",
+    ".pyi",
+    ".pyp",
+    ".pyt",
+    ".pyw",
+    ".rpy",
+    ".sage",
+    ".sc",
+    ".spec",
+    ".tac",
+    ".wsgi",
+    ".xpy"
+  ],
+  "interpreters": [
+    "python",
+    "python2",
+    "python3",
+    "py",
+    "pypy",
+    "pypy3",
+    "uv"
+  ],
+  "github_linguist_id": 303,
+  "termux_worker": true,
+  "worker_id": "python",
+  "execution_policy": "verified-on-device"
+}

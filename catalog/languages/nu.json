@@ -1,0 +1,23 @@
+{
+  "name": "Nu",
+  "slug": "nu",
+  "letter": "N",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist"
+  ],
+  "aliases": [
+    "nush"
+  ],
+  "extensions": [
+    ".nu"
+  ],
+  "interpreters": [
+    "nush"
+  ],
+  "github_linguist_id": 253,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

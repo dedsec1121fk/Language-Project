@@ -1,0 +1,18 @@
+{
+  "name": "RAScript",
+  "slug": "rascript",
+  "letter": "R",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".rascript"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 601118790,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

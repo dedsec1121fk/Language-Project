@@ -1,0 +1,27 @@
+{
+  "name": "HCL",
+  "slug": "hcl",
+  "letter": "H",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [
+    "HashiCorp Configuration Language",
+    "opentofu",
+    "terraform"
+  ],
+  "extensions": [
+    ".hcl",
+    ".nomad",
+    ".tf",
+    ".tfvars",
+    ".tofu",
+    ".workflow"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 144,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

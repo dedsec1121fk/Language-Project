@@ -1,0 +1,24 @@
+{
+  "name": "Logos",
+  "slug": "logos",
+  "letter": "L",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "logos"
+  ],
+  "extensions": [
+    ".x",
+    ".xi",
+    ".xm",
+    ".xmi"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 209,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

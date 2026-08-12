@@ -1,0 +1,21 @@
+{
+  "name": "Nit",
+  "slug": "nit",
+  "letter": "N",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "nit"
+  ],
+  "extensions": [
+    ".nit"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 251,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

@@ -1,0 +1,22 @@
+{
+  "name": "EmacsLisp",
+  "slug": "emacslisp",
+  "letter": "E",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "elisp",
+    "emacs",
+    "emacs-lisp"
+  ],
+  "extensions": [
+    ".el"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

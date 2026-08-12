@@ -1,0 +1,25 @@
+{
+  "name": "Pike",
+  "slug": "pike",
+  "letter": "P",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "pike"
+  ],
+  "extensions": [
+    ".pike",
+    ".pmod"
+  ],
+  "interpreters": [
+    "pike"
+  ],
+  "github_linguist_id": 287,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

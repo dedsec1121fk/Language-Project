@@ -1,0 +1,20 @@
+{
+  "name": "sqlite3con",
+  "slug": "sqlite3con",
+  "letter": "S",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "sqlite3"
+  ],
+  "extensions": [
+    ".sqlite3-console"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

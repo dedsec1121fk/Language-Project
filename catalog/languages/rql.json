@@ -1,0 +1,20 @@
+{
+  "name": "RQL",
+  "slug": "rql",
+  "letter": "R",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "rql"
+  ],
+  "extensions": [
+    ".rql"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

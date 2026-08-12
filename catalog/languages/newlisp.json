@@ -1,0 +1,27 @@
+{
+  "name": "NewLisp",
+  "slug": "newlisp",
+  "letter": "N",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "newlisp"
+  ],
+  "extensions": [
+    ".kif",
+    ".lisp",
+    ".lsp",
+    ".nl"
+  ],
+  "interpreters": [
+    "newlisp"
+  ],
+  "github_linguist_id": 247,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

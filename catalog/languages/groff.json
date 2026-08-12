@@ -1,0 +1,25 @@
+{
+  "name": "Groff",
+  "slug": "groff",
+  "letter": "G",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "groff",
+    "man",
+    "nroff"
+  ],
+  "extensions": [
+    ".1p",
+    ".3pm",
+    ".[1-9]",
+    ".man"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

@@ -1,0 +1,22 @@
+{
+  "name": "CMake",
+  "slug": "cmake",
+  "letter": "C",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "cmake"
+  ],
+  "extensions": [
+    ".cmake",
+    ".cmake.in"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 47,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

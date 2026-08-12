@@ -1,0 +1,23 @@
+{
+  "name": "Euphoria",
+  "slug": "euphoria",
+  "letter": "E",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".e",
+    ".ex"
+  ],
+  "interpreters": [
+    "eui",
+    "euiw"
+  ],
+  "github_linguist_id": 880693982,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

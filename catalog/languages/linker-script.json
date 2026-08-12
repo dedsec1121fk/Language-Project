@@ -1,0 +1,20 @@
+{
+  "name": "Linker Script",
+  "slug": "linker-script",
+  "letter": "L",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".ld",
+    ".lds",
+    ".x"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 202,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

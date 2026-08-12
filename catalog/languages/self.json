@@ -1,0 +1,19 @@
+{
+  "name": "Self",
+  "slug": "self",
+  "letter": "S",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".self"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 345,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

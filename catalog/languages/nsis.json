@@ -1,0 +1,25 @@
+{
+  "name": "NSIS",
+  "slug": "nsis",
+  "letter": "N",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "nsh",
+    "nsi",
+    "nsis"
+  ],
+  "extensions": [
+    ".nsh",
+    ".nsi"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 242,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

@@ -1,0 +1,34 @@
+{
+  "schema": 1,
+  "project": "Language Project",
+  "scenarios": {
+    "confidence": {
+      "description": "Fast integrity-focused run across chain, differential audit and consensus.",
+      "fail_fast": true,
+      "steps": [
+        {"type": "chain", "args": {"rounds": 1, "warmups": 1, "order": "fastest"}},
+        {"type": "differential", "args": {"vectors": 8, "max_size": 512, "warmups": 1}},
+        {"type": "consensus", "args": {"replicas": 2, "rounds": 1, "warmups": 1, "seed": 1121}}
+      ]
+    },
+    "presentation": {
+      "description": "High-visibility demonstration using chain, braided topology, race and consensus modes.",
+      "fail_fast": true,
+      "steps": [
+        {"type": "chain", "args": {"rounds": 2, "warmups": 2, "order": "fastest"}},
+        {"type": "topology", "args": {"lanes": 4, "iterations": 3, "warmups": 1, "strategy": "round-robin"}},
+        {"type": "parallel-race", "args": {"iterations": 7, "warmups": 2}},
+        {"type": "consensus", "args": {"replicas": 3, "rounds": 1, "warmups": 1, "seed": 1121}}
+      ]
+    },
+    "resilience": {
+      "description": "Worker restart resilience plus differential and endurance verification.",
+      "fail_fast": true,
+      "steps": [
+        {"type": "chaos", "args": {"cycles": 5, "restart_rate": 0.15, "seed": 1121, "warmups": 1}},
+        {"type": "differential", "args": {"vectors": 16, "max_size": 2048, "seed": 1121, "warmups": 1}},
+        {"type": "stress", "args": {"size": 1024, "cycles": 10, "warmups": 1, "seed": 1121}}
+      ]
+    }
+  }
+}

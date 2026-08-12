@@ -1,0 +1,21 @@
+{
+  "name": "FStar",
+  "slug": "fstar",
+  "letter": "F",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "fstar"
+  ],
+  "extensions": [
+    ".fst",
+    ".fsti"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Numba_IR",
+  "slug": "numba-ir",
+  "letter": "N",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "numba_ir",
+    "numbair"
+  ],
+  "extensions": [
+    ".numba_ir"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

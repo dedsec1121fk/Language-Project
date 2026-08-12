@@ -1,0 +1,19 @@
+{
+  "name": "XC",
+  "slug": "xc",
+  "letter": "X",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".xc"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 398,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

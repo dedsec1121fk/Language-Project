@@ -1,0 +1,21 @@
+{
+  "name": "K",
+  "slug": "k",
+  "letter": "K",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "pygments"
+  ],
+  "aliases": [
+    "k"
+  ],
+  "extensions": [
+    ".k"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

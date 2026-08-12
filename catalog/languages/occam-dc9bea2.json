@@ -1,0 +1,16 @@
+{
+  "name": "occam-π",
+  "slug": "occam-dc9bea2",
+  "letter": "O",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index"
+  ],
+  "aliases": [],
+  "extensions": [],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

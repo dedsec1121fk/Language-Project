@@ -1,0 +1,24 @@
+{
+  "name": "TeX",
+  "slug": "tex",
+  "letter": "T",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "pygments"
+  ],
+  "aliases": [
+    "latex",
+    "tex"
+  ],
+  "extensions": [
+    ".aux",
+    ".tex",
+    ".toc"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

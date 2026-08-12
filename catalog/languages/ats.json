@@ -1,0 +1,22 @@
+{
+  "name": "ATS",
+  "slug": "ats",
+  "letter": "A",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [
+    "ats2"
+  ],
+  "extensions": [
+    ".dats",
+    ".hats",
+    ".sats"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 9,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

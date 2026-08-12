@@ -1,0 +1,20 @@
+{
+  "name": "Monte",
+  "slug": "monte",
+  "letter": "M",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "monte"
+  ],
+  "extensions": [
+    ".mt"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

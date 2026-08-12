@@ -1,0 +1,29 @@
+{
+  "name": "Forth",
+  "slug": "forth",
+  "letter": "F",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "forth"
+  ],
+  "extensions": [
+    ".4th",
+    ".f",
+    ".for",
+    ".forth",
+    ".fr",
+    ".frt",
+    ".fs",
+    ".fth"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 114,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

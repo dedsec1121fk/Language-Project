@@ -1,0 +1,21 @@
+{
+  "name": "M",
+  "slug": "m",
+  "letter": "M",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [
+    "mumps"
+  ],
+  "extensions": [
+    ".mumps",
+    ".m"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 214,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

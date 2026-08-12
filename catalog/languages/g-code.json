@@ -1,0 +1,25 @@
+{
+  "name": "G-code",
+  "slug": "g-code",
+  "letter": "G",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "gcode"
+  ],
+  "extensions": [
+    ".cnc",
+    ".g",
+    ".gco",
+    ".gcode"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 117,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

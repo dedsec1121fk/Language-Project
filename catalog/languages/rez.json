@@ -1,0 +1,18 @@
+{
+  "name": "Rez",
+  "slug": "rez",
+  "letter": "R",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".r"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 498022874,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

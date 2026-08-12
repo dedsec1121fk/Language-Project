@@ -1,0 +1,20 @@
+{
+  "name": "Terra",
+  "slug": "terra",
+  "letter": "T",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".t"
+  ],
+  "interpreters": [
+    "lua"
+  ],
+  "github_linguist_id": 371,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

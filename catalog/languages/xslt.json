@@ -1,0 +1,25 @@
+{
+  "name": "XSLT",
+  "slug": "xslt",
+  "letter": "X",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "xsl",
+    "xslt"
+  ],
+  "extensions": [
+    ".xpl",
+    ".xsl",
+    ".xslt"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 404,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

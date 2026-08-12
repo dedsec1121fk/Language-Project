@@ -1,0 +1,20 @@
+{
+  "name": "Glimmer TS",
+  "slug": "glimmer-ts",
+  "letter": "G",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [
+    "gts"
+  ],
+  "extensions": [
+    ".gts"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 95110458,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

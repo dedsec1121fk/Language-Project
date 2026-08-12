@@ -1,0 +1,20 @@
+{
+  "name": "Python+UL4",
+  "slug": "python-ul4",
+  "letter": "P",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "py+ul4"
+  ],
+  "extensions": [
+    ".pyul4"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

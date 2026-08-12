@@ -1,0 +1,21 @@
+{
+  "name": "QVTO",
+  "slug": "qvto",
+  "letter": "Q",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "qvt",
+    "qvto"
+  ],
+  "extensions": [
+    ".qvto"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

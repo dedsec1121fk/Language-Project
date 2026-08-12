@@ -1,0 +1,25 @@
+{
+  "name": "Julia",
+  "slug": "julia",
+  "letter": "J",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "jl",
+    "julia"
+  ],
+  "extensions": [
+    ".jl"
+  ],
+  "interpreters": [
+    "julia"
+  ],
+  "github_linguist_id": 184,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

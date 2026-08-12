@@ -1,0 +1,19 @@
+{
+  "name": "IPython console session",
+  "slug": "ipython-console-session",
+  "letter": "I",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "ipython3console",
+    "ipythonconsole"
+  ],
+  "extensions": [],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

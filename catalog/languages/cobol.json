@@ -1,0 +1,28 @@
+{
+  "name": "COBOL",
+  "slug": "cobol",
+  "letter": "C",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "cobol"
+  ],
+  "extensions": [
+    ".cbl",
+    ".ccp",
+    ".cob",
+    ".COB",
+    ".cobol",
+    ".cpy",
+    ".CPY"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 48,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

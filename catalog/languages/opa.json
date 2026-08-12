@@ -1,0 +1,22 @@
+{
+  "name": "Opa",
+  "slug": "opa",
+  "letter": "O",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "opa"
+  ],
+  "extensions": [
+    ".opa"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 261,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

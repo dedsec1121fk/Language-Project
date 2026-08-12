@@ -1,0 +1,20 @@
+{
+  "name": "Tree-sitter Query",
+  "slug": "tree-sitter-query",
+  "letter": "T",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [
+    "tsq"
+  ],
+  "extensions": [
+    ".scm"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 436081647,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

@@ -1,0 +1,20 @@
+{
+  "name": "Sophia",
+  "slug": "sophia",
+  "letter": "S",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "sophia"
+  ],
+  "extensions": [
+    ".aes"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

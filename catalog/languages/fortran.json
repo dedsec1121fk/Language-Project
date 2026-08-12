@@ -1,0 +1,29 @@
+{
+  "name": "Fortran",
+  "slug": "fortran",
+  "letter": "F",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "f90",
+    "fortran"
+  ],
+  "extensions": [
+    ".f",
+    ".f03",
+    ".F03",
+    ".f77",
+    ".F90",
+    ".f90",
+    ".for",
+    ".fpp"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 107,
+  "termux_worker": true,
+  "worker_id": "fortran",
+  "execution_policy": "verified-on-device"
+}

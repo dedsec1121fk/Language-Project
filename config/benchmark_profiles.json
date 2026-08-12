@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "project": "Language Project",
+  "profiles": {
+    "quick": {
+      "description": "Fast confidence check and small showcase.",
+      "chain": {"rounds": 1, "warmups": 1, "order": "registry"},
+      "race": {"iterations": 3, "warmups": 1},
+      "matrix": {"sizes": [16, 256, 4096], "iterations": 2, "warmups": 1},
+      "stress": {"size": 256, "cycles": 3, "warmups": 1}
+    },
+    "showcase": {
+      "description": "Balanced visual demo with stronger statistics.",
+      "chain": {"rounds": 3, "warmups": 2, "order": "fastest"},
+      "race": {"iterations": 9, "warmups": 2},
+      "matrix": {"sizes": [16, 256, 4096, 65536], "iterations": 5, "warmups": 2},
+      "stress": {"size": 2048, "cycles": 12, "warmups": 2}
+    },
+    "extreme": {
+      "description": "Heavy repeatability/stability run intended for powerful devices.",
+      "chain": {"rounds": 10, "warmups": 3, "order": "fastest"},
+      "race": {"iterations": 30, "warmups": 3},
+      "matrix": {"sizes": [16, 256, 4096, 65536, 1048576], "iterations": 10, "warmups": 3},
+      "stress": {"size": 16384, "cycles": 100, "warmups": 3}
+    }
+  }
+}

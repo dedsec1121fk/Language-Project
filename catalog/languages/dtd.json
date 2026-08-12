@@ -1,0 +1,20 @@
+{
+  "name": "DTD",
+  "slug": "dtd",
+  "letter": "D",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "dtd"
+  ],
+  "extensions": [
+    ".dtd"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

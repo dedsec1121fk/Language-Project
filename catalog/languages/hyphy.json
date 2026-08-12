@@ -1,0 +1,18 @@
+{
+  "name": "HyPhy",
+  "slug": "hyphy",
+  "letter": "H",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".bf"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 160,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

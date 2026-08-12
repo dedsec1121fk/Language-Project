@@ -1,0 +1,21 @@
+{
+  "name": "ShExC",
+  "slug": "shexc",
+  "letter": "S",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "shex",
+    "shexc"
+  ],
+  "extensions": [
+    ".shex"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

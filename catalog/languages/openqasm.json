@@ -1,0 +1,19 @@
+{
+  "name": "OpenQASM",
+  "slug": "openqasm",
+  "letter": "O",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".qasm"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 153739399,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

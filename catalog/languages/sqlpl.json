@@ -1,0 +1,19 @@
+{
+  "name": "SQLPL",
+  "slug": "sqlpl",
+  "letter": "S",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".sql",
+    ".db2"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 334,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

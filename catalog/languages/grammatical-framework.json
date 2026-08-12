@@ -1,0 +1,20 @@
+{
+  "name": "Grammatical Framework",
+  "slug": "grammatical-framework",
+  "letter": "G",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [
+    "gf"
+  ],
+  "extensions": [
+    ".gf"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 137,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

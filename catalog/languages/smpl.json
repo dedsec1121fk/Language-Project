@@ -1,0 +1,20 @@
+{
+  "name": "SmPL",
+  "slug": "smpl",
+  "letter": "S",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [
+    "coccinelle"
+  ],
+  "extensions": [
+    ".cocci"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 164123055,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

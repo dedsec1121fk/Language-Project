@@ -1,0 +1,20 @@
+{
+  "name": "YANG",
+  "slug": "yang",
+  "letter": "Y",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "yang"
+  ],
+  "extensions": [
+    ".yang"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

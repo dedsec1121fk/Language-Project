@@ -1,0 +1,24 @@
+{
+  "name": "Xojo",
+  "slug": "xojo",
+  "letter": "X",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".xojo_code",
+    ".xojo_menu",
+    ".xojo_report",
+    ".xojo_script",
+    ".xojo_toolbar",
+    ".xojo_window"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 405,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

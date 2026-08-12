@@ -1,0 +1,22 @@
+{
+  "name": "ANTLR With ActionScript Target",
+  "slug": "antlr-with-actionscript-target",
+  "letter": "A",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "antlr-actionscript",
+    "antlr-as"
+  ],
+  "extensions": [
+    ".G",
+    ".g"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

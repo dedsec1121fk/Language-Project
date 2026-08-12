@@ -1,0 +1,19 @@
+{
+  "name": "Squirrel",
+  "slug": "squirrel",
+  "letter": "S",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".nut"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 355,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

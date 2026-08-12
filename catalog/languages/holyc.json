@@ -1,0 +1,19 @@
+{
+  "name": "HolyC",
+  "slug": "holyc",
+  "letter": "H",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".hc"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 928121743,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

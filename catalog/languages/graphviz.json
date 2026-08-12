@@ -1,0 +1,22 @@
+{
+  "name": "Graphviz",
+  "slug": "graphviz",
+  "letter": "G",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "dot",
+    "graphviz"
+  ],
+  "extensions": [
+    ".dot",
+    ".gv"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

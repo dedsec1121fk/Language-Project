@@ -1,0 +1,20 @@
+{
+  "name": "Zimpl",
+  "slug": "zimpl",
+  "letter": "Z",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".zimpl",
+    ".zmpl",
+    ".zpl"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 411,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

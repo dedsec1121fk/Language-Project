@@ -1,0 +1,22 @@
+{
+  "name": "Eiffel",
+  "slug": "eiffel",
+  "letter": "E",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "eiffel"
+  ],
+  "extensions": [
+    ".e"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 99,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

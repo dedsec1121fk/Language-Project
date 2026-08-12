@@ -1,0 +1,22 @@
+{
+  "name": "Parrot Internal Representation",
+  "slug": "parrot-internal-representation",
+  "letter": "P",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [
+    "pir"
+  ],
+  "extensions": [
+    ".pir"
+  ],
+  "interpreters": [
+    "parrot"
+  ],
+  "github_linguist_id": 280,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

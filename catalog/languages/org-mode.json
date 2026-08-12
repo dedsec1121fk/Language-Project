@@ -1,0 +1,22 @@
+{
+  "name": "Org Mode",
+  "slug": "org-mode",
+  "letter": "O",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "org",
+    "org-mode",
+    "orgmode"
+  ],
+  "extensions": [
+    ".org"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

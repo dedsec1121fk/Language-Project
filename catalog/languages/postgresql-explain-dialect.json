@@ -1,0 +1,20 @@
+{
+  "name": "PostgreSQL EXPLAIN dialect",
+  "slug": "postgresql-explain-dialect",
+  "letter": "P",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "postgres-explain"
+  ],
+  "extensions": [
+    ".explain"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

@@ -1,0 +1,22 @@
+{
+  "name": "RHTML",
+  "slug": "rhtml",
+  "letter": "R",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "html+erb",
+    "html+ruby",
+    "rhtml"
+  ],
+  "extensions": [
+    ".rhtml"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

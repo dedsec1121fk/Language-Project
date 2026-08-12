@@ -1,0 +1,22 @@
+{
+  "name": "mcfunction",
+  "slug": "mcfunction",
+  "letter": "M",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "mcf",
+    "mcfunction"
+  ],
+  "extensions": [
+    ".mcfunction"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 462488745,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

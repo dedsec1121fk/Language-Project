@@ -1,0 +1,23 @@
+{
+  "name": "AmbientTalk",
+  "slug": "ambienttalk",
+  "letter": "A",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "pygments"
+  ],
+  "aliases": [
+    "ambienttalk",
+    "ambienttalk/2",
+    "at"
+  ],
+  "extensions": [
+    ".at"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "NestedText",
+  "slug": "nestedtext",
+  "letter": "N",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "nestedtext",
+    "nt"
+  ],
+  "extensions": [
+    ".nt"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

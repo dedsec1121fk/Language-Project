@@ -1,0 +1,22 @@
+{
+  "name": "Jasmin",
+  "slug": "jasmin",
+  "letter": "J",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "jasmin",
+    "jasminxt"
+  ],
+  "extensions": [
+    ".j"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 180,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

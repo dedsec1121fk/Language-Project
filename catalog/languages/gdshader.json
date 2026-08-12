@@ -1,0 +1,19 @@
+{
+  "name": "GDShader",
+  "slug": "gdshader",
+  "letter": "G",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".gdshader",
+    ".gdshaderinc"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 694638086,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

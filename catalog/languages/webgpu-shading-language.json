@@ -1,0 +1,20 @@
+{
+  "name": "WebGPU Shading Language",
+  "slug": "webgpu-shading-language",
+  "letter": "W",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "wgsl"
+  ],
+  "extensions": [
+    ".wgsl"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

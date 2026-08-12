@@ -1,0 +1,21 @@
+{
+  "name": "COBOLFree",
+  "slug": "cobolfree",
+  "letter": "C",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "cobolfree"
+  ],
+  "extensions": [
+    ".cbl",
+    ".CBL"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

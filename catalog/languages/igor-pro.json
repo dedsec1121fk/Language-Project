@@ -1,0 +1,21 @@
+{
+  "name": "IGOR Pro",
+  "slug": "igor-pro",
+  "letter": "I",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [
+    "igor",
+    "igorpro"
+  ],
+  "extensions": [
+    ".ipf"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 162,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

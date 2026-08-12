@@ -1,0 +1,12 @@
+{
+  "name": "F*",
+  "slug": "f-e7ae0c1",
+  "letter": "F",
+  "sources": [
+    "bundled-snapshot",
+    "wikipedia"
+  ],
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Apollo Guidance Computer",
+  "slug": "apollo-guidance-computer",
+  "letter": "A",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".agc"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 18,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

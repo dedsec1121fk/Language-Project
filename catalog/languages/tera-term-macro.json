@@ -1,0 +1,22 @@
+{
+  "name": "Tera Term macro",
+  "slug": "tera-term-macro",
+  "letter": "T",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "teraterm",
+    "teratermmacro",
+    "ttl"
+  ],
+  "extensions": [
+    ".ttl"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

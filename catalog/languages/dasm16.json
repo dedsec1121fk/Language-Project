@@ -1,0 +1,21 @@
+{
+  "name": "DASM16",
+  "slug": "dasm16",
+  "letter": "D",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "dasm16"
+  ],
+  "extensions": [
+    ".dasm",
+    ".dasm16"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Smithy",
+  "slug": "smithy",
+  "letter": "S",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "smithy"
+  ],
+  "extensions": [
+    ".smithy"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 1027892786,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

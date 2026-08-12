@@ -1,0 +1,20 @@
+{
+  "name": "WDiff",
+  "slug": "wdiff",
+  "letter": "W",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "wdiff"
+  ],
+  "extensions": [
+    ".wdiff"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

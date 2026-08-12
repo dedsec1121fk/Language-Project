@@ -1,0 +1,21 @@
+{
+  "name": "Vyper",
+  "slug": "vyper",
+  "letter": "V",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "vyper"
+  ],
+  "extensions": [
+    ".vy"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 1055641948,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

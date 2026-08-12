@@ -1,0 +1,29 @@
+{
+  "name": "Stata",
+  "slug": "stata",
+  "letter": "S",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "do",
+    "stata"
+  ],
+  "extensions": [
+    ".ado",
+    ".do",
+    ".doh",
+    ".ihlp",
+    ".mata",
+    ".matah",
+    ".sthlp"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 358,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

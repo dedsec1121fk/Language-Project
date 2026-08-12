@@ -1,0 +1,20 @@
+{
+  "name": "TADS 3",
+  "slug": "tads-3",
+  "letter": "T",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "tads3"
+  ],
+  "extensions": [
+    ".t"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

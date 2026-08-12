@@ -1,0 +1,22 @@
+{
+  "name": "PowerBuilder",
+  "slug": "powerbuilder",
+  "letter": "P",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".pbt",
+    ".sra",
+    ".sru",
+    ".srw"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 292,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

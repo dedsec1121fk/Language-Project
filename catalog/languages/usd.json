@@ -1,0 +1,22 @@
+{
+  "name": "USD",
+  "slug": "usd",
+  "letter": "U",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "usd",
+    "usda"
+  ],
+  "extensions": [
+    ".usd",
+    ".usda"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

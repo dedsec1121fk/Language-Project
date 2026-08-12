@@ -1,0 +1,23 @@
+{
+  "name": "Limbo",
+  "slug": "limbo",
+  "letter": "L",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "limbo"
+  ],
+  "extensions": [
+    ".b",
+    ".m"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 201,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

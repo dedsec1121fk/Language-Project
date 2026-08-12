@@ -1,0 +1,25 @@
+{
+  "name": "ActionScript",
+  "slug": "actionscript",
+  "letter": "A",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "actionscript",
+    "actionscript 3",
+    "actionscript3",
+    "as",
+    "as3"
+  ],
+  "extensions": [
+    ".as"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 10,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

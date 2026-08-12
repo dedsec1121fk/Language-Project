@@ -1,0 +1,32 @@
+{
+  "name": "OCaml",
+  "slug": "ocaml",
+  "letter": "O",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "ocaml"
+  ],
+  "extensions": [
+    ".eliom",
+    ".eliomi",
+    ".ml",
+    ".ml4",
+    ".mli",
+    ".mll",
+    ".mly"
+  ],
+  "interpreters": [
+    "ocaml",
+    "ocamlrun",
+    "ocamlscript"
+  ],
+  "github_linguist_id": 255,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

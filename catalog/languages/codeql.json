@@ -1,0 +1,23 @@
+{
+  "name": "CodeQL",
+  "slug": "codeql",
+  "letter": "C",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "codeql",
+    "ql"
+  ],
+  "extensions": [
+    ".ql",
+    ".qll"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 424259634,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

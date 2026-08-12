@@ -1,0 +1,21 @@
+{
+  "name": "Jolie",
+  "slug": "jolie",
+  "letter": "J",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".ol",
+    ".iol"
+  ],
+  "interpreters": [
+    "jolie"
+  ],
+  "github_linguist_id": 998078858,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

@@ -1,0 +1,32 @@
+{
+  "name": "Tcl",
+  "slug": "tcl",
+  "letter": "T",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "sdc",
+    "tcl",
+    "xdc"
+  ],
+  "extensions": [
+    ".adp",
+    ".rvt",
+    ".sdc",
+    ".tcl",
+    ".tcl.in",
+    ".tm",
+    ".xdc"
+  ],
+  "interpreters": [
+    "tclsh",
+    "wish"
+  ],
+  "github_linguist_id": 367,
+  "termux_worker": true,
+  "worker_id": "tcl",
+  "execution_policy": "verified-on-device"
+}

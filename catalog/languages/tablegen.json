@@ -1,0 +1,21 @@
+{
+  "name": "TableGen",
+  "slug": "tablegen",
+  "letter": "T",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "tablegen",
+    "td"
+  ],
+  "extensions": [
+    ".td"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

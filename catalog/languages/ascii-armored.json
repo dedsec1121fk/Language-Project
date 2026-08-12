@@ -1,0 +1,22 @@
+{
+  "name": "ASCII armored",
+  "slug": "ascii-armored",
+  "letter": "A",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "asc",
+    "pem"
+  ],
+  "extensions": [
+    ".asc",
+    ".pem"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

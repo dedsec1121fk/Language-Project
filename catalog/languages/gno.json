@@ -1,0 +1,20 @@
+{
+  "name": "Gno",
+  "slug": "gno",
+  "letter": "G",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [
+    "gnolang"
+  ],
+  "extensions": [
+    ".gno"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 279301301,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

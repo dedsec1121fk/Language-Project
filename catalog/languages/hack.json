@@ -1,0 +1,22 @@
+{
+  "name": "Hack",
+  "slug": "hack",
+  "letter": "H",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".hack",
+    ".hh",
+    ".hhi",
+    ".php"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 153,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

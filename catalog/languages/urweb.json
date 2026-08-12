@@ -1,0 +1,22 @@
+{
+  "name": "UrWeb",
+  "slug": "urweb",
+  "letter": "U",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [
+    "Ur/Web",
+    "Ur"
+  ],
+  "extensions": [
+    ".ur",
+    ".urs"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 383,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

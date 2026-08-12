@@ -1,0 +1,25 @@
+{
+  "name": "Hy",
+  "slug": "hy",
+  "letter": "H",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "hy",
+    "hylang"
+  ],
+  "extensions": [
+    ".hy"
+  ],
+  "interpreters": [
+    "hy"
+  ],
+  "github_linguist_id": 159,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

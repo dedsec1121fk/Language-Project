@@ -1,0 +1,22 @@
+{
+  "name": "DylanLID",
+  "slug": "dylanlid",
+  "letter": "D",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "dylan-lid",
+    "lid"
+  ],
+  "extensions": [
+    ".hdp",
+    ".lid"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

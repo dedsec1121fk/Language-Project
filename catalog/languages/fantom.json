@@ -1,0 +1,22 @@
+{
+  "name": "Fantom",
+  "slug": "fantom",
+  "letter": "F",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "fan"
+  ],
+  "extensions": [
+    ".fan"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 110,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

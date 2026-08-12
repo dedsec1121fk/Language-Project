@@ -1,0 +1,33 @@
+{
+  "name": "Awk",
+  "slug": "awk",
+  "letter": "A",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "awk",
+    "gawk",
+    "mawk",
+    "nawk"
+  ],
+  "extensions": [
+    ".auk",
+    ".awk",
+    ".gawk",
+    ".mawk",
+    ".nawk"
+  ],
+  "interpreters": [
+    "awk",
+    "gawk",
+    "mawk",
+    "nawk"
+  ],
+  "github_linguist_id": 28,
+  "termux_worker": true,
+  "worker_id": "awk",
+  "execution_policy": "verified-on-device"
+}

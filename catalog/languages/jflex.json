@@ -1,0 +1,19 @@
+{
+  "name": "JFlex",
+  "slug": "jflex",
+  "letter": "J",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".flex",
+    ".jflex"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 173,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

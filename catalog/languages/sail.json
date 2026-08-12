@@ -1,0 +1,19 @@
+{
+  "name": "Sail",
+  "slug": "sail",
+  "letter": "S",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".sail"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 1029438153,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

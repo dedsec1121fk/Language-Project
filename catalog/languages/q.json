@@ -1,0 +1,22 @@
+{
+  "name": "q",
+  "slug": "q",
+  "letter": "Q",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "q"
+  ],
+  "extensions": [
+    ".q"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 970539067,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

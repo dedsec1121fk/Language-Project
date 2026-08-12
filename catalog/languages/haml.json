@@ -1,0 +1,20 @@
+{
+  "name": "Haml",
+  "slug": "haml",
+  "letter": "H",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "haml"
+  ],
+  "extensions": [
+    ".haml"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Maple",
+  "slug": "maple",
+  "letter": "M",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "pygments"
+  ],
+  "aliases": [
+    "maple"
+  ],
+  "extensions": [
+    ".mi",
+    ".mm",
+    ".mpl"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

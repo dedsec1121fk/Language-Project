@@ -1,0 +1,21 @@
+{
+  "name": "V",
+  "slug": "v",
+  "letter": "V",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist"
+  ],
+  "aliases": [
+    "vlang"
+  ],
+  "extensions": [
+    ".v"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 603371597,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

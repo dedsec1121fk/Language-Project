@@ -1,0 +1,20 @@
+{
+  "name": "Reason",
+  "slug": "reason",
+  "letter": "R",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".re",
+    ".rei"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 869538413,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

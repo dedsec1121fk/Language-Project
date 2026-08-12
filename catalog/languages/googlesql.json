@@ -1,0 +1,22 @@
+{
+  "name": "GoogleSQL",
+  "slug": "googlesql",
+  "letter": "G",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "googlesql",
+    "zetasql"
+  ],
+  "extensions": [
+    ".googlesql",
+    ".googlesql.sql"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

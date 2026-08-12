@@ -1,0 +1,20 @@
+{
+  "name": "HTML+UL4",
+  "slug": "html-ul4",
+  "letter": "H",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "html+ul4"
+  ],
+  "extensions": [
+    ".htmlul4"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

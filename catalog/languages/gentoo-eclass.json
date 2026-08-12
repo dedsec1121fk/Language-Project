@@ -1,0 +1,18 @@
+{
+  "name": "Gentoo Eclass",
+  "slug": "gentoo-eclass",
+  "letter": "G",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".eclass"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 128,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

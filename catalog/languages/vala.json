@@ -1,0 +1,24 @@
+{
+  "name": "Vala",
+  "slug": "vala",
+  "letter": "V",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "vala",
+    "vapi"
+  ],
+  "extensions": [
+    ".vala",
+    ".vapi"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 386,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

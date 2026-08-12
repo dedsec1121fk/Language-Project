@@ -1,0 +1,23 @@
+{
+  "name": "Zeek",
+  "slug": "zeek",
+  "letter": "Z",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "bro",
+    "zeek"
+  ],
+  "extensions": [
+    ".bro",
+    ".zeek"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 40,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

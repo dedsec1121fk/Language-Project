@@ -1,0 +1,20 @@
+{
+  "name": "Todotxt",
+  "slug": "todotxt",
+  "letter": "T",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "todotxt"
+  ],
+  "extensions": [
+    ".todotxt"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

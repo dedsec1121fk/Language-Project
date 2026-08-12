@@ -1,0 +1,22 @@
+{
+  "name": "Starlark",
+  "slug": "starlark",
+  "letter": "S",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [
+    "bazel",
+    "bzl"
+  ],
+  "extensions": [
+    ".bzl",
+    ".star"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 960266174,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

@@ -1,0 +1,20 @@
+{
+  "name": "Savi",
+  "slug": "savi",
+  "letter": "S",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "savi"
+  ],
+  "extensions": [
+    ".savi"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Python console",
+  "slug": "python-console",
+  "letter": "P",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [
+    "pycon"
+  ],
+  "extensions": [],
+  "interpreters": [],
+  "github_linguist_id": 428,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

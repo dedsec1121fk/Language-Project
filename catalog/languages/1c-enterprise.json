@@ -1,0 +1,19 @@
+{
+  "name": "1C Enterprise",
+  "slug": "1c-enterprise",
+  "letter": "#",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".bsl",
+    ".os"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 0,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

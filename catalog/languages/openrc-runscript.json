@@ -1,0 +1,20 @@
+{
+  "name": "OpenRC runscript",
+  "slug": "openrc-runscript",
+  "letter": "O",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [
+    "openrc"
+  ],
+  "extensions": [],
+  "interpreters": [
+    "openrc-run"
+  ],
+  "github_linguist_id": 265,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

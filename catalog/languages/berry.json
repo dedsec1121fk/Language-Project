@@ -1,0 +1,22 @@
+{
+  "name": "Berry",
+  "slug": "berry",
+  "letter": "B",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "be",
+    "berry"
+  ],
+  "extensions": [
+    ".be"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 121855308,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

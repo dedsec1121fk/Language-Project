@@ -1,0 +1,18 @@
+{
+  "name": "Wollok",
+  "slug": "wollok",
+  "letter": "W",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".wlk"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 632745969,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

@@ -1,0 +1,24 @@
+{
+  "name": "SystemVerilog",
+  "slug": "systemverilog",
+  "letter": "S",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "sv",
+    "systemverilog"
+  ],
+  "extensions": [
+    ".sv",
+    ".svh",
+    ".vh"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 363,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

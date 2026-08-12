@@ -1,0 +1,24 @@
+{
+  "name": "Lean",
+  "slug": "lean",
+  "letter": "L",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "lean",
+    "lean3"
+  ],
+  "extensions": [
+    ".hlean",
+    ".lean"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 197,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

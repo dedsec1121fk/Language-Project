@@ -1,0 +1,21 @@
+{
+  "name": "JASS",
+  "slug": "jass",
+  "letter": "J",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist"
+  ],
+  "aliases": [
+    "jass2"
+  ],
+  "extensions": [
+    ".j"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 504860504,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "jq",
+  "slug": "jq",
+  "letter": "J",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".jq"
+  ],
+  "interpreters": [
+    "gojq",
+    "jaq",
+    "jq",
+    "jqjq",
+    "jqq",
+    "query-json"
+  ],
+  "github_linguist_id": 905371884,
+  "termux_worker": true,
+  "worker_id": "jq",
+  "execution_policy": "verified-on-device"
+}

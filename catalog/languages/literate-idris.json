@@ -1,0 +1,22 @@
+{
+  "name": "Literate Idris",
+  "slug": "literate-idris",
+  "letter": "L",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "lidr",
+    "lidris",
+    "literate-idris"
+  ],
+  "extensions": [
+    ".lidr"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

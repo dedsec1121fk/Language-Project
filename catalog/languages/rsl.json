@@ -1,0 +1,21 @@
+{
+  "name": "RSL",
+  "slug": "rsl",
+  "letter": "R",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "pygments"
+  ],
+  "aliases": [
+    "rsl"
+  ],
+  "extensions": [
+    ".rsl"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

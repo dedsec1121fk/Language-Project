@@ -1,0 +1,22 @@
+{
+  "name": "Literate Agda",
+  "slug": "literate-agda",
+  "letter": "L",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "lagda",
+    "literate-agda"
+  ],
+  "extensions": [
+    ".lagda"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 205,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

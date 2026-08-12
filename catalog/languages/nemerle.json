@@ -1,0 +1,22 @@
+{
+  "name": "Nemerle",
+  "slug": "nemerle",
+  "letter": "N",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "nemerle"
+  ],
+  "extensions": [
+    ".n"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 243,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

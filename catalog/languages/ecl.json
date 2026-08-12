@@ -1,0 +1,22 @@
+{
+  "name": "ECL",
+  "slug": "ecl",
+  "letter": "E",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "ecl"
+  ],
+  "extensions": [
+    ".ecl",
+    ".eclxml"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 93,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "aspx-vb",
+  "slug": "aspx-vb",
+  "letter": "A",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "aspx-vb"
+  ],
+  "extensions": [
+    ".asax",
+    ".ascx",
+    ".ashx",
+    ".asmx",
+    ".aspx",
+    ".axd"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

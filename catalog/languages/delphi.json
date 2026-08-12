@@ -1,0 +1,25 @@
+{
+  "name": "Delphi",
+  "slug": "delphi",
+  "letter": "D",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "pygments"
+  ],
+  "aliases": [
+    "delphi",
+    "objectpascal",
+    "pas",
+    "pascal"
+  ],
+  "extensions": [
+    ".dpr",
+    ".pas"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

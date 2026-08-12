@@ -1,0 +1,20 @@
+{
+  "name": "Scenic",
+  "slug": "scenic",
+  "letter": "S",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".scenic"
+  ],
+  "interpreters": [
+    "scenic"
+  ],
+  "github_linguist_id": 619814037,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "LiveScript",
+  "slug": "livescript",
+  "letter": "L",
+  "sources": [
+    "bundled-snapshot",
+    "curated-index",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "live-script",
+    "livescript",
+    "ls"
+  ],
+  "extensions": [
+    "._ls",
+    ".ls"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 208,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

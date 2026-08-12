@@ -1,0 +1,19 @@
+{
+  "name": "SQF",
+  "slug": "sqf",
+  "letter": "S",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [],
+  "extensions": [
+    ".sqf",
+    ".hqf"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 332,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

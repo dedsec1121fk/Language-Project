@@ -1,0 +1,20 @@
+{
+  "name": "Ragel in D Host",
+  "slug": "ragel-in-d-host",
+  "letter": "R",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "ragel-d"
+  ],
+  "extensions": [
+    ".rl"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

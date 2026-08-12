@@ -1,0 +1,20 @@
+{
+  "name": "Roboconf Graph",
+  "slug": "roboconf-graph",
+  "letter": "R",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "roboconf-graph"
+  ],
+  "extensions": [
+    ".graph"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

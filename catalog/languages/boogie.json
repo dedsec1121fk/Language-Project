@@ -1,0 +1,23 @@
+{
+  "name": "Boogie",
+  "slug": "boogie",
+  "letter": "B",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "boogie"
+  ],
+  "extensions": [
+    ".bpl"
+  ],
+  "interpreters": [
+    "boogie"
+  ],
+  "github_linguist_id": 955017407,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

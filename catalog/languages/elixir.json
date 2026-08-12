@@ -1,0 +1,28 @@
+{
+  "name": "Elixir",
+  "slug": "elixir",
+  "letter": "E",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist",
+    "pygments"
+  ],
+  "aliases": [
+    "elixir",
+    "ex",
+    "exs"
+  ],
+  "extensions": [
+    ".eex",
+    ".ex",
+    ".exs",
+    ".leex"
+  ],
+  "interpreters": [
+    "elixir"
+  ],
+  "github_linguist_id": 100,
+  "termux_worker": true,
+  "worker_id": "elixir",
+  "execution_policy": "verified-on-device"
+}

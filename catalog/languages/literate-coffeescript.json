@@ -1,0 +1,21 @@
+{
+  "name": "Literate CoffeeScript",
+  "slug": "literate-coffeescript",
+  "letter": "L",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [
+    "litcoffee"
+  ],
+  "extensions": [
+    ".litcoffee",
+    ".coffee.md"
+  ],
+  "interpreters": [],
+  "github_linguist_id": 206,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

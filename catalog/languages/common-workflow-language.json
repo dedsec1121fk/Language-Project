@@ -1,0 +1,22 @@
+{
+  "name": "Common Workflow Language",
+  "slug": "common-workflow-language",
+  "letter": "C",
+  "sources": [
+    "bundled-snapshot",
+    "github-linguist"
+  ],
+  "aliases": [
+    "cwl"
+  ],
+  "extensions": [
+    ".cwl"
+  ],
+  "interpreters": [
+    "cwl-runner"
+  ],
+  "github_linguist_id": 988547172,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

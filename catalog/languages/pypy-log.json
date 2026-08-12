@@ -1,0 +1,21 @@
+{
+  "name": "PyPy Log",
+  "slug": "pypy-log",
+  "letter": "P",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "pypy",
+    "pypylog"
+  ],
+  "extensions": [
+    ".pypylog"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}

@@ -1,0 +1,20 @@
+{
+  "name": "Blueprint",
+  "slug": "blueprint",
+  "letter": "B",
+  "sources": [
+    "bundled-snapshot",
+    "pygments"
+  ],
+  "aliases": [
+    "blueprint"
+  ],
+  "extensions": [
+    ".blp"
+  ],
+  "interpreters": [],
+  "github_linguist_id": null,
+  "termux_worker": false,
+  "worker_id": null,
+  "execution_policy": "catalog-only"
+}
