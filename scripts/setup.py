@@ -4,6 +4,7 @@ import sys,subprocess,json,shutil,os,time,platform,datetime
 import select
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT))
 from core.registry import load_registry,expand,executable_exists,command_version
+from core.langtools import setup_tools
 STATE=ROOT/'state'/'active.json'
 TEST_VECTORS=[
  '466c65782050726f6a656374',
@@ -84,6 +85,9 @@ def main():
   'python':platform.python_version()
  }
  STATE.parent.mkdir(exist_ok=True);STATE.write_text(json.dumps(state,indent=2,ensure_ascii=False)+'\n')
+ print('\nBuilding practical multi-language tools for verified runtimes...')
+ tool_state=setup_tools(active,verbose=True)
+ print(f"Verified native tools: {len(tool_state.get('active',[]))}/{len(registry)}")
  if refresh:
   print('\nRefreshing global language catalog (best effort)...')
   subprocess.run([sys.executable,str(ROOT/'scripts'/'refresh_catalog.py')],cwd=ROOT)

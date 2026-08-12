@@ -1,0 +1,2 @@
+#!/usr/bin/env escript
+main(Args)->case Args of ["--help"]->io:format("Usage: line-stats FILE~n");[F|_]->case file:read_file(F) of {ok,B}->Ls=binary:split(B,<<"\n">>,[global]),Lens=[byte_size(X)||X<-Ls],Blank=length([X||X<-Ls,byte_size(X)==0]),Max=case Lens of []->0;_->lists:max(Lens) end,io:format("bytes=~p~nlines=~p~nblank_lines=~p~nlongest_line_bytes=~p~n",[byte_size(B),length(Ls),Blank,Max]);E->io:format(standard_error,"~p~n",[E]),halt(2) end;_->io:format("Usage: line-stats FILE~n"),halt(2) end.

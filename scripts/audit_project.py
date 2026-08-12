@@ -48,13 +48,37 @@ missing=[x['id'] for x in reg if x['id'] not in worker_ids]
 if missing: bad('registry workers missing from catalog mapping: '+', '.join(missing))
 else: ok(f'all {len(reg)} executable workers map into catalog records')
 
+# Native multi-language practical tool integrity: exactly one useful tool per executable worker candidate.
+try:
+ pt=json.loads((ROOT/'polytools.json').read_text())
+ tools=pt.get('tools',[])
+ if pt.get('count')!=len(tools): bad(f"polytools count field {pt.get('count')} != {len(tools)} records")
+ tids=[x.get('id') for x in tools]
+ if len(tids)!=len(set(tids)): bad('duplicate native language tool IDs')
+ else: ok(f'{len(tools)} unique native language tool IDs')
+ lids=[x.get('language_id') for x in tools]
+ if set(lids)!=set(ids): bad('native language tools do not map exactly one-per executable worker set')
+ elif len(lids)!=len(ids): bad('native language tool count differs from executable worker count')
+ else: ok(f'all {len(ids)} executable workers have a native practical tool')
+ for t in tools:
+  for key in ('id','language_id','language','name','category','source','run','smoke_args'):
+   if key not in t: bad(f"native tool {t.get('id','?')}: missing field {key}")
+  src=ROOT/t.get('source','')
+  if not src.is_file(): bad(f"native tool {t.get('id','?')}: missing source {t.get('source')}")
+  for token in list(t.get('run') or [])+list(t.get('build') or []):
+   if isinstance(token,str) and '{root}/' in token:
+    rel=token.split('{root}/',1)[1]
+    if rel.startswith('build/'): continue
+    if not (ROOT/rel).exists(): bad(f"native tool {t.get('id','?')}: missing project path {rel}")
+except Exception as e: bad('native multi-language tool registry invalid: '+str(e))
+
 # Advanced architecture files / profile integrity
 required_files=[
- 'core/analytics.py','core/profiles.py','core/history.py','core/telemetry.py','core/store.py','core/adaptive.py','core/advanced.py','core/topology.py','core/scenarios.py','core/bundles.py','core/dashboard.py','core/plugins.py','core/provenance.py','core/planner.py','core/regression.py',
- 'config/benchmark_profiles.json','config/scenarios.json','plugins/README.md',
- 'scripts/doctor.py','scripts/selftest.py','scripts/package_plan.py','scripts/smoke_benchmark.py','scripts/advanced_smoke.py',
- 'docs/ADVANCED_MODES.md','docs/ADVANCED_ARCHITECTURE.md','docs/RESULT_SCHEMA.md','docs/PROTOCOL.md','docs/REPRODUCIBILITY.md','docs/DIAGNOSTICS.md','docs/CHECKPOINTS.md','docs/ADAPTIVE_SCHEDULER.md','docs/CHAOS_TESTING.md','docs/TOPOLOGY.md','docs/DATABASE.md','docs/PLUGINS.md','docs/SCENARIOS.md','docs/TELEMETRY.md','docs/BUNDLES.md','docs/REGRESSION_GATES.md','docs/DIFFERENTIAL_AUDIT.md','docs/CONSENSUS.md',
- 'schemas/languages.schema.json','schemas/active-state.schema.json','schemas/catalog.schema.json','schemas/result.schema.json','schemas/calibration.schema.json','schemas/checkpoint.schema.json','schemas/scenarios.schema.json','schemas/provenance.schema.json'
+ 'core/toolbox.py','core/practical.py','core/langtools.py','core/polyglot_ops.py','core/polyglot_practical.py','core/scaffold.py','core/source_runner.py','core/analytics.py','core/profiles.py','core/history.py','core/telemetry.py','core/store.py','core/adaptive.py','core/advanced.py','core/topology.py','core/scenarios.py','core/bundles.py','core/dashboard.py','core/plugins.py','core/provenance.py','core/planner.py','core/regression.py',
+ 'config/benchmark_profiles.json','config/scenarios.json','polytools.json','plugins/README.md',
+ 'scripts/doctor.py','scripts/selftest.py','scripts/langtools_smoke.py','scripts/toolbox_smoke.py','scripts/practical_smoke.py','scripts/polyglot_smoke.py','scripts/polyglot_practical_smoke.py','scripts/package_plan.py','scripts/smoke_benchmark.py','scripts/advanced_smoke.py',
+ 'docs/USEFUL_TOOLS.md','docs/NATIVE_LANGUAGE_TOOLS.md','docs/PRACTICAL_POLYGLOT.md','docs/POLYGLOT_OPERATIONS.md','examples/useful-demo.sh','examples/everyday-demo.sh','examples/native-tools-demo.sh','examples/polyglot-backup-demo.sh','docs/ADVANCED_MODES.md','docs/ADVANCED_ARCHITECTURE.md','docs/RESULT_SCHEMA.md','docs/PROTOCOL.md','docs/REPRODUCIBILITY.md','docs/DIAGNOSTICS.md','docs/CHECKPOINTS.md','docs/ADAPTIVE_SCHEDULER.md','docs/CHAOS_TESTING.md','docs/TOPOLOGY.md','docs/DATABASE.md','docs/PLUGINS.md','docs/SCENARIOS.md','docs/TELEMETRY.md','docs/BUNDLES.md','docs/REGRESSION_GATES.md','docs/DIFFERENTIAL_AUDIT.md','docs/CONSENSUS.md',
+ 'schemas/languages.schema.json','schemas/polytools.schema.json','schemas/polyglot.schema.json','schemas/active-state.schema.json','schemas/catalog.schema.json','schemas/result.schema.json','schemas/calibration.schema.json','schemas/checkpoint.schema.json','schemas/scenarios.schema.json','schemas/provenance.schema.json'
 ]
 missing_required=[x for x in required_files if not (ROOT/x).exists()]
 if missing_required: bad('missing advanced project files: '+', '.join(missing_required))
@@ -86,6 +110,10 @@ if '<!-- LANGUAGE-CATALOG:START -->' not in readme or '<!-- LANGUAGE-CATALOG:END
 else: ok('README catalog markers present')
 if '# Language Project' not in readme: bad('README title is not Language Project')
 if '## Advanced Control-Plane Commands' not in readme: bad('README advanced control-plane section missing')
+if '## Useful Everyday Tools' not in readme: bad('README useful-toolbox section missing')
+if '## Native Multi-Language Tools — Useful Programs Written In The Languages' not in readme: bad('README native multi-language tools section missing')
+if '## Practical Polyglot Workflows' not in readme: bad('README practical-polyglot section missing')
+if 'Polyglot Mirror — Safe Verified Directory Sync' not in readme: bad('README expanded practical-polyglot section missing')
 if readme.count('<details>') < 10: bad('README does not contain the expected collapsible advanced/catalog sections')
 else: ok(f"README contains {readme.count('<details>')} collapsible sections")
 old_name='Flex'+' Project'

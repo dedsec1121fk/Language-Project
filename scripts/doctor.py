@@ -8,6 +8,10 @@ from core.analytics import device_snapshot
 from core.store import stats as database_stats
 from core.scenarios import load_scenarios
 from core.provenance import fingerprint
+from core.toolbox import codec,identify_language
+from core.practical import environment_report,tree_view
+from core.polyglot_ops import status as polyglot_status,FORMAT as POLYGLOT_FORMAT
+from core.langtools import status as langtools_status,selftest as langtools_selftest
 
 def check(name,ok,detail=''):
     print(f"{'OK' if ok else 'FAIL':<5} {name:<34} {detail}")
@@ -33,6 +37,28 @@ def main():
         db=database_stats();checks.append(check('SQLite performance database',True,f"{db.get('sessions',0)} sessions"))
     except Exception as e:checks.append(check('SQLite performance database',False,str(e)))
     checks.append(check('Environment fingerprint',len(fingerprint())==64,fingerprint()[:16]+'...'))
+    try:
+        raw=b'utility-plane';ok=codec(codec(raw,'base64'),'base64',True)==raw and (identify_language(ROOT/'Language.py').get('best') or {}).get('name')=='Python'
+        checks.append(check('Useful toolbox core',ok,'codec + catalog language detector'))
+    except Exception as e:checks.append(check('Useful toolbox core',False,str(e)))
+    try:
+        env=environment_report(['python']);ok=bool(env['commands'][0]['path']) and bool(tree_view(ROOT,depth=1,max_entries=20))
+        checks.append(check('Practical utility plane',ok,'environment + tree + dry-run utilities'))
+    except Exception as e:checks.append(check('Practical utility plane',False,str(e)))
+    try:
+        ps=polyglot_status();ok=POLYGLOT_FORMAT=='language-project-polyglot' and len(ps.get('operations',{}))>=16
+        checks.append(check('Practical polyglot control plane',ok,f"{ps.get('verified_languages',0)} active / {len(ps.get('operations',{}))} workflows"))
+    except Exception as e:checks.append(check('Practical polyglot control plane',False,str(e)))
+    try:
+        nts=langtools_status(); expected=len(active) if active else 0
+        reg_ok=nts.get('registered')==len(reg)
+        checks.append(check('Native tool registry coverage',reg_ok,f"{nts.get('registered',0)}/{len(reg)} one-per-language tools"))
+        if st:
+            coverage=nts.get('available',0)==expected
+            checks.append(check('Verified language/tool parity',coverage,f"{nts.get('available',0)} tools / {expected} active languages"))
+            if nts.get('available',0):
+                tr=langtools_selftest(); checks.append(check('Native language tool smoke',tr.get('ok',False),f"{tr.get('passed',0)}/{tr.get('tested',0)}"))
+    except Exception as e:checks.append(check('Native multi-language tools',False,str(e)))
     checks.append(check('Executable registry readable',bool(reg),f'{len(reg)} workers'))
     checks.append(check('Verified runtime state present',bool(st),f"{len(st.get('active',[]))} active" if st else 'run setup'))
     if st:

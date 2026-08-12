@@ -15,3 +15,14 @@ For every executable registry entry, setup follows this sequence:
 9. Record runtime version, startup/test timing, success or failure in `state/active.json`.
 
 A failed package, compiler, startup, or self-test is quarantined from the active chain instead of being counted as supported.
+
+## Native Practical Tool Pass
+
+After worker verification, setup performs a second pass over `polytools.json`. There is exactly one practical native utility for every executable worker candidate. Only tools whose corresponding worker is active are considered; compiled utilities are built under `build/polytools/`, then each candidate is run against deterministic fixture data. Successful utilities are recorded in `state/polytools.json`.
+
+This gives the project two independent device-specific claims:
+
+- `state/active.json`: languages proven usable for the benchmark/polyglot protocol on this device.
+- `state/polytools.json`: useful native utilities proven to build/run on this device.
+
+The installer also creates a short `langtool` command, equivalent to `language-project langtools`.

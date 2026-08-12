@@ -37,7 +37,7 @@ ROOT="$DEST"
 rm -rf "$ROOT/build"
 mkdir -p "$ROOT/build" "$ROOT/results" "$ROOT/bundles" "$ROOT/state" "$ROOT/state/checkpoints"
 touch "$ROOT/build/.gitkeep" "$ROOT/results/.gitkeep" "$ROOT/bundles/.gitkeep" "$ROOT/state/.gitkeep"
-rm -f "$ROOT/state/active.json" "$ROOT/state/calibration.json"
+rm -f "$ROOT/state/active.json" "$ROOT/state/calibration.json" "$ROOT/state/polytools.json"
 
 echo "Running core static self-test..."
 python "$ROOT/scripts/selftest.py" || { echo "ERROR: core self-test failed."; exit 1; }
@@ -63,6 +63,11 @@ exec python "$ROOT/Language.py" "\$@"
 EOF
  chmod +x "$PREFIX/bin/$CMD"
 done
+cat > "$PREFIX/bin/langtool" <<EOF
+#!/data/data/com.termux/files/usr/bin/bash
+exec python "$ROOT/Language.py" langtools "\$@"
+EOF
+chmod +x "$PREFIX/bin/langtool"
 
 echo
 echo "Installed in: $ROOT"
@@ -71,3 +76,5 @@ echo "Alias: language"
 echo "Dashboard: language-project dashboard"
 echo "Catalog stats: language-project catalog stats"
 echo "Recommended calibration: language-project calibrate"
+echo "Native tools: language-project langtools list  (or: langtool list)"
+echo "All-language workspace report: language-project langtools workspace-report ~/YourProject"

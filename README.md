@@ -1,8 +1,8 @@
 # Language Project
 
-**One input. Every verified Termux language. Forward and backward. Timed. Plus a massive global programming-language catalog.**
+**One Android device. Every verified Termux language. Benchmark them, then put all of them to work on real files, backups, verified mirrors, large-file transfers, integrity checks, duplicate analysis, repair, and project audits.**
 
-Language Project is a Termux-native polyglot execution, resilience, orchestration, and benchmarking platform. It keeps two intentionally separate layers:
+Language Project is a Termux-native polyglot execution, resilience, orchestration, benchmarking, and practical developer-tool platform. It now includes a native utility suite written across the executable language set as well as the shared benchmark worker protocol. It keeps the catalog/execution distinction strict:
 
 1. **Execution layer** — real worker source code for languages that have a direct Termux runtime/toolchain candidate and can pass a live on-device round-trip self-test.
 2. **Global catalog layer** — a large A–Z index of programming languages, dialects, historical languages, DSLs, and experimental/esoteric languages. Catalog entries are metadata; they never get counted as executable unless a real worker exists and passes Termux verification.
@@ -140,6 +140,590 @@ Language Project is now more than a serial benchmark. The worker protocol stays 
 
 </details>
 
+
+## Practical Polyglot Workflows — Use Every Verified Language
+
+The benchmark chain is no longer the only feature that uses the language workers. The `polyglot` command family turns the complete **verified active language set** into practical data workflows. If 27 workers pass setup on a phone, all 27 participate. If 34 pass, all 34 participate. Catalog-only languages are never pretended to be executable.
+
+<details>
+<summary><strong>Polyglot Seal — Persistent File Integrity</strong></summary>
+
+```bash
+language-project polyglot seal ~/storage/downloads/archive.zip
+language-project polyglot verify ~/storage/downloads/archive.zip.language-seal.json
+```
+
+The file is chunked across every verified language. Each assigned runtime transforms its data, reverses it, and contributes a deterministic transformed digest. Small files also use deterministic anchor probes so **every verified language participates at least once**. The resulting JSON contains the ordinary SHA-256 plus a language-by-language seal and a combined Polyglot Fingerprint.
+
+Useful for checking important downloads, backups, release archives, APKs, project ZIPs, datasets, and files before/after moving them.
+
+</details>
+
+<details>
+<summary><strong>Polyglot Pack / Unpack — Recoverable All-Language Archives</strong></summary>
+
+```bash
+language-project polyglot pack ~/MyProject --output ~/storage/downloads/MyProject.lpack
+language-project polyglot unpack ~/storage/downloads/MyProject.lpack --destination ~/Recovered
+```
+
+Language Project first creates a normal `tar.gz` payload. Every payload chunk then travels **forward through every verified language and backward through every verified language** before the encoded chunk is accepted. The `.lpack` stores the transformed payload, exact language order, per-chunk hashes, toolchain metadata, and archive hashes.
+
+During restoration the recorded chain is reversed, every chunk is SHA-256 checked, the recovered archive is checked again, and extraction uses path-safety validation. The required language workers must be available; setup can re-detect/reinstall them.
+
+**`.lpack` is reversible encoding and integrity packaging, not encryption. Do not use it to hide secrets.**
+
+</details>
+
+<details>
+<summary><strong>Full-Language Verified Copy</strong></summary>
+
+```bash
+language-project polyglot copy \
+  ~/storage/downloads/important.zip \
+  ~/storage/downloads/Backups/important.zip
+```
+
+This is intentionally excessive but genuinely useful for critical copies: every chunk goes through the **complete language chain forward and backward** before it is written. The destination is written to a temporary file, the final SHA-256 must equal the source, and only then is the destination atomically replaced.
+
+Use `--force` only when intentionally replacing an existing destination.
+
+</details>
+
+<details>
+<summary><strong>Directory Polyglot Audit</strong></summary>
+
+```bash
+language-project polyglot audit ~/MyProject
+language-project polyglot audit-verify ~/MyProject/LANGUAGE-PROJECT-POLYGLOT-AUDIT.json
+```
+
+Every file gets a full SHA-256 hash. A deterministic probe bound to that full-file hash is then passed through **all verified languages** forward and backward. The audit records file hashes, probe hashes, the complete worker order, runtime metadata, and a directory tree fingerprint.
+
+This is useful before a repository upload, before/after a large refactor, before moving a project between devices, or when checking whether a backup tree changed unexpectedly.
+
+</details>
+
+<details>
+<summary><strong>Polyglot Fingerprint</strong></summary>
+
+```bash
+language-project polyglot fingerprint ~/storage/downloads/release.zip
+```
+
+Produces a compact fingerprint derived from the ordinary full-file SHA-256 plus deterministic transformed digests contributed by every active language. It is a project-specific integrity identity, not a replacement for a standard cryptographic hash.
+
+</details>
+
+<details>
+<summary><strong>Polyglot Status</strong></summary>
+
+```bash
+language-project polyglot status
+```
+
+Shows exactly which verified languages will participate on the current phone. The rule is strict: **all active verified workers are used; unavailable/catalog-only languages are not counted.**
+
+</details>
+
+<details>
+<summary><strong>Protect / Restore — One-Command Backup Workflow</strong></summary>
+
+```bash
+language-project polyglot protect ~/MyProject \
+  --destination ~/storage/downloads/Language-Project-Backups
+```
+
+For a directory this produces a practical backup set:
+
+1. an all-language directory audit;
+2. an all-language `.lpack` backup;
+3. an all-language seal of the resulting `.lpack`;
+4. a small receipt JSON tying the artifacts together.
+
+Restore later with:
+
+```bash
+language-project polyglot restore \
+  ~/storage/downloads/Language-Project-Backups/MyProject-YYYYMMDD-HHMMSS.lpack \
+  --destination ~/Recovered
+```
+
+If the adjacent `.language-seal.json` exists, `restore` verifies it **before** decoding or extracting the package. This is the easiest practical way to use the entire verified language set without manually chaining several commands.
+
+</details>
+
+<details>
+<summary><strong>Polyglot Compare — Files And Directory Trees</strong></summary>
+
+```bash
+language-project polyglot compare LEFT RIGHT
+```
+
+Compares full SHA-256 values and sizes while every verified language validates content-bound probes. Directory mode reports unchanged, changed, left-only and right-only files. This is useful before syncing, replacing or deleting anything.
+
+</details>
+
+<details>
+<summary><strong>Polyglot Mirror — Safe Verified Directory Sync</strong></summary>
+
+```bash
+language-project polyglot mirror ~/Project ~/storage/downloads/Project-Mirror
+language-project polyglot mirror ~/Project ~/storage/downloads/Project-Mirror --apply
+```
+
+The first command is a dry run. With `--apply`, each new or changed file is copied atomically and **every chunk passes through every verified language forward and backward** before being written. `--delete` removes destination-only files only when combined with `--apply`.
+
+</details>
+
+<details>
+<summary><strong>Polyglot Split / Join — Large File Transfer</strong></summary>
+
+```bash
+language-project polyglot split huge.iso --part-size 4194304
+language-project polyglot join huge.iso.language-parts/LANGUAGE-PARTS.json --destination huge-restored.iso
+```
+
+Splits large files into transport-friendly `.lpart` pieces. Every part is stored after the complete forward language chain. Join uses the exact recorded language order to decode every part and verifies per-part plus whole-file SHA-256 values before accepting the output. This is reversible encoding, not encryption.
+
+</details>
+
+<details>
+<summary><strong>Polyglot Dedupe — Confirm Exact Duplicate Files</strong></summary>
+
+```bash
+language-project polyglot dedupe ~/storage/downloads --min-size 1048576
+```
+
+Groups files by size and SHA-256 and then makes all verified languages validate a content-bound probe for each duplicate group. It reports reclaimable space but **never deletes files**.
+
+</details>
+
+<details>
+<summary><strong>Polyglot Scrub / Repair</strong></summary>
+
+```bash
+language-project polyglot scrub AUDIT.json --root ~/Project
+language-project polyglot scrub AUDIT.json --root ~/Project --mirror ~/Trusted-Mirror --repair
+```
+
+Checks an existing directory audit. Repair is deliberately strict: a mirror file is accepted only when its size and SHA-256 exactly match the trusted audit, and the replacement itself is copied through all verified languages. Unexpected extra files are reported rather than silently deleted.
+
+</details>
+
+<details>
+<summary><strong>Protected Backup Health Scanner</strong></summary>
+
+```bash
+language-project polyglot backup-health ~/storage/downloads/Language-Project-Backups
+```
+
+Scans backup receipts, confirms each package still exists, verifies its stored SHA-256, and re-runs the package polyglot seal with the exact recorded runtime set. This makes old backups testable before the day you actually need to restore them.
+
+</details>
+
+<details>
+<summary><strong>Practical Safety Rules</strong></summary>
+
+- Mirror is dry-run first.
+- Dedupe is report-only.
+- Scrub never repairs from an unverified mirror file.
+- Polyglot archives and split parts are not encryption.
+- Directory traversal ignores symlinks.
+- Critical writes use temporary files and final hash checks where practical.
+- Catalog-only languages never appear in execution claims.
+
+See `docs/POLYGLOT_OPERATIONS.md` for the detailed behavior and limitations.
+
+</details>
+
+### Practical examples
+
+Before pushing a repository update:
+
+```bash
+language-project polyglot audit ~/MyProject
+language-project tools todos ~/MyProject
+language-project tools git ~/MyProject
+```
+
+Create a recoverable all-language backup before a risky change:
+
+```bash
+language-project polyglot pack ~/MyProject \
+  --output ~/storage/downloads/MyProject-before-update.lpack
+```
+
+Make a highly verified copy of a release artifact:
+
+```bash
+language-project polyglot copy release.zip ~/storage/downloads/Backups/release.zip
+```
+
+Seal a downloaded artifact and verify it later:
+
+```bash
+language-project polyglot seal package.zip
+language-project polyglot verify package.zip.language-seal.json --file package.zip
+```
+
+## Native Multi-Language Tools — Useful Programs Written In The Languages
+
+Language Project now has a second practical layer: **34 standalone native utilities, one for every executable language candidate**. These are not benchmark workers and they are not Python wrappers pretending to be other languages—the implementation under `polytools/<language>/` is written in that language and executed with that language's real Termux runtime/toolchain.
+
+During setup, a native utility is only activated after its corresponding language worker has passed Termux verification **and** the tool itself builds/runs successfully. Use:
+
+```bash
+language-project langtools list
+language-project langtools status
+langtool list                         # short alias installed by install.sh
+language-project langtools run byte-stats ~/storage/downloads/file.bin
+language-project langtools recommend json inspect
+```
+
+<details>
+<summary><strong>Workspace Report — Run Every Available Native Language Tool</strong></summary>
+
+This is the practical "use all languages" mode for the native-tool layer:
+
+```bash
+language-project langtools workspace-report ~/MyProject \
+  --output ~/storage/downloads/MyProject-language-report.json
+```
+
+`workspace-report` builds temporary inventories from the real target project and gives **every currently available native tool an appropriate job**. For example, C measures bytes/entropy, Go summarizes the directory, Kotlin measures code, Perl searches TODO/FIXME markers, PHP examines a CSV inventory, JavaScript/jq inspect JSON, Fortran analyzes real file sizes, and Bash audits the environment.
+
+The report contains `all_available_tools_executed: true` only if every tool that passed setup participated successfully. Temporary derivative data is removed automatically.
+
+</details>
+
+<details>
+<summary><strong>Data Tools</strong></summary>
+
+| Language | Tool | Purpose |
+|---|---|---|
+| AWK | `tabular-stats` | Tabular/TSV Statistics |
+| Python | `jsonl-check` | JSON Lines Validator |
+| JavaScript | `json-format` | JSON Formatter/Minifier |
+| Lua | `kv-read` | Key/Value Config Reader |
+| PHP | `csv-stats` | CSV Statistics |
+| Scala | `properties-check` | Properties File Checker |
+| Dart | `jsonl-stats` | JSONL Statistics |
+| Fortran | `number-stats` | Numeric Record Statistics |
+| jq | `json-shape` | JSON Shape Inspector |
+
+</details>
+
+<details>
+<summary><strong>Developer Tools</strong></summary>
+
+| Language | Tool | Purpose |
+|---|---|---|
+| Scheme | `paren-check` | Delimiter Balance Check |
+| Nim | `eol-stats` | Line Ending Analyzer |
+| Kotlin | `code-metrics` | Codebase Metrics |
+| Racket | `markdown-outline` | Markdown Outline Extractor |
+
+</details>
+
+<details>
+<summary><strong>Files Tools</strong></summary>
+
+| Language | Tool | Purpose |
+|---|---|---|
+| C | `byte-stats` | Byte Statistics + Entropy |
+| Go | `dir-summary` | Directory Summary |
+| Java | `file-compare` | Binary File Compare |
+| Zig | `hex-view` | Hex Viewer |
+| D | `extension-stats` | Extension Statistics |
+| Zsh | `recent-files` | Recent Files |
+| Fish | `large-files` | Largest Files |
+
+</details>
+
+<details>
+<summary><strong>Integrity Tools</strong></summary>
+
+| Language | Tool | Purpose |
+|---|---|---|
+| Rust | `fnv64` | Fast FNV-1a 64 Checksum |
+
+</details>
+
+<details>
+<summary><strong>Logs Tools</strong></summary>
+
+| Language | Tool | Purpose |
+|---|---|---|
+| Elixir | `log-stats` | Log Level Statistics |
+
+</details>
+
+<details>
+<summary><strong>Search Tools</strong></summary>
+
+| Language | Tool | Purpose |
+|---|---|---|
+| Perl | `grep-context` | Recursive Regex Search |
+
+</details>
+
+<details>
+<summary><strong>System Tools</strong></summary>
+
+| Language | Tool | Purpose |
+|---|---|---|
+| Bash | `sys-report` | System Report |
+| Dash | `path-audit` | PATH Audit |
+
+</details>
+
+<details>
+<summary><strong>Text Tools</strong></summary>
+
+| Language | Tool | Purpose |
+|---|---|---|
+| C++ | `word-frequency` | Word Frequency Analyzer |
+| Ruby | `unique-lines` | Unique Line Filter |
+| Tcl | `regex-filter` | Regex Line Filter |
+| Erlang | `line-stats` | Line Statistics |
+| Prolog | `word-count` | Word/Line/Character Count |
+| Haskell | `duplicate-lines-hs` | Duplicate Line Finder |
+| Crystal | `duplicate-lines-cr` | Duplicate Line Finder (Crystal) |
+| Common Lisp | `top-words` | Top Word Frequencies |
+| sed | `trim-lines` | Trim Trailing Whitespace |
+
+</details>
+
+<details>
+<summary><strong>Combined Reports</strong></summary>
+
+```bash
+# Multiple language tools suited to a project directory
+language-project langtools project-report ~/MyProject
+
+# Multiple independent analyzers for one file
+language-project langtools file-report ~/storage/downloads/file.bin
+
+# Routes JSON/JSONL/CSV/log/config/Markdown to suitable language tools
+language-project langtools data-report data.json
+
+# Automatically chooses project vs data/file reporting
+language-project langtools auto-report PATH
+```
+
+These reports are complementary to `polyglot` workflows: `polyglot` makes every verified worker perform the same reversible data protocol, while `langtools` gives different languages **different useful jobs**.
+
+</details>
+
+<details>
+<summary><strong>Availability And Self-Test</strong></summary>
+
+```bash
+language-project langtools selftest
+```
+
+Compiled tools are stored under `build/polytools/`; interpreted tools execute directly from `polytools/`. Device-specific availability is saved in `state/polytools.json`. If a runtime or native tool fails its smoke test, it is shown as unavailable instead of being advertised as working.
+
+See [`docs/NATIVE_LANGUAGE_TOOLS.md`](docs/NATIVE_LANGUAGE_TOOLS.md) for the complete tool matrix and safety notes.
+
+</details>
+
+
+## Useful Everyday Tools
+
+The project also contains a practical offline-first toolbox. These tools do **not** start the benchmark workers, so they can be used as ordinary Termux utilities without contaminating performance sessions.
+
+<details>
+<summary><strong>Encoding, Decoding And Compression</strong></summary>
+
+```bash
+language-project tools codec base64 --text "Language Project"
+language-project tools codec base64 --decode --text "TGFuZ3VhZ2UgUHJvamVjdA=="
+language-project tools codec gzip --file input.bin --output input.bin.gz
+```
+
+Includes Base64/Base32/Base85/ASCII85, hex, URL percent encoding, ROT13, Gzip, zlib, BZ2 and XZ/LZMA. Binary-safe transformations can write directly to a file.
+
+</details>
+
+<details>
+<summary><strong>File Inspection And Integrity</strong></summary>
+
+```bash
+language-project tools inspect file.bin
+language-project tools hexdump file.bin --limit 2048
+language-project tools strings file.bin
+language-project tools hash --file file.bin
+language-project tools compare original.bin copy.bin
+```
+
+Inspectors provide hashes, entropy, MIME guesses, permissions, bounded hex previews, text statistics, printable strings, and first mismatch offsets.
+
+</details>
+
+<details>
+<summary><strong>Directory Integrity, Duplicates And Storage</strong></summary>
+
+```bash
+language-project tools manifest-create ~/storage/downloads/MyFolder
+language-project tools manifest-verify ~/storage/downloads/MyFolder/LANGUAGE-PROJECT-FILE-MANIFEST.json
+language-project tools duplicates ~/storage/downloads --min-size 1048576
+language-project tools storage ~/storage/downloads --top 30
+```
+
+This gives Language Project a second integrity system for arbitrary user folders, plus duplicate-space and largest-file analysis.
+
+</details>
+
+<details>
+<summary><strong>JSON, CSV And Text Workbench</strong></summary>
+
+```bash
+language-project tools json --file data.json --mode pretty
+language-project tools json --file data.json --mode minify
+language-project tools json --file data.json --query user.profile.name
+language-project tools csv data.csv
+language-project tools text-stats --file README.md
+```
+
+The data tools are implemented with the Python standard library and work offline.
+
+</details>
+
+<details>
+<summary><strong>Secure Generators</strong></summary>
+
+```bash
+language-project tools generate --kind password --length 32 --count 5
+language-project tools generate --kind token --length 32
+language-project tools generate --kind hex --length 32
+language-project tools generate --kind uuid --count 5
+```
+
+Password/token randomness comes from Python's cryptographically secure `secrets` module.
+
+</details>
+
+<details>
+<summary><strong>Archive And Local Sharing Tools</strong></summary>
+
+```bash
+language-project tools archive-create ~/MyProject --kind zip
+language-project tools archive-extract ~/MyProject.zip --destination ~/Recovered
+language-project tools serve ~/storage/downloads --host 127.0.0.1 --port 8000
+```
+
+Archive extraction validates paths before writing them. The local file server binds to loopback by default.
+
+</details>
+
+<details>
+<summary><strong>Create And Run Real Programs</strong></summary>
+
+```bash
+language-project new python MyApp
+language-project new rust NativeDemo
+language-project execute MyApp/main.py
+language-project execute NativeDemo/main.rs
+```
+
+The scaffolder creates starter projects for common Termux-supported languages. `execute` can interpret or temporarily compile trusted source code locally; it does not upload code anywhere. Only execute source files you trust.
+
+</details>
+
+
+Programming-aware utilities also use the bundled global catalog:
+
+```bash
+language-project tools identify source.file
+language-project tools codebase ~/MyProject --top 30
+```
+
+`identify` considers extensions and shebangs; `codebase` summarizes files, bytes, and lines by detected language.
+
+<details>
+<summary><strong>Search, Tree And Source Navigation</strong></summary>
+
+```bash
+language-project tools find ~/MyProject --pattern '*.py' --content TODO
+language-project tools tree ~/MyProject --depth 4
+language-project tools todos ~/MyProject
+```
+
+Search filenames and file contents, render a bounded terminal tree, and scan source trees for TODO/FIXME/HACK/BUG annotations.
+
+</details>
+
+<details>
+<summary><strong>Safe Rename, Sync And Cleanup</strong></summary>
+
+```bash
+language-project tools rename ~/Pictures --glob '*.jpg' --prefix trip-
+language-project tools sync ~/Project ~/storage/downloads/Project-Backup --checksum
+language-project tools clean ~/Project --older-days 14
+```
+
+Potentially destructive operations are preview-only by default. Add `--apply` only after reviewing the generated plan. Rename collisions are rejected before any change is made.
+
+</details>
+
+<details>
+<summary><strong>Backup And Recovery Helpers</strong></summary>
+
+```bash
+language-project tools backup ~/MyProject --destination ~/storage/downloads/Backups
+language-project tools manifest-create ~/MyProject
+language-project tools manifest-verify ~/MyProject/LANGUAGE-PROJECT-FILE-MANIFEST.json
+```
+
+Create timestamped compressed snapshots with SHA-256 metadata and independently verify directory integrity later.
+
+</details>
+
+<details>
+<summary><strong>Git, Diff And Text Maintenance</strong></summary>
+
+```bash
+language-project tools git ~/MyProject
+language-project tools diff old.py new.py
+language-project tools eol ~/MyProject --mode lf
+```
+
+Inspect Git repository state without changing it, produce unified diffs, and preview or apply LF/CRLF normalization while skipping binary files.
+
+</details>
+
+<details>
+<summary><strong>Environment And Process Diagnostics</strong></summary>
+
+```bash
+language-project tools env
+language-project tools env python git clang rustc go node
+language-project tools processes --limit 50
+```
+
+Resolve local toolchains and versions, Termux/Python environment details, and a bounded process listing for troubleshooting.
+
+</details>
+
+<details>
+<summary><strong>Network And Verified Download Utilities</strong></summary>
+
+```bash
+language-project tools dns example.com
+language-project tools tcp example.com 443
+language-project tools http https://example.com
+language-project tools download https://example.com/file.zip --output file.zip --sha256 EXPECTED_HASH
+```
+
+Explicit online helpers provide DNS lookup, TCP reachability timing, HTTP header inspection, and downloads that can require an exact SHA-256 before the final file is accepted.
+
+</details>
+
+
+Full utility reference: [`docs/USEFUL_TOOLS.md`](docs/USEFUL_TOOLS.md).
+
 ## Install In Termux
 
 ```bash
@@ -148,7 +732,7 @@ cd ~/storage/downloads/Language-Project
 bash install.sh
 ```
 
-The installer stages the project into `$HOME/Language-Project`, installs core dependencies, attempts all registered runtime packages, rebuilds device-specific compiled workers, performs live protocol and round-trip tests, refreshes the catalog on a best-effort basis, reindexes saved results into SQLite, and creates both `language-project` and `language` commands. On upgrades it preserves previous `results/`, `bundles/`, the SQLite history database, and unfinished checkpoints while discarding stale compiled binaries/runtime detection.
+The installer stages the project into `$HOME/Language-Project`, installs core dependencies, attempts all registered runtime packages, rebuilds device-specific compiled workers, performs live protocol and round-trip tests, refreshes the catalog on a best-effort basis, builds and smoke-tests the per-language native utility suite, reindexes saved results into SQLite, and creates `language-project`, `language`, and the short `langtool` dispatcher command. On upgrades it preserves previous `results/`, `bundles/`, the SQLite history database, and unfinished checkpoints while discarding stale compiled binaries/runtime detection.
 
 Some runtimes/toolchains are large. Package availability can differ by Android architecture and can change in Termux repositories, so **the active language count is always measured on the user's device**.
 
@@ -573,7 +1157,9 @@ Language-Project/
 ├── install.sh
 ├── uninstall.sh
 ├── languages.json                 # executable worker registry
-├── languages/                     # real worker source files only
+├── languages/                     # real benchmark worker source files
+├── polytools.json                 # one useful native tool per executable language
+├── polytools/                     # practical utilities written in those languages
 ├── catalog/
 │   ├── known_languages.json       # global catalog snapshot
 │   ├── SOURCES.md
@@ -581,14 +1167,29 @@ Language-Project/
 ├── core/
 │   ├── engine.py
 │   ├── registry.py
-│   └── catalog.py
+│   ├── catalog.py
+│   ├── toolbox.py                    # offline file/data utilities
+│   ├── practical.py                  # daily Termux operations utilities
+│   ├── langtools.py                   # native multi-language tool dispatcher/reports
+│   ├── polyglot_ops.py               # core all-language artifact/workflow engine
+│   ├── polyglot_practical.py         # compare/mirror/split/dedupe/scrub/backup health
+│   ├── scaffold.py
+│   └── source_runner.py
 ├── scripts/
 │   ├── setup.py
 │   ├── refresh_catalog.py
 │   ├── verify_manifest.py
+│   ├── toolbox_smoke.py
+│   ├── practical_smoke.py
+│   ├── langtools_smoke.py
+│   ├── polyglot_smoke.py
+│   ├── polyglot_practical_smoke.py
 │   └── quick-test.sh
 ├── docs/
 │   ├── ARCHITECTURE.md
+│   ├── NATIVE_LANGUAGE_TOOLS.md
+│   ├── PRACTICAL_POLYGLOT.md
+│   ├── POLYGLOT_OPERATIONS.md
 │   └── BENCHMARKING.md
 ├── build/
 ├── state/

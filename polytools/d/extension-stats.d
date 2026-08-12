@@ -1,0 +1,2 @@
+import std.stdio,std.file,std.path,std.algorithm,std.array;
+void main(string[]a){if(a.length<2||a[1]=="--help"){writeln("Usage: extension-stats DIRECTORY");if(a.length<2)throw new Exception("missing path");return;}size_t[string] m;ulong files=0,bytes=0;foreach(e;dirEntries(a[1],SpanMode.depth)){if(e.isFile){files++;bytes+=e.size;auto x=extension(e.name);if(x.length==0)x="[none]";m[x]++;}}auto keys=m.keys.sort!((x,y)=>m[x]>m[y]);writeln("files=",files);writeln("bytes=",bytes);foreach(k;keys[0..min(keys.length,cast(size_t)30)])writeln(m[k],"\t",k);}

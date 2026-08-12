@@ -17,10 +17,17 @@ from core.bundles import create_bundle
 from core.dashboard import dashboard
 from core.planner import execution_plan,print_plan
 from core.regression import check as regression_check,print_check as print_regression
+from core.toolbox import read_bytes as tool_read_bytes,write_output as tool_write_output,codec as tool_codec,hash_bytes as tool_hash_bytes,file_info as tool_file_info,strings as tool_strings,hexdump as tool_hexdump,duplicate_files as tool_duplicate_files,text_stats as tool_text_stats,json_process as tool_json_process,csv_info as tool_csv_info,secure_generate as tool_secure_generate,manifest_create as tool_manifest_create,manifest_verify as tool_manifest_verify,archive_create as tool_archive_create,archive_extract as tool_archive_extract,storage_report as tool_storage_report,compare_files as tool_compare_files,serve as tool_serve,identify_language as tool_identify_language,codebase_stats as tool_codebase_stats
+from core.practical import find_files as tool_find_files,tree_view as tool_tree_view,batch_rename as tool_batch_rename,sync_dirs as tool_sync_dirs,backup_snapshot as tool_backup_snapshot,clean_plan as tool_clean_plan,unified_diff as tool_unified_diff,todo_scan as tool_todo_scan,normalize_line_endings as tool_normalize_eol,environment_report as tool_environment_report,git_summary as tool_git_summary,tcp_check as tool_tcp_check,dns_lookup as tool_dns_lookup,http_info as tool_http_info,download_file as tool_download_file,process_list as tool_process_list
+from core.scaffold import create as scaffold_create,available as scaffold_languages
+from core.source_runner import run_source
+from core.polyglot_ops import status as polyglot_status,seal as polyglot_seal,verify_seal as polyglot_verify_seal,fingerprint as polyglot_fingerprint,pack as polyglot_pack,unpack as polyglot_unpack,verified_copy as polyglot_copy,directory_audit as polyglot_audit,verify_directory_audit as polyglot_audit_verify,protect as polyglot_protect,restore_protected as polyglot_restore
+from core.polyglot_practical import compare_paths as polyglot_compare,mirror_directory as polyglot_mirror,split_file as polyglot_split,join_file as polyglot_join,duplicate_report as polyglot_dedupe,scrub_from_audit as polyglot_scrub,backup_health as polyglot_backup_health
+from core.langtools import status as langtools_status,run_tool as langtool_run,recommend as langtool_recommend,project_report as langtool_project_report,file_report as langtool_file_report,data_report as langtool_data_report,auto_report as langtool_auto_report,selftest as langtools_selftest,workspace_report as langtool_workspace_report
 
 ORDERS=['registry','fastest','random','adaptive-balanced','adaptive-latency','adaptive-throughput','adaptive-stable']
 
-def banner():print('\n'+'='*92+'\nLANGUAGE PROJECT — TERMUX POLYGLOT EXECUTION + BENCHMARK ORCHESTRATION PLATFORM\n'+'='*92)
+def banner():print('\n'+'='*92+'\nLANGUAGE PROJECT — TERMUX POLYGLOT EXECUTION + NATIVE TOOLS + BENCHMARK PLATFORM\n'+'='*92)
 def ensure():
     if not active_languages():
         print('No verified runtime state found. Running local verification...')
@@ -51,6 +58,228 @@ def worker_info(query):
             for f in sorted(src.rglob('*')):
                 if f.is_file():print(' ',f.relative_to(ROOT))
     return 0
+
+
+def useful_toolbox_menu():
+    while True:
+        print("""
+USEFUL TOOLBOX
+[1]  Encode / Decode / Compress
+[2]  Hash Text Or File
+[3]  Inspect File
+[4]  Hexdump File
+[5]  Extract Printable Strings
+[6]  Find Duplicate Files
+[7]  Text Statistics
+[8]  JSON Pretty / Minify / Validate
+[9]  CSV Inspector
+[10] Secure Generator
+[11] Create File Integrity Manifest
+[12] Verify File Integrity Manifest
+[13] Create Archive
+[14] Extract Archive
+[15] Storage Analyzer
+[16] Compare Two Files
+[17] Local File Server
+[18] Identify Programming Language
+[19] Codebase Language Statistics
+[20] Find Files / Search Contents
+[21] Directory Tree
+[22] Batch Rename (Preview First)
+[23] Directory Sync (Preview First)
+[24] Backup Snapshot
+[25] Safe Cache Cleanup (Preview First)
+[26] Unified Text Diff
+[27] TODO / FIXME Scanner
+[28] Normalize Line Endings
+[29] Environment / Toolchain Report
+[30] Git Repository Summary
+[31] DNS Lookup
+[32] TCP Port Check
+[33] HTTP Header / Reachability Check
+[34] Download File + Optional SHA-256 Verify
+[35] Process List
+[0]  Back""")
+        c=input('\nSelect: ').strip()
+        try:
+            if c=='0':return
+            if c=='1':
+                fmt=input('Format (base64/base32/base85/ascii85/hex/url/gzip/zlib/bz2/xz/rot13): ').strip();mode=input('Decode? [y/N]: ').strip().lower().startswith('y');txt=input('Text: ');out=tool_codec(txt.encode(),fmt,mode);print(out.decode('utf-8','replace') if fmt not in {'gzip','zlib','bz2','xz','lzma'} or mode else out.hex())
+            elif c=='2':
+                x=input('File path, or leave blank for text: ').strip();data=Path(x).expanduser().read_bytes() if x else input('Text: ').encode();print(json.dumps(tool_hash_bytes(data),indent=2))
+            elif c=='3':print(json.dumps(tool_file_info(input('File path: ').strip()),indent=2))
+            elif c=='4':p=Path(input('File path: ').strip()).expanduser();print(tool_hexdump(p.read_bytes(),limit=1024))
+            elif c=='5':p=Path(input('File path: ').strip()).expanduser();[print(f"{x['offset']:08x}  {x['text']}") for x in tool_strings(p.read_bytes())]
+            elif c=='6':print(json.dumps(tool_duplicate_files(input('Directory: ').strip()),indent=2))
+            elif c=='7':print(json.dumps(tool_text_stats(input('Text: ').encode()),indent=2))
+            elif c=='8':print(tool_json_process(input('JSON: ').encode()).decode(),end='')
+            elif c=='9':print(json.dumps(tool_csv_info(input('CSV file: ').strip()),indent=2))
+            elif c=='10':
+                kind=input('password/token/hex/uuid: ').strip() or 'password';print('\n'.join(tool_secure_generate(kind)))
+            elif c=='11':print('Created:',tool_manifest_create(input('Directory: ').strip())[0])
+            elif c=='12':print(json.dumps(tool_manifest_verify(input('Manifest path: ').strip()),indent=2))
+            elif c=='13':print('Created:',tool_archive_create(input('File/directory: ').strip()))
+            elif c=='14':print('Extracted:',tool_archive_extract(input('Archive: ').strip()))
+            elif c=='15':print(json.dumps(tool_storage_report(input('Directory: ').strip()),indent=2))
+            elif c=='16':print(json.dumps(tool_compare_files(input('First file: ').strip(),input('Second file: ').strip()),indent=2))
+            elif c=='17':tool_serve(input('Directory [.]: ').strip() or '.')
+            elif c=='18':print(json.dumps(tool_identify_language(input('Source file: ').strip()),indent=2))
+            elif c=='19':print(json.dumps(tool_codebase_stats(input('Project directory: ').strip()),indent=2))
+            elif c=='20':print(json.dumps(tool_find_files(input('Directory: ').strip(),input('Filename glob [*]: ').strip() or '*',input('Content text [optional]: ').strip() or None),indent=2))
+            elif c=='21':print(tool_tree_view(input('Directory [.]: ').strip() or '.'))
+            elif c=='22':print(json.dumps(tool_batch_rename(input('Directory: ').strip(),input('Glob [*]: ').strip() or '*',input('Find text [optional]: ').strip() or None,input('Replace with: ').strip()),indent=2))
+            elif c=='23':print(json.dumps(tool_sync_dirs(input('Source: ').strip(),input('Destination: ').strip()),indent=2))
+            elif c=='24':print(json.dumps(tool_backup_snapshot(input('Source: ').strip()),indent=2))
+            elif c=='25':print(json.dumps(tool_clean_plan(input('Directory: ').strip()),indent=2))
+            elif c=='26':print(tool_unified_diff(input('First text file: ').strip(),input('Second text file: ').strip()))
+            elif c=='27':print(json.dumps(tool_todo_scan(input('Project directory: ').strip()),indent=2))
+            elif c=='28':print(json.dumps(tool_normalize_eol(input('File/directory: ').strip()),indent=2))
+            elif c=='29':print(json.dumps(tool_environment_report(),indent=2))
+            elif c=='30':print(json.dumps(tool_git_summary(input('Repository [.]: ').strip() or '.'),indent=2))
+            elif c=='31':print(json.dumps(tool_dns_lookup(input('Host: ').strip()),indent=2))
+            elif c=='32':print(json.dumps(tool_tcp_check(input('Host: ').strip(),int(input('Port: ').strip())),indent=2))
+            elif c=='33':print(json.dumps(tool_http_info(input('URL: ').strip()),indent=2))
+            elif c=='34':print(json.dumps(tool_download_file(input('URL: ').strip(),input('Output [optional]: ').strip() or None),indent=2))
+            elif c=='35':print(json.dumps(tool_process_list(),indent=2))
+        except Exception as e:print('Tool error:',e)
+
+def run_tools(a):
+    if not a.tool_cmd:
+        useful_toolbox_menu();return 0
+    if a.tool_cmd=='codec':
+        data=tool_read_bytes(a.text,a.file);out=tool_codec(data,a.format,a.decode)
+        if a.format in {'gzip','zlib','bz2','xz'} and not a.decode and not a.output and not a.raw:
+            raise ValueError('Compressed binary output needs --output FILE or --raw')
+        tool_write_output(out,a.output,text_mode=not a.raw);return 0
+    if a.tool_cmd=='hash':print(json.dumps(tool_hash_bytes(tool_read_bytes(a.text,a.file),a.algorithms),indent=2));return 0
+    if a.tool_cmd=='inspect':print(json.dumps(tool_file_info(a.path,a.preview),indent=2));return 0
+    if a.tool_cmd=='hexdump':print(tool_hexdump(Path(a.path).expanduser().read_bytes(),a.width,a.limit));return 0
+    if a.tool_cmd=='strings':
+        for x in tool_strings(Path(a.path).expanduser().read_bytes(),a.min_length,a.limit):print(f"{x['offset']:08x}  {x['text']}")
+        return 0
+    if a.tool_cmd=='duplicates':print(json.dumps(tool_duplicate_files(a.root,a.min_size,a.algorithm),indent=2));return 0
+    if a.tool_cmd=='text-stats':print(json.dumps(tool_text_stats(tool_read_bytes(a.text,a.file)),indent=2));return 0
+    if a.tool_cmd=='json':tool_write_output(tool_json_process(tool_read_bytes(a.text,a.file),a.mode,a.query),a.output,True);return 0
+    if a.tool_cmd=='csv':print(json.dumps(tool_csv_info(a.path,a.delimiter,a.sample),indent=2));return 0
+    if a.tool_cmd=='generate':print('\n'.join(tool_secure_generate(a.kind,a.length,a.count)));return 0
+    if a.tool_cmd=='manifest-create':p,n=tool_manifest_create(a.root,a.output,a.algorithm);print(f'Created {p} with {n} files');return 0
+    if a.tool_cmd=='manifest-verify':r=tool_manifest_verify(a.manifest);print(json.dumps(r,indent=2));return 0 if r['ok'] else 2
+    if a.tool_cmd=='archive-create':print(tool_archive_create(a.source,a.output,a.kind));return 0
+    if a.tool_cmd=='archive-extract':print(tool_archive_extract(a.archive,a.destination));return 0
+    if a.tool_cmd=='storage':print(json.dumps(tool_storage_report(a.root,a.top),indent=2));return 0
+    if a.tool_cmd=='compare':r=tool_compare_files(a.a,a.b);print(json.dumps(r,indent=2));return 0 if r['equal'] else 1
+    if a.tool_cmd=='serve':tool_serve(a.directory,a.host,a.port);return 0
+    if a.tool_cmd=='identify':print(json.dumps(tool_identify_language(a.path),indent=2));return 0
+    if a.tool_cmd=='codebase':print(json.dumps(tool_codebase_stats(a.root,a.top),indent=2));return 0
+    if a.tool_cmd=='find':print(json.dumps(tool_find_files(a.root,a.pattern,a.content,a.regex,a.case_sensitive,a.hidden,a.max_results),indent=2));return 0
+    if a.tool_cmd=='tree':print(tool_tree_view(a.root,a.depth,a.max_entries,a.hidden));return 0
+    if a.tool_cmd=='rename':print(json.dumps(tool_batch_rename(a.root,a.glob,a.find,a.replace,a.prefix,a.suffix,a.apply),indent=2));return 0
+    if a.tool_cmd=='sync':print(json.dumps(tool_sync_dirs(a.source,a.destination,a.delete,a.apply,a.checksum),indent=2));return 0
+    if a.tool_cmd=='backup':print(json.dumps(tool_backup_snapshot(a.source,a.destination,a.label),indent=2));return 0
+    if a.tool_cmd=='clean':print(json.dumps(tool_clean_plan(a.root,a.older_days,a.apply),indent=2));return 0
+    if a.tool_cmd=='diff':print(tool_unified_diff(a.a,a.b,a.context));return 0
+    if a.tool_cmd=='todos':print(json.dumps(tool_todo_scan(a.root,a.max_results),indent=2));return 0
+    if a.tool_cmd=='eol':print(json.dumps(tool_normalize_eol(a.path,a.mode,a.apply),indent=2));return 0
+    if a.tool_cmd=='env':print(json.dumps(tool_environment_report(a.commands),indent=2));return 0
+    if a.tool_cmd=='git':print(json.dumps(tool_git_summary(a.path),indent=2));return 0
+    if a.tool_cmd=='dns':print(json.dumps(tool_dns_lookup(a.host),indent=2));return 0
+    if a.tool_cmd=='tcp':r=tool_tcp_check(a.host,a.port,a.timeout);print(json.dumps(r,indent=2));return 0 if r['ok'] else 1
+    if a.tool_cmd=='http':r=tool_http_info(a.url,a.timeout);print(json.dumps(r,indent=2));return 0 if 'error' not in r else 1
+    if a.tool_cmd=='download':print(json.dumps(tool_download_file(a.url,a.output,a.sha256,a.timeout,a.max_bytes),indent=2));return 0
+    if a.tool_cmd=='processes':print(json.dumps(tool_process_list(a.limit),indent=2));return 0
+    return 0
+
+def practical_polyglot_menu():
+    while True:
+        print("""
+PRACTICAL POLYGLOT WORKFLOWS — EVERY VERIFIED LANGUAGE PARTICIPATES
+[1]  Status / Active Language Set
+[2]  Seal A File With All Languages
+[3]  Verify A Polyglot Seal
+[4]  Create Polyglot Fingerprint
+[5]  Pack File/Folder Into .lpack
+[6]  Unpack / Restore .lpack
+[7]  Full-Language Verified File Copy
+[8]  Audit A Directory With All Languages
+[9]  Verify Directory Polyglot Audit
+[10] Protect / Backup In One Command
+[11] Verify + Restore Protected Backup
+[12] Compare Files / Directories With All Languages
+[13] Mirror Directory (Dry-Run First)
+[14] Split Large File Into Polyglot Parts
+[15] Join / Restore Polyglot Parts
+[16] Confirm Duplicate Files With All Languages
+[17] Scrub / Repair From Audit + Trusted Mirror
+[18] Check Protected Backup Health
+[0]  Back
+
+Note: .lpack and language transforms are reversible encoding, NOT encryption.
+""")
+        c=input('Select: ').strip()
+        try:
+            if c=='0':return
+            if c=='1':print(json.dumps(polyglot_status(),indent=2))
+            elif c=='2':print(json.dumps(polyglot_seal(input('File: ').strip()),indent=2))
+            elif c=='3':print(json.dumps(polyglot_verify_seal(input('Seal manifest: ').strip(),input('File override [optional]: ').strip() or None),indent=2))
+            elif c=='4':print(json.dumps(polyglot_fingerprint(input('File: ').strip()),indent=2))
+            elif c=='5':print(json.dumps(polyglot_pack(input('File/folder: ').strip()),indent=2))
+            elif c=='6':print(json.dumps(polyglot_unpack(input('.lpack file: ').strip()),indent=2))
+            elif c=='7':print(json.dumps(polyglot_copy(input('Source file: ').strip(),input('Destination file: ').strip()),indent=2))
+            elif c=='8':print(json.dumps(polyglot_audit(input('Directory: ').strip()),indent=2))
+            elif c=='9':print(json.dumps(polyglot_audit_verify(input('Audit manifest: ').strip(),input('Directory override [optional]: ').strip() or None),indent=2))
+            elif c=='10':print(json.dumps(polyglot_protect(input('File/folder: ').strip(),input('Backup directory [optional]: ').strip() or None),indent=2))
+            elif c=='11':print(json.dumps(polyglot_restore(input('.lpack file: ').strip(),input('Restore directory [optional]: ').strip() or None),indent=2))
+            elif c=='12':print(json.dumps(polyglot_compare(input('Left path: ').strip(),input('Right path: ').strip()),indent=2))
+            elif c=='13':
+                src=input('Source directory: ').strip();dst=input('Destination directory: ').strip();apply=input('Apply changes? [y/N]: ').strip().lower().startswith('y');print(json.dumps(polyglot_mirror(src,dst,apply=apply),indent=2))
+            elif c=='14':print(json.dumps(polyglot_split(input('Large file: ').strip(),input('Output directory [optional]: ').strip() or None),indent=2))
+            elif c=='15':print(json.dumps(polyglot_join(input('LANGUAGE-PARTS.json: ').strip(),input('Destination file [optional]: ').strip() or None),indent=2))
+            elif c=='16':print(json.dumps(polyglot_dedupe(input('Directory: ').strip()),indent=2))
+            elif c=='17':
+                man=input('Audit manifest: ').strip();root=input('Directory override [optional]: ').strip() or None;mirror=input('Trusted mirror [optional]: ').strip() or None;repair=input('Repair from mirror? [y/N]: ').strip().lower().startswith('y');print(json.dumps(polyglot_scrub(man,root,mirror,repair),indent=2))
+            elif c=='18':print(json.dumps(polyglot_backup_health(input('Backup directory: ').strip()),indent=2))
+        except Exception as e:print('Polyglot workflow error:',e)
+
+def native_language_tools_menu():
+    while True:
+        st=langtools_status()
+        print(f"""
+NATIVE MULTI-LANGUAGE TOOLS — REAL UTILITIES WRITTEN IN DIFFERENT LANGUAGES
+Available now: {st['available']}/{st['registered']}
+
+[1]  List Tools + Language
+[2]  Run A Native Tool
+[3]  Recommend Tools For A Task
+[4]  Project Report (Multiple Languages)
+[5]  File Report (Multiple Languages)
+[6]  Data Report (JSON/CSV/Logs/etc.)
+[7]  Auto Report
+[8]  Self-Test Available Native Tools
+[9]  Workspace Report (Uses Every Available Native Tool)
+[0]  Back
+""")
+        c=input('Select: ').strip()
+        try:
+            if c=='0': return
+            if c=='1':
+                for x in st['tools']:
+                    mark='✓' if x['available'] else '·'
+                    print(f" {mark} {x['id']:<22} {x['language']:<14} {x['name']}")
+            elif c=='2':
+                tid=input('Tool ID: ').strip(); raw=input('Arguments (space separated): ').strip(); import shlex
+                r=langtool_run(tid,shlex.split(raw)); print(r['stdout'],end='');
+                if r['stderr']: print(r['stderr'],file=sys.stderr,end='')
+                print(f"\nExit code: {r['returncode']}")
+            elif c=='3':
+                q=input('What do you want to do? ').strip()
+                for x in langtool_recommend(q): print(f"{'✓' if x['available'] else '·'} {x['id']:<22} {x['language']:<14} {x['name']}")
+            elif c=='4': print(json.dumps(langtool_project_report(input('Project directory: ').strip()),indent=2))
+            elif c=='5': print(json.dumps(langtool_file_report(input('File: ').strip()),indent=2))
+            elif c=='6': print(json.dumps(langtool_data_report(input('Data file: ').strip()),indent=2))
+            elif c=='7': print(json.dumps(langtool_auto_report(input('Path: ').strip()),indent=2))
+            elif c=='8': print(json.dumps(langtools_selftest(),indent=2))
+            elif c=='9': print(json.dumps(langtool_workspace_report(input('Project directory: ').strip()),indent=2))
+        except Exception as e: print('Native tool error:',e)
 
 def interactive():
     banner();ensure()
@@ -83,6 +312,11 @@ def interactive():
 [25] Create Result Bundle
 [26] Execution Plan / Dry Run
 [27] Performance Regression Gate
+[28] Useful Offline Toolbox
+[29] Create Starter Project
+[30] Execute Trusted Source File
+[31] Practical Polyglot Workflows (Uses Every Verified Language)
+[32] Native Tools Written Across 34 Languages
 [0]  Exit''')
         c=input('\nSelect: ').strip()
         if c=='0':return
@@ -121,9 +355,16 @@ def interactive():
         elif c=='25':print('Bundle:',create_bundle())
         elif c=='26':print_plan(execution_plan(0,1,'fastest'))
         elif c=='27':print_regression(regression_check())
+        elif c=='28':useful_toolbox_menu()
+        elif c=='29':
+            print('Templates:',', '.join(scaffold_languages()));lang=input('Language: ').strip();name=input('Project name: ').strip();print(json.dumps(scaffold_create(lang,name),indent=2))
+        elif c=='30':
+            src=input('Source file: ').strip();r=run_source(src);sys.stdout.buffer.write(r['stdout']);sys.stderr.buffer.write(r['stderr']);print(f'\nExit code: {r["returncode"]}')
+        elif c=='31':practical_polyglot_menu()
+        elif c=='32':native_language_tools_menu()
 
 def main():
-    ap=argparse.ArgumentParser(description='Language Project — verified Termux polyglot execution, resilience and benchmark orchestration platform with a global language catalog.')
+    ap=argparse.ArgumentParser(description='Language Project — verified Termux polyglot execution, native multi-language utilities, practical workflows, resilience, benchmarking, and a global language catalog.')
     sp=ap.add_subparsers(dest='cmd')
     p=sp.add_parser('run');p.add_argument('--text');p.add_argument('--file');p.add_argument('--rounds',type=int,default=1);p.add_argument('--warmups',type=int,default=1);p.add_argument('--order',choices=ORDERS,default='fastest');p.add_argument('--seed',type=int);p.add_argument('--telemetry',action='store_true')
     sp.add_parser('list');s=sp.add_parser('setup');s.add_argument('--install',action='store_true');s.add_argument('--update',action='store_true');s.add_argument('--refresh-catalog',action='store_true');sp.add_parser('doctor')
@@ -150,6 +391,70 @@ def main():
     pl=sp.add_parser('plan');pl.add_argument('--bytes',type=int,default=0);pl.add_argument('--rounds',type=int,default=1);pl.add_argument('--order',choices=ORDERS,default='fastest');pl.add_argument('--json',action='store_true')
     rg=sp.add_parser('regression');rg.add_argument('--mode',default='chain');rg.add_argument('--threshold',type=float,default=15.0)
     c=sp.add_parser('catalog');csp=c.add_subparsers(dest='catalog_cmd');cl=csp.add_parser('list');cl.add_argument('--letter');cs=csp.add_parser('search');cs.add_argument('query');csp.add_parser('stats');csp.add_parser('refresh')
+    t=sp.add_parser('tools',help='Offline practical utility toolbox');ts=t.add_subparsers(dest='tool_cmd')
+    tc=ts.add_parser('codec');tc.add_argument('format',choices=['base64','base32','base85','ascii85','hex','url','gzip','zlib','bz2','xz','rot13']);tc.add_argument('--decode',action='store_true');tc.add_argument('--text');tc.add_argument('--file');tc.add_argument('--output');tc.add_argument('--raw',action='store_true',help='write raw bytes to stdout when no --output is used')
+    th=ts.add_parser('hash');th.add_argument('--text');th.add_argument('--file');th.add_argument('--algorithms',nargs='+',default=['sha256','sha512','blake2b'])
+    ti=ts.add_parser('inspect');ti.add_argument('path');ti.add_argument('--preview',type=int,default=256)
+    tx=ts.add_parser('hexdump');tx.add_argument('path');tx.add_argument('--width',type=int,default=16);tx.add_argument('--limit',type=int,default=1024)
+    tr=ts.add_parser('strings');tr.add_argument('path');tr.add_argument('--min-length',type=int,default=4);tr.add_argument('--limit',type=int,default=200)
+    td=ts.add_parser('duplicates');td.add_argument('root');td.add_argument('--min-size',type=int,default=1);td.add_argument('--algorithm',default='sha256')
+    tt=ts.add_parser('text-stats');tt.add_argument('--text');tt.add_argument('--file')
+    tj=ts.add_parser('json');tj.add_argument('--text');tj.add_argument('--file');tj.add_argument('--mode',choices=['pretty','minify','validate'],default='pretty');tj.add_argument('--query');tj.add_argument('--output')
+    tv=ts.add_parser('csv');tv.add_argument('path');tv.add_argument('--delimiter');tv.add_argument('--sample',type=int,default=5)
+    tg=ts.add_parser('generate');tg.add_argument('--kind',choices=['password','token','hex','uuid'],default='password');tg.add_argument('--length',type=int,default=24);tg.add_argument('--count',type=int,default=1)
+    tm=ts.add_parser('manifest-create');tm.add_argument('root');tm.add_argument('--output');tm.add_argument('--algorithm',default='sha256')
+    tmv=ts.add_parser('manifest-verify');tmv.add_argument('manifest')
+    tac=ts.add_parser('archive-create');tac.add_argument('source');tac.add_argument('--output');tac.add_argument('--kind',choices=['zip','tar.gz'],default='zip')
+    tae=ts.add_parser('archive-extract');tae.add_argument('archive');tae.add_argument('--destination')
+    tsr=ts.add_parser('storage');tsr.add_argument('root');tsr.add_argument('--top',type=int,default=20)
+    tcp=ts.add_parser('compare');tcp.add_argument('a');tcp.add_argument('b')
+    tsv=ts.add_parser('serve');tsv.add_argument('directory',nargs='?',default='.');tsv.add_argument('--host',default='127.0.0.1');tsv.add_argument('--port',type=int,default=8000)
+    tid=ts.add_parser('identify');tid.add_argument('path')
+    tcb=ts.add_parser('codebase');tcb.add_argument('root');tcb.add_argument('--top',type=int,default=30)
+    tf=ts.add_parser('find');tf.add_argument('root');tf.add_argument('--pattern',default='*');tf.add_argument('--content');tf.add_argument('--regex',action='store_true');tf.add_argument('--case-sensitive',action='store_true');tf.add_argument('--hidden',action='store_true');tf.add_argument('--max-results',type=int,default=500)
+    ttree=ts.add_parser('tree');ttree.add_argument('root',nargs='?',default='.');ttree.add_argument('--depth',type=int,default=3);ttree.add_argument('--max-entries',type=int,default=500);ttree.add_argument('--hidden',action='store_true')
+    tren=ts.add_parser('rename');tren.add_argument('root');tren.add_argument('--glob',default='*');tren.add_argument('--find');tren.add_argument('--replace',default='');tren.add_argument('--prefix',default='');tren.add_argument('--suffix',default='');tren.add_argument('--apply',action='store_true')
+    tsy=ts.add_parser('sync');tsy.add_argument('source');tsy.add_argument('destination');tsy.add_argument('--delete',action='store_true');tsy.add_argument('--apply',action='store_true');tsy.add_argument('--checksum',action='store_true')
+    tbk=ts.add_parser('backup');tbk.add_argument('source');tbk.add_argument('--destination');tbk.add_argument('--label')
+    tcl=ts.add_parser('clean');tcl.add_argument('root');tcl.add_argument('--older-days',type=int,default=7);tcl.add_argument('--apply',action='store_true')
+    tdf=ts.add_parser('diff');tdf.add_argument('a');tdf.add_argument('b');tdf.add_argument('--context',type=int,default=3)
+    tdo=ts.add_parser('todos');tdo.add_argument('root');tdo.add_argument('--max-results',type=int,default=500)
+    teol=ts.add_parser('eol');teol.add_argument('path');teol.add_argument('--mode',choices=['lf','crlf'],default='lf');teol.add_argument('--apply',action='store_true')
+    tenv=ts.add_parser('env');tenv.add_argument('commands',nargs='*')
+    tgit=ts.add_parser('git');tgit.add_argument('path',nargs='?',default='.')
+    tdns=ts.add_parser('dns');tdns.add_argument('host')
+    ttcp=ts.add_parser('tcp');ttcp.add_argument('host');ttcp.add_argument('port',type=int);ttcp.add_argument('--timeout',type=float,default=3)
+    thttp=ts.add_parser('http');thttp.add_argument('url');thttp.add_argument('--timeout',type=float,default=10)
+    tdl=ts.add_parser('download');tdl.add_argument('url');tdl.add_argument('--output');tdl.add_argument('--sha256');tdl.add_argument('--timeout',type=float,default=30);tdl.add_argument('--max-bytes',type=int,default=1073741824)
+    tps=ts.add_parser('processes');tps.add_argument('--limit',type=int,default=100)
+    pg=sp.add_parser('polyglot',help='Practical workflows where every verified language actively processes data');pgs=pg.add_subparsers(dest='poly_cmd')
+    pgs.add_parser('status')
+    pseal=pgs.add_parser('seal');pseal.add_argument('path');pseal.add_argument('--output');pseal.add_argument('--chunk-size',type=int,default=65536);pseal.add_argument('--order',choices=ORDERS,default='registry');pseal.add_argument('--warmups',type=int,default=1)
+    pver=pgs.add_parser('verify');pver.add_argument('manifest');pver.add_argument('--file');pver.add_argument('--warmups',type=int,default=1)
+    pfp=pgs.add_parser('fingerprint');pfp.add_argument('path');pfp.add_argument('--chunk-size',type=int,default=65536);pfp.add_argument('--order',choices=ORDERS,default='registry');pfp.add_argument('--warmups',type=int,default=1)
+    ppack=pgs.add_parser('pack');ppack.add_argument('source');ppack.add_argument('--output');ppack.add_argument('--chunk-size',type=int,default=65536);ppack.add_argument('--order',choices=ORDERS,default='registry');ppack.add_argument('--warmups',type=int,default=1);ppack.add_argument('--force',action='store_true')
+    pun=pgs.add_parser('unpack');pun.add_argument('package');pun.add_argument('--destination');pun.add_argument('--warmups',type=int,default=1);pun.add_argument('--force',action='store_true')
+    pcopy=pgs.add_parser('copy');pcopy.add_argument('source');pcopy.add_argument('destination');pcopy.add_argument('--chunk-size',type=int,default=65536);pcopy.add_argument('--order',choices=ORDERS,default='registry');pcopy.add_argument('--warmups',type=int,default=1);pcopy.add_argument('--force',action='store_true')
+    paud=pgs.add_parser('audit');paud.add_argument('root');paud.add_argument('--output');paud.add_argument('--sample-bytes',type=int,default=32768);paud.add_argument('--order',choices=ORDERS,default='registry');paud.add_argument('--warmups',type=int,default=1);paud.add_argument('--hidden',action='store_true')
+    pav=pgs.add_parser('audit-verify');pav.add_argument('manifest');pav.add_argument('--root');pav.add_argument('--warmups',type=int,default=1)
+    pprot=pgs.add_parser('protect');pprot.add_argument('source');pprot.add_argument('--destination');pprot.add_argument('--label');pprot.add_argument('--chunk-size',type=int,default=65536);pprot.add_argument('--order',choices=ORDERS,default='registry');pprot.add_argument('--warmups',type=int,default=1);pprot.add_argument('--force',action='store_true');pprot.add_argument('--no-audit',action='store_true')
+    prest=pgs.add_parser('restore');prest.add_argument('package');prest.add_argument('--destination');prest.add_argument('--seal');prest.add_argument('--warmups',type=int,default=1);prest.add_argument('--force',action='store_true')
+    pcmp=pgs.add_parser('compare');pcmp.add_argument('left');pcmp.add_argument('right');pcmp.add_argument('--sample-bytes',type=int,default=32768);pcmp.add_argument('--order',choices=ORDERS,default='registry');pcmp.add_argument('--warmups',type=int,default=1);pcmp.add_argument('--hidden',action='store_true')
+    pmir=pgs.add_parser('mirror');pmir.add_argument('source');pmir.add_argument('destination');pmir.add_argument('--apply',action='store_true');pmir.add_argument('--delete',action='store_true');pmir.add_argument('--no-checksum',action='store_true');pmir.add_argument('--chunk-size',type=int,default=65536);pmir.add_argument('--order',choices=ORDERS,default='registry');pmir.add_argument('--warmups',type=int,default=1);pmir.add_argument('--hidden',action='store_true')
+    pspl=pgs.add_parser('split');pspl.add_argument('source');pspl.add_argument('--output-dir');pspl.add_argument('--part-size',type=int,default=4194304);pspl.add_argument('--order',choices=ORDERS,default='registry');pspl.add_argument('--warmups',type=int,default=1);pspl.add_argument('--force',action='store_true')
+    pjoin=pgs.add_parser('join');pjoin.add_argument('manifest');pjoin.add_argument('--destination');pjoin.add_argument('--warmups',type=int,default=1);pjoin.add_argument('--force',action='store_true')
+    pded=pgs.add_parser('dedupe');pded.add_argument('root');pded.add_argument('--min-size',type=int,default=1);pded.add_argument('--sample-bytes',type=int,default=8192);pded.add_argument('--order',choices=ORDERS,default='registry');pded.add_argument('--warmups',type=int,default=1);pded.add_argument('--hidden',action='store_true')
+    pscr=pgs.add_parser('scrub');pscr.add_argument('manifest');pscr.add_argument('--root');pscr.add_argument('--mirror');pscr.add_argument('--repair',action='store_true');pscr.add_argument('--warmups',type=int,default=1)
+    pbh=pgs.add_parser('backup-health');pbh.add_argument('root');pbh.add_argument('--warmups',type=int,default=1);pbh.add_argument('--limit',type=int)
+    lt=sp.add_parser('langtools',help='Useful native utilities implemented across the verified programming languages');lts=lt.add_subparsers(dest='langtool_cmd')
+    lts.add_parser('list');lts.add_parser('status')
+    ltr=lts.add_parser('run');ltr.add_argument('tool');ltr.add_argument('args',nargs=argparse.REMAINDER);ltr.add_argument('--timeout',type=int,default=60)
+    ltrec=lts.add_parser('recommend');ltrec.add_argument('query',nargs='+')
+    for _name in ('project-report','file-report','data-report','auto-report','workspace-report'):
+        _p=lts.add_parser(_name);_p.add_argument('path');_p.add_argument('--output')
+    lts.add_parser('selftest')
+    nw=sp.add_parser('new',help='Create a starter project');nw.add_argument('language',choices=scaffold_languages());nw.add_argument('name');nw.add_argument('--dir',default='.');nw.add_argument('--force',action='store_true')
+    ex=sp.add_parser('execute',help='Execute a trusted source file using a local Termux runtime/toolchain');ex.add_argument('source');ex.add_argument('args',nargs='*');ex.add_argument('--timeout',type=int,default=30);ex.add_argument('--stdin-text')
     sp.add_parser('verify');sp.add_parser('audit')
     a=ap.parse_args()
     if not a.cmd:return interactive()
@@ -212,6 +517,61 @@ def main():
         if a.catalog_cmd=='list':show_catalog(a.letter);return 0
         if a.catalog_cmd=='refresh':return subprocess.call([sys.executable,str(ROOT/'scripts'/'refresh_catalog.py')])
         c.print_help();return 0
+    if a.cmd=='polyglot':
+        try:
+            if not a.poly_cmd:practical_polyglot_menu();return 0
+            ensure()
+            if a.poly_cmd=='status':print(json.dumps(polyglot_status(),indent=2));return 0
+            if a.poly_cmd=='seal':print(json.dumps(polyglot_seal(a.path,a.output,a.chunk_size,a.order,a.warmups),indent=2));return 0
+            if a.poly_cmd=='verify':r=polyglot_verify_seal(a.manifest,a.file,a.warmups);print(json.dumps(r,indent=2));return 0 if r['ok'] else 2
+            if a.poly_cmd=='fingerprint':print(json.dumps(polyglot_fingerprint(a.path,a.chunk_size,a.order,a.warmups),indent=2));return 0
+            if a.poly_cmd=='pack':print(json.dumps(polyglot_pack(a.source,a.output,a.chunk_size,a.order,a.warmups,a.force),indent=2));return 0
+            if a.poly_cmd=='unpack':print(json.dumps(polyglot_unpack(a.package,a.destination,a.warmups,a.force),indent=2));return 0
+            if a.poly_cmd=='copy':print(json.dumps(polyglot_copy(a.source,a.destination,a.chunk_size,a.order,a.warmups,a.force),indent=2));return 0
+            if a.poly_cmd=='audit':print(json.dumps(polyglot_audit(a.root,a.output,a.sample_bytes,a.order,a.warmups,a.hidden),indent=2));return 0
+            if a.poly_cmd=='audit-verify':r=polyglot_audit_verify(a.manifest,a.root,a.warmups);print(json.dumps(r,indent=2));return 0 if r['ok'] else 2
+            if a.poly_cmd=='protect':print(json.dumps(polyglot_protect(a.source,a.destination,a.label,a.chunk_size,a.order,a.warmups,a.force,not a.no_audit),indent=2));return 0
+            if a.poly_cmd=='restore':print(json.dumps(polyglot_restore(a.package,a.destination,a.seal,a.warmups,a.force),indent=2));return 0
+            if a.poly_cmd=='compare':r=polyglot_compare(a.left,a.right,a.sample_bytes,a.order,a.warmups,a.hidden);print(json.dumps(r,indent=2));return 0 if r.get('equal') else 1
+            if a.poly_cmd=='mirror':print(json.dumps(polyglot_mirror(a.source,a.destination,a.apply,a.delete,not a.no_checksum,a.chunk_size,a.order,a.warmups,a.hidden),indent=2));return 0
+            if a.poly_cmd=='split':print(json.dumps(polyglot_split(a.source,a.output_dir,a.part_size,a.order,a.warmups,a.force),indent=2));return 0
+            if a.poly_cmd=='join':print(json.dumps(polyglot_join(a.manifest,a.destination,a.warmups,a.force),indent=2));return 0
+            if a.poly_cmd=='dedupe':print(json.dumps(polyglot_dedupe(a.root,a.min_size,a.sample_bytes,a.order,a.warmups,a.hidden),indent=2));return 0
+            if a.poly_cmd=='scrub':r=polyglot_scrub(a.manifest,a.root,a.mirror,a.repair,a.warmups);print(json.dumps(r,indent=2));return 0 if r.get('ok') else 2
+            if a.poly_cmd=='backup-health':r=polyglot_backup_health(a.root,a.warmups,a.limit);print(json.dumps(r,indent=2));return 0 if r.get('ok') else 2
+        except Exception as e:print('Polyglot workflow error:',e,file=sys.stderr);return 2
+    if a.cmd=='langtools':
+        try:
+            if not a.langtool_cmd or a.langtool_cmd in {'list','status'}:
+                st=langtools_status()
+                if a.langtool_cmd=='status': print(json.dumps(st,indent=2)); return 0
+                for x in st['tools']:
+                    mark='✓' if x['available'] else '·'; print(f"{mark} {x['id']:<22} {x['language']:<14} {x['category']:<10} {x['name']}")
+                print(f"\nAvailable: {st['available']}/{st['registered']}"); return 0
+            if a.langtool_cmd=='run':
+                r=langtool_run(a.tool,a.args,a.timeout);sys.stdout.write(r['stdout']);sys.stderr.write(r['stderr']);return r['returncode']
+            if a.langtool_cmd=='recommend':
+                xs=langtool_recommend(' '.join(a.query));
+                for x in xs: print(f"{'✓' if x['available'] else '·'} {x['id']:<22} {x['language']:<14} {x['name']}")
+                return 0
+            if a.langtool_cmd=='selftest':
+                r=langtools_selftest();print(json.dumps(r,indent=2));return 0 if r['ok'] else 2
+            funcs={'project-report':langtool_project_report,'file-report':langtool_file_report,'data-report':langtool_data_report,'auto-report':langtool_auto_report,'workspace-report':langtool_workspace_report}
+            r=funcs[a.langtool_cmd](a.path);txt=json.dumps(r,indent=2,ensure_ascii=False)+'\n'
+            if a.output: Path(a.output).expanduser().write_text(txt,encoding='utf-8'); print('Written:',Path(a.output).expanduser())
+            else: print(txt,end='')
+            return 0
+        except Exception as e: print('Native language tool error:',e,file=sys.stderr); return 2
+    if a.cmd=='tools':
+        try:return run_tools(a)
+        except Exception as e:print('Tool error:',e,file=sys.stderr);return 2
+    if a.cmd=='new':
+        try:print(json.dumps(scaffold_create(a.language,a.name,a.dir,a.force),indent=2));return 0
+        except Exception as e:print('Scaffold error:',e,file=sys.stderr);return 2
+    if a.cmd=='execute':
+        try:
+            r=run_source(a.source,a.args,a.timeout,a.stdin_text.encode() if a.stdin_text is not None else None);sys.stdout.buffer.write(r['stdout']);sys.stderr.buffer.write(r['stderr']);return r['returncode']
+        except Exception as e:print('Execute error:',e,file=sys.stderr);return 2
     if a.cmd=='verify':return subprocess.call([sys.executable,str(ROOT/'scripts'/'verify_manifest.py')])
     if a.cmd=='audit':return subprocess.call([sys.executable,str(ROOT/'scripts'/'audit_project.py')])
 if __name__=='__main__':raise SystemExit(main() or 0)

@@ -1,0 +1,7 @@
+(use-modules (ice-9 rdelim) (ice-9 textual-ports))
+(define args (cdr (command-line)))
+(if (or (null? args) (string=? (car args) "--help")) (begin (display "Usage: paren-check FILE  # quick (), [], {} balance check\n") (exit (if (null? args) 2 0))))
+(define text (call-with-input-file (car args) get-string-all))
+(define p 0)(define b 0)(define c 0)(define bad #f)
+(string-for-each (lambda (x) (cond ((char=? x #\() (set! p (+ p 1))) ((char=? x #\)) (set! p (- p 1))) ((char=? x #\[) (set! b (+ b 1))) ((char=? x #\]) (set! b (- b 1))) ((char=? x #\{) (set! c (+ c 1))) ((char=? x #\}) (set! c (- c 1)))) (if (or (< p 0)(< b 0)(< c 0)) (set! bad #t))) text)
+(format #t "parentheses=~a\nbrackets=~a\nbraces=~a\nquick_balanced=~a\n" p b c (if (and (= p 0)(= b 0)(= c 0)(not bad)) "true" "false"))

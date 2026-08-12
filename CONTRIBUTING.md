@@ -38,3 +38,27 @@ New result-producing modes should:
 ## Catalog-only languages
 
 Catalog-only languages belong under the generated catalog and must not be counted as executable. Catalog refresh logic should preserve unique names and stable metadata slugs without claiming runtime support that was not verified on the device.
+
+## Useful Toolbox Changes
+
+Changes to `core/toolbox.py`, `core/scaffold.py`, or `core/source_runner.py` should remain offline-first where practical and must not silently add network uploads or shell interpolation of user-controlled filenames.
+
+Run these before submitting utility changes:
+
+```bash
+python scripts/selftest.py
+python scripts/toolbox_smoke.py
+python scripts/audit_project.py
+```
+
+## Native Multi-Language Tools
+
+Every executable worker candidate should have exactly one practical native utility registered in `polytools.json`. When adding a new executable language worker:
+
+1. add the worker and its catalog mapping;
+2. add `polytools/<language>/...` containing a useful standalone utility written in that language;
+3. add the matching `polytools.json` entry with source, run/build commands, tags, and deterministic smoke-test arguments;
+4. keep the tool dependency-free beyond the runtime/toolchain already needed by that language whenever possible;
+5. run `python scripts/audit_project.py` and, after runtime setup, `python scripts/langtools_smoke.py`.
+
+A utility should solve a real local task (file/data/text/source/system analysis) rather than being another `Hello World`. Read-only behavior is preferred. Any future file-modifying native utility must clearly document its mutation behavior and should default to a preview/dry-run where practical.
