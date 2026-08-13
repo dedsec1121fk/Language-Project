@@ -1,0 +1,2082 @@
+{
+  "unicode_version": "17.0.0",
+  "count": 346,
+  "blocks": [
+    {
+      "name": "Basic Latin",
+      "start": "U+0000",
+      "end": "U+007F",
+      "size": 128
+    },
+    {
+      "name": "Latin-1 Supplement",
+      "start": "U+0080",
+      "end": "U+00FF",
+      "size": 128
+    },
+    {
+      "name": "Latin Extended-A",
+      "start": "U+0100",
+      "end": "U+017F",
+      "size": 128
+    },
+    {
+      "name": "Latin Extended-B",
+      "start": "U+0180",
+      "end": "U+024F",
+      "size": 208
+    },
+    {
+      "name": "IPA Extensions",
+      "start": "U+0250",
+      "end": "U+02AF",
+      "size": 96
+    },
+    {
+      "name": "Spacing Modifier Letters",
+      "start": "U+02B0",
+      "end": "U+02FF",
+      "size": 80
+    },
+    {
+      "name": "Combining Diacritical Marks",
+      "start": "U+0300",
+      "end": "U+036F",
+      "size": 112
+    },
+    {
+      "name": "Greek and Coptic",
+      "start": "U+0370",
+      "end": "U+03FF",
+      "size": 144
+    },
+    {
+      "name": "Cyrillic",
+      "start": "U+0400",
+      "end": "U+04FF",
+      "size": 256
+    },
+    {
+      "name": "Cyrillic Supplement",
+      "start": "U+0500",
+      "end": "U+052F",
+      "size": 48
+    },
+    {
+      "name": "Armenian",
+      "start": "U+0530",
+      "end": "U+058F",
+      "size": 96
+    },
+    {
+      "name": "Hebrew",
+      "start": "U+0590",
+      "end": "U+05FF",
+      "size": 112
+    },
+    {
+      "name": "Arabic",
+      "start": "U+0600",
+      "end": "U+06FF",
+      "size": 256
+    },
+    {
+      "name": "Syriac",
+      "start": "U+0700",
+      "end": "U+074F",
+      "size": 80
+    },
+    {
+      "name": "Arabic Supplement",
+      "start": "U+0750",
+      "end": "U+077F",
+      "size": 48
+    },
+    {
+      "name": "Thaana",
+      "start": "U+0780",
+      "end": "U+07BF",
+      "size": 64
+    },
+    {
+      "name": "NKo",
+      "start": "U+07C0",
+      "end": "U+07FF",
+      "size": 64
+    },
+    {
+      "name": "Samaritan",
+      "start": "U+0800",
+      "end": "U+083F",
+      "size": 64
+    },
+    {
+      "name": "Mandaic",
+      "start": "U+0840",
+      "end": "U+085F",
+      "size": 32
+    },
+    {
+      "name": "Syriac Supplement",
+      "start": "U+0860",
+      "end": "U+086F",
+      "size": 16
+    },
+    {
+      "name": "Arabic Extended-B",
+      "start": "U+0870",
+      "end": "U+089F",
+      "size": 48
+    },
+    {
+      "name": "Arabic Extended-A",
+      "start": "U+08A0",
+      "end": "U+08FF",
+      "size": 96
+    },
+    {
+      "name": "Devanagari",
+      "start": "U+0900",
+      "end": "U+097F",
+      "size": 128
+    },
+    {
+      "name": "Bengali",
+      "start": "U+0980",
+      "end": "U+09FF",
+      "size": 128
+    },
+    {
+      "name": "Gurmukhi",
+      "start": "U+0A00",
+      "end": "U+0A7F",
+      "size": 128
+    },
+    {
+      "name": "Gujarati",
+      "start": "U+0A80",
+      "end": "U+0AFF",
+      "size": 128
+    },
+    {
+      "name": "Oriya",
+      "start": "U+0B00",
+      "end": "U+0B7F",
+      "size": 128
+    },
+    {
+      "name": "Tamil",
+      "start": "U+0B80",
+      "end": "U+0BFF",
+      "size": 128
+    },
+    {
+      "name": "Telugu",
+      "start": "U+0C00",
+      "end": "U+0C7F",
+      "size": 128
+    },
+    {
+      "name": "Kannada",
+      "start": "U+0C80",
+      "end": "U+0CFF",
+      "size": 128
+    },
+    {
+      "name": "Malayalam",
+      "start": "U+0D00",
+      "end": "U+0D7F",
+      "size": 128
+    },
+    {
+      "name": "Sinhala",
+      "start": "U+0D80",
+      "end": "U+0DFF",
+      "size": 128
+    },
+    {
+      "name": "Thai",
+      "start": "U+0E00",
+      "end": "U+0E7F",
+      "size": 128
+    },
+    {
+      "name": "Lao",
+      "start": "U+0E80",
+      "end": "U+0EFF",
+      "size": 128
+    },
+    {
+      "name": "Tibetan",
+      "start": "U+0F00",
+      "end": "U+0FFF",
+      "size": 256
+    },
+    {
+      "name": "Myanmar",
+      "start": "U+1000",
+      "end": "U+109F",
+      "size": 160
+    },
+    {
+      "name": "Georgian",
+      "start": "U+10A0",
+      "end": "U+10FF",
+      "size": 96
+    },
+    {
+      "name": "Hangul Jamo",
+      "start": "U+1100",
+      "end": "U+11FF",
+      "size": 256
+    },
+    {
+      "name": "Ethiopic",
+      "start": "U+1200",
+      "end": "U+137F",
+      "size": 384
+    },
+    {
+      "name": "Ethiopic Supplement",
+      "start": "U+1380",
+      "end": "U+139F",
+      "size": 32
+    },
+    {
+      "name": "Cherokee",
+      "start": "U+13A0",
+      "end": "U+13FF",
+      "size": 96
+    },
+    {
+      "name": "Unified Canadian Aboriginal Syllabics",
+      "start": "U+1400",
+      "end": "U+167F",
+      "size": 640
+    },
+    {
+      "name": "Ogham",
+      "start": "U+1680",
+      "end": "U+169F",
+      "size": 32
+    },
+    {
+      "name": "Runic",
+      "start": "U+16A0",
+      "end": "U+16FF",
+      "size": 96
+    },
+    {
+      "name": "Tagalog",
+      "start": "U+1700",
+      "end": "U+171F",
+      "size": 32
+    },
+    {
+      "name": "Hanunoo",
+      "start": "U+1720",
+      "end": "U+173F",
+      "size": 32
+    },
+    {
+      "name": "Buhid",
+      "start": "U+1740",
+      "end": "U+175F",
+      "size": 32
+    },
+    {
+      "name": "Tagbanwa",
+      "start": "U+1760",
+      "end": "U+177F",
+      "size": 32
+    },
+    {
+      "name": "Khmer",
+      "start": "U+1780",
+      "end": "U+17FF",
+      "size": 128
+    },
+    {
+      "name": "Mongolian",
+      "start": "U+1800",
+      "end": "U+18AF",
+      "size": 176
+    },
+    {
+      "name": "Unified Canadian Aboriginal Syllabics Extended",
+      "start": "U+18B0",
+      "end": "U+18FF",
+      "size": 80
+    },
+    {
+      "name": "Limbu",
+      "start": "U+1900",
+      "end": "U+194F",
+      "size": 80
+    },
+    {
+      "name": "Tai Le",
+      "start": "U+1950",
+      "end": "U+197F",
+      "size": 48
+    },
+    {
+      "name": "New Tai Lue",
+      "start": "U+1980",
+      "end": "U+19DF",
+      "size": 96
+    },
+    {
+      "name": "Khmer Symbols",
+      "start": "U+19E0",
+      "end": "U+19FF",
+      "size": 32
+    },
+    {
+      "name": "Buginese",
+      "start": "U+1A00",
+      "end": "U+1A1F",
+      "size": 32
+    },
+    {
+      "name": "Tai Tham",
+      "start": "U+1A20",
+      "end": "U+1AAF",
+      "size": 144
+    },
+    {
+      "name": "Combining Diacritical Marks Extended",
+      "start": "U+1AB0",
+      "end": "U+1AFF",
+      "size": 80
+    },
+    {
+      "name": "Balinese",
+      "start": "U+1B00",
+      "end": "U+1B7F",
+      "size": 128
+    },
+    {
+      "name": "Sundanese",
+      "start": "U+1B80",
+      "end": "U+1BBF",
+      "size": 64
+    },
+    {
+      "name": "Batak",
+      "start": "U+1BC0",
+      "end": "U+1BFF",
+      "size": 64
+    },
+    {
+      "name": "Lepcha",
+      "start": "U+1C00",
+      "end": "U+1C4F",
+      "size": 80
+    },
+    {
+      "name": "Ol Chiki",
+      "start": "U+1C50",
+      "end": "U+1C7F",
+      "size": 48
+    },
+    {
+      "name": "Cyrillic Extended-C",
+      "start": "U+1C80",
+      "end": "U+1C8F",
+      "size": 16
+    },
+    {
+      "name": "Georgian Extended",
+      "start": "U+1C90",
+      "end": "U+1CBF",
+      "size": 48
+    },
+    {
+      "name": "Sundanese Supplement",
+      "start": "U+1CC0",
+      "end": "U+1CCF",
+      "size": 16
+    },
+    {
+      "name": "Vedic Extensions",
+      "start": "U+1CD0",
+      "end": "U+1CFF",
+      "size": 48
+    },
+    {
+      "name": "Phonetic Extensions",
+      "start": "U+1D00",
+      "end": "U+1D7F",
+      "size": 128
+    },
+    {
+      "name": "Phonetic Extensions Supplement",
+      "start": "U+1D80",
+      "end": "U+1DBF",
+      "size": 64
+    },
+    {
+      "name": "Combining Diacritical Marks Supplement",
+      "start": "U+1DC0",
+      "end": "U+1DFF",
+      "size": 64
+    },
+    {
+      "name": "Latin Extended Additional",
+      "start": "U+1E00",
+      "end": "U+1EFF",
+      "size": 256
+    },
+    {
+      "name": "Greek Extended",
+      "start": "U+1F00",
+      "end": "U+1FFF",
+      "size": 256
+    },
+    {
+      "name": "General Punctuation",
+      "start": "U+2000",
+      "end": "U+206F",
+      "size": 112
+    },
+    {
+      "name": "Superscripts and Subscripts",
+      "start": "U+2070",
+      "end": "U+209F",
+      "size": 48
+    },
+    {
+      "name": "Currency Symbols",
+      "start": "U+20A0",
+      "end": "U+20CF",
+      "size": 48
+    },
+    {
+      "name": "Combining Diacritical Marks for Symbols",
+      "start": "U+20D0",
+      "end": "U+20FF",
+      "size": 48
+    },
+    {
+      "name": "Letterlike Symbols",
+      "start": "U+2100",
+      "end": "U+214F",
+      "size": 80
+    },
+    {
+      "name": "Number Forms",
+      "start": "U+2150",
+      "end": "U+218F",
+      "size": 64
+    },
+    {
+      "name": "Arrows",
+      "start": "U+2190",
+      "end": "U+21FF",
+      "size": 112
+    },
+    {
+      "name": "Mathematical Operators",
+      "start": "U+2200",
+      "end": "U+22FF",
+      "size": 256
+    },
+    {
+      "name": "Miscellaneous Technical",
+      "start": "U+2300",
+      "end": "U+23FF",
+      "size": 256
+    },
+    {
+      "name": "Control Pictures",
+      "start": "U+2400",
+      "end": "U+243F",
+      "size": 64
+    },
+    {
+      "name": "Optical Character Recognition",
+      "start": "U+2440",
+      "end": "U+245F",
+      "size": 32
+    },
+    {
+      "name": "Enclosed Alphanumerics",
+      "start": "U+2460",
+      "end": "U+24FF",
+      "size": 160
+    },
+    {
+      "name": "Box Drawing",
+      "start": "U+2500",
+      "end": "U+257F",
+      "size": 128
+    },
+    {
+      "name": "Block Elements",
+      "start": "U+2580",
+      "end": "U+259F",
+      "size": 32
+    },
+    {
+      "name": "Geometric Shapes",
+      "start": "U+25A0",
+      "end": "U+25FF",
+      "size": 96
+    },
+    {
+      "name": "Miscellaneous Symbols",
+      "start": "U+2600",
+      "end": "U+26FF",
+      "size": 256
+    },
+    {
+      "name": "Dingbats",
+      "start": "U+2700",
+      "end": "U+27BF",
+      "size": 192
+    },
+    {
+      "name": "Miscellaneous Mathematical Symbols-A",
+      "start": "U+27C0",
+      "end": "U+27EF",
+      "size": 48
+    },
+    {
+      "name": "Supplemental Arrows-A",
+      "start": "U+27F0",
+      "end": "U+27FF",
+      "size": 16
+    },
+    {
+      "name": "Braille Patterns",
+      "start": "U+2800",
+      "end": "U+28FF",
+      "size": 256
+    },
+    {
+      "name": "Supplemental Arrows-B",
+      "start": "U+2900",
+      "end": "U+297F",
+      "size": 128
+    },
+    {
+      "name": "Miscellaneous Mathematical Symbols-B",
+      "start": "U+2980",
+      "end": "U+29FF",
+      "size": 128
+    },
+    {
+      "name": "Supplemental Mathematical Operators",
+      "start": "U+2A00",
+      "end": "U+2AFF",
+      "size": 256
+    },
+    {
+      "name": "Miscellaneous Symbols and Arrows",
+      "start": "U+2B00",
+      "end": "U+2BFF",
+      "size": 256
+    },
+    {
+      "name": "Glagolitic",
+      "start": "U+2C00",
+      "end": "U+2C5F",
+      "size": 96
+    },
+    {
+      "name": "Latin Extended-C",
+      "start": "U+2C60",
+      "end": "U+2C7F",
+      "size": 32
+    },
+    {
+      "name": "Coptic",
+      "start": "U+2C80",
+      "end": "U+2CFF",
+      "size": 128
+    },
+    {
+      "name": "Georgian Supplement",
+      "start": "U+2D00",
+      "end": "U+2D2F",
+      "size": 48
+    },
+    {
+      "name": "Tifinagh",
+      "start": "U+2D30",
+      "end": "U+2D7F",
+      "size": 80
+    },
+    {
+      "name": "Ethiopic Extended",
+      "start": "U+2D80",
+      "end": "U+2DDF",
+      "size": 96
+    },
+    {
+      "name": "Cyrillic Extended-A",
+      "start": "U+2DE0",
+      "end": "U+2DFF",
+      "size": 32
+    },
+    {
+      "name": "Supplemental Punctuation",
+      "start": "U+2E00",
+      "end": "U+2E7F",
+      "size": 128
+    },
+    {
+      "name": "CJK Radicals Supplement",
+      "start": "U+2E80",
+      "end": "U+2EFF",
+      "size": 128
+    },
+    {
+      "name": "Kangxi Radicals",
+      "start": "U+2F00",
+      "end": "U+2FDF",
+      "size": 224
+    },
+    {
+      "name": "Ideographic Description Characters",
+      "start": "U+2FF0",
+      "end": "U+2FFF",
+      "size": 16
+    },
+    {
+      "name": "CJK Symbols and Punctuation",
+      "start": "U+3000",
+      "end": "U+303F",
+      "size": 64
+    },
+    {
+      "name": "Hiragana",
+      "start": "U+3040",
+      "end": "U+309F",
+      "size": 96
+    },
+    {
+      "name": "Katakana",
+      "start": "U+30A0",
+      "end": "U+30FF",
+      "size": 96
+    },
+    {
+      "name": "Bopomofo",
+      "start": "U+3100",
+      "end": "U+312F",
+      "size": 48
+    },
+    {
+      "name": "Hangul Compatibility Jamo",
+      "start": "U+3130",
+      "end": "U+318F",
+      "size": 96
+    },
+    {
+      "name": "Kanbun",
+      "start": "U+3190",
+      "end": "U+319F",
+      "size": 16
+    },
+    {
+      "name": "Bopomofo Extended",
+      "start": "U+31A0",
+      "end": "U+31BF",
+      "size": 32
+    },
+    {
+      "name": "CJK Strokes",
+      "start": "U+31C0",
+      "end": "U+31EF",
+      "size": 48
+    },
+    {
+      "name": "Katakana Phonetic Extensions",
+      "start": "U+31F0",
+      "end": "U+31FF",
+      "size": 16
+    },
+    {
+      "name": "Enclosed CJK Letters and Months",
+      "start": "U+3200",
+      "end": "U+32FF",
+      "size": 256
+    },
+    {
+      "name": "CJK Compatibility",
+      "start": "U+3300",
+      "end": "U+33FF",
+      "size": 256
+    },
+    {
+      "name": "CJK Unified Ideographs Extension A",
+      "start": "U+3400",
+      "end": "U+4DBF",
+      "size": 6592
+    },
+    {
+      "name": "Yijing Hexagram Symbols",
+      "start": "U+4DC0",
+      "end": "U+4DFF",
+      "size": 64
+    },
+    {
+      "name": "CJK Unified Ideographs",
+      "start": "U+4E00",
+      "end": "U+9FFF",
+      "size": 20992
+    },
+    {
+      "name": "Yi Syllables",
+      "start": "U+A000",
+      "end": "U+A48F",
+      "size": 1168
+    },
+    {
+      "name": "Yi Radicals",
+      "start": "U+A490",
+      "end": "U+A4CF",
+      "size": 64
+    },
+    {
+      "name": "Lisu",
+      "start": "U+A4D0",
+      "end": "U+A4FF",
+      "size": 48
+    },
+    {
+      "name": "Vai",
+      "start": "U+A500",
+      "end": "U+A63F",
+      "size": 320
+    },
+    {
+      "name": "Cyrillic Extended-B",
+      "start": "U+A640",
+      "end": "U+A69F",
+      "size": 96
+    },
+    {
+      "name": "Bamum",
+      "start": "U+A6A0",
+      "end": "U+A6FF",
+      "size": 96
+    },
+    {
+      "name": "Modifier Tone Letters",
+      "start": "U+A700",
+      "end": "U+A71F",
+      "size": 32
+    },
+    {
+      "name": "Latin Extended-D",
+      "start": "U+A720",
+      "end": "U+A7FF",
+      "size": 224
+    },
+    {
+      "name": "Syloti Nagri",
+      "start": "U+A800",
+      "end": "U+A82F",
+      "size": 48
+    },
+    {
+      "name": "Common Indic Number Forms",
+      "start": "U+A830",
+      "end": "U+A83F",
+      "size": 16
+    },
+    {
+      "name": "Phags-pa",
+      "start": "U+A840",
+      "end": "U+A87F",
+      "size": 64
+    },
+    {
+      "name": "Saurashtra",
+      "start": "U+A880",
+      "end": "U+A8DF",
+      "size": 96
+    },
+    {
+      "name": "Devanagari Extended",
+      "start": "U+A8E0",
+      "end": "U+A8FF",
+      "size": 32
+    },
+    {
+      "name": "Kayah Li",
+      "start": "U+A900",
+      "end": "U+A92F",
+      "size": 48
+    },
+    {
+      "name": "Rejang",
+      "start": "U+A930",
+      "end": "U+A95F",
+      "size": 48
+    },
+    {
+      "name": "Hangul Jamo Extended-A",
+      "start": "U+A960",
+      "end": "U+A97F",
+      "size": 32
+    },
+    {
+      "name": "Javanese",
+      "start": "U+A980",
+      "end": "U+A9DF",
+      "size": 96
+    },
+    {
+      "name": "Myanmar Extended-B",
+      "start": "U+A9E0",
+      "end": "U+A9FF",
+      "size": 32
+    },
+    {
+      "name": "Cham",
+      "start": "U+AA00",
+      "end": "U+AA5F",
+      "size": 96
+    },
+    {
+      "name": "Myanmar Extended-A",
+      "start": "U+AA60",
+      "end": "U+AA7F",
+      "size": 32
+    },
+    {
+      "name": "Tai Viet",
+      "start": "U+AA80",
+      "end": "U+AADF",
+      "size": 96
+    },
+    {
+      "name": "Meetei Mayek Extensions",
+      "start": "U+AAE0",
+      "end": "U+AAFF",
+      "size": 32
+    },
+    {
+      "name": "Ethiopic Extended-A",
+      "start": "U+AB00",
+      "end": "U+AB2F",
+      "size": 48
+    },
+    {
+      "name": "Latin Extended-E",
+      "start": "U+AB30",
+      "end": "U+AB6F",
+      "size": 64
+    },
+    {
+      "name": "Cherokee Supplement",
+      "start": "U+AB70",
+      "end": "U+ABBF",
+      "size": 80
+    },
+    {
+      "name": "Meetei Mayek",
+      "start": "U+ABC0",
+      "end": "U+ABFF",
+      "size": 64
+    },
+    {
+      "name": "Hangul Syllables",
+      "start": "U+AC00",
+      "end": "U+D7AF",
+      "size": 11184
+    },
+    {
+      "name": "Hangul Jamo Extended-B",
+      "start": "U+D7B0",
+      "end": "U+D7FF",
+      "size": 80
+    },
+    {
+      "name": "High Surrogates",
+      "start": "U+D800",
+      "end": "U+DB7F",
+      "size": 896
+    },
+    {
+      "name": "High Private Use Surrogates",
+      "start": "U+DB80",
+      "end": "U+DBFF",
+      "size": 128
+    },
+    {
+      "name": "Low Surrogates",
+      "start": "U+DC00",
+      "end": "U+DFFF",
+      "size": 1024
+    },
+    {
+      "name": "Private Use Area",
+      "start": "U+E000",
+      "end": "U+F8FF",
+      "size": 6400
+    },
+    {
+      "name": "CJK Compatibility Ideographs",
+      "start": "U+F900",
+      "end": "U+FAFF",
+      "size": 512
+    },
+    {
+      "name": "Alphabetic Presentation Forms",
+      "start": "U+FB00",
+      "end": "U+FB4F",
+      "size": 80
+    },
+    {
+      "name": "Arabic Presentation Forms-A",
+      "start": "U+FB50",
+      "end": "U+FDFF",
+      "size": 688
+    },
+    {
+      "name": "Variation Selectors",
+      "start": "U+FE00",
+      "end": "U+FE0F",
+      "size": 16
+    },
+    {
+      "name": "Vertical Forms",
+      "start": "U+FE10",
+      "end": "U+FE1F",
+      "size": 16
+    },
+    {
+      "name": "Combining Half Marks",
+      "start": "U+FE20",
+      "end": "U+FE2F",
+      "size": 16
+    },
+    {
+      "name": "CJK Compatibility Forms",
+      "start": "U+FE30",
+      "end": "U+FE4F",
+      "size": 32
+    },
+    {
+      "name": "Small Form Variants",
+      "start": "U+FE50",
+      "end": "U+FE6F",
+      "size": 32
+    },
+    {
+      "name": "Arabic Presentation Forms-B",
+      "start": "U+FE70",
+      "end": "U+FEFF",
+      "size": 144
+    },
+    {
+      "name": "Halfwidth and Fullwidth Forms",
+      "start": "U+FF00",
+      "end": "U+FFEF",
+      "size": 240
+    },
+    {
+      "name": "Specials",
+      "start": "U+FFF0",
+      "end": "U+FFFF",
+      "size": 16
+    },
+    {
+      "name": "Linear B Syllabary",
+      "start": "U+10000",
+      "end": "U+1007F",
+      "size": 128
+    },
+    {
+      "name": "Linear B Ideograms",
+      "start": "U+10080",
+      "end": "U+100FF",
+      "size": 128
+    },
+    {
+      "name": "Aegean Numbers",
+      "start": "U+10100",
+      "end": "U+1013F",
+      "size": 64
+    },
+    {
+      "name": "Ancient Greek Numbers",
+      "start": "U+10140",
+      "end": "U+1018F",
+      "size": 80
+    },
+    {
+      "name": "Ancient Symbols",
+      "start": "U+10190",
+      "end": "U+101CF",
+      "size": 64
+    },
+    {
+      "name": "Phaistos Disc",
+      "start": "U+101D0",
+      "end": "U+101FF",
+      "size": 48
+    },
+    {
+      "name": "Lycian",
+      "start": "U+10280",
+      "end": "U+1029F",
+      "size": 32
+    },
+    {
+      "name": "Carian",
+      "start": "U+102A0",
+      "end": "U+102DF",
+      "size": 64
+    },
+    {
+      "name": "Coptic Epact Numbers",
+      "start": "U+102E0",
+      "end": "U+102FF",
+      "size": 32
+    },
+    {
+      "name": "Old Italic",
+      "start": "U+10300",
+      "end": "U+1032F",
+      "size": 48
+    },
+    {
+      "name": "Gothic",
+      "start": "U+10330",
+      "end": "U+1034F",
+      "size": 32
+    },
+    {
+      "name": "Old Permic",
+      "start": "U+10350",
+      "end": "U+1037F",
+      "size": 48
+    },
+    {
+      "name": "Ugaritic",
+      "start": "U+10380",
+      "end": "U+1039F",
+      "size": 32
+    },
+    {
+      "name": "Old Persian",
+      "start": "U+103A0",
+      "end": "U+103DF",
+      "size": 64
+    },
+    {
+      "name": "Deseret",
+      "start": "U+10400",
+      "end": "U+1044F",
+      "size": 80
+    },
+    {
+      "name": "Shavian",
+      "start": "U+10450",
+      "end": "U+1047F",
+      "size": 48
+    },
+    {
+      "name": "Osmanya",
+      "start": "U+10480",
+      "end": "U+104AF",
+      "size": 48
+    },
+    {
+      "name": "Osage",
+      "start": "U+104B0",
+      "end": "U+104FF",
+      "size": 80
+    },
+    {
+      "name": "Elbasan",
+      "start": "U+10500",
+      "end": "U+1052F",
+      "size": 48
+    },
+    {
+      "name": "Caucasian Albanian",
+      "start": "U+10530",
+      "end": "U+1056F",
+      "size": 64
+    },
+    {
+      "name": "Vithkuqi",
+      "start": "U+10570",
+      "end": "U+105BF",
+      "size": 80
+    },
+    {
+      "name": "Todhri",
+      "start": "U+105C0",
+      "end": "U+105FF",
+      "size": 64
+    },
+    {
+      "name": "Linear A",
+      "start": "U+10600",
+      "end": "U+1077F",
+      "size": 384
+    },
+    {
+      "name": "Latin Extended-F",
+      "start": "U+10780",
+      "end": "U+107BF",
+      "size": 64
+    },
+    {
+      "name": "Cypriot Syllabary",
+      "start": "U+10800",
+      "end": "U+1083F",
+      "size": 64
+    },
+    {
+      "name": "Imperial Aramaic",
+      "start": "U+10840",
+      "end": "U+1085F",
+      "size": 32
+    },
+    {
+      "name": "Palmyrene",
+      "start": "U+10860",
+      "end": "U+1087F",
+      "size": 32
+    },
+    {
+      "name": "Nabataean",
+      "start": "U+10880",
+      "end": "U+108AF",
+      "size": 48
+    },
+    {
+      "name": "Hatran",
+      "start": "U+108E0",
+      "end": "U+108FF",
+      "size": 32
+    },
+    {
+      "name": "Phoenician",
+      "start": "U+10900",
+      "end": "U+1091F",
+      "size": 32
+    },
+    {
+      "name": "Lydian",
+      "start": "U+10920",
+      "end": "U+1093F",
+      "size": 32
+    },
+    {
+      "name": "Sidetic",
+      "start": "U+10940",
+      "end": "U+1095F",
+      "size": 32
+    },
+    {
+      "name": "Meroitic Hieroglyphs",
+      "start": "U+10980",
+      "end": "U+1099F",
+      "size": 32
+    },
+    {
+      "name": "Meroitic Cursive",
+      "start": "U+109A0",
+      "end": "U+109FF",
+      "size": 96
+    },
+    {
+      "name": "Kharoshthi",
+      "start": "U+10A00",
+      "end": "U+10A5F",
+      "size": 96
+    },
+    {
+      "name": "Old South Arabian",
+      "start": "U+10A60",
+      "end": "U+10A7F",
+      "size": 32
+    },
+    {
+      "name": "Old North Arabian",
+      "start": "U+10A80",
+      "end": "U+10A9F",
+      "size": 32
+    },
+    {
+      "name": "Manichaean",
+      "start": "U+10AC0",
+      "end": "U+10AFF",
+      "size": 64
+    },
+    {
+      "name": "Avestan",
+      "start": "U+10B00",
+      "end": "U+10B3F",
+      "size": 64
+    },
+    {
+      "name": "Inscriptional Parthian",
+      "start": "U+10B40",
+      "end": "U+10B5F",
+      "size": 32
+    },
+    {
+      "name": "Inscriptional Pahlavi",
+      "start": "U+10B60",
+      "end": "U+10B7F",
+      "size": 32
+    },
+    {
+      "name": "Psalter Pahlavi",
+      "start": "U+10B80",
+      "end": "U+10BAF",
+      "size": 48
+    },
+    {
+      "name": "Old Turkic",
+      "start": "U+10C00",
+      "end": "U+10C4F",
+      "size": 80
+    },
+    {
+      "name": "Old Hungarian",
+      "start": "U+10C80",
+      "end": "U+10CFF",
+      "size": 128
+    },
+    {
+      "name": "Hanifi Rohingya",
+      "start": "U+10D00",
+      "end": "U+10D3F",
+      "size": 64
+    },
+    {
+      "name": "Garay",
+      "start": "U+10D40",
+      "end": "U+10D8F",
+      "size": 80
+    },
+    {
+      "name": "Rumi Numeral Symbols",
+      "start": "U+10E60",
+      "end": "U+10E7F",
+      "size": 32
+    },
+    {
+      "name": "Yezidi",
+      "start": "U+10E80",
+      "end": "U+10EBF",
+      "size": 64
+    },
+    {
+      "name": "Arabic Extended-C",
+      "start": "U+10EC0",
+      "end": "U+10EFF",
+      "size": 64
+    },
+    {
+      "name": "Old Sogdian",
+      "start": "U+10F00",
+      "end": "U+10F2F",
+      "size": 48
+    },
+    {
+      "name": "Sogdian",
+      "start": "U+10F30",
+      "end": "U+10F6F",
+      "size": 64
+    },
+    {
+      "name": "Old Uyghur",
+      "start": "U+10F70",
+      "end": "U+10FAF",
+      "size": 64
+    },
+    {
+      "name": "Chorasmian",
+      "start": "U+10FB0",
+      "end": "U+10FDF",
+      "size": 48
+    },
+    {
+      "name": "Elymaic",
+      "start": "U+10FE0",
+      "end": "U+10FFF",
+      "size": 32
+    },
+    {
+      "name": "Brahmi",
+      "start": "U+11000",
+      "end": "U+1107F",
+      "size": 128
+    },
+    {
+      "name": "Kaithi",
+      "start": "U+11080",
+      "end": "U+110CF",
+      "size": 80
+    },
+    {
+      "name": "Sora Sompeng",
+      "start": "U+110D0",
+      "end": "U+110FF",
+      "size": 48
+    },
+    {
+      "name": "Chakma",
+      "start": "U+11100",
+      "end": "U+1114F",
+      "size": 80
+    },
+    {
+      "name": "Mahajani",
+      "start": "U+11150",
+      "end": "U+1117F",
+      "size": 48
+    },
+    {
+      "name": "Sharada",
+      "start": "U+11180",
+      "end": "U+111DF",
+      "size": 96
+    },
+    {
+      "name": "Sinhala Archaic Numbers",
+      "start": "U+111E0",
+      "end": "U+111FF",
+      "size": 32
+    },
+    {
+      "name": "Khojki",
+      "start": "U+11200",
+      "end": "U+1124F",
+      "size": 80
+    },
+    {
+      "name": "Multani",
+      "start": "U+11280",
+      "end": "U+112AF",
+      "size": 48
+    },
+    {
+      "name": "Khudawadi",
+      "start": "U+112B0",
+      "end": "U+112FF",
+      "size": 80
+    },
+    {
+      "name": "Grantha",
+      "start": "U+11300",
+      "end": "U+1137F",
+      "size": 128
+    },
+    {
+      "name": "Tulu-Tigalari",
+      "start": "U+11380",
+      "end": "U+113FF",
+      "size": 128
+    },
+    {
+      "name": "Newa",
+      "start": "U+11400",
+      "end": "U+1147F",
+      "size": 128
+    },
+    {
+      "name": "Tirhuta",
+      "start": "U+11480",
+      "end": "U+114DF",
+      "size": 96
+    },
+    {
+      "name": "Siddham",
+      "start": "U+11580",
+      "end": "U+115FF",
+      "size": 128
+    },
+    {
+      "name": "Modi",
+      "start": "U+11600",
+      "end": "U+1165F",
+      "size": 96
+    },
+    {
+      "name": "Mongolian Supplement",
+      "start": "U+11660",
+      "end": "U+1167F",
+      "size": 32
+    },
+    {
+      "name": "Takri",
+      "start": "U+11680",
+      "end": "U+116CF",
+      "size": 80
+    },
+    {
+      "name": "Myanmar Extended-C",
+      "start": "U+116D0",
+      "end": "U+116FF",
+      "size": 48
+    },
+    {
+      "name": "Ahom",
+      "start": "U+11700",
+      "end": "U+1174F",
+      "size": 80
+    },
+    {
+      "name": "Dogra",
+      "start": "U+11800",
+      "end": "U+1184F",
+      "size": 80
+    },
+    {
+      "name": "Warang Citi",
+      "start": "U+118A0",
+      "end": "U+118FF",
+      "size": 96
+    },
+    {
+      "name": "Dives Akuru",
+      "start": "U+11900",
+      "end": "U+1195F",
+      "size": 96
+    },
+    {
+      "name": "Nandinagari",
+      "start": "U+119A0",
+      "end": "U+119FF",
+      "size": 96
+    },
+    {
+      "name": "Zanabazar Square",
+      "start": "U+11A00",
+      "end": "U+11A4F",
+      "size": 80
+    },
+    {
+      "name": "Soyombo",
+      "start": "U+11A50",
+      "end": "U+11AAF",
+      "size": 96
+    },
+    {
+      "name": "Unified Canadian Aboriginal Syllabics Extended-A",
+      "start": "U+11AB0",
+      "end": "U+11ABF",
+      "size": 16
+    },
+    {
+      "name": "Pau Cin Hau",
+      "start": "U+11AC0",
+      "end": "U+11AFF",
+      "size": 64
+    },
+    {
+      "name": "Devanagari Extended-A",
+      "start": "U+11B00",
+      "end": "U+11B5F",
+      "size": 96
+    },
+    {
+      "name": "Sharada Supplement",
+      "start": "U+11B60",
+      "end": "U+11B7F",
+      "size": 32
+    },
+    {
+      "name": "Sunuwar",
+      "start": "U+11BC0",
+      "end": "U+11BFF",
+      "size": 64
+    },
+    {
+      "name": "Bhaiksuki",
+      "start": "U+11C00",
+      "end": "U+11C6F",
+      "size": 112
+    },
+    {
+      "name": "Marchen",
+      "start": "U+11C70",
+      "end": "U+11CBF",
+      "size": 80
+    },
+    {
+      "name": "Masaram Gondi",
+      "start": "U+11D00",
+      "end": "U+11D5F",
+      "size": 96
+    },
+    {
+      "name": "Gunjala Gondi",
+      "start": "U+11D60",
+      "end": "U+11DAF",
+      "size": 80
+    },
+    {
+      "name": "Tolong Siki",
+      "start": "U+11DB0",
+      "end": "U+11DEF",
+      "size": 64
+    },
+    {
+      "name": "Makasar",
+      "start": "U+11EE0",
+      "end": "U+11EFF",
+      "size": 32
+    },
+    {
+      "name": "Kawi",
+      "start": "U+11F00",
+      "end": "U+11F5F",
+      "size": 96
+    },
+    {
+      "name": "Lisu Supplement",
+      "start": "U+11FB0",
+      "end": "U+11FBF",
+      "size": 16
+    },
+    {
+      "name": "Tamil Supplement",
+      "start": "U+11FC0",
+      "end": "U+11FFF",
+      "size": 64
+    },
+    {
+      "name": "Cuneiform",
+      "start": "U+12000",
+      "end": "U+123FF",
+      "size": 1024
+    },
+    {
+      "name": "Cuneiform Numbers and Punctuation",
+      "start": "U+12400",
+      "end": "U+1247F",
+      "size": 128
+    },
+    {
+      "name": "Early Dynastic Cuneiform",
+      "start": "U+12480",
+      "end": "U+1254F",
+      "size": 208
+    },
+    {
+      "name": "Cypro-Minoan",
+      "start": "U+12F90",
+      "end": "U+12FFF",
+      "size": 112
+    },
+    {
+      "name": "Egyptian Hieroglyphs",
+      "start": "U+13000",
+      "end": "U+1342F",
+      "size": 1072
+    },
+    {
+      "name": "Egyptian Hieroglyph Format Controls",
+      "start": "U+13430",
+      "end": "U+1345F",
+      "size": 48
+    },
+    {
+      "name": "Egyptian Hieroglyphs Extended-A",
+      "start": "U+13460",
+      "end": "U+143FF",
+      "size": 4000
+    },
+    {
+      "name": "Anatolian Hieroglyphs",
+      "start": "U+14400",
+      "end": "U+1467F",
+      "size": 640
+    },
+    {
+      "name": "Gurung Khema",
+      "start": "U+16100",
+      "end": "U+1613F",
+      "size": 64
+    },
+    {
+      "name": "Bamum Supplement",
+      "start": "U+16800",
+      "end": "U+16A3F",
+      "size": 576
+    },
+    {
+      "name": "Mro",
+      "start": "U+16A40",
+      "end": "U+16A6F",
+      "size": 48
+    },
+    {
+      "name": "Tangsa",
+      "start": "U+16A70",
+      "end": "U+16ACF",
+      "size": 96
+    },
+    {
+      "name": "Bassa Vah",
+      "start": "U+16AD0",
+      "end": "U+16AFF",
+      "size": 48
+    },
+    {
+      "name": "Pahawh Hmong",
+      "start": "U+16B00",
+      "end": "U+16B8F",
+      "size": 144
+    },
+    {
+      "name": "Kirat Rai",
+      "start": "U+16D40",
+      "end": "U+16D7F",
+      "size": 64
+    },
+    {
+      "name": "Medefaidrin",
+      "start": "U+16E40",
+      "end": "U+16E9F",
+      "size": 96
+    },
+    {
+      "name": "Beria Erfe",
+      "start": "U+16EA0",
+      "end": "U+16EDF",
+      "size": 64
+    },
+    {
+      "name": "Miao",
+      "start": "U+16F00",
+      "end": "U+16F9F",
+      "size": 160
+    },
+    {
+      "name": "Ideographic Symbols and Punctuation",
+      "start": "U+16FE0",
+      "end": "U+16FFF",
+      "size": 32
+    },
+    {
+      "name": "Tangut",
+      "start": "U+17000",
+      "end": "U+187FF",
+      "size": 6144
+    },
+    {
+      "name": "Tangut Components",
+      "start": "U+18800",
+      "end": "U+18AFF",
+      "size": 768
+    },
+    {
+      "name": "Khitan Small Script",
+      "start": "U+18B00",
+      "end": "U+18CFF",
+      "size": 512
+    },
+    {
+      "name": "Tangut Supplement",
+      "start": "U+18D00",
+      "end": "U+18D7F",
+      "size": 128
+    },
+    {
+      "name": "Tangut Components Supplement",
+      "start": "U+18D80",
+      "end": "U+18DFF",
+      "size": 128
+    },
+    {
+      "name": "Kana Extended-B",
+      "start": "U+1AFF0",
+      "end": "U+1AFFF",
+      "size": 16
+    },
+    {
+      "name": "Kana Supplement",
+      "start": "U+1B000",
+      "end": "U+1B0FF",
+      "size": 256
+    },
+    {
+      "name": "Kana Extended-A",
+      "start": "U+1B100",
+      "end": "U+1B12F",
+      "size": 48
+    },
+    {
+      "name": "Small Kana Extension",
+      "start": "U+1B130",
+      "end": "U+1B16F",
+      "size": 64
+    },
+    {
+      "name": "Nushu",
+      "start": "U+1B170",
+      "end": "U+1B2FF",
+      "size": 400
+    },
+    {
+      "name": "Duployan",
+      "start": "U+1BC00",
+      "end": "U+1BC9F",
+      "size": 160
+    },
+    {
+      "name": "Shorthand Format Controls",
+      "start": "U+1BCA0",
+      "end": "U+1BCAF",
+      "size": 16
+    },
+    {
+      "name": "Symbols for Legacy Computing Supplement",
+      "start": "U+1CC00",
+      "end": "U+1CEBF",
+      "size": 704
+    },
+    {
+      "name": "Miscellaneous Symbols Supplement",
+      "start": "U+1CEC0",
+      "end": "U+1CEFF",
+      "size": 64
+    },
+    {
+      "name": "Znamenny Musical Notation",
+      "start": "U+1CF00",
+      "end": "U+1CFCF",
+      "size": 208
+    },
+    {
+      "name": "Byzantine Musical Symbols",
+      "start": "U+1D000",
+      "end": "U+1D0FF",
+      "size": 256
+    },
+    {
+      "name": "Musical Symbols",
+      "start": "U+1D100",
+      "end": "U+1D1FF",
+      "size": 256
+    },
+    {
+      "name": "Ancient Greek Musical Notation",
+      "start": "U+1D200",
+      "end": "U+1D24F",
+      "size": 80
+    },
+    {
+      "name": "Kaktovik Numerals",
+      "start": "U+1D2C0",
+      "end": "U+1D2DF",
+      "size": 32
+    },
+    {
+      "name": "Mayan Numerals",
+      "start": "U+1D2E0",
+      "end": "U+1D2FF",
+      "size": 32
+    },
+    {
+      "name": "Tai Xuan Jing Symbols",
+      "start": "U+1D300",
+      "end": "U+1D35F",
+      "size": 96
+    },
+    {
+      "name": "Counting Rod Numerals",
+      "start": "U+1D360",
+      "end": "U+1D37F",
+      "size": 32
+    },
+    {
+      "name": "Mathematical Alphanumeric Symbols",
+      "start": "U+1D400",
+      "end": "U+1D7FF",
+      "size": 1024
+    },
+    {
+      "name": "Sutton SignWriting",
+      "start": "U+1D800",
+      "end": "U+1DAAF",
+      "size": 688
+    },
+    {
+      "name": "Latin Extended-G",
+      "start": "U+1DF00",
+      "end": "U+1DFFF",
+      "size": 256
+    },
+    {
+      "name": "Glagolitic Supplement",
+      "start": "U+1E000",
+      "end": "U+1E02F",
+      "size": 48
+    },
+    {
+      "name": "Cyrillic Extended-D",
+      "start": "U+1E030",
+      "end": "U+1E08F",
+      "size": 96
+    },
+    {
+      "name": "Nyiakeng Puachue Hmong",
+      "start": "U+1E100",
+      "end": "U+1E14F",
+      "size": 80
+    },
+    {
+      "name": "Toto",
+      "start": "U+1E290",
+      "end": "U+1E2BF",
+      "size": 48
+    },
+    {
+      "name": "Wancho",
+      "start": "U+1E2C0",
+      "end": "U+1E2FF",
+      "size": 64
+    },
+    {
+      "name": "Nag Mundari",
+      "start": "U+1E4D0",
+      "end": "U+1E4FF",
+      "size": 48
+    },
+    {
+      "name": "Ol Onal",
+      "start": "U+1E5D0",
+      "end": "U+1E5FF",
+      "size": 48
+    },
+    {
+      "name": "Tai Yo",
+      "start": "U+1E6C0",
+      "end": "U+1E6FF",
+      "size": 64
+    },
+    {
+      "name": "Ethiopic Extended-B",
+      "start": "U+1E7E0",
+      "end": "U+1E7FF",
+      "size": 32
+    },
+    {
+      "name": "Mende Kikakui",
+      "start": "U+1E800",
+      "end": "U+1E8DF",
+      "size": 224
+    },
+    {
+      "name": "Adlam",
+      "start": "U+1E900",
+      "end": "U+1E95F",
+      "size": 96
+    },
+    {
+      "name": "Indic Siyaq Numbers",
+      "start": "U+1EC70",
+      "end": "U+1ECBF",
+      "size": 80
+    },
+    {
+      "name": "Ottoman Siyaq Numbers",
+      "start": "U+1ED00",
+      "end": "U+1ED4F",
+      "size": 80
+    },
+    {
+      "name": "Arabic Mathematical Alphabetic Symbols",
+      "start": "U+1EE00",
+      "end": "U+1EEFF",
+      "size": 256
+    },
+    {
+      "name": "Mahjong Tiles",
+      "start": "U+1F000",
+      "end": "U+1F02F",
+      "size": 48
+    },
+    {
+      "name": "Domino Tiles",
+      "start": "U+1F030",
+      "end": "U+1F09F",
+      "size": 112
+    },
+    {
+      "name": "Playing Cards",
+      "start": "U+1F0A0",
+      "end": "U+1F0FF",
+      "size": 96
+    },
+    {
+      "name": "Enclosed Alphanumeric Supplement",
+      "start": "U+1F100",
+      "end": "U+1F1FF",
+      "size": 256
+    },
+    {
+      "name": "Enclosed Ideographic Supplement",
+      "start": "U+1F200",
+      "end": "U+1F2FF",
+      "size": 256
+    },
+    {
+      "name": "Miscellaneous Symbols and Pictographs",
+      "start": "U+1F300",
+      "end": "U+1F5FF",
+      "size": 768
+    },
+    {
+      "name": "Emoticons",
+      "start": "U+1F600",
+      "end": "U+1F64F",
+      "size": 80
+    },
+    {
+      "name": "Ornamental Dingbats",
+      "start": "U+1F650",
+      "end": "U+1F67F",
+      "size": 48
+    },
+    {
+      "name": "Transport and Map Symbols",
+      "start": "U+1F680",
+      "end": "U+1F6FF",
+      "size": 128
+    },
+    {
+      "name": "Alchemical Symbols",
+      "start": "U+1F700",
+      "end": "U+1F77F",
+      "size": 128
+    },
+    {
+      "name": "Geometric Shapes Extended",
+      "start": "U+1F780",
+      "end": "U+1F7FF",
+      "size": 128
+    },
+    {
+      "name": "Supplemental Arrows-C",
+      "start": "U+1F800",
+      "end": "U+1F8FF",
+      "size": 256
+    },
+    {
+      "name": "Supplemental Symbols and Pictographs",
+      "start": "U+1F900",
+      "end": "U+1F9FF",
+      "size": 256
+    },
+    {
+      "name": "Chess Symbols",
+      "start": "U+1FA00",
+      "end": "U+1FA6F",
+      "size": 112
+    },
+    {
+      "name": "Symbols and Pictographs Extended-A",
+      "start": "U+1FA70",
+      "end": "U+1FAFF",
+      "size": 144
+    },
+    {
+      "name": "Symbols for Legacy Computing",
+      "start": "U+1FB00",
+      "end": "U+1FBFF",
+      "size": 256
+    },
+    {
+      "name": "CJK Unified Ideographs Extension B",
+      "start": "U+20000",
+      "end": "U+2A6DF",
+      "size": 42720
+    },
+    {
+      "name": "CJK Unified Ideographs Extension C",
+      "start": "U+2A700",
+      "end": "U+2B73F",
+      "size": 4160
+    },
+    {
+      "name": "CJK Unified Ideographs Extension D",
+      "start": "U+2B740",
+      "end": "U+2B81F",
+      "size": 224
+    },
+    {
+      "name": "CJK Unified Ideographs Extension E",
+      "start": "U+2B820",
+      "end": "U+2CEAF",
+      "size": 5776
+    },
+    {
+      "name": "CJK Unified Ideographs Extension F",
+      "start": "U+2CEB0",
+      "end": "U+2EBEF",
+      "size": 7488
+    },
+    {
+      "name": "CJK Unified Ideographs Extension I",
+      "start": "U+2EBF0",
+      "end": "U+2EE5F",
+      "size": 624
+    },
+    {
+      "name": "CJK Compatibility Ideographs Supplement",
+      "start": "U+2F800",
+      "end": "U+2FA1F",
+      "size": 544
+    },
+    {
+      "name": "CJK Unified Ideographs Extension G",
+      "start": "U+30000",
+      "end": "U+3134F",
+      "size": 4944
+    },
+    {
+      "name": "CJK Unified Ideographs Extension H",
+      "start": "U+31350",
+      "end": "U+323AF",
+      "size": 4192
+    },
+    {
+      "name": "CJK Unified Ideographs Extension J",
+      "start": "U+323B0",
+      "end": "U+3347F",
+      "size": 4304
+    },
+    {
+      "name": "Tags",
+      "start": "U+E0000",
+      "end": "U+E007F",
+      "size": 128
+    },
+    {
+      "name": "Variation Selectors Supplement",
+      "start": "U+E0100",
+      "end": "U+E01EF",
+      "size": 240
+    },
+    {
+      "name": "Supplementary Private Use Area-A",
+      "start": "U+F0000",
+      "end": "U+FFFFF",
+      "size": 65536
+    },
+    {
+      "name": "Supplementary Private Use Area-B",
+      "start": "U+100000",
+      "end": "U+10FFFF",
+      "size": 65536
+    }
+  ]
+}

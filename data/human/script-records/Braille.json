@@ -1,0 +1,15 @@
+{
+  "name": "Braille",
+  "iso15924": "Brai",
+  "ranges": [
+    [
+      "U+2800",
+      "U+28FF"
+    ]
+  ],
+  "letters": 0,
+  "marks": 0,
+  "numbers": 0,
+  "sample": [],
+  "codepoints": 256
+}

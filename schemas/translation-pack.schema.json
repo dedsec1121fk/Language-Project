@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"Language Project exact translation pack","type":"object","required":["scope","languages","phrases"],"properties":{"scope":{"type":"string"},"languages":{"type":"array","items":{"type":"string"}},"phrases":{"type":"object"}}}

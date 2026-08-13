@@ -1,0 +1,59 @@
+{
+  "name": "SignWriting",
+  "iso15924": "Sgnw",
+  "ranges": [
+    [
+      "U+1D800",
+      "U+1D9FF"
+    ],
+    [
+      "U+1DA00",
+      "U+1DA36"
+    ],
+    [
+      "U+1DA37",
+      "U+1DA3A"
+    ],
+    [
+      "U+1DA3B",
+      "U+1DA6C"
+    ],
+    [
+      "U+1DA6D",
+      "U+1DA74"
+    ],
+    [
+      "U+1DA75",
+      "U+1DA75"
+    ],
+    [
+      "U+1DA76",
+      "U+1DA83"
+    ],
+    [
+      "U+1DA84",
+      "U+1DA84"
+    ],
+    [
+      "U+1DA85",
+      "U+1DA86"
+    ],
+    [
+      "U+1DA87",
+      "U+1DA8B"
+    ],
+    [
+      "U+1DA9B",
+      "U+1DA9F"
+    ],
+    [
+      "U+1DAA1",
+      "U+1DAAF"
+    ]
+  ],
+  "letters": 0,
+  "marks": 127,
+  "numbers": 0,
+  "sample": [],
+  "codepoints": 672
+}

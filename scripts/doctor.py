@@ -13,6 +13,7 @@ from core.toolbox import codec,identify_language
 from core.practical import environment_report,tree_view
 from core.polyglot_ops import status as polyglot_status,FORMAT as POLYGLOT_FORMAT
 from core.langtools import status as langtools_status,selftest as langtools_selftest
+from core.human_language import status as human_status,detect_scripts as human_detect_scripts,encode_bridge as human_encode_bridge,decode_bridge as human_decode_bridge
 
 def check(name,ok,detail=''):
     print(f"{'OK' if ok else 'FAIL':<5} {name:<34} {detail}")
@@ -61,6 +62,10 @@ def main():
             if nts.get('available',0):
                 tr=langtools_selftest(); checks.append(check('Native language tool smoke',tr.get('ok',False),f"{tr.get('passed',0)}/{tr.get('tested',0)}"))
     except Exception as e:checks.append(check('Native multi-language tools',False,str(e)))
+    try:
+        hs=human_status(); sample='Hello κόσμε Привет'; enc=human_encode_bridge(sample,'codepoints'); ok=hs.get('iana_language_records',0)>=8000 and hs.get('glottolog_languoids',0)>=27000 and hs.get('unicode_script_values',0)>=170 and human_decode_bridge(enc,'codepoints')==sample and len(human_detect_scripts(sample).get('scripts',[]))>=3
+        checks.append(check('Offline human Language Vault',ok,f"{hs.get('iana_language_records',0)} IANA / {hs.get('glottolog_languoids',0)} Glottolog / {hs.get('unicode_script_values',0)} scripts"))
+    except Exception as e:checks.append(check('Offline human Language Vault',False,str(e)))
     checks.append(check('Executable registry readable',bool(reg),f'{len(reg)} workers'))
     try:
         cr=subprocess.run([sys.executable,str(ROOT/'scripts'/'termux_coverage_audit.py')],capture_output=True,text=True,timeout=30)
@@ -69,9 +74,11 @@ def main():
     except Exception as e: checks.append(check('Full Termux language coverage',False,str(e)))
     try:
         br=subprocess.run([sys.executable,str(ROOT/'scripts'/'language_balance.py')],capture_output=True,text=True,timeout=30)
-        detail=next((line.strip() for line in br.stdout.splitlines() if line.startswith('Below 0.2%')), 'balance audit')
-        checks.append(check('GitHub language >=0.2% guardrail',br.returncode==0,detail))
-    except Exception as e: checks.append(check('GitHub language >=0.2% guardrail',False,str(e)))
+        lines=br.stdout.splitlines()
+        low=next((line.strip() for line in lines if line.startswith('Below 0.2%')), 'minimum-share audit')
+        py=next((line.strip() for line in lines if line.startswith('Python estimated share:')), 'Python-share audit')
+        checks.append(check('GitHub language balance guardrail',br.returncode==0,f'{low}; {py}'))
+    except Exception as e: checks.append(check('GitHub language balance guardrail',False,str(e)))
     checks.append(check('Verified runtime state present',bool(st),f"{len(st.get('active',[]))} active" if st else 'run setup'))
     if st:
         missing=[x['id'] for x in active if not executable_exists(x['run'])]

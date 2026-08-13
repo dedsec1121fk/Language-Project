@@ -1,0 +1,8 @@
+Glottolog 5.3
+Hammarström, Harald & Forkel, Robert & Haspelmath, Martin & Bank, Sebastian. 2026.
+Glottolog 5.3. Leipzig: Max Planck Institute for Evolutionary Anthropology.
+DOI: 10.5281/zenodo.18840935
+Available online at glottolog.org.
+
+The bundled Glottolog CLDF language table is licensed under Creative Commons Attribution 4.0 International (CC BY 4.0).
+See CC-BY-4.0.txt in this directory.

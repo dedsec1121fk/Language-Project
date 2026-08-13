@@ -1,0 +1,453 @@
+{
+  "version": 1,
+  "symbols": [
+    {
+      "symbol": "!",
+      "canonical": "exclamation mark",
+      "labels": {
+        "en": "exclamation mark",
+        "el": "θαυμαστικό"
+      }
+    },
+    {
+      "symbol": "\"",
+      "canonical": "double quote",
+      "labels": {
+        "en": "double quote",
+        "el": "διπλά εισαγωγικά"
+      }
+    },
+    {
+      "symbol": "#",
+      "canonical": "hash / number sign",
+      "labels": {
+        "en": "hash / number sign",
+        "el": "δίεση / σύμβολο αριθμού"
+      }
+    },
+    {
+      "symbol": "$",
+      "canonical": "dollar sign",
+      "labels": {
+        "en": "dollar sign",
+        "el": "σύμβολο δολαρίου"
+      }
+    },
+    {
+      "symbol": "%",
+      "canonical": "percent sign",
+      "labels": {
+        "en": "percent sign",
+        "el": "σύμβολο ποσοστού"
+      }
+    },
+    {
+      "symbol": "&",
+      "canonical": "ampersand",
+      "labels": {
+        "en": "ampersand",
+        "el": "σύμβολο και"
+      }
+    },
+    {
+      "symbol": "'",
+      "canonical": "single quote",
+      "labels": {
+        "en": "single quote",
+        "el": "μονό εισαγωγικό"
+      }
+    },
+    {
+      "symbol": "(",
+      "canonical": "open parenthesis",
+      "labels": {
+        "en": "open parenthesis",
+        "el": "αριστερή παρένθεση"
+      }
+    },
+    {
+      "symbol": ")",
+      "canonical": "close parenthesis",
+      "labels": {
+        "en": "close parenthesis",
+        "el": "δεξιά παρένθεση"
+      }
+    },
+    {
+      "symbol": "*",
+      "canonical": "asterisk",
+      "labels": {
+        "en": "asterisk",
+        "el": "αστερίσκος"
+      }
+    },
+    {
+      "symbol": "+",
+      "canonical": "plus sign",
+      "labels": {
+        "en": "plus sign",
+        "el": "σύμβολο συν"
+      }
+    },
+    {
+      "symbol": ",",
+      "canonical": "comma",
+      "labels": {
+        "en": "comma",
+        "el": "κόμμα"
+      }
+    },
+    {
+      "symbol": "-",
+      "canonical": "hyphen / minus",
+      "labels": {
+        "en": "hyphen / minus",
+        "el": "παύλα / μείον"
+      }
+    },
+    {
+      "symbol": ".",
+      "canonical": "dot / period",
+      "labels": {
+        "en": "dot / period",
+        "el": "τελεία"
+      }
+    },
+    {
+      "symbol": "/",
+      "canonical": "forward slash",
+      "labels": {
+        "en": "forward slash",
+        "el": "κάθετος"
+      }
+    },
+    {
+      "symbol": ":",
+      "canonical": "colon",
+      "labels": {
+        "en": "colon",
+        "el": "άνω και κάτω τελεία"
+      }
+    },
+    {
+      "symbol": ";",
+      "canonical": "semicolon",
+      "labels": {
+        "en": "semicolon",
+        "el": "ελληνικό ερωτηματικό / semicolon"
+      }
+    },
+    {
+      "symbol": "<",
+      "canonical": "less-than sign",
+      "labels": {
+        "en": "less-than sign",
+        "el": "μικρότερο από"
+      }
+    },
+    {
+      "symbol": "=",
+      "canonical": "equals sign",
+      "labels": {
+        "en": "equals sign",
+        "el": "ίσο"
+      }
+    },
+    {
+      "symbol": ">",
+      "canonical": "greater-than sign",
+      "labels": {
+        "en": "greater-than sign",
+        "el": "μεγαλύτερο από"
+      }
+    },
+    {
+      "symbol": "?",
+      "canonical": "question mark",
+      "labels": {
+        "en": "question mark",
+        "el": "ερωτηματικό"
+      }
+    },
+    {
+      "symbol": "@",
+      "canonical": "at sign",
+      "labels": {
+        "en": "at sign",
+        "el": "παπάκι"
+      }
+    },
+    {
+      "symbol": "[",
+      "canonical": "open square bracket",
+      "labels": {
+        "en": "open square bracket",
+        "el": "αριστερή αγκύλη"
+      }
+    },
+    {
+      "symbol": "\\",
+      "canonical": "backslash",
+      "labels": {
+        "en": "backslash",
+        "el": "ανάποδη κάθετος"
+      }
+    },
+    {
+      "symbol": "]",
+      "canonical": "close square bracket",
+      "labels": {
+        "en": "close square bracket",
+        "el": "δεξιά αγκύλη"
+      }
+    },
+    {
+      "symbol": "^",
+      "canonical": "caret",
+      "labels": {
+        "en": "caret",
+        "el": "καρέ"
+      }
+    },
+    {
+      "symbol": "_",
+      "canonical": "underscore",
+      "labels": {
+        "en": "underscore",
+        "el": "κάτω παύλα"
+      }
+    },
+    {
+      "symbol": "`",
+      "canonical": "backtick",
+      "labels": {
+        "en": "backtick",
+        "el": "ανάστροφη απόστροφος"
+      }
+    },
+    {
+      "symbol": "{",
+      "canonical": "open curly brace",
+      "labels": {
+        "en": "open curly brace",
+        "el": "αριστερό άγκιστρο"
+      }
+    },
+    {
+      "symbol": "|",
+      "canonical": "vertical bar / pipe",
+      "labels": {
+        "en": "vertical bar / pipe",
+        "el": "κατακόρυφη γραμμή / pipe"
+      }
+    },
+    {
+      "symbol": "}",
+      "canonical": "close curly brace",
+      "labels": {
+        "en": "close curly brace",
+        "el": "δεξί άγκιστρο"
+      }
+    },
+    {
+      "symbol": "~",
+      "canonical": "tilde",
+      "labels": {
+        "en": "tilde",
+        "el": "περισπωμένη"
+      }
+    },
+    {
+      "symbol": "==",
+      "canonical": "equality operator",
+      "labels": {
+        "en": "equality operator",
+        "el": "equality operator"
+      }
+    },
+    {
+      "symbol": "!=",
+      "canonical": "not-equal operator",
+      "labels": {
+        "en": "not-equal operator",
+        "el": "not-equal operator"
+      }
+    },
+    {
+      "symbol": "<=",
+      "canonical": "less-than-or-equal operator",
+      "labels": {
+        "en": "less-than-or-equal operator",
+        "el": "less-than-or-equal operator"
+      }
+    },
+    {
+      "symbol": ">=",
+      "canonical": "greater-than-or-equal operator",
+      "labels": {
+        "en": "greater-than-or-equal operator",
+        "el": "greater-than-or-equal operator"
+      }
+    },
+    {
+      "symbol": "->",
+      "canonical": "arrow operator",
+      "labels": {
+        "en": "arrow operator",
+        "el": "arrow operator"
+      }
+    },
+    {
+      "symbol": "=>",
+      "canonical": "fat-arrow operator",
+      "labels": {
+        "en": "fat-arrow operator",
+        "el": "fat-arrow operator"
+      }
+    },
+    {
+      "symbol": "::",
+      "canonical": "double-colon / scope operator",
+      "labels": {
+        "en": "double-colon / scope operator",
+        "el": "double-colon / scope operator"
+      }
+    },
+    {
+      "symbol": "&&",
+      "canonical": "logical AND",
+      "labels": {
+        "en": "logical AND",
+        "el": "logical AND"
+      }
+    },
+    {
+      "symbol": "||",
+      "canonical": "logical OR",
+      "labels": {
+        "en": "logical OR",
+        "el": "logical OR"
+      }
+    },
+    {
+      "symbol": "++",
+      "canonical": "increment operator",
+      "labels": {
+        "en": "increment operator",
+        "el": "increment operator"
+      }
+    },
+    {
+      "symbol": "--",
+      "canonical": "decrement operator",
+      "labels": {
+        "en": "decrement operator",
+        "el": "decrement operator"
+      }
+    },
+    {
+      "symbol": "+=",
+      "canonical": "add-and-assign",
+      "labels": {
+        "en": "add-and-assign",
+        "el": "add-and-assign"
+      }
+    },
+    {
+      "symbol": "-=",
+      "canonical": "subtract-and-assign",
+      "labels": {
+        "en": "subtract-and-assign",
+        "el": "subtract-and-assign"
+      }
+    },
+    {
+      "symbol": "*=",
+      "canonical": "multiply-and-assign",
+      "labels": {
+        "en": "multiply-and-assign",
+        "el": "multiply-and-assign"
+      }
+    },
+    {
+      "symbol": "/=",
+      "canonical": "divide-and-assign",
+      "labels": {
+        "en": "divide-and-assign",
+        "el": "divide-and-assign"
+      }
+    },
+    {
+      "symbol": "%=",
+      "canonical": "modulo-and-assign",
+      "labels": {
+        "en": "modulo-and-assign",
+        "el": "modulo-and-assign"
+      }
+    },
+    {
+      "symbol": "<<",
+      "canonical": "left shift",
+      "labels": {
+        "en": "left shift",
+        "el": "left shift"
+      }
+    },
+    {
+      "symbol": ">>",
+      "canonical": "right shift",
+      "labels": {
+        "en": "right shift",
+        "el": "right shift"
+      }
+    },
+    {
+      "symbol": "**",
+      "canonical": "power / double-asterisk",
+      "labels": {
+        "en": "power / double-asterisk",
+        "el": "power / double-asterisk"
+      }
+    },
+    {
+      "symbol": "//",
+      "canonical": "double-slash",
+      "labels": {
+        "en": "double-slash",
+        "el": "double-slash"
+      }
+    },
+    {
+      "symbol": "/*",
+      "canonical": "block-comment open",
+      "labels": {
+        "en": "block-comment open",
+        "el": "block-comment open"
+      }
+    },
+    {
+      "symbol": "*/",
+      "canonical": "block-comment close",
+      "labels": {
+        "en": "block-comment close",
+        "el": "block-comment close"
+      }
+    },
+    {
+      "symbol": "<!--",
+      "canonical": "HTML comment open",
+      "labels": {
+        "en": "HTML comment open",
+        "el": "HTML comment open"
+      }
+    },
+    {
+      "symbol": "-->",
+      "canonical": "HTML comment close",
+      "labels": {
+        "en": "HTML comment close",
+        "el": "HTML comment close"
+      }
+    }
+  ]
+}

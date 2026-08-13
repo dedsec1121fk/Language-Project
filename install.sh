@@ -122,6 +122,20 @@ exec python "$ENTRY" langtools "\$@"
 EOF
 chmod +x "$PREFIX/bin/langtool"
 
+cat > "$PREFIX/bin/language-vault" <<EOF
+#!/data/data/com.termux/files/usr/bin/bash
+export LANGUAGE_PROJECT_HOME="$BASE"
+exec python "$ENTRY" human "\$@"
+EOF
+chmod +x "$PREFIX/bin/language-vault"
+
+cat > "$PREFIX/bin/langbridge" <<EOF
+#!/data/data/com.termux/files/usr/bin/bash
+export LANGUAGE_PROJECT_HOME="$BASE"
+exec python "$ENTRY" human "\$@"
+EOF
+chmod +x "$PREFIX/bin/langbridge"
+
 cat > "$PREFIX/bin/language-project-home" <<EOF
 #!/data/data/com.termux/files/usr/bin/bash
 printf '%s\n' "$BASE"
@@ -135,6 +149,8 @@ echo "Runtime/data home: $BASE"
 echo "Run: language-project"
 echo "Alias: language"
 echo "Native tools: langtool list"
+echo "Human language vault: language-vault status"
+echo "Text/programming bridge: langbridge encode codepoints --text 'Γεια'"
 echo "Storage path: language-project-home"
 echo "Workspace report: language-project langtools workspace-report ~/YourProject --output \"$BASE/reports/workspace.json\""
 

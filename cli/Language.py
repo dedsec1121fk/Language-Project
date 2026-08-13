@@ -26,6 +26,7 @@ from core.polyglot_practical import compare_paths as polyglot_compare,mirror_dir
 from core.langtools import status as langtools_status,run_tool as langtool_run,recommend as langtool_recommend,project_report as langtool_project_report,file_report as langtool_file_report,data_report as langtool_data_report,auto_report as langtool_auto_report,selftest as langtools_selftest,workspace_report as langtool_workspace_report
 from core.language_modules import list_modules,module_info,verify_modules,demo_module
 from core.paths import DATA_ROOT, ensure_data_tree
+from core.human_language import status as human_status,languages_search as human_languages_search,language_show as human_language_show,scripts_list as human_scripts_list,script_show as human_script_show,char_info as human_char_info,unicode_search as human_unicode_search,detect_scripts as human_detect_scripts,alphabet_chars as human_alphabet_chars,normalize as human_normalize,encode_bridge as human_encode_bridge,decode_bridge as human_decode_bridge,symbols_describe as human_symbols_describe,symbols_parse as human_symbols_parse,glossary_status as human_glossary_status,translate as human_translate,transliterate as human_transliterate,morse as human_morse,braille as human_braille,nato as human_nato,text_audit as human_text_audit,languages_for_script as human_languages_for_script,tag_info as human_tag_info,vault_db_stats as human_vault_db_stats,glottolog_search as human_glottolog_search,glottolog_show as human_glottolog_show,codepoint_info as human_codepoint_info,text_from_unicode_names as human_text_from_unicode_names,source_literal as human_source_literal,source_literal_languages as human_source_literal_languages,ascii_table as human_ascii_table
 
 ORDERS=['registry','fastest','random','adaptive-balanced','adaptive-latency','adaptive-throughput','adaptive-stable']
 
@@ -467,6 +468,38 @@ def main():
     sups.add_parser('list');sups.add_parser('status');sups.add_parser('packages');sups.add_parser('balance');sups.add_parser('audit');si=sups.add_parser('install');si.add_argument('ids',nargs='+');sups.add_parser('install-all')
     mod=sp.add_parser('modules',help='Browse, verify, and demo the self-contained executable language modules');mods=mod.add_subparsers(dest='module_cmd')
     mods.add_parser('list');mi=mods.add_parser('info');mi.add_argument('query');md=mods.add_parser('demo');md.add_argument('query');md.add_argument('--timeout',type=int,default=60);mods.add_parser('verify')
+
+    hu=sp.add_parser('human',help='Offline human-language, Unicode, script/alphabet, translation and symbol bridge tools');hus=hu.add_subparsers(dest='human_cmd')
+    hus.add_parser('status')
+    hl=hus.add_parser('languages');hl.add_argument('query',nargs='?',default='');hl.add_argument('--limit',type=int,default=100);hl.add_argument('--no-deprecated',action='store_true')
+    hli=hus.add_parser('language');hli.add_argument('code')
+    hs=hus.add_parser('scripts');hs.add_argument('query',nargs='?',default='');hs.add_argument('--limit',type=int,default=300)
+    hsi=hus.add_parser('script');hsi.add_argument('query')
+    ha=hus.add_parser('alphabet');ha.add_argument('script');ha.add_argument('--limit',type=int,default=500);ha.add_argument('--all',action='store_true',help='include non-letter characters from the script ranges')
+    hd=hus.add_parser('detect-script');hd.add_argument('--text');hd.add_argument('--file')
+    hc=hus.add_parser('char');hc.add_argument('character')
+    hcp=hus.add_parser('codepoint');hcp.add_argument('value')
+    hnt=hus.add_parser('name-to-text');hnt.add_argument('names',help='Unicode names separated by |, or U+XXXX values')
+    hsl=hus.add_parser('source-literal');hsl.add_argument('language',choices=human_source_literal_languages());hsl.add_argument('--text');hsl.add_argument('--file')
+    hus.add_parser('ascii')
+    hq=hus.add_parser('unicode-search');hq.add_argument('query');hq.add_argument('--limit',type=int,default=100)
+    hn=hus.add_parser('normalize');hn.add_argument('--text');hn.add_argument('--file');hn.add_argument('--form',choices=['NFC','NFD','NFKC','NFKD'],default='NFC');hn.add_argument('--output')
+    he=hus.add_parser('encode');he.add_argument('format',choices=['codepoints','unicode','hex','binary','decimal','html','url','json']);he.add_argument('--text');he.add_argument('--file')
+    hde=hus.add_parser('decode');hde.add_argument('format',choices=['codepoints','unicode','hex','binary','decimal','html','url','json']);hde.add_argument('value',nargs='?');hde.add_argument('--file')
+    hsd=hus.add_parser('symbols-describe');hsd.add_argument('--text');hsd.add_argument('--file');hsd.add_argument('--locale',default='en');hsd.add_argument('--plain',action='store_true')
+    hsp=hus.add_parser('symbols-parse');hsp.add_argument('--text');hsp.add_argument('--file');hsp.add_argument('--locale',default='en')
+    htr=hus.add_parser('translate');htr.add_argument('--text',required=True);htr.add_argument('--from',dest='source',default='en');htr.add_argument('--to',dest='target',default='el')
+    hus.add_parser('translation-status')
+    htl=hus.add_parser('transliterate');htl.add_argument('--text',required=True);htl.add_argument('--mode',choices=['ascii','greek-latin','cyrillic-latin','unicode-names','codepoints'],default='ascii')
+    hm=hus.add_parser('morse');hm.add_argument('--text',required=True);hm.add_argument('--decode',action='store_true')
+    hb=hus.add_parser('braille');hb.add_argument('--text',required=True);hb.add_argument('--decode',action='store_true')
+    hna=hus.add_parser('nato');hna.add_argument('--text',required=True)
+    hta=hus.add_parser('text-audit');hta.add_argument('--text');hta.add_argument('--file')
+    hls=hus.add_parser('languages-for-script');hls.add_argument('script');hls.add_argument('--limit',type=int,default=500)
+    htag=hus.add_parser('tag');htag.add_argument('tag')
+    hus.add_parser('db-stats')
+    hgs=hus.add_parser('glottolog-search');hgs.add_argument('query',nargs='?',default='');hgs.add_argument('--level',choices=['family','language','dialect']);hgs.add_argument('--limit',type=int,default=100)
+    hg=hus.add_parser('glottolog');hg.add_argument('code')
     sp.add_parser('home',help='Show the persistent Language Project home folder')
     nw=sp.add_parser('new',help='Create a starter project');nw.add_argument('language',choices=scaffold_languages());nw.add_argument('name');nw.add_argument('--dir',default='.');nw.add_argument('--force',action='store_true')
     ex=sp.add_parser('execute',help='Execute a trusted source file using a local Termux runtime/toolchain');ex.add_argument('source');ex.add_argument('args',nargs='*');ex.add_argument('--timeout',type=int,default=30);ex.add_argument('--stdin-text')
@@ -575,6 +608,48 @@ def main():
             if a.module_cmd=='demo':
                 ensure();r=demo_module(a.query,a.timeout);print(json.dumps(r,indent=2,ensure_ascii=False));return 0 if r['result']['returncode']==0 else r['result']['returncode']
         except Exception as e: print('Module error:',e,file=sys.stderr); return 2
+
+    if a.cmd=='human':
+        try:
+            def _txt(text=None,file=None):
+                return Path(file).expanduser().read_text(encoding='utf-8') if file else (text if text is not None else '')
+            if not a.human_cmd or a.human_cmd=='status':print(json.dumps(human_status(),indent=2,ensure_ascii=False));return 0
+            if a.human_cmd=='languages':print(json.dumps(human_languages_search(a.query,a.limit,not a.no_deprecated),indent=2,ensure_ascii=False));return 0
+            if a.human_cmd=='language':r=human_language_show(a.code);print(json.dumps(r,indent=2,ensure_ascii=False));return 0 if r else 1
+            if a.human_cmd=='scripts':print(json.dumps(human_scripts_list(a.query,a.limit),indent=2,ensure_ascii=False));return 0
+            if a.human_cmd=='script':r=human_script_show(a.query);print(json.dumps(r,indent=2,ensure_ascii=False));return 0 if r else 1
+            if a.human_cmd=='alphabet':print(json.dumps(human_alphabet_chars(a.script,a.limit,not a.all),indent=2,ensure_ascii=False));return 0
+            if a.human_cmd=='detect-script':print(json.dumps(human_detect_scripts(_txt(a.text,a.file)),indent=2,ensure_ascii=False));return 0
+            if a.human_cmd=='char':print(json.dumps(human_char_info(a.character),indent=2,ensure_ascii=False));return 0
+            if a.human_cmd=='codepoint':print(json.dumps(human_codepoint_info(a.value),indent=2,ensure_ascii=False));return 0
+            if a.human_cmd=='name-to-text':print(human_text_from_unicode_names(a.names));return 0
+            if a.human_cmd=='source-literal':print(human_source_literal(_txt(a.text,a.file),a.language));return 0
+            if a.human_cmd=='ascii':print(json.dumps(human_ascii_table(),indent=2,ensure_ascii=False));return 0
+            if a.human_cmd=='unicode-search':print(json.dumps(human_unicode_search(a.query,a.limit),indent=2,ensure_ascii=False));return 0
+            if a.human_cmd=='normalize':
+                out=human_normalize(_txt(a.text,a.file),a.form)
+                if a.output:Path(a.output).expanduser().write_text(out,encoding='utf-8');print('Written:',Path(a.output).expanduser())
+                else:print(out)
+                return 0
+            if a.human_cmd=='encode':print(human_encode_bridge(_txt(a.text,a.file),a.format));return 0
+            if a.human_cmd=='decode':
+                val=Path(a.file).expanduser().read_text(encoding='utf-8') if a.file else (a.value or '')
+                print(human_decode_bridge(val,a.format));return 0
+            if a.human_cmd=='symbols-describe':print(human_symbols_describe(_txt(a.text,a.file),a.locale,'plain' if a.plain else 'brackets'));return 0
+            if a.human_cmd=='symbols-parse':print(human_symbols_parse(_txt(a.text,a.file),a.locale));return 0
+            if a.human_cmd=='translation-status':print(json.dumps(human_glossary_status(),indent=2,ensure_ascii=False));return 0
+            if a.human_cmd=='translate':print(json.dumps(human_translate(a.text,a.source,a.target),indent=2,ensure_ascii=False));return 0
+            if a.human_cmd=='transliterate':print(human_transliterate(a.text,a.mode));return 0
+            if a.human_cmd=='morse':print(human_morse(a.text,a.decode));return 0
+            if a.human_cmd=='braille':print(human_braille(a.text,a.decode));return 0
+            if a.human_cmd=='nato':print(human_nato(a.text));return 0
+            if a.human_cmd=='text-audit':print(json.dumps(human_text_audit(_txt(a.text,a.file)),indent=2,ensure_ascii=False));return 0
+            if a.human_cmd=='languages-for-script':print(json.dumps(human_languages_for_script(a.script,a.limit),indent=2,ensure_ascii=False));return 0
+            if a.human_cmd=='tag':print(json.dumps(human_tag_info(a.tag),indent=2,ensure_ascii=False));return 0
+            if a.human_cmd=='db-stats':print(json.dumps(human_vault_db_stats(),indent=2,ensure_ascii=False));return 0
+            if a.human_cmd=='glottolog-search':print(json.dumps(human_glottolog_search(a.query,a.level,a.limit),indent=2,ensure_ascii=False));return 0
+            if a.human_cmd=='glottolog':r=human_glottolog_show(a.code);print(json.dumps(r,indent=2,ensure_ascii=False));return 0 if r else 1
+        except Exception as e:print('Human-language tool error:',e,file=sys.stderr);return 2
     if a.cmd=='home':
         ensure_data_tree();print(DATA_ROOT);return 0
     if a.cmd=='langtools':

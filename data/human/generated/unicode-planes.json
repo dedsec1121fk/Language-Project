@@ -1,0 +1,104 @@
+[
+  {
+    "plane": 0,
+    "start": "U+000000",
+    "end": "U+00FFFF",
+    "name": "Basic Multilingual Plane"
+  },
+  {
+    "plane": 1,
+    "start": "U+010000",
+    "end": "U+01FFFF",
+    "name": "Supplementary Multilingual Plane"
+  },
+  {
+    "plane": 2,
+    "start": "U+020000",
+    "end": "U+02FFFF",
+    "name": "Supplementary Ideographic Plane"
+  },
+  {
+    "plane": 3,
+    "start": "U+030000",
+    "end": "U+03FFFF",
+    "name": "Tertiary Ideographic Plane"
+  },
+  {
+    "plane": 4,
+    "start": "U+040000",
+    "end": "U+04FFFF",
+    "name": "Plane 4"
+  },
+  {
+    "plane": 5,
+    "start": "U+050000",
+    "end": "U+05FFFF",
+    "name": "Plane 5"
+  },
+  {
+    "plane": 6,
+    "start": "U+060000",
+    "end": "U+06FFFF",
+    "name": "Plane 6"
+  },
+  {
+    "plane": 7,
+    "start": "U+070000",
+    "end": "U+07FFFF",
+    "name": "Plane 7"
+  },
+  {
+    "plane": 8,
+    "start": "U+080000",
+    "end": "U+08FFFF",
+    "name": "Plane 8"
+  },
+  {
+    "plane": 9,
+    "start": "U+090000",
+    "end": "U+09FFFF",
+    "name": "Plane 9"
+  },
+  {
+    "plane": 10,
+    "start": "U+0A0000",
+    "end": "U+0AFFFF",
+    "name": "Plane 10"
+  },
+  {
+    "plane": 11,
+    "start": "U+0B0000",
+    "end": "U+0BFFFF",
+    "name": "Plane 11"
+  },
+  {
+    "plane": 12,
+    "start": "U+0C0000",
+    "end": "U+0CFFFF",
+    "name": "Plane 12"
+  },
+  {
+    "plane": 13,
+    "start": "U+0D0000",
+    "end": "U+0DFFFF",
+    "name": "Plane 13"
+  },
+  {
+    "plane": 14,
+    "start": "U+0E0000",
+    "end": "U+0EFFFF",
+    "name": "Supplementary Special-purpose Plane"
+  },
+  {
+    "plane": 15,
+    "start": "U+0F0000",
+    "end": "U+0FFFFF",
+    "name": "Private Use Plane"
+  },
+  {
+    "plane": 16,
+    "start": "U+100000",
+    "end": "U+10FFFF",
+    "name": "Private Use Plane"
+  }
+]

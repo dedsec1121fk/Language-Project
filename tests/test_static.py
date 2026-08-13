@@ -26,6 +26,7 @@ def main():
     workflow=(ROOT/'.github/workflows/static-checks.yml').read_text()
     assert 'python -m compileall' not in workflow
     assert 'python scripts/check_python_syntax.py' in workflow
+    assert 'python scripts/language_balance.py' in workflow
     assert "PYTHONDONTWRITEBYTECODE: '1'" in workflow
     syntax_checker=(ROOT/'scripts/check_python_syntax.py').read_text()
     assert 'ast.parse' in syntax_checker and 'compileall' not in syntax_checker

@@ -38,6 +38,9 @@ jobs:
           fi
           echo 'No Python bytecode/cache artifacts generated.'
 
+      - name: GitHub language balance
+        run: python scripts/language_balance.py
+
       - name: Project audit
         run: python scripts/audit_project.py
 

@@ -25,11 +25,13 @@ for x in rows:
     d=ROOT/'languages'/lid
     for rel in ('README.md','metadata.json','tools','examples','tests/module.json'):
         if not (d/rel).exists(): errors.append(f'{lid}: missing {rel}')
+    guide=list((d/'tools').glob('termux-field-guide.*'))
+    if not guide: errors.append(f'{lid}: missing Termux field guide source')
     if not x.get('packages'): errors.append(f'{lid}: no Termux package')
     if not x.get('official_package_verified'): errors.append(f'{lid}: official package not verified')
     srcs=[p for p in d.rglob('*') if p.is_file() and p.suffix.lower()==('.'+x.get('extension','').lower().lstrip('.'))]
     if not srcs: errors.append(f'{lid}: no source matching .{x.get("extension","")}')
-    elif sum(p.stat().st_size for p in srcs) < 900: warnings.append(f'{lid}: very small language source footprint')
+    elif sum(p.stat().st_size for p in srcs) < 12000: warnings.append(f'{lid}: language source footprint below 12 KiB balance floor')
 worker=sum(x.get('tier')=='worker' for x in rows)
 native=sum(x.get('tier')=='native-module' for x in rows)
 known=sum(bool(x.get('github_linguist_supported')) for x in rows)

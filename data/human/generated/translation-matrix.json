@@ -1,0 +1,3032 @@
+{
+  "languages": [
+    "ar",
+    "cs",
+    "da",
+    "de",
+    "el",
+    "en",
+    "es",
+    "fi",
+    "fr",
+    "he",
+    "hi",
+    "hu",
+    "it",
+    "ja",
+    "ko",
+    "nl",
+    "no",
+    "pl",
+    "pt",
+    "ro",
+    "ru",
+    "sv",
+    "tr",
+    "uk",
+    "zh"
+  ],
+  "pairs": [
+    {
+      "source": "ar",
+      "target": "cs",
+      "exact_entries": 10
+    },
+    {
+      "source": "ar",
+      "target": "da",
+      "exact_entries": 10
+    },
+    {
+      "source": "ar",
+      "target": "de",
+      "exact_entries": 10
+    },
+    {
+      "source": "ar",
+      "target": "el",
+      "exact_entries": 10
+    },
+    {
+      "source": "ar",
+      "target": "en",
+      "exact_entries": 10
+    },
+    {
+      "source": "ar",
+      "target": "es",
+      "exact_entries": 10
+    },
+    {
+      "source": "ar",
+      "target": "fi",
+      "exact_entries": 10
+    },
+    {
+      "source": "ar",
+      "target": "fr",
+      "exact_entries": 10
+    },
+    {
+      "source": "ar",
+      "target": "he",
+      "exact_entries": 10
+    },
+    {
+      "source": "ar",
+      "target": "hi",
+      "exact_entries": 10
+    },
+    {
+      "source": "ar",
+      "target": "hu",
+      "exact_entries": 10
+    },
+    {
+      "source": "ar",
+      "target": "it",
+      "exact_entries": 10
+    },
+    {
+      "source": "ar",
+      "target": "ja",
+      "exact_entries": 10
+    },
+    {
+      "source": "ar",
+      "target": "ko",
+      "exact_entries": 10
+    },
+    {
+      "source": "ar",
+      "target": "nl",
+      "exact_entries": 10
+    },
+    {
+      "source": "ar",
+      "target": "no",
+      "exact_entries": 10
+    },
+    {
+      "source": "ar",
+      "target": "pl",
+      "exact_entries": 10
+    },
+    {
+      "source": "ar",
+      "target": "pt",
+      "exact_entries": 10
+    },
+    {
+      "source": "ar",
+      "target": "ro",
+      "exact_entries": 10
+    },
+    {
+      "source": "ar",
+      "target": "ru",
+      "exact_entries": 10
+    },
+    {
+      "source": "ar",
+      "target": "sv",
+      "exact_entries": 10
+    },
+    {
+      "source": "ar",
+      "target": "tr",
+      "exact_entries": 10
+    },
+    {
+      "source": "ar",
+      "target": "uk",
+      "exact_entries": 10
+    },
+    {
+      "source": "ar",
+      "target": "zh",
+      "exact_entries": 10
+    },
+    {
+      "source": "cs",
+      "target": "ar",
+      "exact_entries": 10
+    },
+    {
+      "source": "cs",
+      "target": "da",
+      "exact_entries": 10
+    },
+    {
+      "source": "cs",
+      "target": "de",
+      "exact_entries": 10
+    },
+    {
+      "source": "cs",
+      "target": "el",
+      "exact_entries": 10
+    },
+    {
+      "source": "cs",
+      "target": "en",
+      "exact_entries": 10
+    },
+    {
+      "source": "cs",
+      "target": "es",
+      "exact_entries": 10
+    },
+    {
+      "source": "cs",
+      "target": "fi",
+      "exact_entries": 10
+    },
+    {
+      "source": "cs",
+      "target": "fr",
+      "exact_entries": 10
+    },
+    {
+      "source": "cs",
+      "target": "he",
+      "exact_entries": 10
+    },
+    {
+      "source": "cs",
+      "target": "hi",
+      "exact_entries": 10
+    },
+    {
+      "source": "cs",
+      "target": "hu",
+      "exact_entries": 10
+    },
+    {
+      "source": "cs",
+      "target": "it",
+      "exact_entries": 10
+    },
+    {
+      "source": "cs",
+      "target": "ja",
+      "exact_entries": 10
+    },
+    {
+      "source": "cs",
+      "target": "ko",
+      "exact_entries": 10
+    },
+    {
+      "source": "cs",
+      "target": "nl",
+      "exact_entries": 10
+    },
+    {
+      "source": "cs",
+      "target": "no",
+      "exact_entries": 10
+    },
+    {
+      "source": "cs",
+      "target": "pl",
+      "exact_entries": 10
+    },
+    {
+      "source": "cs",
+      "target": "pt",
+      "exact_entries": 10
+    },
+    {
+      "source": "cs",
+      "target": "ro",
+      "exact_entries": 10
+    },
+    {
+      "source": "cs",
+      "target": "ru",
+      "exact_entries": 10
+    },
+    {
+      "source": "cs",
+      "target": "sv",
+      "exact_entries": 10
+    },
+    {
+      "source": "cs",
+      "target": "tr",
+      "exact_entries": 10
+    },
+    {
+      "source": "cs",
+      "target": "uk",
+      "exact_entries": 10
+    },
+    {
+      "source": "cs",
+      "target": "zh",
+      "exact_entries": 10
+    },
+    {
+      "source": "da",
+      "target": "ar",
+      "exact_entries": 10
+    },
+    {
+      "source": "da",
+      "target": "cs",
+      "exact_entries": 10
+    },
+    {
+      "source": "da",
+      "target": "de",
+      "exact_entries": 10
+    },
+    {
+      "source": "da",
+      "target": "el",
+      "exact_entries": 10
+    },
+    {
+      "source": "da",
+      "target": "en",
+      "exact_entries": 10
+    },
+    {
+      "source": "da",
+      "target": "es",
+      "exact_entries": 10
+    },
+    {
+      "source": "da",
+      "target": "fi",
+      "exact_entries": 10
+    },
+    {
+      "source": "da",
+      "target": "fr",
+      "exact_entries": 10
+    },
+    {
+      "source": "da",
+      "target": "he",
+      "exact_entries": 10
+    },
+    {
+      "source": "da",
+      "target": "hi",
+      "exact_entries": 10
+    },
+    {
+      "source": "da",
+      "target": "hu",
+      "exact_entries": 10
+    },
+    {
+      "source": "da",
+      "target": "it",
+      "exact_entries": 10
+    },
+    {
+      "source": "da",
+      "target": "ja",
+      "exact_entries": 10
+    },
+    {
+      "source": "da",
+      "target": "ko",
+      "exact_entries": 10
+    },
+    {
+      "source": "da",
+      "target": "nl",
+      "exact_entries": 10
+    },
+    {
+      "source": "da",
+      "target": "no",
+      "exact_entries": 10
+    },
+    {
+      "source": "da",
+      "target": "pl",
+      "exact_entries": 10
+    },
+    {
+      "source": "da",
+      "target": "pt",
+      "exact_entries": 10
+    },
+    {
+      "source": "da",
+      "target": "ro",
+      "exact_entries": 10
+    },
+    {
+      "source": "da",
+      "target": "ru",
+      "exact_entries": 10
+    },
+    {
+      "source": "da",
+      "target": "sv",
+      "exact_entries": 10
+    },
+    {
+      "source": "da",
+      "target": "tr",
+      "exact_entries": 10
+    },
+    {
+      "source": "da",
+      "target": "uk",
+      "exact_entries": 10
+    },
+    {
+      "source": "da",
+      "target": "zh",
+      "exact_entries": 10
+    },
+    {
+      "source": "de",
+      "target": "ar",
+      "exact_entries": 10
+    },
+    {
+      "source": "de",
+      "target": "cs",
+      "exact_entries": 10
+    },
+    {
+      "source": "de",
+      "target": "da",
+      "exact_entries": 10
+    },
+    {
+      "source": "de",
+      "target": "el",
+      "exact_entries": 10
+    },
+    {
+      "source": "de",
+      "target": "en",
+      "exact_entries": 10
+    },
+    {
+      "source": "de",
+      "target": "es",
+      "exact_entries": 10
+    },
+    {
+      "source": "de",
+      "target": "fi",
+      "exact_entries": 10
+    },
+    {
+      "source": "de",
+      "target": "fr",
+      "exact_entries": 10
+    },
+    {
+      "source": "de",
+      "target": "he",
+      "exact_entries": 10
+    },
+    {
+      "source": "de",
+      "target": "hi",
+      "exact_entries": 10
+    },
+    {
+      "source": "de",
+      "target": "hu",
+      "exact_entries": 10
+    },
+    {
+      "source": "de",
+      "target": "it",
+      "exact_entries": 10
+    },
+    {
+      "source": "de",
+      "target": "ja",
+      "exact_entries": 10
+    },
+    {
+      "source": "de",
+      "target": "ko",
+      "exact_entries": 10
+    },
+    {
+      "source": "de",
+      "target": "nl",
+      "exact_entries": 10
+    },
+    {
+      "source": "de",
+      "target": "no",
+      "exact_entries": 10
+    },
+    {
+      "source": "de",
+      "target": "pl",
+      "exact_entries": 10
+    },
+    {
+      "source": "de",
+      "target": "pt",
+      "exact_entries": 10
+    },
+    {
+      "source": "de",
+      "target": "ro",
+      "exact_entries": 10
+    },
+    {
+      "source": "de",
+      "target": "ru",
+      "exact_entries": 10
+    },
+    {
+      "source": "de",
+      "target": "sv",
+      "exact_entries": 10
+    },
+    {
+      "source": "de",
+      "target": "tr",
+      "exact_entries": 10
+    },
+    {
+      "source": "de",
+      "target": "uk",
+      "exact_entries": 10
+    },
+    {
+      "source": "de",
+      "target": "zh",
+      "exact_entries": 10
+    },
+    {
+      "source": "el",
+      "target": "ar",
+      "exact_entries": 10
+    },
+    {
+      "source": "el",
+      "target": "cs",
+      "exact_entries": 10
+    },
+    {
+      "source": "el",
+      "target": "da",
+      "exact_entries": 10
+    },
+    {
+      "source": "el",
+      "target": "de",
+      "exact_entries": 10
+    },
+    {
+      "source": "el",
+      "target": "en",
+      "exact_entries": 10
+    },
+    {
+      "source": "el",
+      "target": "es",
+      "exact_entries": 10
+    },
+    {
+      "source": "el",
+      "target": "fi",
+      "exact_entries": 10
+    },
+    {
+      "source": "el",
+      "target": "fr",
+      "exact_entries": 10
+    },
+    {
+      "source": "el",
+      "target": "he",
+      "exact_entries": 10
+    },
+    {
+      "source": "el",
+      "target": "hi",
+      "exact_entries": 10
+    },
+    {
+      "source": "el",
+      "target": "hu",
+      "exact_entries": 10
+    },
+    {
+      "source": "el",
+      "target": "it",
+      "exact_entries": 10
+    },
+    {
+      "source": "el",
+      "target": "ja",
+      "exact_entries": 10
+    },
+    {
+      "source": "el",
+      "target": "ko",
+      "exact_entries": 10
+    },
+    {
+      "source": "el",
+      "target": "nl",
+      "exact_entries": 10
+    },
+    {
+      "source": "el",
+      "target": "no",
+      "exact_entries": 10
+    },
+    {
+      "source": "el",
+      "target": "pl",
+      "exact_entries": 10
+    },
+    {
+      "source": "el",
+      "target": "pt",
+      "exact_entries": 10
+    },
+    {
+      "source": "el",
+      "target": "ro",
+      "exact_entries": 10
+    },
+    {
+      "source": "el",
+      "target": "ru",
+      "exact_entries": 10
+    },
+    {
+      "source": "el",
+      "target": "sv",
+      "exact_entries": 10
+    },
+    {
+      "source": "el",
+      "target": "tr",
+      "exact_entries": 10
+    },
+    {
+      "source": "el",
+      "target": "uk",
+      "exact_entries": 10
+    },
+    {
+      "source": "el",
+      "target": "zh",
+      "exact_entries": 10
+    },
+    {
+      "source": "en",
+      "target": "ar",
+      "exact_entries": 10
+    },
+    {
+      "source": "en",
+      "target": "cs",
+      "exact_entries": 10
+    },
+    {
+      "source": "en",
+      "target": "da",
+      "exact_entries": 10
+    },
+    {
+      "source": "en",
+      "target": "de",
+      "exact_entries": 10
+    },
+    {
+      "source": "en",
+      "target": "el",
+      "exact_entries": 10
+    },
+    {
+      "source": "en",
+      "target": "es",
+      "exact_entries": 10
+    },
+    {
+      "source": "en",
+      "target": "fi",
+      "exact_entries": 10
+    },
+    {
+      "source": "en",
+      "target": "fr",
+      "exact_entries": 10
+    },
+    {
+      "source": "en",
+      "target": "he",
+      "exact_entries": 10
+    },
+    {
+      "source": "en",
+      "target": "hi",
+      "exact_entries": 10
+    },
+    {
+      "source": "en",
+      "target": "hu",
+      "exact_entries": 10
+    },
+    {
+      "source": "en",
+      "target": "it",
+      "exact_entries": 10
+    },
+    {
+      "source": "en",
+      "target": "ja",
+      "exact_entries": 10
+    },
+    {
+      "source": "en",
+      "target": "ko",
+      "exact_entries": 10
+    },
+    {
+      "source": "en",
+      "target": "nl",
+      "exact_entries": 10
+    },
+    {
+      "source": "en",
+      "target": "no",
+      "exact_entries": 10
+    },
+    {
+      "source": "en",
+      "target": "pl",
+      "exact_entries": 10
+    },
+    {
+      "source": "en",
+      "target": "pt",
+      "exact_entries": 10
+    },
+    {
+      "source": "en",
+      "target": "ro",
+      "exact_entries": 10
+    },
+    {
+      "source": "en",
+      "target": "ru",
+      "exact_entries": 10
+    },
+    {
+      "source": "en",
+      "target": "sv",
+      "exact_entries": 10
+    },
+    {
+      "source": "en",
+      "target": "tr",
+      "exact_entries": 10
+    },
+    {
+      "source": "en",
+      "target": "uk",
+      "exact_entries": 10
+    },
+    {
+      "source": "en",
+      "target": "zh",
+      "exact_entries": 10
+    },
+    {
+      "source": "es",
+      "target": "ar",
+      "exact_entries": 10
+    },
+    {
+      "source": "es",
+      "target": "cs",
+      "exact_entries": 10
+    },
+    {
+      "source": "es",
+      "target": "da",
+      "exact_entries": 10
+    },
+    {
+      "source": "es",
+      "target": "de",
+      "exact_entries": 10
+    },
+    {
+      "source": "es",
+      "target": "el",
+      "exact_entries": 10
+    },
+    {
+      "source": "es",
+      "target": "en",
+      "exact_entries": 10
+    },
+    {
+      "source": "es",
+      "target": "fi",
+      "exact_entries": 10
+    },
+    {
+      "source": "es",
+      "target": "fr",
+      "exact_entries": 10
+    },
+    {
+      "source": "es",
+      "target": "he",
+      "exact_entries": 10
+    },
+    {
+      "source": "es",
+      "target": "hi",
+      "exact_entries": 10
+    },
+    {
+      "source": "es",
+      "target": "hu",
+      "exact_entries": 10
+    },
+    {
+      "source": "es",
+      "target": "it",
+      "exact_entries": 10
+    },
+    {
+      "source": "es",
+      "target": "ja",
+      "exact_entries": 10
+    },
+    {
+      "source": "es",
+      "target": "ko",
+      "exact_entries": 10
+    },
+    {
+      "source": "es",
+      "target": "nl",
+      "exact_entries": 10
+    },
+    {
+      "source": "es",
+      "target": "no",
+      "exact_entries": 10
+    },
+    {
+      "source": "es",
+      "target": "pl",
+      "exact_entries": 10
+    },
+    {
+      "source": "es",
+      "target": "pt",
+      "exact_entries": 10
+    },
+    {
+      "source": "es",
+      "target": "ro",
+      "exact_entries": 10
+    },
+    {
+      "source": "es",
+      "target": "ru",
+      "exact_entries": 10
+    },
+    {
+      "source": "es",
+      "target": "sv",
+      "exact_entries": 10
+    },
+    {
+      "source": "es",
+      "target": "tr",
+      "exact_entries": 10
+    },
+    {
+      "source": "es",
+      "target": "uk",
+      "exact_entries": 10
+    },
+    {
+      "source": "es",
+      "target": "zh",
+      "exact_entries": 10
+    },
+    {
+      "source": "fi",
+      "target": "ar",
+      "exact_entries": 10
+    },
+    {
+      "source": "fi",
+      "target": "cs",
+      "exact_entries": 10
+    },
+    {
+      "source": "fi",
+      "target": "da",
+      "exact_entries": 10
+    },
+    {
+      "source": "fi",
+      "target": "de",
+      "exact_entries": 10
+    },
+    {
+      "source": "fi",
+      "target": "el",
+      "exact_entries": 10
+    },
+    {
+      "source": "fi",
+      "target": "en",
+      "exact_entries": 10
+    },
+    {
+      "source": "fi",
+      "target": "es",
+      "exact_entries": 10
+    },
+    {
+      "source": "fi",
+      "target": "fr",
+      "exact_entries": 10
+    },
+    {
+      "source": "fi",
+      "target": "he",
+      "exact_entries": 10
+    },
+    {
+      "source": "fi",
+      "target": "hi",
+      "exact_entries": 10
+    },
+    {
+      "source": "fi",
+      "target": "hu",
+      "exact_entries": 10
+    },
+    {
+      "source": "fi",
+      "target": "it",
+      "exact_entries": 10
+    },
+    {
+      "source": "fi",
+      "target": "ja",
+      "exact_entries": 10
+    },
+    {
+      "source": "fi",
+      "target": "ko",
+      "exact_entries": 10
+    },
+    {
+      "source": "fi",
+      "target": "nl",
+      "exact_entries": 10
+    },
+    {
+      "source": "fi",
+      "target": "no",
+      "exact_entries": 10
+    },
+    {
+      "source": "fi",
+      "target": "pl",
+      "exact_entries": 10
+    },
+    {
+      "source": "fi",
+      "target": "pt",
+      "exact_entries": 10
+    },
+    {
+      "source": "fi",
+      "target": "ro",
+      "exact_entries": 10
+    },
+    {
+      "source": "fi",
+      "target": "ru",
+      "exact_entries": 10
+    },
+    {
+      "source": "fi",
+      "target": "sv",
+      "exact_entries": 10
+    },
+    {
+      "source": "fi",
+      "target": "tr",
+      "exact_entries": 10
+    },
+    {
+      "source": "fi",
+      "target": "uk",
+      "exact_entries": 10
+    },
+    {
+      "source": "fi",
+      "target": "zh",
+      "exact_entries": 10
+    },
+    {
+      "source": "fr",
+      "target": "ar",
+      "exact_entries": 10
+    },
+    {
+      "source": "fr",
+      "target": "cs",
+      "exact_entries": 10
+    },
+    {
+      "source": "fr",
+      "target": "da",
+      "exact_entries": 10
+    },
+    {
+      "source": "fr",
+      "target": "de",
+      "exact_entries": 10
+    },
+    {
+      "source": "fr",
+      "target": "el",
+      "exact_entries": 10
+    },
+    {
+      "source": "fr",
+      "target": "en",
+      "exact_entries": 10
+    },
+    {
+      "source": "fr",
+      "target": "es",
+      "exact_entries": 10
+    },
+    {
+      "source": "fr",
+      "target": "fi",
+      "exact_entries": 10
+    },
+    {
+      "source": "fr",
+      "target": "he",
+      "exact_entries": 10
+    },
+    {
+      "source": "fr",
+      "target": "hi",
+      "exact_entries": 10
+    },
+    {
+      "source": "fr",
+      "target": "hu",
+      "exact_entries": 10
+    },
+    {
+      "source": "fr",
+      "target": "it",
+      "exact_entries": 10
+    },
+    {
+      "source": "fr",
+      "target": "ja",
+      "exact_entries": 10
+    },
+    {
+      "source": "fr",
+      "target": "ko",
+      "exact_entries": 10
+    },
+    {
+      "source": "fr",
+      "target": "nl",
+      "exact_entries": 10
+    },
+    {
+      "source": "fr",
+      "target": "no",
+      "exact_entries": 10
+    },
+    {
+      "source": "fr",
+      "target": "pl",
+      "exact_entries": 10
+    },
+    {
+      "source": "fr",
+      "target": "pt",
+      "exact_entries": 10
+    },
+    {
+      "source": "fr",
+      "target": "ro",
+      "exact_entries": 10
+    },
+    {
+      "source": "fr",
+      "target": "ru",
+      "exact_entries": 10
+    },
+    {
+      "source": "fr",
+      "target": "sv",
+      "exact_entries": 10
+    },
+    {
+      "source": "fr",
+      "target": "tr",
+      "exact_entries": 10
+    },
+    {
+      "source": "fr",
+      "target": "uk",
+      "exact_entries": 10
+    },
+    {
+      "source": "fr",
+      "target": "zh",
+      "exact_entries": 10
+    },
+    {
+      "source": "he",
+      "target": "ar",
+      "exact_entries": 10
+    },
+    {
+      "source": "he",
+      "target": "cs",
+      "exact_entries": 10
+    },
+    {
+      "source": "he",
+      "target": "da",
+      "exact_entries": 10
+    },
+    {
+      "source": "he",
+      "target": "de",
+      "exact_entries": 10
+    },
+    {
+      "source": "he",
+      "target": "el",
+      "exact_entries": 10
+    },
+    {
+      "source": "he",
+      "target": "en",
+      "exact_entries": 10
+    },
+    {
+      "source": "he",
+      "target": "es",
+      "exact_entries": 10
+    },
+    {
+      "source": "he",
+      "target": "fi",
+      "exact_entries": 10
+    },
+    {
+      "source": "he",
+      "target": "fr",
+      "exact_entries": 10
+    },
+    {
+      "source": "he",
+      "target": "hi",
+      "exact_entries": 10
+    },
+    {
+      "source": "he",
+      "target": "hu",
+      "exact_entries": 10
+    },
+    {
+      "source": "he",
+      "target": "it",
+      "exact_entries": 10
+    },
+    {
+      "source": "he",
+      "target": "ja",
+      "exact_entries": 10
+    },
+    {
+      "source": "he",
+      "target": "ko",
+      "exact_entries": 10
+    },
+    {
+      "source": "he",
+      "target": "nl",
+      "exact_entries": 10
+    },
+    {
+      "source": "he",
+      "target": "no",
+      "exact_entries": 10
+    },
+    {
+      "source": "he",
+      "target": "pl",
+      "exact_entries": 10
+    },
+    {
+      "source": "he",
+      "target": "pt",
+      "exact_entries": 10
+    },
+    {
+      "source": "he",
+      "target": "ro",
+      "exact_entries": 10
+    },
+    {
+      "source": "he",
+      "target": "ru",
+      "exact_entries": 10
+    },
+    {
+      "source": "he",
+      "target": "sv",
+      "exact_entries": 10
+    },
+    {
+      "source": "he",
+      "target": "tr",
+      "exact_entries": 10
+    },
+    {
+      "source": "he",
+      "target": "uk",
+      "exact_entries": 10
+    },
+    {
+      "source": "he",
+      "target": "zh",
+      "exact_entries": 10
+    },
+    {
+      "source": "hi",
+      "target": "ar",
+      "exact_entries": 10
+    },
+    {
+      "source": "hi",
+      "target": "cs",
+      "exact_entries": 10
+    },
+    {
+      "source": "hi",
+      "target": "da",
+      "exact_entries": 10
+    },
+    {
+      "source": "hi",
+      "target": "de",
+      "exact_entries": 10
+    },
+    {
+      "source": "hi",
+      "target": "el",
+      "exact_entries": 10
+    },
+    {
+      "source": "hi",
+      "target": "en",
+      "exact_entries": 10
+    },
+    {
+      "source": "hi",
+      "target": "es",
+      "exact_entries": 10
+    },
+    {
+      "source": "hi",
+      "target": "fi",
+      "exact_entries": 10
+    },
+    {
+      "source": "hi",
+      "target": "fr",
+      "exact_entries": 10
+    },
+    {
+      "source": "hi",
+      "target": "he",
+      "exact_entries": 10
+    },
+    {
+      "source": "hi",
+      "target": "hu",
+      "exact_entries": 10
+    },
+    {
+      "source": "hi",
+      "target": "it",
+      "exact_entries": 10
+    },
+    {
+      "source": "hi",
+      "target": "ja",
+      "exact_entries": 10
+    },
+    {
+      "source": "hi",
+      "target": "ko",
+      "exact_entries": 10
+    },
+    {
+      "source": "hi",
+      "target": "nl",
+      "exact_entries": 10
+    },
+    {
+      "source": "hi",
+      "target": "no",
+      "exact_entries": 10
+    },
+    {
+      "source": "hi",
+      "target": "pl",
+      "exact_entries": 10
+    },
+    {
+      "source": "hi",
+      "target": "pt",
+      "exact_entries": 10
+    },
+    {
+      "source": "hi",
+      "target": "ro",
+      "exact_entries": 10
+    },
+    {
+      "source": "hi",
+      "target": "ru",
+      "exact_entries": 10
+    },
+    {
+      "source": "hi",
+      "target": "sv",
+      "exact_entries": 10
+    },
+    {
+      "source": "hi",
+      "target": "tr",
+      "exact_entries": 10
+    },
+    {
+      "source": "hi",
+      "target": "uk",
+      "exact_entries": 10
+    },
+    {
+      "source": "hi",
+      "target": "zh",
+      "exact_entries": 10
+    },
+    {
+      "source": "hu",
+      "target": "ar",
+      "exact_entries": 10
+    },
+    {
+      "source": "hu",
+      "target": "cs",
+      "exact_entries": 10
+    },
+    {
+      "source": "hu",
+      "target": "da",
+      "exact_entries": 10
+    },
+    {
+      "source": "hu",
+      "target": "de",
+      "exact_entries": 10
+    },
+    {
+      "source": "hu",
+      "target": "el",
+      "exact_entries": 10
+    },
+    {
+      "source": "hu",
+      "target": "en",
+      "exact_entries": 10
+    },
+    {
+      "source": "hu",
+      "target": "es",
+      "exact_entries": 10
+    },
+    {
+      "source": "hu",
+      "target": "fi",
+      "exact_entries": 10
+    },
+    {
+      "source": "hu",
+      "target": "fr",
+      "exact_entries": 10
+    },
+    {
+      "source": "hu",
+      "target": "he",
+      "exact_entries": 10
+    },
+    {
+      "source": "hu",
+      "target": "hi",
+      "exact_entries": 10
+    },
+    {
+      "source": "hu",
+      "target": "it",
+      "exact_entries": 10
+    },
+    {
+      "source": "hu",
+      "target": "ja",
+      "exact_entries": 10
+    },
+    {
+      "source": "hu",
+      "target": "ko",
+      "exact_entries": 10
+    },
+    {
+      "source": "hu",
+      "target": "nl",
+      "exact_entries": 10
+    },
+    {
+      "source": "hu",
+      "target": "no",
+      "exact_entries": 10
+    },
+    {
+      "source": "hu",
+      "target": "pl",
+      "exact_entries": 10
+    },
+    {
+      "source": "hu",
+      "target": "pt",
+      "exact_entries": 10
+    },
+    {
+      "source": "hu",
+      "target": "ro",
+      "exact_entries": 10
+    },
+    {
+      "source": "hu",
+      "target": "ru",
+      "exact_entries": 10
+    },
+    {
+      "source": "hu",
+      "target": "sv",
+      "exact_entries": 10
+    },
+    {
+      "source": "hu",
+      "target": "tr",
+      "exact_entries": 10
+    },
+    {
+      "source": "hu",
+      "target": "uk",
+      "exact_entries": 10
+    },
+    {
+      "source": "hu",
+      "target": "zh",
+      "exact_entries": 10
+    },
+    {
+      "source": "it",
+      "target": "ar",
+      "exact_entries": 10
+    },
+    {
+      "source": "it",
+      "target": "cs",
+      "exact_entries": 10
+    },
+    {
+      "source": "it",
+      "target": "da",
+      "exact_entries": 10
+    },
+    {
+      "source": "it",
+      "target": "de",
+      "exact_entries": 10
+    },
+    {
+      "source": "it",
+      "target": "el",
+      "exact_entries": 10
+    },
+    {
+      "source": "it",
+      "target": "en",
+      "exact_entries": 10
+    },
+    {
+      "source": "it",
+      "target": "es",
+      "exact_entries": 10
+    },
+    {
+      "source": "it",
+      "target": "fi",
+      "exact_entries": 10
+    },
+    {
+      "source": "it",
+      "target": "fr",
+      "exact_entries": 10
+    },
+    {
+      "source": "it",
+      "target": "he",
+      "exact_entries": 10
+    },
+    {
+      "source": "it",
+      "target": "hi",
+      "exact_entries": 10
+    },
+    {
+      "source": "it",
+      "target": "hu",
+      "exact_entries": 10
+    },
+    {
+      "source": "it",
+      "target": "ja",
+      "exact_entries": 10
+    },
+    {
+      "source": "it",
+      "target": "ko",
+      "exact_entries": 10
+    },
+    {
+      "source": "it",
+      "target": "nl",
+      "exact_entries": 10
+    },
+    {
+      "source": "it",
+      "target": "no",
+      "exact_entries": 10
+    },
+    {
+      "source": "it",
+      "target": "pl",
+      "exact_entries": 10
+    },
+    {
+      "source": "it",
+      "target": "pt",
+      "exact_entries": 10
+    },
+    {
+      "source": "it",
+      "target": "ro",
+      "exact_entries": 10
+    },
+    {
+      "source": "it",
+      "target": "ru",
+      "exact_entries": 10
+    },
+    {
+      "source": "it",
+      "target": "sv",
+      "exact_entries": 10
+    },
+    {
+      "source": "it",
+      "target": "tr",
+      "exact_entries": 10
+    },
+    {
+      "source": "it",
+      "target": "uk",
+      "exact_entries": 10
+    },
+    {
+      "source": "it",
+      "target": "zh",
+      "exact_entries": 10
+    },
+    {
+      "source": "ja",
+      "target": "ar",
+      "exact_entries": 10
+    },
+    {
+      "source": "ja",
+      "target": "cs",
+      "exact_entries": 10
+    },
+    {
+      "source": "ja",
+      "target": "da",
+      "exact_entries": 10
+    },
+    {
+      "source": "ja",
+      "target": "de",
+      "exact_entries": 10
+    },
+    {
+      "source": "ja",
+      "target": "el",
+      "exact_entries": 10
+    },
+    {
+      "source": "ja",
+      "target": "en",
+      "exact_entries": 10
+    },
+    {
+      "source": "ja",
+      "target": "es",
+      "exact_entries": 10
+    },
+    {
+      "source": "ja",
+      "target": "fi",
+      "exact_entries": 10
+    },
+    {
+      "source": "ja",
+      "target": "fr",
+      "exact_entries": 10
+    },
+    {
+      "source": "ja",
+      "target": "he",
+      "exact_entries": 10
+    },
+    {
+      "source": "ja",
+      "target": "hi",
+      "exact_entries": 10
+    },
+    {
+      "source": "ja",
+      "target": "hu",
+      "exact_entries": 10
+    },
+    {
+      "source": "ja",
+      "target": "it",
+      "exact_entries": 10
+    },
+    {
+      "source": "ja",
+      "target": "ko",
+      "exact_entries": 10
+    },
+    {
+      "source": "ja",
+      "target": "nl",
+      "exact_entries": 10
+    },
+    {
+      "source": "ja",
+      "target": "no",
+      "exact_entries": 10
+    },
+    {
+      "source": "ja",
+      "target": "pl",
+      "exact_entries": 10
+    },
+    {
+      "source": "ja",
+      "target": "pt",
+      "exact_entries": 10
+    },
+    {
+      "source": "ja",
+      "target": "ro",
+      "exact_entries": 10
+    },
+    {
+      "source": "ja",
+      "target": "ru",
+      "exact_entries": 10
+    },
+    {
+      "source": "ja",
+      "target": "sv",
+      "exact_entries": 10
+    },
+    {
+      "source": "ja",
+      "target": "tr",
+      "exact_entries": 10
+    },
+    {
+      "source": "ja",
+      "target": "uk",
+      "exact_entries": 10
+    },
+    {
+      "source": "ja",
+      "target": "zh",
+      "exact_entries": 10
+    },
+    {
+      "source": "ko",
+      "target": "ar",
+      "exact_entries": 10
+    },
+    {
+      "source": "ko",
+      "target": "cs",
+      "exact_entries": 10
+    },
+    {
+      "source": "ko",
+      "target": "da",
+      "exact_entries": 10
+    },
+    {
+      "source": "ko",
+      "target": "de",
+      "exact_entries": 10
+    },
+    {
+      "source": "ko",
+      "target": "el",
+      "exact_entries": 10
+    },
+    {
+      "source": "ko",
+      "target": "en",
+      "exact_entries": 10
+    },
+    {
+      "source": "ko",
+      "target": "es",
+      "exact_entries": 10
+    },
+    {
+      "source": "ko",
+      "target": "fi",
+      "exact_entries": 10
+    },
+    {
+      "source": "ko",
+      "target": "fr",
+      "exact_entries": 10
+    },
+    {
+      "source": "ko",
+      "target": "he",
+      "exact_entries": 10
+    },
+    {
+      "source": "ko",
+      "target": "hi",
+      "exact_entries": 10
+    },
+    {
+      "source": "ko",
+      "target": "hu",
+      "exact_entries": 10
+    },
+    {
+      "source": "ko",
+      "target": "it",
+      "exact_entries": 10
+    },
+    {
+      "source": "ko",
+      "target": "ja",
+      "exact_entries": 10
+    },
+    {
+      "source": "ko",
+      "target": "nl",
+      "exact_entries": 10
+    },
+    {
+      "source": "ko",
+      "target": "no",
+      "exact_entries": 10
+    },
+    {
+      "source": "ko",
+      "target": "pl",
+      "exact_entries": 10
+    },
+    {
+      "source": "ko",
+      "target": "pt",
+      "exact_entries": 10
+    },
+    {
+      "source": "ko",
+      "target": "ro",
+      "exact_entries": 10
+    },
+    {
+      "source": "ko",
+      "target": "ru",
+      "exact_entries": 10
+    },
+    {
+      "source": "ko",
+      "target": "sv",
+      "exact_entries": 10
+    },
+    {
+      "source": "ko",
+      "target": "tr",
+      "exact_entries": 10
+    },
+    {
+      "source": "ko",
+      "target": "uk",
+      "exact_entries": 10
+    },
+    {
+      "source": "ko",
+      "target": "zh",
+      "exact_entries": 10
+    },
+    {
+      "source": "nl",
+      "target": "ar",
+      "exact_entries": 10
+    },
+    {
+      "source": "nl",
+      "target": "cs",
+      "exact_entries": 10
+    },
+    {
+      "source": "nl",
+      "target": "da",
+      "exact_entries": 10
+    },
+    {
+      "source": "nl",
+      "target": "de",
+      "exact_entries": 10
+    },
+    {
+      "source": "nl",
+      "target": "el",
+      "exact_entries": 10
+    },
+    {
+      "source": "nl",
+      "target": "en",
+      "exact_entries": 10
+    },
+    {
+      "source": "nl",
+      "target": "es",
+      "exact_entries": 10
+    },
+    {
+      "source": "nl",
+      "target": "fi",
+      "exact_entries": 10
+    },
+    {
+      "source": "nl",
+      "target": "fr",
+      "exact_entries": 10
+    },
+    {
+      "source": "nl",
+      "target": "he",
+      "exact_entries": 10
+    },
+    {
+      "source": "nl",
+      "target": "hi",
+      "exact_entries": 10
+    },
+    {
+      "source": "nl",
+      "target": "hu",
+      "exact_entries": 10
+    },
+    {
+      "source": "nl",
+      "target": "it",
+      "exact_entries": 10
+    },
+    {
+      "source": "nl",
+      "target": "ja",
+      "exact_entries": 10
+    },
+    {
+      "source": "nl",
+      "target": "ko",
+      "exact_entries": 10
+    },
+    {
+      "source": "nl",
+      "target": "no",
+      "exact_entries": 10
+    },
+    {
+      "source": "nl",
+      "target": "pl",
+      "exact_entries": 10
+    },
+    {
+      "source": "nl",
+      "target": "pt",
+      "exact_entries": 10
+    },
+    {
+      "source": "nl",
+      "target": "ro",
+      "exact_entries": 10
+    },
+    {
+      "source": "nl",
+      "target": "ru",
+      "exact_entries": 10
+    },
+    {
+      "source": "nl",
+      "target": "sv",
+      "exact_entries": 10
+    },
+    {
+      "source": "nl",
+      "target": "tr",
+      "exact_entries": 10
+    },
+    {
+      "source": "nl",
+      "target": "uk",
+      "exact_entries": 10
+    },
+    {
+      "source": "nl",
+      "target": "zh",
+      "exact_entries": 10
+    },
+    {
+      "source": "no",
+      "target": "ar",
+      "exact_entries": 10
+    },
+    {
+      "source": "no",
+      "target": "cs",
+      "exact_entries": 10
+    },
+    {
+      "source": "no",
+      "target": "da",
+      "exact_entries": 10
+    },
+    {
+      "source": "no",
+      "target": "de",
+      "exact_entries": 10
+    },
+    {
+      "source": "no",
+      "target": "el",
+      "exact_entries": 10
+    },
+    {
+      "source": "no",
+      "target": "en",
+      "exact_entries": 10
+    },
+    {
+      "source": "no",
+      "target": "es",
+      "exact_entries": 10
+    },
+    {
+      "source": "no",
+      "target": "fi",
+      "exact_entries": 10
+    },
+    {
+      "source": "no",
+      "target": "fr",
+      "exact_entries": 10
+    },
+    {
+      "source": "no",
+      "target": "he",
+      "exact_entries": 10
+    },
+    {
+      "source": "no",
+      "target": "hi",
+      "exact_entries": 10
+    },
+    {
+      "source": "no",
+      "target": "hu",
+      "exact_entries": 10
+    },
+    {
+      "source": "no",
+      "target": "it",
+      "exact_entries": 10
+    },
+    {
+      "source": "no",
+      "target": "ja",
+      "exact_entries": 10
+    },
+    {
+      "source": "no",
+      "target": "ko",
+      "exact_entries": 10
+    },
+    {
+      "source": "no",
+      "target": "nl",
+      "exact_entries": 10
+    },
+    {
+      "source": "no",
+      "target": "pl",
+      "exact_entries": 10
+    },
+    {
+      "source": "no",
+      "target": "pt",
+      "exact_entries": 10
+    },
+    {
+      "source": "no",
+      "target": "ro",
+      "exact_entries": 10
+    },
+    {
+      "source": "no",
+      "target": "ru",
+      "exact_entries": 10
+    },
+    {
+      "source": "no",
+      "target": "sv",
+      "exact_entries": 10
+    },
+    {
+      "source": "no",
+      "target": "tr",
+      "exact_entries": 10
+    },
+    {
+      "source": "no",
+      "target": "uk",
+      "exact_entries": 10
+    },
+    {
+      "source": "no",
+      "target": "zh",
+      "exact_entries": 10
+    },
+    {
+      "source": "pl",
+      "target": "ar",
+      "exact_entries": 10
+    },
+    {
+      "source": "pl",
+      "target": "cs",
+      "exact_entries": 10
+    },
+    {
+      "source": "pl",
+      "target": "da",
+      "exact_entries": 10
+    },
+    {
+      "source": "pl",
+      "target": "de",
+      "exact_entries": 10
+    },
+    {
+      "source": "pl",
+      "target": "el",
+      "exact_entries": 10
+    },
+    {
+      "source": "pl",
+      "target": "en",
+      "exact_entries": 10
+    },
+    {
+      "source": "pl",
+      "target": "es",
+      "exact_entries": 10
+    },
+    {
+      "source": "pl",
+      "target": "fi",
+      "exact_entries": 10
+    },
+    {
+      "source": "pl",
+      "target": "fr",
+      "exact_entries": 10
+    },
+    {
+      "source": "pl",
+      "target": "he",
+      "exact_entries": 10
+    },
+    {
+      "source": "pl",
+      "target": "hi",
+      "exact_entries": 10
+    },
+    {
+      "source": "pl",
+      "target": "hu",
+      "exact_entries": 10
+    },
+    {
+      "source": "pl",
+      "target": "it",
+      "exact_entries": 10
+    },
+    {
+      "source": "pl",
+      "target": "ja",
+      "exact_entries": 10
+    },
+    {
+      "source": "pl",
+      "target": "ko",
+      "exact_entries": 10
+    },
+    {
+      "source": "pl",
+      "target": "nl",
+      "exact_entries": 10
+    },
+    {
+      "source": "pl",
+      "target": "no",
+      "exact_entries": 10
+    },
+    {
+      "source": "pl",
+      "target": "pt",
+      "exact_entries": 10
+    },
+    {
+      "source": "pl",
+      "target": "ro",
+      "exact_entries": 10
+    },
+    {
+      "source": "pl",
+      "target": "ru",
+      "exact_entries": 10
+    },
+    {
+      "source": "pl",
+      "target": "sv",
+      "exact_entries": 10
+    },
+    {
+      "source": "pl",
+      "target": "tr",
+      "exact_entries": 10
+    },
+    {
+      "source": "pl",
+      "target": "uk",
+      "exact_entries": 10
+    },
+    {
+      "source": "pl",
+      "target": "zh",
+      "exact_entries": 10
+    },
+    {
+      "source": "pt",
+      "target": "ar",
+      "exact_entries": 10
+    },
+    {
+      "source": "pt",
+      "target": "cs",
+      "exact_entries": 10
+    },
+    {
+      "source": "pt",
+      "target": "da",
+      "exact_entries": 10
+    },
+    {
+      "source": "pt",
+      "target": "de",
+      "exact_entries": 10
+    },
+    {
+      "source": "pt",
+      "target": "el",
+      "exact_entries": 10
+    },
+    {
+      "source": "pt",
+      "target": "en",
+      "exact_entries": 10
+    },
+    {
+      "source": "pt",
+      "target": "es",
+      "exact_entries": 10
+    },
+    {
+      "source": "pt",
+      "target": "fi",
+      "exact_entries": 10
+    },
+    {
+      "source": "pt",
+      "target": "fr",
+      "exact_entries": 10
+    },
+    {
+      "source": "pt",
+      "target": "he",
+      "exact_entries": 10
+    },
+    {
+      "source": "pt",
+      "target": "hi",
+      "exact_entries": 10
+    },
+    {
+      "source": "pt",
+      "target": "hu",
+      "exact_entries": 10
+    },
+    {
+      "source": "pt",
+      "target": "it",
+      "exact_entries": 10
+    },
+    {
+      "source": "pt",
+      "target": "ja",
+      "exact_entries": 10
+    },
+    {
+      "source": "pt",
+      "target": "ko",
+      "exact_entries": 10
+    },
+    {
+      "source": "pt",
+      "target": "nl",
+      "exact_entries": 10
+    },
+    {
+      "source": "pt",
+      "target": "no",
+      "exact_entries": 10
+    },
+    {
+      "source": "pt",
+      "target": "pl",
+      "exact_entries": 10
+    },
+    {
+      "source": "pt",
+      "target": "ro",
+      "exact_entries": 10
+    },
+    {
+      "source": "pt",
+      "target": "ru",
+      "exact_entries": 10
+    },
+    {
+      "source": "pt",
+      "target": "sv",
+      "exact_entries": 10
+    },
+    {
+      "source": "pt",
+      "target": "tr",
+      "exact_entries": 10
+    },
+    {
+      "source": "pt",
+      "target": "uk",
+      "exact_entries": 10
+    },
+    {
+      "source": "pt",
+      "target": "zh",
+      "exact_entries": 10
+    },
+    {
+      "source": "ro",
+      "target": "ar",
+      "exact_entries": 10
+    },
+    {
+      "source": "ro",
+      "target": "cs",
+      "exact_entries": 10
+    },
+    {
+      "source": "ro",
+      "target": "da",
+      "exact_entries": 10
+    },
+    {
+      "source": "ro",
+      "target": "de",
+      "exact_entries": 10
+    },
+    {
+      "source": "ro",
+      "target": "el",
+      "exact_entries": 10
+    },
+    {
+      "source": "ro",
+      "target": "en",
+      "exact_entries": 10
+    },
+    {
+      "source": "ro",
+      "target": "es",
+      "exact_entries": 10
+    },
+    {
+      "source": "ro",
+      "target": "fi",
+      "exact_entries": 10
+    },
+    {
+      "source": "ro",
+      "target": "fr",
+      "exact_entries": 10
+    },
+    {
+      "source": "ro",
+      "target": "he",
+      "exact_entries": 10
+    },
+    {
+      "source": "ro",
+      "target": "hi",
+      "exact_entries": 10
+    },
+    {
+      "source": "ro",
+      "target": "hu",
+      "exact_entries": 10
+    },
+    {
+      "source": "ro",
+      "target": "it",
+      "exact_entries": 10
+    },
+    {
+      "source": "ro",
+      "target": "ja",
+      "exact_entries": 10
+    },
+    {
+      "source": "ro",
+      "target": "ko",
+      "exact_entries": 10
+    },
+    {
+      "source": "ro",
+      "target": "nl",
+      "exact_entries": 10
+    },
+    {
+      "source": "ro",
+      "target": "no",
+      "exact_entries": 10
+    },
+    {
+      "source": "ro",
+      "target": "pl",
+      "exact_entries": 10
+    },
+    {
+      "source": "ro",
+      "target": "pt",
+      "exact_entries": 10
+    },
+    {
+      "source": "ro",
+      "target": "ru",
+      "exact_entries": 10
+    },
+    {
+      "source": "ro",
+      "target": "sv",
+      "exact_entries": 10
+    },
+    {
+      "source": "ro",
+      "target": "tr",
+      "exact_entries": 10
+    },
+    {
+      "source": "ro",
+      "target": "uk",
+      "exact_entries": 10
+    },
+    {
+      "source": "ro",
+      "target": "zh",
+      "exact_entries": 10
+    },
+    {
+      "source": "ru",
+      "target": "ar",
+      "exact_entries": 10
+    },
+    {
+      "source": "ru",
+      "target": "cs",
+      "exact_entries": 10
+    },
+    {
+      "source": "ru",
+      "target": "da",
+      "exact_entries": 10
+    },
+    {
+      "source": "ru",
+      "target": "de",
+      "exact_entries": 10
+    },
+    {
+      "source": "ru",
+      "target": "el",
+      "exact_entries": 10
+    },
+    {
+      "source": "ru",
+      "target": "en",
+      "exact_entries": 10
+    },
+    {
+      "source": "ru",
+      "target": "es",
+      "exact_entries": 10
+    },
+    {
+      "source": "ru",
+      "target": "fi",
+      "exact_entries": 10
+    },
+    {
+      "source": "ru",
+      "target": "fr",
+      "exact_entries": 10
+    },
+    {
+      "source": "ru",
+      "target": "he",
+      "exact_entries": 10
+    },
+    {
+      "source": "ru",
+      "target": "hi",
+      "exact_entries": 10
+    },
+    {
+      "source": "ru",
+      "target": "hu",
+      "exact_entries": 10
+    },
+    {
+      "source": "ru",
+      "target": "it",
+      "exact_entries": 10
+    },
+    {
+      "source": "ru",
+      "target": "ja",
+      "exact_entries": 10
+    },
+    {
+      "source": "ru",
+      "target": "ko",
+      "exact_entries": 10
+    },
+    {
+      "source": "ru",
+      "target": "nl",
+      "exact_entries": 10
+    },
+    {
+      "source": "ru",
+      "target": "no",
+      "exact_entries": 10
+    },
+    {
+      "source": "ru",
+      "target": "pl",
+      "exact_entries": 10
+    },
+    {
+      "source": "ru",
+      "target": "pt",
+      "exact_entries": 10
+    },
+    {
+      "source": "ru",
+      "target": "ro",
+      "exact_entries": 10
+    },
+    {
+      "source": "ru",
+      "target": "sv",
+      "exact_entries": 10
+    },
+    {
+      "source": "ru",
+      "target": "tr",
+      "exact_entries": 10
+    },
+    {
+      "source": "ru",
+      "target": "uk",
+      "exact_entries": 10
+    },
+    {
+      "source": "ru",
+      "target": "zh",
+      "exact_entries": 10
+    },
+    {
+      "source": "sv",
+      "target": "ar",
+      "exact_entries": 10
+    },
+    {
+      "source": "sv",
+      "target": "cs",
+      "exact_entries": 10
+    },
+    {
+      "source": "sv",
+      "target": "da",
+      "exact_entries": 10
+    },
+    {
+      "source": "sv",
+      "target": "de",
+      "exact_entries": 10
+    },
+    {
+      "source": "sv",
+      "target": "el",
+      "exact_entries": 10
+    },
+    {
+      "source": "sv",
+      "target": "en",
+      "exact_entries": 10
+    },
+    {
+      "source": "sv",
+      "target": "es",
+      "exact_entries": 10
+    },
+    {
+      "source": "sv",
+      "target": "fi",
+      "exact_entries": 10
+    },
+    {
+      "source": "sv",
+      "target": "fr",
+      "exact_entries": 10
+    },
+    {
+      "source": "sv",
+      "target": "he",
+      "exact_entries": 10
+    },
+    {
+      "source": "sv",
+      "target": "hi",
+      "exact_entries": 10
+    },
+    {
+      "source": "sv",
+      "target": "hu",
+      "exact_entries": 10
+    },
+    {
+      "source": "sv",
+      "target": "it",
+      "exact_entries": 10
+    },
+    {
+      "source": "sv",
+      "target": "ja",
+      "exact_entries": 10
+    },
+    {
+      "source": "sv",
+      "target": "ko",
+      "exact_entries": 10
+    },
+    {
+      "source": "sv",
+      "target": "nl",
+      "exact_entries": 10
+    },
+    {
+      "source": "sv",
+      "target": "no",
+      "exact_entries": 10
+    },
+    {
+      "source": "sv",
+      "target": "pl",
+      "exact_entries": 10
+    },
+    {
+      "source": "sv",
+      "target": "pt",
+      "exact_entries": 10
+    },
+    {
+      "source": "sv",
+      "target": "ro",
+      "exact_entries": 10
+    },
+    {
+      "source": "sv",
+      "target": "ru",
+      "exact_entries": 10
+    },
+    {
+      "source": "sv",
+      "target": "tr",
+      "exact_entries": 10
+    },
+    {
+      "source": "sv",
+      "target": "uk",
+      "exact_entries": 10
+    },
+    {
+      "source": "sv",
+      "target": "zh",
+      "exact_entries": 10
+    },
+    {
+      "source": "tr",
+      "target": "ar",
+      "exact_entries": 10
+    },
+    {
+      "source": "tr",
+      "target": "cs",
+      "exact_entries": 10
+    },
+    {
+      "source": "tr",
+      "target": "da",
+      "exact_entries": 10
+    },
+    {
+      "source": "tr",
+      "target": "de",
+      "exact_entries": 10
+    },
+    {
+      "source": "tr",
+      "target": "el",
+      "exact_entries": 10
+    },
+    {
+      "source": "tr",
+      "target": "en",
+      "exact_entries": 10
+    },
+    {
+      "source": "tr",
+      "target": "es",
+      "exact_entries": 10
+    },
+    {
+      "source": "tr",
+      "target": "fi",
+      "exact_entries": 10
+    },
+    {
+      "source": "tr",
+      "target": "fr",
+      "exact_entries": 10
+    },
+    {
+      "source": "tr",
+      "target": "he",
+      "exact_entries": 10
+    },
+    {
+      "source": "tr",
+      "target": "hi",
+      "exact_entries": 10
+    },
+    {
+      "source": "tr",
+      "target": "hu",
+      "exact_entries": 10
+    },
+    {
+      "source": "tr",
+      "target": "it",
+      "exact_entries": 10
+    },
+    {
+      "source": "tr",
+      "target": "ja",
+      "exact_entries": 10
+    },
+    {
+      "source": "tr",
+      "target": "ko",
+      "exact_entries": 10
+    },
+    {
+      "source": "tr",
+      "target": "nl",
+      "exact_entries": 10
+    },
+    {
+      "source": "tr",
+      "target": "no",
+      "exact_entries": 10
+    },
+    {
+      "source": "tr",
+      "target": "pl",
+      "exact_entries": 10
+    },
+    {
+      "source": "tr",
+      "target": "pt",
+      "exact_entries": 10
+    },
+    {
+      "source": "tr",
+      "target": "ro",
+      "exact_entries": 10
+    },
+    {
+      "source": "tr",
+      "target": "ru",
+      "exact_entries": 10
+    },
+    {
+      "source": "tr",
+      "target": "sv",
+      "exact_entries": 10
+    },
+    {
+      "source": "tr",
+      "target": "uk",
+      "exact_entries": 10
+    },
+    {
+      "source": "tr",
+      "target": "zh",
+      "exact_entries": 10
+    },
+    {
+      "source": "uk",
+      "target": "ar",
+      "exact_entries": 10
+    },
+    {
+      "source": "uk",
+      "target": "cs",
+      "exact_entries": 10
+    },
+    {
+      "source": "uk",
+      "target": "da",
+      "exact_entries": 10
+    },
+    {
+      "source": "uk",
+      "target": "de",
+      "exact_entries": 10
+    },
+    {
+      "source": "uk",
+      "target": "el",
+      "exact_entries": 10
+    },
+    {
+      "source": "uk",
+      "target": "en",
+      "exact_entries": 10
+    },
+    {
+      "source": "uk",
+      "target": "es",
+      "exact_entries": 10
+    },
+    {
+      "source": "uk",
+      "target": "fi",
+      "exact_entries": 10
+    },
+    {
+      "source": "uk",
+      "target": "fr",
+      "exact_entries": 10
+    },
+    {
+      "source": "uk",
+      "target": "he",
+      "exact_entries": 10
+    },
+    {
+      "source": "uk",
+      "target": "hi",
+      "exact_entries": 10
+    },
+    {
+      "source": "uk",
+      "target": "hu",
+      "exact_entries": 10
+    },
+    {
+      "source": "uk",
+      "target": "it",
+      "exact_entries": 10
+    },
+    {
+      "source": "uk",
+      "target": "ja",
+      "exact_entries": 10
+    },
+    {
+      "source": "uk",
+      "target": "ko",
+      "exact_entries": 10
+    },
+    {
+      "source": "uk",
+      "target": "nl",
+      "exact_entries": 10
+    },
+    {
+      "source": "uk",
+      "target": "no",
+      "exact_entries": 10
+    },
+    {
+      "source": "uk",
+      "target": "pl",
+      "exact_entries": 10
+    },
+    {
+      "source": "uk",
+      "target": "pt",
+      "exact_entries": 10
+    },
+    {
+      "source": "uk",
+      "target": "ro",
+      "exact_entries": 10
+    },
+    {
+      "source": "uk",
+      "target": "ru",
+      "exact_entries": 10
+    },
+    {
+      "source": "uk",
+      "target": "sv",
+      "exact_entries": 10
+    },
+    {
+      "source": "uk",
+      "target": "tr",
+      "exact_entries": 10
+    },
+    {
+      "source": "uk",
+      "target": "zh",
+      "exact_entries": 10
+    },
+    {
+      "source": "zh",
+      "target": "ar",
+      "exact_entries": 10
+    },
+    {
+      "source": "zh",
+      "target": "cs",
+      "exact_entries": 10
+    },
+    {
+      "source": "zh",
+      "target": "da",
+      "exact_entries": 10
+    },
+    {
+      "source": "zh",
+      "target": "de",
+      "exact_entries": 10
+    },
+    {
+      "source": "zh",
+      "target": "el",
+      "exact_entries": 10
+    },
+    {
+      "source": "zh",
+      "target": "en",
+      "exact_entries": 10
+    },
+    {
+      "source": "zh",
+      "target": "es",
+      "exact_entries": 10
+    },
+    {
+      "source": "zh",
+      "target": "fi",
+      "exact_entries": 10
+    },
+    {
+      "source": "zh",
+      "target": "fr",
+      "exact_entries": 10
+    },
+    {
+      "source": "zh",
+      "target": "he",
+      "exact_entries": 10
+    },
+    {
+      "source": "zh",
+      "target": "hi",
+      "exact_entries": 10
+    },
+    {
+      "source": "zh",
+      "target": "hu",
+      "exact_entries": 10
+    },
+    {
+      "source": "zh",
+      "target": "it",
+      "exact_entries": 10
+    },
+    {
+      "source": "zh",
+      "target": "ja",
+      "exact_entries": 10
+    },
+    {
+      "source": "zh",
+      "target": "ko",
+      "exact_entries": 10
+    },
+    {
+      "source": "zh",
+      "target": "nl",
+      "exact_entries": 10
+    },
+    {
+      "source": "zh",
+      "target": "no",
+      "exact_entries": 10
+    },
+    {
+      "source": "zh",
+      "target": "pl",
+      "exact_entries": 10
+    },
+    {
+      "source": "zh",
+      "target": "pt",
+      "exact_entries": 10
+    },
+    {
+      "source": "zh",
+      "target": "ro",
+      "exact_entries": 10
+    },
+    {
+      "source": "zh",
+      "target": "ru",
+      "exact_entries": 10
+    },
+    {
+      "source": "zh",
+      "target": "sv",
+      "exact_entries": 10
+    },
+    {
+      "source": "zh",
+      "target": "tr",
+      "exact_entries": 10
+    },
+    {
+      "source": "zh",
+      "target": "uk",
+      "exact_entries": 10
+    }
+  ],
+  "scope": "small high-confidence offline glossary; not general machine translation"
+}

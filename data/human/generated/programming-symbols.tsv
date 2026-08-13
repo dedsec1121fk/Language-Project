@@ -1,0 +1,57 @@
+symbol	canonical	english	greek
+!	exclamation mark	exclamation mark	θαυμαστικό
+""""	double quote	double quote	διπλά εισαγωγικά
+#	hash / number sign	hash / number sign	δίεση / σύμβολο αριθμού
+$	dollar sign	dollar sign	σύμβολο δολαρίου
+%	percent sign	percent sign	σύμβολο ποσοστού
+&	ampersand	ampersand	σύμβολο και
+'	single quote	single quote	μονό εισαγωγικό
+(	open parenthesis	open parenthesis	αριστερή παρένθεση
+)	close parenthesis	close parenthesis	δεξιά παρένθεση
+*	asterisk	asterisk	αστερίσκος
++	plus sign	plus sign	σύμβολο συν
+,	comma	comma	κόμμα
+-	hyphen / minus	hyphen / minus	παύλα / μείον
+.	dot / period	dot / period	τελεία
+/	forward slash	forward slash	κάθετος
+:	colon	colon	άνω και κάτω τελεία
+;	semicolon	semicolon	ελληνικό ερωτηματικό / semicolon
+<	less-than sign	less-than sign	μικρότερο από
+=	equals sign	equals sign	ίσο
+>	greater-than sign	greater-than sign	μεγαλύτερο από
+?	question mark	question mark	ερωτηματικό
+@	at sign	at sign	παπάκι
+[	open square bracket	open square bracket	αριστερή αγκύλη
+\	backslash	backslash	ανάποδη κάθετος
+]	close square bracket	close square bracket	δεξιά αγκύλη
+^	caret	caret	καρέ
+_	underscore	underscore	κάτω παύλα
+`	backtick	backtick	ανάστροφη απόστροφος
+{	open curly brace	open curly brace	αριστερό άγκιστρο
+|	vertical bar / pipe	vertical bar / pipe	κατακόρυφη γραμμή / pipe
+}	close curly brace	close curly brace	δεξί άγκιστρο
+~	tilde	tilde	περισπωμένη
+==	equality operator	equality operator	equality operator
+!=	not-equal operator	not-equal operator	not-equal operator
+<=	less-than-or-equal operator	less-than-or-equal operator	less-than-or-equal operator
+>=	greater-than-or-equal operator	greater-than-or-equal operator	greater-than-or-equal operator
+->	arrow operator	arrow operator	arrow operator
+=>	fat-arrow operator	fat-arrow operator	fat-arrow operator
+::	double-colon / scope operator	double-colon / scope operator	double-colon / scope operator
+&&	logical AND	logical AND	logical AND
+||	logical OR	logical OR	logical OR
+++	increment operator	increment operator	increment operator
+--	decrement operator	decrement operator	decrement operator
++=	add-and-assign	add-and-assign	add-and-assign
+-=	subtract-and-assign	subtract-and-assign	subtract-and-assign
+*=	multiply-and-assign	multiply-and-assign	multiply-and-assign
+/=	divide-and-assign	divide-and-assign	divide-and-assign
+%=	modulo-and-assign	modulo-and-assign	modulo-and-assign
+<<	left shift	left shift	left shift
+>>	right shift	right shift	right shift
+**	power / double-asterisk	power / double-asterisk	power / double-asterisk
+//	double-slash	double-slash	double-slash
+/*	block-comment open	block-comment open	block-comment open
+*/	block-comment close	block-comment close	block-comment close
+<!--	HTML comment open	HTML comment open	HTML comment open
+-->	HTML comment close	HTML comment close	HTML comment close

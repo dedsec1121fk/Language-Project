@@ -1,0 +1,41 @@
+{
+  "language_project_component": "Language Vault",
+  "iana": {
+    "dataset": "Language Subtag Registry",
+    "snapshot_file_date": "2026-08-08",
+    "bundled_path": "data/human/iana/language-subtag-registry.txt"
+  },
+  "unicode": {
+    "version": "17.0.0",
+    "bundled_path": "data/human/unicode/",
+    "license_path": "data/human/unicode/UNICODE-LICENSE.txt",
+    "extra_tables": [
+      "NameAliases.txt",
+      "DerivedAge.txt",
+      "PropList.txt",
+      "DerivedCoreProperties.txt",
+      "BidiMirroring.txt",
+      "BidiBrackets.txt",
+      "NamedSequences.txt",
+      "NormalizationCorrections.txt",
+      "emoji-variation-sequences.txt"
+    ]
+  },
+  "generated": {
+    "language_records": 8276,
+    "unicode_script_values": 174,
+    "unicode_blocks": 346,
+    "sqlite_index": "data/human/generated/language-vault.sqlite3",
+    "glottolog_languoids": 27177,
+    "unicode_explicit_codepoint_rows": 40575,
+    "translation_pairs": 600
+  },
+  "glottolog": {
+    "version": "5.3",
+    "rows": 27177,
+    "bundled_path": "data/human/glottolog/languages.csv",
+    "license": "CC BY 4.0",
+    "license_path": "data/human/glottolog/CC-BY-4.0.txt",
+    "attribution_path": "data/human/glottolog/ATTRIBUTION.txt"
+  }
+}
