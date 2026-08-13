@@ -1,7 +1,7 @@
 {
   "schema": 2,
   "project": "Language Project",
-  "file_count": 10749,
+  "file_count": 10752,
   "files": [
     {
       "path": ".gitattributes",
@@ -35,8 +35,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 89972,
-      "sha256": "9406c661e4d91915149a51f4c3ba8cc4b191f2bc570f8828eb2d83eba9b3e8ad"
+      "bytes": 93354,
+      "sha256": "deafc13ca5be402dada12555e9569a9fc24c460397cb306e254b61dca0c10af9"
     },
     {
       "path": "catalog/SOURCES.md",
@@ -6685,8 +6685,8 @@
     },
     {
       "path": "cli/Language.py",
-      "bytes": 64779,
-      "sha256": "1fcce5710445d39ffd7babe3878fec017dfc522201c0c813d55126839fb1a5d0"
+      "bytes": 75114,
+      "sha256": "0bdf01b85643c5bdcca5a184578de7bc4f74cce6c49c076018c236e1a5648dac"
     },
     {
       "path": "config/benchmark_profiles.json",
@@ -6862,6 +6862,11 @@
       "path": "core/topology.py",
       "bytes": 5079,
       "sha256": "5d973e76950961b0b386b817edec338c987a0192d695fd669ff03d564cd2cbbf"
+    },
+    {
+      "path": "core/workbench.py",
+      "bytes": 13180,
+      "sha256": "f4464f5823fe74cab3a058ae379ef1540d7a0a694a275149cbb58769478af6c2"
     },
     {
       "path": "data/human/PROVENANCE.json",
@@ -49344,6 +49349,11 @@
       "sha256": "dc94ca3a01f0349bea5b2b9bae93b6c8f7dee0ac405928d369848a16f3eb40d3"
     },
     {
+      "path": "docs/ADVANCED_WORKBENCH.md",
+      "bytes": 1659,
+      "sha256": "29d30215e1fb388a355be5315df624428da4ff0384af05c16c466a549b5d5944"
+    },
+    {
       "path": "docs/ARCHITECTURE.md",
       "bytes": 2819,
       "sha256": "4111b94c1f0f71ff139fe42c9ed9778100a5f2afe4120c95dfc23b5108da0b21"
@@ -53620,8 +53630,8 @@
     },
     {
       "path": "scripts/audit_project.py",
-      "bytes": 15885,
-      "sha256": "504f356a81521da08cd42394f3d74a9921ca3990296bfe67bcc5ca73a9fca004"
+      "bytes": 16130,
+      "sha256": "1109200b2b614e477b46c3556fb8d02a167e0f8fc1a28273b2abc277c10c6d2a"
     },
     {
       "path": "scripts/build_manifest.py",
@@ -53690,8 +53700,8 @@
     },
     {
       "path": "scripts/quick-test.sh",
-      "bytes": 505,
-      "sha256": "c9964240815c9802ad49dd572b1120c9e48568e12e740f609fdd526ee0d4651b"
+      "bytes": 572,
+      "sha256": "bd2a7b676494f54af9e53379a0de742948a642839167470d57a02b25916e288b"
     },
     {
       "path": "scripts/refresh_catalog.py",
@@ -53742,6 +53752,11 @@
       "path": "scripts/verify_manifest.py",
       "bytes": 609,
       "sha256": "8b2662272d71b3fd37b68ee00cbde8668ec9b6e02ee565b3618758739a4500ed"
+    },
+    {
+      "path": "scripts/workbench_smoke.py",
+      "bytes": 1825,
+      "sha256": "b15a40df2faa1aa55510f1b711ec01e8e7f4f4eb0ecf2feb456980c32ff90b9c"
     },
     {
       "path": "tests/test_static.py",

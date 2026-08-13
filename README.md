@@ -5,7 +5,6 @@
 > Για να μεταβείτε στην πλήρη Ελληνική έκδοση, συνεχίστε στο [Language Project — Ελληνικά](#language-project--ελληνικά).
 
 
-Language Project keeps the visual/readability approach of a bilingual project README: English first, Greek second, with the large sections collapsed by default so the repository remains easy to browse.
 
 ---
 
@@ -448,6 +447,39 @@ language-project tools --help
 ```
 
 Potentially destructive operations such as rename/sync/cleanup remain preview-first and require `--apply`.
+
+</details>
+<details>
+<summary><strong>Advanced Offline Workbench — 22 More Practical Tools</strong></summary>
+
+The advanced workbench adds dependency-free utilities that are useful for real Termux maintenance, development, data inspection and recovery work:
+
+```bash
+language-project tools signature FILE
+language-project tools chunk-hash FILE --chunk-size 1048576
+language-project tools checksum-write FILE --algorithm sha256
+language-project tools checksum-verify FILE.sha256
+language-project tools archive-list ARCHIVE
+language-project tools base 255 --from-base 10 --to-base 16
+language-project tools cidr 192.168.1.10/24
+language-project tools url-info 'https://example.com/a?x=1'
+language-project tools permissions 0755
+language-project tools regex-test 'TODO|FIXME' --file README.md
+language-project tools clean-text --file notes.txt --dedupe --sort
+language-project tools word-frequency --file README.md --limit 30
+language-project tools ngrams --file README.md -n 2 --mode word
+language-project tools csv-to-json data.csv --output data.json
+language-project tools json-to-csv data.json --output data.csv
+language-project tools sqlite-info database.db
+language-project tools sqlite-query database.db 'SELECT * FROM items LIMIT 20'
+language-project tools env-parse .env
+language-project tools safe-name 'unsafe:name?.txt'
+language-project tools text-split huge.txt --lines-per-file 5000
+language-project tools merge-files part1.txt part2.txt --output merged.txt
+language-project tools json-diff old.json new.json
+```
+
+SQLite access is read-only, checksum sidecars are portable, archive listing does not extract files, and these tools use Python's standard library so they do not add third-party package downloads.
 
 </details>
 <details>
@@ -1131,6 +1163,39 @@ language-project tools --help
 
 </details>
 <details>
+<summary><strong>Προηγμένο Offline Workbench — 22 Επιπλέον Πρακτικά Εργαλεία</strong></summary>
+
+Το προηγμένο workbench προσθέτει εργαλεία χωρίς επιπλέον third-party dependencies για πραγματική χρήση σε Termux, ανάπτυξη, έλεγχο δεδομένων και συντήρηση:
+
+```bash
+language-project tools signature FILE
+language-project tools chunk-hash FILE --chunk-size 1048576
+language-project tools checksum-write FILE --algorithm sha256
+language-project tools checksum-verify FILE.sha256
+language-project tools archive-list ARCHIVE
+language-project tools base 255 --from-base 10 --to-base 16
+language-project tools cidr 192.168.1.10/24
+language-project tools url-info 'https://example.com/a?x=1'
+language-project tools permissions 0755
+language-project tools regex-test 'TODO|FIXME' --file README.md
+language-project tools clean-text --file notes.txt --dedupe --sort
+language-project tools word-frequency --file README.md --limit 30
+language-project tools ngrams --file README.md -n 2 --mode word
+language-project tools csv-to-json data.csv --output data.json
+language-project tools json-to-csv data.json --output data.csv
+language-project tools sqlite-info database.db
+language-project tools sqlite-query database.db 'SELECT * FROM items LIMIT 20'
+language-project tools env-parse .env
+language-project tools safe-name 'unsafe:name?.txt'
+language-project tools text-split huge.txt --lines-per-file 5000
+language-project tools merge-files part1.txt part2.txt --output merged.txt
+language-project tools json-diff old.json new.json
+```
+
+Η πρόσβαση SQLite είναι μόνο για ανάγνωση, τα checksum sidecars είναι φορητά, το archive listing δεν κάνει extraction και τα εργαλεία βασίζονται στη standard library της Python ώστε να μη χρειάζονται επιπλέον third-party downloads.
+
+</details>
+<details>
 <summary><strong>Benchmarks Και Resilience</strong></summary>
 
 Παραμένει διαθέσιμο ολόκληρο το benchmark/flex engine:
@@ -1383,9 +1448,3 @@ Z shell · Z++ · ZAP · Zeek · ZenScript · Zephir · ZetaLisp · Zig · ZIL �
 
 ---
 
-<details>
-<summary><strong>License / Άδεια</strong></summary>
-
-MIT License. See `LICENSE`. / Άδεια MIT. Δείτε το `LICENSE`.
-
-</details>

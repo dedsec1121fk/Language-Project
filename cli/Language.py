@@ -27,6 +27,7 @@ from core.langtools import status as langtools_status,run_tool as langtool_run,r
 from core.language_modules import list_modules,module_info,verify_modules,demo_module
 from core.paths import DATA_ROOT, ensure_data_tree
 from core.human_language import status as human_status,languages_search as human_languages_search,language_show as human_language_show,scripts_list as human_scripts_list,script_show as human_script_show,char_info as human_char_info,unicode_search as human_unicode_search,detect_scripts as human_detect_scripts,alphabet_chars as human_alphabet_chars,normalize as human_normalize,encode_bridge as human_encode_bridge,decode_bridge as human_decode_bridge,symbols_describe as human_symbols_describe,symbols_parse as human_symbols_parse,glossary_status as human_glossary_status,translate as human_translate,transliterate as human_transliterate,morse as human_morse,braille as human_braille,nato as human_nato,text_audit as human_text_audit,languages_for_script as human_languages_for_script,tag_info as human_tag_info,vault_db_stats as human_vault_db_stats,glottolog_search as human_glottolog_search,glottolog_show as human_glottolog_show,codepoint_info as human_codepoint_info,text_from_unicode_names as human_text_from_unicode_names,source_literal as human_source_literal,source_literal_languages as human_source_literal_languages,ascii_table as human_ascii_table
+from core.workbench import file_signature as wb_signature,chunk_hashes as wb_chunk_hashes,checksum_write as wb_checksum_write,checksum_verify as wb_checksum_verify,archive_list as wb_archive_list,base_convert as wb_base_convert,cidr_info as wb_cidr_info,url_info as wb_url_info,permission_info as wb_permission_info,regex_test as wb_regex_test,clean_text as wb_clean_text,word_frequency as wb_word_frequency,ngrams as wb_ngrams,csv_to_json as wb_csv_to_json,json_to_csv as wb_json_to_csv,sqlite_info as wb_sqlite_info,sqlite_query as wb_sqlite_query,env_parse as wb_env_parse,safe_filename as wb_safe_filename,split_text as wb_split_text,merge_files as wb_merge_files,json_diff as wb_json_diff
 
 ORDERS=['registry','fastest','random','adaptive-balanced','adaptive-latency','adaptive-throughput','adaptive-stable']
 
@@ -102,6 +103,7 @@ USEFUL TOOLBOX
 [33] HTTP Header / Reachability Check
 [34] Download File + Optional SHA-256 Verify
 [35] Process List
+[36] Advanced Offline Workbench (22 More Tools)
 [0]  Back""")
         c=input('\nSelect: ').strip()
         try:
@@ -144,7 +146,55 @@ USEFUL TOOLBOX
             elif c=='33':print(json.dumps(tool_http_info(input('URL: ').strip()),indent=2))
             elif c=='34':print(json.dumps(tool_download_file(input('URL: ').strip(),input('Output [optional]: ').strip() or None),indent=2))
             elif c=='35':print(json.dumps(tool_process_list(),indent=2))
+            elif c=='36':advanced_workbench_menu()
         except Exception as e:print('Tool error:',e)
+
+def advanced_workbench_menu():
+    while True:
+        print("""
+ADVANCED OFFLINE WORKBENCH
+[1] File Signature / Magic Bytes        [12] Word Frequency
+[2] Chunk Hashes                        [13] N-grams
+[3] Write Checksum Sidecar              [14] CSV -> JSON
+[4] Verify Checksum Sidecar             [15] JSON -> CSV
+[5] List Archive Contents               [16] SQLite Database Info
+[6] Number Base Converter               [17] Read-only SQLite Query
+[7] IPv4/IPv6 CIDR Calculator           [18] Parse .env File
+[8] URL Parser                          [19] Safe Filename
+[9] Unix Permission Decoder             [20] Split Text By Lines
+[10] Regex Tester                       [21] Merge Files
+[11] Clean / Deduplicate / Sort Text     [22] Structural JSON Diff
+[0] Back
+""")
+        c=input('Select: ').strip()
+        try:
+            if c=='0': return
+            if c=='1': print(json.dumps(wb_signature(input('File: ').strip()),indent=2))
+            elif c=='2': print(json.dumps(wb_chunk_hashes(input('File: ').strip()),indent=2))
+            elif c=='3': print(json.dumps(wb_checksum_write(input('File: ').strip()),indent=2))
+            elif c=='4': print(json.dumps(wb_checksum_verify(input('Sidecar: ').strip()),indent=2))
+            elif c=='5': print(json.dumps(wb_archive_list(input('Archive: ').strip()),indent=2))
+            elif c=='6': print(json.dumps(wb_base_convert(input('Value: ').strip(),int(input('From base [10]: ').strip() or 10),int(input('To base [16]: ').strip() or 16)),indent=2))
+            elif c=='7': print(json.dumps(wb_cidr_info(input('CIDR: ').strip()),indent=2))
+            elif c=='8': print(json.dumps(wb_url_info(input('URL: ').strip()),indent=2))
+            elif c=='9': print(json.dumps(wb_permission_info(input('Mode or path: ').strip()),indent=2))
+            elif c=='10': print(json.dumps(wb_regex_test(input('Regex: ').strip(),text=input('Text: ')),indent=2,ensure_ascii=False))
+            elif c=='11': print(wb_clean_text(input('Text: '),dedupe=True)['text'],end='')
+            elif c=='12': print(json.dumps(wb_word_frequency(input('Text: ')),indent=2,ensure_ascii=False))
+            elif c=='13': print(json.dumps(wb_ngrams(input('Text: ')),indent=2,ensure_ascii=False))
+            elif c=='14': print(json.dumps(wb_csv_to_json(input('CSV: ').strip()),indent=2,ensure_ascii=False))
+            elif c=='15': print(json.dumps(wb_json_to_csv(input('JSON: ').strip()),indent=2,ensure_ascii=False))
+            elif c=='16': print(json.dumps(wb_sqlite_info(input('SQLite DB: ').strip()),indent=2,ensure_ascii=False))
+            elif c=='17': print(json.dumps(wb_sqlite_query(input('SQLite DB: ').strip(),input('Read-only SQL: ')),indent=2,ensure_ascii=False))
+            elif c=='18': print(json.dumps(wb_env_parse(input('.env file: ').strip()),indent=2,ensure_ascii=False))
+            elif c=='19': print(json.dumps(wb_safe_filename(input('Filename: ')),indent=2,ensure_ascii=False))
+            elif c=='20': print(json.dumps(wb_split_text(input('Text file: ').strip()),indent=2))
+            elif c=='21':
+                import shlex
+                files=shlex.split(input('Input files: ')); out=input('Output file: ').strip(); print(json.dumps(wb_merge_files(files,out),indent=2))
+            elif c=='22':
+                r=wb_json_diff(input('First JSON: ').strip(),input('Second JSON: ').strip()); print(json.dumps(r,indent=2,ensure_ascii=False))
+        except Exception as e: print('Workbench error:',e)
 
 def run_tools(a):
     if not a.tool_cmd:
@@ -190,6 +240,32 @@ def run_tools(a):
     if a.tool_cmd=='http':r=tool_http_info(a.url,a.timeout);print(json.dumps(r,indent=2));return 0 if 'error' not in r else 1
     if a.tool_cmd=='download':print(json.dumps(tool_download_file(a.url,a.output,a.sha256,a.timeout,a.max_bytes),indent=2));return 0
     if a.tool_cmd=='processes':print(json.dumps(tool_process_list(a.limit),indent=2));return 0
+    if a.tool_cmd=='signature':print(json.dumps(wb_signature(a.path),indent=2));return 0
+    if a.tool_cmd=='chunk-hash':print(json.dumps(wb_chunk_hashes(a.path,a.chunk_size,a.algorithm),indent=2));return 0
+    if a.tool_cmd=='checksum-write':print(json.dumps(wb_checksum_write(a.path,a.algorithm,a.output),indent=2));return 0
+    if a.tool_cmd=='checksum-verify':r=wb_checksum_verify(a.sidecar,a.file);print(json.dumps(r,indent=2));return 0 if r['ok'] else 2
+    if a.tool_cmd=='archive-list':print(json.dumps(wb_archive_list(a.path,a.limit),indent=2));return 0
+    if a.tool_cmd=='base':print(json.dumps(wb_base_convert(a.value,a.from_base,a.to_base),indent=2));return 0
+    if a.tool_cmd=='cidr':print(json.dumps(wb_cidr_info(a.value),indent=2));return 0
+    if a.tool_cmd=='url-info':print(json.dumps(wb_url_info(a.url),indent=2));return 0
+    if a.tool_cmd=='permissions':print(json.dumps(wb_permission_info(a.value),indent=2));return 0
+    if a.tool_cmd=='regex-test':print(json.dumps(wb_regex_test(a.pattern,a.text,a.file,a.ignore_case,a.multiline,a.max_matches),indent=2,ensure_ascii=False));return 0
+    if a.tool_cmd=='clean-text':
+        txt=tool_read_bytes(a.text,a.file).decode('utf-8','replace');r=wb_clean_text(txt,not a.no_trim,a.drop_blank,a.dedupe,a.sort,a.casefold_sort)
+        if a.output:Path(a.output).expanduser().write_text(r['text'],encoding='utf-8');print('Written:',Path(a.output).expanduser())
+        else:sys.stdout.write(r['text'])
+        return 0
+    if a.tool_cmd=='word-frequency':print(json.dumps(wb_word_frequency(tool_read_bytes(a.text,a.file).decode('utf-8','replace'),a.limit),indent=2,ensure_ascii=False));return 0
+    if a.tool_cmd=='ngrams':print(json.dumps(wb_ngrams(tool_read_bytes(a.text,a.file).decode('utf-8','replace'),a.n,a.limit,a.mode),indent=2,ensure_ascii=False));return 0
+    if a.tool_cmd=='csv-to-json':print(json.dumps(wb_csv_to_json(a.path,a.output,a.delimiter),indent=2,ensure_ascii=False));return 0
+    if a.tool_cmd=='json-to-csv':print(json.dumps(wb_json_to_csv(a.path,a.output),indent=2,ensure_ascii=False));return 0
+    if a.tool_cmd=='sqlite-info':print(json.dumps(wb_sqlite_info(a.path),indent=2,ensure_ascii=False));return 0
+    if a.tool_cmd=='sqlite-query':print(json.dumps(wb_sqlite_query(a.path,a.query,a.limit),indent=2,ensure_ascii=False));return 0
+    if a.tool_cmd=='env-parse':print(json.dumps(wb_env_parse(a.path),indent=2,ensure_ascii=False));return 0
+    if a.tool_cmd=='safe-name':print(json.dumps(wb_safe_filename(a.name,a.replacement,a.max_length),indent=2,ensure_ascii=False));return 0
+    if a.tool_cmd=='text-split':print(json.dumps(wb_split_text(a.path,a.output_dir,a.lines_per_file,a.prefix),indent=2,ensure_ascii=False));return 0
+    if a.tool_cmd=='merge-files':print(json.dumps(wb_merge_files(a.paths,a.output,a.separator),indent=2,ensure_ascii=False));return 0
+    if a.tool_cmd=='json-diff':r=wb_json_diff(a.a,a.b);print(json.dumps(r,indent=2,ensure_ascii=False));return 0 if r['equal'] else 1
     return 0
 
 def practical_polyglot_menu():
@@ -438,6 +514,28 @@ def main():
     thttp=ts.add_parser('http');thttp.add_argument('url');thttp.add_argument('--timeout',type=float,default=10)
     tdl=ts.add_parser('download');tdl.add_argument('url');tdl.add_argument('--output');tdl.add_argument('--sha256');tdl.add_argument('--timeout',type=float,default=30);tdl.add_argument('--max-bytes',type=int,default=1073741824)
     tps=ts.add_parser('processes');tps.add_argument('--limit',type=int,default=100)
+    tsig=ts.add_parser('signature');tsig.add_argument('path')
+    tch=ts.add_parser('chunk-hash');tch.add_argument('path');tch.add_argument('--chunk-size',type=int,default=1048576);tch.add_argument('--algorithm',default='sha256')
+    tcw=ts.add_parser('checksum-write');tcw.add_argument('path');tcw.add_argument('--algorithm',default='sha256');tcw.add_argument('--output')
+    tcv=ts.add_parser('checksum-verify');tcv.add_argument('sidecar');tcv.add_argument('--file')
+    tal=ts.add_parser('archive-list');tal.add_argument('path');tal.add_argument('--limit',type=int,default=5000)
+    tbase=ts.add_parser('base');tbase.add_argument('value');tbase.add_argument('--from-base',type=int,default=10);tbase.add_argument('--to-base',type=int,default=16)
+    tcidr=ts.add_parser('cidr');tcidr.add_argument('value')
+    turi=ts.add_parser('url-info');turi.add_argument('url')
+    tperm=ts.add_parser('permissions');tperm.add_argument('value')
+    treg=ts.add_parser('regex-test');treg.add_argument('pattern');treg.add_argument('--text');treg.add_argument('--file');treg.add_argument('--ignore-case',action='store_true');treg.add_argument('--multiline',action='store_true');treg.add_argument('--max-matches',type=int,default=100)
+    tclean=ts.add_parser('clean-text');tclean.add_argument('--text');tclean.add_argument('--file');tclean.add_argument('--output');tclean.add_argument('--no-trim',action='store_true');tclean.add_argument('--drop-blank',action='store_true');tclean.add_argument('--dedupe',action='store_true');tclean.add_argument('--sort',action='store_true');tclean.add_argument('--casefold-sort',action='store_true')
+    twf=ts.add_parser('word-frequency');twf.add_argument('--text');twf.add_argument('--file');twf.add_argument('--limit',type=int,default=50)
+    tng=ts.add_parser('ngrams');tng.add_argument('--text');tng.add_argument('--file');tng.add_argument('-n',type=int,default=2);tng.add_argument('--limit',type=int,default=50);tng.add_argument('--mode',choices=['word','char'],default='word')
+    tcj=ts.add_parser('csv-to-json');tcj.add_argument('path');tcj.add_argument('--output');tcj.add_argument('--delimiter')
+    tjc=ts.add_parser('json-to-csv');tjc.add_argument('path');tjc.add_argument('--output')
+    tsi=ts.add_parser('sqlite-info');tsi.add_argument('path')
+    tsq=ts.add_parser('sqlite-query');tsq.add_argument('path');tsq.add_argument('query');tsq.add_argument('--limit',type=int,default=1000)
+    tep=ts.add_parser('env-parse');tep.add_argument('path')
+    tsn=ts.add_parser('safe-name');tsn.add_argument('name');tsn.add_argument('--replacement',default='-');tsn.add_argument('--max-length',type=int,default=120)
+    tts=ts.add_parser('text-split');tts.add_argument('path');tts.add_argument('--output-dir');tts.add_argument('--lines-per-file',type=int,default=1000);tts.add_argument('--prefix',default='part')
+    tmf=ts.add_parser('merge-files');tmf.add_argument('paths',nargs='+');tmf.add_argument('--output',required=True);tmf.add_argument('--separator',default='')
+    tjd=ts.add_parser('json-diff');tjd.add_argument('a');tjd.add_argument('b')
     pg=sp.add_parser('polyglot',help='Practical workflows where every verified language actively processes data');pgs=pg.add_subparsers(dest='poly_cmd')
     pgs.add_parser('status')
     pseal=pgs.add_parser('seal');pseal.add_argument('path');pseal.add_argument('--output');pseal.add_argument('--chunk-size',type=int,default=65536);pseal.add_argument('--order',choices=ORDERS,default='registry');pseal.add_argument('--warmups',type=int,default=1)
